@@ -68,16 +68,16 @@ public class IntroScreen extends Screen {
 
         ITextComponent paletteKeyLetter = new StringTextComponent(BindManager.getPaletteBind().getTranslatedKeyMessage().getString().toUpperCase()).withStyle(TextFormatting.GOLD);
         ITextComponent blockstateSelectorKeyLetter = new StringTextComponent("CTRL+MIDDLE-MOUSE-BUTTON").withStyle(TextFormatting.GOLD);
-        ITextComponent welcomeString = new StringTextComponent("Welcome to the Conquest Reforged 1.15.2 Alpha!").withStyle(TextFormatting.GOLD);
+        ITextComponent welcomeString = new StringTextComponent("Welcome to the Conquest Reforged 1.16.5 Alpha!").withStyle(TextFormatting.GOLD);
 
-        String[] message = new String[]{welcomeString.getContents(),
-                "This screen will introduce you to keybinds for making building faster.",
-                "",
-                "\"" + paletteKeyLetter.getContents() + "\" - (Creative Mode only) shows texture shape variants in the block palette.",
-                "Works while hovering over a block in the creative menu or when selected in the hotbar.",
-                "",
-                "\"" + blockstateSelectorKeyLetter.getContents() + "\" - (Creative Mode only) press while looking at a block",
-                "This gives the exact shape you're looking at as a block item in your hotbar."
+        ITextComponent[] message = new ITextComponent[]{welcomeString,
+                new StringTextComponent("This screen will introduce you to keybinds for making building faster."),
+                new StringTextComponent(""),
+                new StringTextComponent("\"").append(paletteKeyLetter).append("\" - (Creative Mode only) shows texture shape variants in the block palette."),
+                new StringTextComponent("Works while hovering over a block in the creative menu or when selected in the hotbar."),
+                new StringTextComponent(""),
+                new StringTextComponent("\"").append(blockstateSelectorKeyLetter).append("\" - (Creative Mode only) press while looking at a block"),
+                new StringTextComponent("This gives the exact shape you're looking at as a block item in your hotbar.")
         };
 
         int dist = 12;
