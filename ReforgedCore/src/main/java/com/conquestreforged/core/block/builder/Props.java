@@ -78,7 +78,7 @@ public class Props extends BlockProps<Props> implements BlockFactory {
         return this;
     }
 
-    //TODO something with light?
+    //something with light?
     @Override
     protected <T> void applyNonNull(Integer light, Consumer<T> lightLevel) {
 
