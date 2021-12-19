@@ -2,16 +2,17 @@ package com.conquestreforged.client.gui.palette;
 
 import com.conquestreforged.client.BindManager;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
-import net.minecraft.client.gui.screen.inventory.CreativeScreen;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.Container;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraftforge.client.gui.ForgeIngameGui;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -22,18 +23,18 @@ public class PaletteGuiEvents {
 
     @SubscribeEvent
     public static void onKeyPress(GuiScreenEvent.KeyboardKeyPressedEvent.Pre event) {
-        if (event.getGui() instanceof ContainerScreen) {
-            PlayerEntity player = Minecraft.getInstance().player;
-            if (player == null || !player.abilities.instabuild) {
+        if (event.getGui() instanceof AbstractContainerScreen) {
+            Player player = Minecraft.getInstance().player;
+            if (player == null || !player.getAbilities().instabuild) {
                 return;
             }
 
-            ContainerScreen<?> screen = (ContainerScreen<?>) event.getGui();
-            if (screen instanceof CreativeScreen) {
+            AbstractContainerScreen<?> screen = (AbstractContainerScreen<?>) event.getGui();
+            if (screen instanceof CreativeModeInventoryScreen) {
                 // ignore search tab in creative inventory
-                CreativeScreen creativeScreen = (CreativeScreen) screen;
+                CreativeModeInventoryScreen creativeScreen = (CreativeModeInventoryScreen) screen;
                 int tabIndex = creativeScreen.getSelectedTab();
-                if (tabIndex == ItemGroup.TAB_SEARCH.getId()) {
+                if (tabIndex == CreativeModeTab.TAB_SEARCH.getId()) {
                     return;
                 }
             }
@@ -49,7 +50,7 @@ public class PaletteGuiEvents {
                 // open creative gui regardless if was there previously
                 if (event.getKeyCode() == Minecraft.getInstance().options.keyInventory.getKey().getValue()) {
                     event.setCanceled(true);
-                    Minecraft.getInstance().setScreen(new CreativeScreen(player));
+                    Minecraft.getInstance().setScreen(new CreativeModeInventoryScreen(player));
                     return;
                 }
             }
@@ -65,21 +66,21 @@ public class PaletteGuiEvents {
             }
 
             ItemStack stack = slot.getItem();
-            Optional<IInventory> palette = Palette.getPalette(stack);
+            Optional<Container> palette = Palette.getPalette(stack);
             if (!palette.isPresent()) {
                 return;
             }
 
             event.setCanceled(true);
-            PaletteContainer container = new PaletteContainer(player.inventory, palette.get());
-            PaletteScreen paletteScreen = new PaletteScreen(screen, player, player.inventory, container);
+            PaletteContainer container = new PaletteContainer(player.getInventory(), palette.get());
+            PaletteScreen paletteScreen = new PaletteScreen(screen, player, player.getInventory(), container);
             Minecraft.getInstance().setScreen(paletteScreen);
         }
     }
 
     @SubscribeEvent
-    public static void onRender(RenderGameOverlayEvent.Pre event) {
-        if (event.getType() == RenderGameOverlayEvent.ElementType.HOTBAR) {
+    public static void onRender(RenderGameOverlayEvent.PreLayer event) {
+        if (event.getOverlay() == ForgeIngameGui.HOTBAR_ELEMENT) {
             if (Minecraft.getInstance().screen instanceof PaletteScreen) {
                 event.setCanceled(true);
             }

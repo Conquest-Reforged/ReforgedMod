@@ -1,37 +1,37 @@
 package com.conquestreforged.core.client.color;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.client.renderer.color.IBlockColor;
-import net.minecraft.client.renderer.color.IItemColor;
-import net.minecraft.item.BlockItem;
-import net.minecraft.world.FoliageColors;
-import net.minecraft.world.GrassColors;
-import net.minecraft.world.biome.BiomeColors;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.client.color.block.BlockColor;
+import net.minecraft.client.color.item.ItemColor;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.GrassColor;
+import net.minecraft.client.renderer.BiomeColors;
 
 public class BlockColors {
 
-    public static final IBlockColor GRASS = (state, reader, pos, tint) -> {
+    public static final BlockColor GRASS = (state, reader, pos, tint) -> {
         if (reader != null && pos != null) {
             return BiomeColors.getAverageGrassColor(reader, pos);
         }
         return defaultGrassColor();
     };
 
-    public static final IBlockColor FOLIAGE = (state, reader, pos, tint) -> {
+    public static final BlockColor FOLIAGE = (state, reader, pos, tint) -> {
         if (reader != null && pos != null) {
             return BiomeColors.getAverageFoliageColor(reader, pos);
         }
         return defaultFoliageColor();
     };
 
-    public static final IBlockColor WATER = (state, reader, pos, tint) -> {
+    public static final BlockColor WATER = (state, reader, pos, tint) -> {
         if (reader != null && pos != null) {
             return BiomeColors.getAverageWaterColor(reader, pos);
         }
         return defaultWaterColor();
     };
 
-    public static IItemColor toItemColor(net.minecraft.client.renderer.color.BlockColors colors) {
+    public static ItemColor toItemColor(net.minecraft.client.color.block.BlockColors colors) {
         return (stack, tint) -> {
             BlockState state = ((BlockItem) stack.getItem()).getBlock().defaultBlockState();
             return colors.getColor(state, null, null, tint);
@@ -44,11 +44,11 @@ public class BlockColors {
      */
 
     private static int defaultGrassColor() {
-        return GrassColors.get(0.5, 1.0);
+        return GrassColor.get(0.5, 1.0);
     }
 
     private static int defaultFoliageColor() {
-        return FoliageColors.getDefaultColor();
+        return FoliageColor.getDefaultColor();
     }
 
     private static int defaultWaterColor() {

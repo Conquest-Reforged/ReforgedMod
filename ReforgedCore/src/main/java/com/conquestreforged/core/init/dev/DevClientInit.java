@@ -6,10 +6,10 @@ import com.conquestreforged.core.asset.pack.VirtualResourcepack;
 import com.conquestreforged.core.block.data.BlockDataRegistry;
 import com.conquestreforged.core.util.log.Log;
 import net.minecraft.client.Minecraft;
-import net.minecraft.item.crafting.IRecipeSerializer;
-import net.minecraft.resources.IPackFinder;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.ResourcePackType;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.server.packs.repository.RepositorySource;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.PackType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -21,23 +21,23 @@ import java.util.function.Consumer;
 public class DevClientInit {
 
     @SubscribeEvent // use this event as it happens later in the registry event cycle, but before first resource reload
-    public static void recipes(RegistryEvent.Register<IRecipeSerializer<?>> event) {
+    public static void recipes(RegistryEvent.Register<RecipeSerializer<?>> event) {
         if (Environment.isProduction()) {
             return;
         }
 
         Log.debug("Registering client resources");
 
-        IResourceManager resourceManager = Minecraft.getInstance().getResourceManager();
-        Consumer<IPackFinder> resourcePacks = Minecraft.getInstance().getResourcePackRepository()::addPackFinder;
+        ResourceManager resourceManager = Minecraft.getInstance().getResourceManager();
+        Consumer<RepositorySource> resourcePacks = Minecraft.getInstance().getResourcePackRepository()::addPackFinder;
 
         BlockDataRegistry.getInstance().getNamespaces().forEach(namespace -> {
-            VirtualResourcepack.Builder builder = VirtualResourcepack.builder(namespace).type(ResourcePackType.CLIENT_RESOURCES);
+            VirtualResourcepack.Builder builder = VirtualResourcepack.builder(namespace).type(PackType.CLIENT_RESOURCES);
             BlockDataRegistry.getInstance().getData(namespace).forEach(data -> data.addClientResources(builder));
             builder.add(new VirtualLang(namespace));
             builder.build(resourceManager);
         });
 
-        PackFinder.getInstance(ResourcePackType.CLIENT_RESOURCES).register(resourceManager, resourcePacks);
+        PackFinder.getInstance(PackType.CLIENT_RESOURCES).register(resourceManager, resourcePacks);
     }
 }

@@ -3,10 +3,10 @@ package com.conquestreforged.client.gui.palette.component;
 import com.conquestreforged.client.gui.palette.PaletteContainer;
 import com.conquestreforged.client.gui.palette.shape.Bounds;
 import com.conquestreforged.client.gui.palette.shape.Point;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.Container;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.resources.ResourceLocation;
 
 public class PaletteSlot extends Slot {
 
@@ -15,7 +15,7 @@ public class PaletteSlot extends Slot {
     private final Style style;
     private final Bounds bounds;
 
-    public PaletteSlot(IInventory inventory, Style style, Bounds bounds, int index, int x, int y) {
+    public PaletteSlot(Container inventory, Style style, Bounds bounds, int index, int x, int y) {
         super(inventory, index, x - 8, y - 8);
         this.style = style;
         this.bounds = bounds;

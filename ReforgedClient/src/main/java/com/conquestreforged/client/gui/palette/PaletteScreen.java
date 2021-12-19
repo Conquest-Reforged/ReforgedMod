@@ -5,17 +5,17 @@ import com.conquestreforged.client.gui.CustomCreativeScreen;
 import com.conquestreforged.client.gui.palette.component.PaletteSettings;
 import com.conquestreforged.client.gui.render.Render;
 import com.conquestreforged.client.tutorial.Tutorials;
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
 
 public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
 
@@ -29,22 +29,22 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
 
     private Slot hovered = null;
 
-    public PaletteScreen(PlayerEntity player, PlayerInventory inventory, PaletteContainer container) {
+    public PaletteScreen(Player player, Inventory inventory, PaletteContainer container) {
         this(null, player, inventory, container);
     }
 
-    public PaletteScreen(Screen previous, PlayerEntity player, PlayerInventory inventory, PaletteContainer container) {
-        super(container, inventory, new StringTextComponent("Palette Screen"));
+    public PaletteScreen(Screen previous, Player player, Inventory inventory, PaletteContainer container) {
+        super(container, inventory, new TextComponent("Palette Screen"));
         this.previous = previous;
         this.passEvents = true;
         player.containerMenu = container;
     }
 
     @Override
-    public void init(Minecraft mc, int width, int height) {
-        super.init(mc, width, height);
+    protected void init() {
+        super.init();
         settings.init(minecraft, width, height);
-        children.add(settings);
+        addWidget(settings);
         resize(width, height);
         Tutorials.openPalette = true;
     }
@@ -57,7 +57,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mouseX, int mouseY, float partialTicks) {
+    public void render(PoseStack matrixStack, int mouseX, int mouseY, float partialTicks) {
         renderBg(matrixStack, partialTicks, mouseX, mouseY);
 
         getMenu().updateStyle(settings);
@@ -96,7 +96,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
     }
 
     @Override
-    public void renderBg(MatrixStack matrixStack, float partialTicks, int mouseX, int mouseY) {
+    public void renderBg(PoseStack matrixStack, float partialTicks, int mouseX, int mouseY) {
         // translucent black background
         renderBackground(matrixStack);
 
@@ -107,7 +107,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
         getMenu().getHotbar().renderBackground(this, matrixStack);
     }
 
-    protected void renderFg(MatrixStack matrixStack, int mouseX, int mouseY) {
+    protected void renderFg(PoseStack matrixStack, int mouseX, int mouseY) {
         //super.drawGuiContainerForegroundLayer(mouseX, mouseY);
         if (minecraft == null) {
             return;

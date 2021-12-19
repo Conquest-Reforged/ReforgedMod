@@ -1,8 +1,8 @@
 package com.conquestreforged.core.block.properties;
 
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.StringRepresentable;
 
-public enum HalfArchShape implements IStringSerializable {
+public enum HalfArchShape implements StringRepresentable {
     ONE("one"),
     TWO_L("two_l"),
     TWO_R("two_r"),

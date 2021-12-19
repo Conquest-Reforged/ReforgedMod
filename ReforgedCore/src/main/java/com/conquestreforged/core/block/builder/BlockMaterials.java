@@ -1,8 +1,8 @@
 package com.conquestreforged.core.block.builder;
 
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.block.material.PushReaction;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.PushReaction;
 
 public class BlockMaterials {
     public static final Material WOOD_SPECIAL = (new Material(MaterialColor.WOOD, false, true, true, true, false, true, PushReaction.NORMAL));

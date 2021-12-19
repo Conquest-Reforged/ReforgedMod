@@ -1,7 +1,7 @@
 package com.conquestreforged.core.capability.handler;
 
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.network.PacketBuffer;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.common.capabilities.Capability;
 
 /**
@@ -15,16 +15,16 @@ public interface NBTHandler<T> extends CapabilityHandler<T> {
     Capability<T> getCapability();
 
     @Override
-    default T decode(PacketBuffer buffer) {
+    default T decode(FriendlyByteBuf buffer) {
         T value = create();
-        CompoundNBT root = buffer.readNbt();
+        CompoundTag root = buffer.readNbt();
         readNBT(getCapability(), value, null, root);
         return value;
     }
 
     @Override
-    default void encode(T message, PacketBuffer buffer) {
-        CompoundNBT root = new CompoundNBT();
+    default void encode(T message, FriendlyByteBuf buffer) {
+        CompoundTag root = new CompoundTag();
         writeNBT(getCapability(), message, null);
         buffer.writeNbt(root);
     }

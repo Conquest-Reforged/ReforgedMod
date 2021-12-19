@@ -1,7 +1,7 @@
 package com.conquestreforged.core.asset.pack;
 
-import net.minecraft.client.renderer.model.ModelResourceLocation;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 
 public class Locations {
 

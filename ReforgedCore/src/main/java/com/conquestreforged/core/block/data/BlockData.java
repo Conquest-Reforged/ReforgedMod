@@ -4,9 +4,9 @@ import com.conquestreforged.core.asset.pack.VirtualResourcepack;
 import com.conquestreforged.core.block.builder.BlockName;
 import com.conquestreforged.core.block.builder.Props;
 import com.conquestreforged.core.block.factory.InitializationException;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
+import net.minecraft.resources.ResourceLocation;
 
 import java.lang.reflect.Constructor;
 

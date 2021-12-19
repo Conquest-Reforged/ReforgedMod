@@ -1,13 +1,13 @@
 package com.conquestreforged.core.block.builder;
 
 import com.conquestreforged.core.block.factory.InitializationException;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.item.DyeColor;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.CreativeModeTab;
 
 import java.util.function.Consumer;
 import java.util.function.ToIntFunction;
@@ -29,7 +29,7 @@ public abstract class BlockProps<T extends BlockProps<T>> {
 
     private DyeColor dyeColor = null;
     private SoundType sound = null;
-    private ItemGroup group = ItemGroup.TAB_SEARCH;
+    private CreativeModeTab group = CreativeModeTab.TAB_SEARCH;
     private ToIntFunction<BlockState> light = null;
     private Float resistance = null;
     private Float hardness = null;
@@ -122,12 +122,12 @@ public abstract class BlockProps<T extends BlockProps<T>> {
         return getProps();
     }
 
-    public T group(ItemGroup group) {
+    public T group(CreativeModeTab group) {
         this.group = group;
         return getProps();
     }
 
-    public ItemGroup group() {
+    public CreativeModeTab group() {
         return group;
     }
 

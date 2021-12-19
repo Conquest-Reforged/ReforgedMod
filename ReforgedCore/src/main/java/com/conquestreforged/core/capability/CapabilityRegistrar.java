@@ -3,7 +3,7 @@ package com.conquestreforged.core.capability;
 import com.conquestreforged.core.capability.provider.Value;
 import com.conquestreforged.core.capability.provider.ValueFactory;
 import com.conquestreforged.core.util.log.Log;
-import net.minecraft.entity.Entity;
+import net.minecraft.world.entity.Entity;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

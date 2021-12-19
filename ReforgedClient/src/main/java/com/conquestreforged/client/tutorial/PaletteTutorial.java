@@ -6,7 +6,7 @@ import com.conquestreforged.core.config.section.ConfigSection;
 import com.conquestreforged.core.config.section.ConfigSectionSpec;
 import com.conquestreforged.core.util.log.Log;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
+import net.minecraft.client.gui.screens.inventory.ContainerScreen;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.common.MinecraftForge;

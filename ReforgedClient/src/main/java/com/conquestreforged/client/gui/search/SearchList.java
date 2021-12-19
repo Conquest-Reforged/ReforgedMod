@@ -1,15 +1,15 @@
 package com.conquestreforged.client.gui.search;
 
 import com.conquestreforged.client.utils.CreativeUtils;
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.player.ClientPlayerEntity;
-import net.minecraft.client.gui.AbstractGui;
-import net.minecraft.client.gui.IGuiEventListener;
-import net.minecraft.item.ItemStack;
+import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.gui.GuiComponent;
+import net.minecraft.client.gui.components.events.GuiEventListener;
+import net.minecraft.world.item.ItemStack;
 
-public class SearchList implements IGuiEventListener {
+public class SearchList implements GuiEventListener {
 
     private static final int slotSize = 20;
     private static final int stackSize = 16;
@@ -72,7 +72,7 @@ public class SearchList implements IGuiEventListener {
         }
     }
 
-    public void render(MatrixStack matrixStack, int mx, int my, int width, int height, float tick) {
+    public void render(PoseStack matrixStack, int mx, int my, int width, int height, float tick) {
         hovered = null;
         for (Slot slot : slots) {
             if (slot.col == 0 && slot.stack.isEmpty()) {
@@ -104,7 +104,7 @@ public class SearchList implements IGuiEventListener {
         return false;
     }
 
-    private class Slot extends AbstractGui {
+    private class Slot extends GuiComponent {
 
         private final int col;
         private final int row;
@@ -137,7 +137,7 @@ public class SearchList implements IGuiEventListener {
             return right < width && bottom < height - 32;
         }
 
-        private void render(MatrixStack matrixStack, double mx, double my) {
+        private void render(PoseStack matrixStack, double mx, double my) {
             float top = top();
             float left = left();
             RenderSystem.pushMatrix();
@@ -156,7 +156,7 @@ public class SearchList implements IGuiEventListener {
 
         private boolean click(double mx, double my) {
             if (mouseOver(mx, my)) {
-                ClientPlayerEntity player = Minecraft.getInstance().player;
+                LocalPlayer player = Minecraft.getInstance().player;
                 if (player == null) {
                     return false;
                 }

@@ -2,8 +2,9 @@ package com.conquestreforged.core.asset.pack;
 
 import com.conquestreforged.core.asset.meta.VirtualMeta;
 import com.conquestreforged.core.util.log.Log;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.*;
-import net.minecraft.resources.data.PackMetadataSection;
+import net.minecraft.server.packs.metadata.pack.PackMetadataSection;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -12,14 +13,23 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class PackFinder implements IPackFinder {
+import net.minecraft.server.packs.PackResources;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.repository.Pack;
+import net.minecraft.server.packs.repository.PackSource;
+import net.minecraft.server.packs.repository.RepositorySource;
+import net.minecraft.server.packs.resources.FallbackResourceManager;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.resources.SimpleReloadableResourceManager;
 
-    private static final Map<ResourcePackType, PackFinder> finders = new ConcurrentHashMap<>();
+public class PackFinder implements RepositorySource {
 
-    private final ResourcePackType type;
+    private static final Map<PackType, PackFinder> finders = new ConcurrentHashMap<>();
+
+    private final PackType type;
     private final List<VirtualResourcepack> resourcePacks = new LinkedList<>();
 
-    public PackFinder(ResourcePackType type) {
+    public PackFinder(PackType type) {
         this.type = type;
     }
 
@@ -29,22 +39,23 @@ public class PackFinder implements IPackFinder {
 
     //todo not entirely sure if this is updated right
     @Override
-    public void loadPacks(Consumer<ResourcePackInfo> map, ResourcePackInfo.IFactory factory) {
+    public void loadPacks(Consumer<Pack> map, Pack.PackConstructor factory) {
         Log.info("Adding virtual packs: {}", type);
         for (VirtualResourcepack pack : resourcePacks) {
             String name = pack.getName();
-            boolean client = type == ResourcePackType.CLIENT_RESOURCES;
-            Supplier<IResourcePack> supplier = () -> pack;
+            boolean client = type == PackType.CLIENT_RESOURCES;
+            Supplier<PackResources> supplier = () -> pack;
             PackMetadataSection metadata = new VirtualMeta(name, "").toMetadata();
-            ResourcePackInfo.Priority priority = ResourcePackInfo.Priority.BOTTOM;
-            ResourcePackInfo info = factory.create(name, client, supplier, pack, metadata, priority, IPackNameDecorator.DEFAULT);
+            Pack.Position priority = Pack.Position.BOTTOM;
+            //especially this line
+            Pack info = factory.create(name, (Component) supplier, client, pack, metadata, priority, PackSource.DEFAULT);
             map.accept(info);
             Log.info("Added virtual pack: {}", name);
         }
     }
 
-    public void register(IResourceManager resourceManager, Consumer<IPackFinder> packList) {
-        Consumer<IResourcePack> consumer = pack -> {};
+    public void register(ResourceManager resourceManager, Consumer<RepositorySource> packList) {
+        Consumer<PackResources> consumer = pack -> {};
         if (resourceManager instanceof FallbackResourceManager) {
             consumer = ((FallbackResourceManager) resourceManager)::add;
         } else if (resourceManager instanceof SimpleReloadableResourceManager) {
@@ -54,7 +65,7 @@ public class PackFinder implements IPackFinder {
         resourcePacks.forEach(consumer);
     }
 
-    public static PackFinder getInstance(ResourcePackType type) {
+    public static PackFinder getInstance(PackType type) {
         return finders.computeIfAbsent(type, PackFinder::new);
     }
 }

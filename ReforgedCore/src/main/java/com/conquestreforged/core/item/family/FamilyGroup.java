@@ -1,8 +1,8 @@
 package com.conquestreforged.core.item.family;
 
 import com.conquestreforged.core.item.group.TaggedGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
 
 import java.util.Comparator;
 import java.util.LinkedList;

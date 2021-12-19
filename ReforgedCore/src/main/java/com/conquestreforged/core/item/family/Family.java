@@ -2,25 +2,25 @@ package com.conquestreforged.core.item.family;
 
 import com.conquestreforged.core.util.OptimizedList;
 import com.conquestreforged.core.util.OptionalValue;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
 
 import java.util.*;
 
 public abstract class Family<T> implements OptionalValue, Comparator<T> {
 
     private final List<T> members;
-    private final ItemGroup group;
+    private final CreativeModeTab group;
     private final Comparator<T> order;
 
     private T root = null;
 
-    public Family(ItemGroup group, List<T> members) {
+    public Family(CreativeModeTab group, List<T> members) {
         this(group, (t1, t2) -> 0, members);
     }
 
-    public Family(ItemGroup group, Comparator<T> order, List<T> members) {
+    public Family(CreativeModeTab group, Comparator<T> order, List<T> members) {
         this.group = group;
         this.order = order;
         this.members = members;
@@ -28,7 +28,7 @@ public abstract class Family<T> implements OptionalValue, Comparator<T> {
 
     protected abstract T emptyValue();
 
-    protected abstract void addItem(ItemGroup group, NonNullList<ItemStack> list, T item);
+    protected abstract void addItem(CreativeModeTab group, NonNullList<ItemStack> list, T item);
 
     public void trim() {
         if (members instanceof ArrayList) {
@@ -40,7 +40,7 @@ public abstract class Family<T> implements OptionalValue, Comparator<T> {
         }
     }
 
-    public ItemGroup getGroup() {
+    public CreativeModeTab getGroup() {
         return group;
     }
 
@@ -98,12 +98,12 @@ public abstract class Family<T> implements OptionalValue, Comparator<T> {
         return this;
     }
 
-    public void addAllItems(ItemGroup group, NonNullList<ItemStack> list) {
+    public void addAllItems(CreativeModeTab group, NonNullList<ItemStack> list) {
         addAllItems(group, list, TypeFilter.ANY);
     }
 
-    public void addAllItems(ItemGroup group, NonNullList<ItemStack> list, TypeFilter filter) {
-        if (group == ItemGroup.TAB_SEARCH || group == this.group) {
+    public void addAllItems(CreativeModeTab group, NonNullList<ItemStack> list, TypeFilter filter) {
+        if (group == CreativeModeTab.TAB_SEARCH || group == this.group) {
             for (T t : members) {
                 if (filter.test(t)) {
                     addItem(group, list, t);
@@ -112,8 +112,8 @@ public abstract class Family<T> implements OptionalValue, Comparator<T> {
         }
     }
 
-    public void addRootItem(ItemGroup group, NonNullList<ItemStack> list) {
-        if (group == ItemGroup.TAB_SEARCH || group == this.group) {
+    public void addRootItem(CreativeModeTab group, NonNullList<ItemStack> list) {
+        if (group == CreativeModeTab.TAB_SEARCH || group == this.group) {
             addItem(group, list, getRoot());
         }
     }
@@ -136,6 +136,6 @@ public abstract class Family<T> implements OptionalValue, Comparator<T> {
 
     public interface Filler {
 
-        void fill(Family family, ItemGroup group, NonNullList<ItemStack> items);
+        void fill(Family family, CreativeModeTab group, NonNullList<ItemStack> items);
     }
 }

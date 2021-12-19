@@ -3,8 +3,8 @@ package com.conquestreforged.client.gui.painting;
 import com.conquestreforged.api.painting.Painting;
 import com.conquestreforged.api.painting.art.Art;
 import com.conquestreforged.client.gui.PickerScreen;
-import com.mojang.blaze3d.matrix.MatrixStack;
-import net.minecraft.item.ItemStack;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.world.item.ItemStack;
 
 public class PaintingScreen<T> extends PickerScreen<Art<T>> {
 
@@ -31,7 +31,7 @@ public class PaintingScreen<T> extends PickerScreen<Art<T>> {
     }
 
     @Override
-    public void render(Art<T> option, MatrixStack matrixStack, int x, int y, int width, int height, float scale) {
+    public void render(Art<T> option, PoseStack matrixStack, int x, int y, int width, int height, float scale) {
         option.getRenderer().render(type, option, matrixStack, x, y, width, height);
     }
 

@@ -10,8 +10,8 @@ import com.conquestreforged.core.client.input.BindEvent;
 import com.conquestreforged.core.client.input.BindListener;
 import com.conquestreforged.core.net.Channels;
 import net.minecraft.client.Minecraft;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.world.item.ItemStack;
 
 public class ToggleBindListener implements BindListener {
 
@@ -36,9 +36,9 @@ public class ToggleBindListener implements BindListener {
 
                 // display client toggle state
                 if (toggle.getIndex() == 0) {
-                    Minecraft.getInstance().gui.setOverlayMessage(new StringTextComponent("You are now on Toggle #0. This is for default placement mechanics"), false);
+                    Minecraft.getInstance().gui.setOverlayMessage(new TextComponent("You are now on Toggle #0. This is for default placement mechanics"), false);
                 } else {
-                    Minecraft.getInstance().gui.setOverlayMessage(new StringTextComponent("You are now on Toggle #" + toggle.getIndex() + ". To return to default placement press \"" + BindManager.getPaletteBind().getTranslatedKeyMessage().getString().toUpperCase() + "\" until you reach 0 again"), false);
+                    Minecraft.getInstance().gui.setOverlayMessage(new TextComponent("You are now on Toggle #" + toggle.getIndex() + ". To return to default placement press \"" + BindManager.getPaletteBind().getTranslatedKeyMessage().getString().toUpperCase() + "\" until you reach 0 again"), false);
                 }
             });
         }

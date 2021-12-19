@@ -3,11 +3,11 @@ package com.conquestreforged.client.gui.state;
 import com.conquestreforged.client.gui.PickerScreen;
 import com.conquestreforged.client.gui.render.Render;
 import com.conquestreforged.core.item.ItemUtils;
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.minecraft.block.BlockState;
-import net.minecraft.item.ItemStack;
-import net.minecraft.state.Property;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.properties.Property;
 
 import java.util.*;
 import java.util.function.Predicate;
@@ -64,7 +64,7 @@ public class BlockStateScreen extends PickerScreen<BlockState> {
     }
 
     @Override
-    public void render(BlockState option, MatrixStack matrixStack, int x, int y, int width, int height, float scale) {
+    public void render(BlockState option, PoseStack matrixStack, int x, int y, int width, int height, float scale) {
         RenderSystem.pushMatrix();
         RenderSystem.translatef(x + (width / 2F), y + (height / 2F), 0);
         RenderSystem.scalef(scale, scale, 1);

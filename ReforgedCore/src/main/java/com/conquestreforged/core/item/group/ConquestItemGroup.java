@@ -5,11 +5,11 @@ import com.conquestreforged.core.init.Context;
 import com.conquestreforged.core.item.family.FamilyGroup;
 import com.conquestreforged.core.item.group.sort.ItemList;
 import com.conquestreforged.core.item.group.sort.Sorter;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,12 +19,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class ConquestItemGroup extends ItemGroup {
+public abstract class ConquestItemGroup extends CreativeModeTab {
 
     private static final String pathFormat = "/assets/%s/groups/%s.txt";
 
     private final int index;
-    private final ITextComponent translationKey;
+    private final Component translationKey;
     private final Sorter<ItemStack> sorter;
     private List<ItemStack> cached = Collections.emptyList();
 
@@ -32,13 +32,13 @@ public abstract class ConquestItemGroup extends ItemGroup {
         super(-1, label);
         String namespace = Context.getInstance().getNamespace();
         this.index = index;
-        this.translationKey = new TranslationTextComponent(Translations.getKey("itemGroup", namespace, label));
+        this.translationKey = new TranslatableComponent(Translations.getKey("itemGroup", namespace, label));
         this.sorter = getItemSorter(namespace, label);
         Translations.getInstance().add(translationKey.getString(), Translations.translate(label));
     }
 
     @Override
-    public ITextComponent getDisplayName() {
+    public Component getDisplayName() {
         return translationKey;
     }
 

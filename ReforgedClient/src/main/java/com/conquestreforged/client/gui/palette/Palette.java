@@ -3,14 +3,14 @@ package com.conquestreforged.client.gui.palette;
 import com.conquestreforged.core.init.dev.Environment;
 import com.conquestreforged.core.item.family.Family;
 import com.conquestreforged.core.item.family.FamilyRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.Inventory;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.Container;
+import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ import java.util.Random;
 
 public class Palette {
 
-    public static IInventory createPalette(ItemStack first, List<ItemStack> family) {
+    public static Container createPalette(ItemStack first, List<ItemStack> family) {
         List<ItemStack> result = new ArrayList<>(family.size());
         result.add(copyOne(first));
         for (ItemStack stack : family) {
@@ -31,21 +31,21 @@ public class Palette {
             }
             result.add(copyOne(stack));
         }
-        return new Inventory(result.toArray(new ItemStack[0]));
+        return new SimpleContainer(result.toArray(new ItemStack[0]));
     }
 
-    public static Optional<IInventory> getPalette(ItemStack stack) {
+    public static Optional<Container> getPalette(ItemStack stack) {
         return getPalette(stack, stack.getItem());
     }
 
-    private static Optional<IInventory> getPalette(ItemStack stack, Item item) {
+    private static Optional<Container> getPalette(ItemStack stack, Item item) {
         if (item instanceof BlockItem) {
             return getPalette(stack, ((BlockItem) item).getBlock());
         }
         return Optional.empty();
     }
 
-    private static Optional<IInventory> getPalette(ItemStack stack, Block block) {
+    private static Optional<Container> getPalette(ItemStack stack, Block block) {
         if (block == Blocks.AIR) {
             return Optional.empty();
         }

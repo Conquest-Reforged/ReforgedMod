@@ -1,8 +1,8 @@
 package com.conquestreforged.core.block.properties;
 
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.StringRepresentable;
 
-public enum ArchShape implements IStringSerializable {
+public enum ArchShape implements StringRepresentable {
     ONE("one"),
     TWO("two"),
     THREE("three"),

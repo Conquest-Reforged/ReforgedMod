@@ -1,15 +1,15 @@
 package com.conquestreforged.client.events;
 
 import com.conquestreforged.core.item.ItemUtils;
-import net.minecraft.block.BlockState;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.util.Hand;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.BlockRayTraceResult;
-import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,17 +28,17 @@ public class BlockPicker {
             return;
         }
 
-        PlayerEntity player = Minecraft.getInstance().player;
+        Player player = Minecraft.getInstance().player;
         if (player == null || !player.abilities.instabuild) {
             return;
         }
 
-        RayTraceResult result = Minecraft.getInstance().hitResult;
-        if (result == null || result.getType() != RayTraceResult.Type.BLOCK) {
+        HitResult result = Minecraft.getInstance().hitResult;
+        if (result == null || result.getType() != HitResult.Type.BLOCK) {
             return;
         }
 
-        BlockPos pos = ((BlockRayTraceResult) result).getBlockPos();
+        BlockPos pos = ((BlockHitResult) result).getBlockPos();
         BlockState state = player.level.getBlockState(pos);
         if (state.hasTileEntity()) {
             return;

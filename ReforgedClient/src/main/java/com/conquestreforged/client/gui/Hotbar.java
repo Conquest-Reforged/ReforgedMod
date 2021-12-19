@@ -1,24 +1,24 @@
 package com.conquestreforged.client.gui;
 
 import com.conquestreforged.client.gui.render.Render;
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.resources.ResourceLocation;
 
 public class Hotbar {
 
     private static final ResourceLocation HOTBAR = new ResourceLocation("minecraft:textures/gui/widgets.png");
 
-    private final PlayerInventory inventory;
+    private final Inventory inventory;
 
-    public Hotbar(PlayerInventory inventory) {
+    public Hotbar(Inventory inventory) {
         this.inventory = inventory;
     }
 
-    public PlayerInventory getInventory() {
+    public Inventory getInventory() {
         return inventory;
     }
 
@@ -30,7 +30,7 @@ public class Hotbar {
         return getSlotSize() - 1;
     }
 
-    public void renderBackground(Screen screen, MatrixStack matrixStack) {
+    public void renderBackground(Screen screen, PoseStack matrixStack) {
         int u = 0;
         int v = 0;
         int uMax = 182;

@@ -1,13 +1,13 @@
 package com.conquestreforged.client.gui.palette.component;
 
-import com.mojang.blaze3d.matrix.MatrixStack;
-import net.minecraft.client.gui.IGuiEventListener;
-import net.minecraft.client.gui.INestedGuiEventHandler;
-import net.minecraft.client.gui.IRenderable;
-import net.minecraft.client.gui.widget.Widget;
-import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.gui.components.events.GuiEventListener;
+import net.minecraft.client.gui.components.events.ContainerEventHandler;
+import net.minecraft.client.gui.components.Widget;
+import net.minecraft.client.gui.components.AbstractWidget;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraftforge.fml.client.gui.widget.Slider;
 
 import javax.annotation.Nullable;
@@ -16,9 +16,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ColorPicker2 extends Widget implements INestedGuiEventHandler, IRenderable, Slider.ISlider {
+public class ColorPicker2 extends AbstractWidget implements ContainerEventHandler, Widget, Slider.ISlider {
 
-    private static final Button.IPressable NONE = btn -> {};
+    private static final Button.OnPress NONE = btn -> {};
     private static final int VERT_SPACING = 2;
 
     private final Slider red;
@@ -30,22 +30,22 @@ public class ColorPicker2 extends Widget implements INestedGuiEventHandler, IRen
     public int x = 0;
     public int y = 0;
     private boolean dragging = false;
-    private IGuiEventListener focused;
+    private GuiEventListener focused;
 
     // (int xPos, int yPos, int width, int height, String prefix, String suf, double minVal, double maxVal, double currentVal, boolean showDec, boolean drawStr, IPressable handler)
-    public ColorPicker2(ITextComponent name, int color, Consumer<Integer> consumer) {
+    public ColorPicker2(Component name, int color, Consumer<Integer> consumer) {
         super(0, 0, 0, 0, name);
         int[] rgb = getComponents(color);
         this.consumer = consumer;
         this.sliders = Arrays.asList(
-                this.red = new Slider(0, 0, new TranslationTextComponent("red"), 0, 255, rgb[0], NONE, this),
-                this.green = new Slider(0, 0, new TranslationTextComponent("red"), 0, 255, rgb[1], NONE, this),
-                this.blue = new Slider(0, 0, new TranslationTextComponent("red"), 0, 255, rgb[2], NONE, this)
+                this.red = new Slider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[0], NONE, this),
+                this.green = new Slider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[1], NONE, this),
+                this.blue = new Slider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[2], NONE, this)
         );
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mx, int my, float ticks) {
+    public void render(PoseStack matrixStack, int mx, int my, float ticks) {
         int top = y;
         for (Slider slider : sliders) {
             slider.x = x;
@@ -80,7 +80,7 @@ public class ColorPicker2 extends Widget implements INestedGuiEventHandler, IRen
     }
 
     @Override
-    public List<? extends IGuiEventListener> children() {
+    public List<? extends GuiEventListener> children() {
         return sliders;
     }
 
@@ -96,12 +96,12 @@ public class ColorPicker2 extends Widget implements INestedGuiEventHandler, IRen
 
     @Nullable
     @Override
-    public IGuiEventListener getFocused() {
+    public GuiEventListener getFocused() {
         return focused;
     }
 
     @Override
-    public void setFocused(@Nullable IGuiEventListener focused) {
+    public void setFocused(@Nullable GuiEventListener focused) {
         this.focused = focused;
     }
 

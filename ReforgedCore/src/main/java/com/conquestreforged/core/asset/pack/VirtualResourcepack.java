@@ -3,10 +3,11 @@ package com.conquestreforged.core.asset.pack;
 import com.conquestreforged.core.asset.VirtualResource;
 import com.conquestreforged.core.asset.meta.VirtualMeta;
 import com.google.gson.Gson;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.ResourcePack;
-import net.minecraft.resources.ResourcePackType;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.packs.PackResources;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.AbstractPackResources;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.resources.ResourceLocation;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -16,14 +17,15 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-public class VirtualResourcepack extends ResourcePack {
+public class VirtualResourcepack extends AbstractPackResources implements Supplier<PackResources> {
 
-    private final IResourceManager resourceManager;
+    private final ResourceManager resourceManager;
     private final Map<String, VirtualResource> resources;
 
-    private VirtualResourcepack(ResourcePackType type, IResourceManager resourceManager, String name, Map<String, VirtualResource> resources) {
+    private VirtualResourcepack(PackType type, ResourceManager resourceManager, String name, Map<String, VirtualResource> resources) {
         super(new File(name));
         this.resources = resources;
         this.resourceManager = resourceManager;
@@ -38,7 +40,7 @@ public class VirtualResourcepack extends ResourcePack {
         return resources.isEmpty();
     }
 
-    public IResourceManager getResourceManager() {
+    public ResourceManager getResourceManager() {
         return resourceManager;
     }
 
@@ -57,7 +59,7 @@ public class VirtualResourcepack extends ResourcePack {
     }
 
     @Override
-    public Collection<ResourceLocation> getResources(ResourcePackType type, String namespace, String path, int maxDepth, Predicate<String> filter) {
+    public Collection<ResourceLocation> getResources(PackType type, String namespace, String path, int maxDepth, Predicate<String> filter) {
         String prefix = type.getDirectory() + "/" + namespace + "/";
 
         return resources.keySet().stream()
@@ -82,7 +84,7 @@ public class VirtualResourcepack extends ResourcePack {
     }
 
     @Override
-    public Set<String> getNamespaces(ResourcePackType type) {
+    public Set<String> getNamespaces(PackType type) {
         return resources.values().stream()
                 .filter(r -> r.getType() == type)
                 .map(VirtualResource::getNamespace)
@@ -121,17 +123,22 @@ public class VirtualResourcepack extends ResourcePack {
         return new Builder(name);
     }
 
+    @Override
+    public PackResources get() {
+        return null;
+    }
+
     public static class Builder {
 
         private final String namespace;
         private final List<VirtualResource> resources = new LinkedList<>();
-        private ResourcePackType type = ResourcePackType.CLIENT_RESOURCES;
+        private PackType type = PackType.CLIENT_RESOURCES;
 
         private Builder(String namespace) {
             this.namespace = namespace;
         }
 
-        public Builder type(ResourcePackType type) {
+        public Builder type(PackType type) {
             this.type = type;
             return this;
         }
@@ -141,14 +148,14 @@ public class VirtualResourcepack extends ResourcePack {
             return this;
         }
 
-        public VirtualResourcepack build(IResourceManager resourceManager) {
+        public VirtualResourcepack build(ResourceManager resourceManager) {
             Map<String, VirtualResource> map = new HashMap<>();
             // first so can be overridden
             map.put("pack.mcmeta", new VirtualMeta(namespace, namespace));
             // add resources second
             resources.forEach(r -> map.put(r.getPath(), r));
 
-            String suffix = type == ResourcePackType.CLIENT_RESOURCES ? "_resources" : "_data";
+            String suffix = type == PackType.CLIENT_RESOURCES ? "_resources" : "_data";
             return new VirtualResourcepack(type, resourceManager, namespace + suffix, map);
         }
     }

@@ -1,10 +1,10 @@
 package com.conquestreforged.core.item.group.sort;
 
 import com.conquestreforged.core.util.Provider;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
 
 import java.io.BufferedReader;
 import java.util.Comparator;
@@ -41,7 +41,7 @@ public class ItemList implements Sorter<ItemStack>, Comparator<ItemStack> {
                 int size = items.size();
 
                 Item item = e.getValue().stack.get();
-                item.fillItemCategory(ItemGroup.TAB_SEARCH, items);
+                item.fillItemCategory(CreativeModeTab.TAB_SEARCH, items);
 
                 // manually add item if fillItemGroup doesn't work for this item type (debug stick)
                 if (items.size() == size) {

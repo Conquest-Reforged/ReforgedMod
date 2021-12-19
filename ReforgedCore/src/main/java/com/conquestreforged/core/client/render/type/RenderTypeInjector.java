@@ -1,19 +1,19 @@
 package com.conquestreforged.core.client.render.type;
 
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import net.minecraft.client.renderer.IRenderTypeBuffer;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 
-public class RenderTypeInjector implements IRenderTypeBuffer {
+public class RenderTypeInjector implements MultiBufferSource {
 
-    protected final IRenderTypeBuffer delegate;
+    protected final MultiBufferSource delegate;
 
-    public RenderTypeInjector(IRenderTypeBuffer delegate) {
+    public RenderTypeInjector(MultiBufferSource delegate) {
         this.delegate = delegate;
     }
 
     @Override
-    public IVertexBuilder getBuffer(RenderType type) {
+    public VertexConsumer getBuffer(RenderType type) {
         return delegate.getBuffer(getRenderType(type));
     }
 

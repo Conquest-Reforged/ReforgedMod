@@ -2,17 +2,17 @@ package com.conquestreforged.core.item.family.item;
 
 import com.conquestreforged.core.item.family.Family;
 import com.conquestreforged.core.util.OptimizedList;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.NonNullList;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.core.NonNullList;
 
 public class ItemFamily extends Family<Item> {
 
-    public static final ItemFamily EMPTY = new ItemFamily(ItemGroup.TAB_SEARCH);
+    public static final ItemFamily EMPTY = new ItemFamily(CreativeModeTab.TAB_SEARCH);
 
-    public ItemFamily(ItemGroup group) {
+    public ItemFamily(CreativeModeTab group) {
         super(group, new OptimizedList<>());
     }
 
@@ -22,7 +22,7 @@ public class ItemFamily extends Family<Item> {
     }
 
     @Override
-    protected void addItem(ItemGroup group, NonNullList<ItemStack> list, Item item) {
+    protected void addItem(CreativeModeTab group, NonNullList<ItemStack> list, Item item) {
         item.fillItemCategory(item.getItemCategory(), list);
     }
 

@@ -2,10 +2,10 @@ package com.conquestreforged.core.client.render;
 
 import com.conquestreforged.core.util.RenderLayer;
 import com.conquestreforged.core.util.log.Log;
-import net.minecraft.block.Block;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.fluid.Fluid;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.world.level.material.Fluid;
 
 // MUST ONLY BE USED ON THE CLIENT
 public class RenderLayerHelper {
@@ -16,7 +16,7 @@ public class RenderLayerHelper {
             if (type == null) {
                 return;
             }
-            RenderTypeLookup.setRenderLayer(block, type);
+            ItemBlockRenderTypes.setRenderLayer(block, type);
             Log.debug("Registered render type for Block: {}={}", block.getRegistryName(), type);
         }
     }
@@ -27,7 +27,7 @@ public class RenderLayerHelper {
             if (type == null) {
                 return;
             }
-            RenderTypeLookup.setRenderLayer(fluid, type);
+            ItemBlockRenderTypes.setRenderLayer(fluid, type);
             Log.debug("Registered render type for Fluid: {}={}", fluid.getRegistryName(), type);
         }
     }

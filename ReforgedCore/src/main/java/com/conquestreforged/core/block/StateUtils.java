@@ -2,15 +2,15 @@ package com.conquestreforged.core.block;
 
 import com.conquestreforged.core.block.factory.InitializationException;
 import com.conquestreforged.core.item.ItemUtils;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.state.Property;
-import net.minecraft.state.StateContainer;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Optional;
@@ -26,18 +26,18 @@ public class StateUtils {
     }
 
     public static Optional<BlockState> fromStack(ItemStack stack, BlockItem item) {
-        CompoundNBT stackTag = stack.getTag();
+        CompoundTag stackTag = stack.getTag();
         if (stackTag == null) {
             return Optional.of(item.getBlock().defaultBlockState());
         }
 
-        CompoundNBT stateTag = stackTag.getCompound("BlockStateTag");
+        CompoundTag stateTag = stackTag.getCompound("BlockStateTag");
         if (stateTag.isEmpty()) {
             return Optional.of(item.getBlock().defaultBlockState());
         }
 
         BlockState state = item.getBlock().defaultBlockState();
-        StateContainer<Block, BlockState> container = item.getBlock().getStateDefinition();
+        StateDefinition<Block, BlockState> container = item.getBlock().getStateDefinition();
 
         for (String key : stateTag.getAllKeys()) {
             Property<?> property = container.getProperty(key);

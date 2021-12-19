@@ -1,9 +1,9 @@
 package com.conquestreforged.client.gui.dependency;
 
 import com.google.gson.JsonObject;
-import net.minecraft.resources.data.IMetadataSectionSerializer;
+import net.minecraft.server.packs.metadata.MetadataSectionSerializer;
 
-public class PackIdDeserializer implements IMetadataSectionSerializer<String> {
+public class PackIdDeserializer implements MetadataSectionSerializer<String> {
 
     public static final PackIdDeserializer INSTANCE = new PackIdDeserializer();
 

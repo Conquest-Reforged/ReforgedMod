@@ -1,8 +1,8 @@
 package com.conquestreforged.core.block.properties;
 
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.StringRepresentable;
 
-public enum CapitalDirection implements IStringSerializable {
+public enum CapitalDirection implements StringRepresentable {
     FLAT("flat"),
     NORTH("north"),
     SOUTH("south"),

@@ -7,17 +7,19 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.AbstractGui;
-import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.widget.button.CheckboxButton;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.client.gui.components.Checkbox;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Util;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
+
+import ConfigSection;
 
 public class DependencyScreen extends Screen {
 
@@ -33,7 +35,7 @@ public class DependencyScreen extends Screen {
     private final Screen screen;
     private final ConfigSection section;
     private final List<Dependency> missing;
-    private final CheckboxButton check = new CheckboxButton(0, 0, 0, 0, new TranslationTextComponent("conquest.dependency.checkbox"), false);
+    private final Checkbox check = new Checkbox(0, 0, 0, 0, new TranslatableComponent("conquest.dependency.checkbox"), false);
 
     public DependencyScreen(Screen parent, ConfigSection section, List<Dependency> missing) {
         super(new StringTextComponent("Dependencies"));

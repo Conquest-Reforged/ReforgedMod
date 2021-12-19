@@ -1,10 +1,10 @@
 package com.conquestreforged.core.data;
 
-import net.minecraft.resources.IResource;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.IResourcePack;
-import net.minecraft.resources.ResourcePackType;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.packs.resources.Resource;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.PackResources;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import java.io.IOException;
@@ -15,12 +15,12 @@ import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-public class DataResourceManager implements IResourceManager {
+public class DataResourceManager implements ResourceManager {
 
-    private final ResourcePackType type;
+    private final PackType type;
     private final ExistingFileHelper helper;
 
-    public DataResourceManager(ResourcePackType type, ExistingFileHelper helper) {
+    public DataResourceManager(PackType type, ExistingFileHelper helper) {
         this.type = type;
         this.helper = helper;
     }
@@ -31,7 +31,7 @@ public class DataResourceManager implements IResourceManager {
     }
 
     @Override
-    public IResource getResource(ResourceLocation location) throws IOException {
+    public Resource getResource(ResourceLocation location) throws IOException {
         int pre = location.getPath().indexOf('/');
         int suf = location.getPath().lastIndexOf('.');
         String prefix = location.getPath().substring(0, pre);
@@ -53,7 +53,7 @@ public class DataResourceManager implements IResourceManager {
     }
 
     @Override
-    public List<IResource> getResources(ResourceLocation location) throws IOException {
+    public List<Resource> getResources(ResourceLocation location) throws IOException {
         return Collections.emptyList();
     }
 
@@ -64,7 +64,7 @@ public class DataResourceManager implements IResourceManager {
 
     //todo unsure about this one
     @Override
-    public Stream<IResourcePack> listPacks() {
+    public Stream<PackResources> listPacks() {
         return Stream.of();
     }
 }

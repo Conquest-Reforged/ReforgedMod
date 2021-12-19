@@ -5,17 +5,17 @@ import com.conquestreforged.core.capability.handler.CapabilityHandler;
 import com.conquestreforged.core.capability.provider.SimpleValue;
 import com.conquestreforged.core.capability.provider.ValueFactory;
 import com.conquestreforged.core.init.Context;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
-import net.minecraftforge.fml.network.NetworkEvent;
-import net.minecraftforge.fml.network.NetworkRegistry;
-import net.minecraftforge.fml.network.PacketDistributor;
-import net.minecraftforge.fml.network.simple.SimpleChannel;
+import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.fmllegacy.network.NetworkRegistry;
+import net.minecraftforge.fmllegacy.network.PacketDistributor;
+import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiConsumer;
@@ -75,14 +75,14 @@ public class Channel {
     }
 
     // send a server -> client to the given player
-    public <T> void send(PlayerEntity player, T message) {
-        if (player instanceof ServerPlayerEntity) {
-            send((ServerPlayerEntity) player, message);
+    public <T> void send(Player player, T message) {
+        if (player instanceof ServerPlayer) {
+            send((ServerPlayer) player, message);
         }
     }
 
     // send a server -> client to the given player
-    public <T> void send(ServerPlayerEntity player, T message) {
+    public <T> void send(ServerPlayer player, T message) {
         send(PacketDistributor.PLAYER.with(() -> player), message);
     }
 
@@ -150,11 +150,11 @@ public class Channel {
 
     }
 
-    public interface Encoder<T> extends BiConsumer<T, PacketBuffer> {
+    public interface Encoder<T> extends BiConsumer<T, FriendlyByteBuf> {
 
     }
 
-    public interface Decoder<T> extends Function<PacketBuffer, T> {
+    public interface Decoder<T> extends Function<FriendlyByteBuf, T> {
 
     }
 }

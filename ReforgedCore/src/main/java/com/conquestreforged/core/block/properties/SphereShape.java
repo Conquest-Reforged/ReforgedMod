@@ -1,8 +1,8 @@
 package com.conquestreforged.core.block.properties;
 
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.StringRepresentable;
 
-public enum SphereShape implements IStringSerializable {
+public enum SphereShape implements StringRepresentable {
     EGG("egg"),
     SMALL("small"),
     LARGE("large");

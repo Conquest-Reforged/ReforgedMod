@@ -1,26 +1,26 @@
 package com.conquestreforged.core.client.input;
 
-import net.minecraft.client.settings.KeyBinding;
-import net.minecraft.client.util.InputMappings;
+import net.minecraft.client.KeyMapping;
+import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraftforge.client.settings.IKeyConflictContext;
 import net.minecraftforge.client.settings.KeyConflictContext;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fmlclient.registry.ClientRegistry;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class EventBinding extends KeyBinding {
+public class EventBinding extends KeyMapping {
 
     private final List<BindListener> listeners = new LinkedList<>();
 
     private boolean down = false;
 
     // String description, net.minecraftforge.client.settings.IKeyConflictContext keyConflictContext, final InputMappings.Type inputType, final int keyCode, String category
-    public EventBinding(String description, InputMappings.Input input, String category) {
+    public EventBinding(String description, InputConstants.Key input, String category) {
         this(description, input, category, KeyConflictContext.UNIVERSAL);
     }
 
-    public EventBinding(String description, InputMappings.Input input, String category, IKeyConflictContext context) {
+    public EventBinding(String description, InputConstants.Key input, String category, IKeyConflictContext context) {
         super(description, context, input, category);
         ClientRegistry.registerKeyBinding(this);
     }

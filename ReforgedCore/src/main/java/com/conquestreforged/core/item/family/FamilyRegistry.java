@@ -2,9 +2,9 @@ package com.conquestreforged.core.item.family;
 
 import com.conquestreforged.core.item.family.block.BlockFamily;
 import com.conquestreforged.core.item.family.item.ItemFamily;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
 import java.util.HashMap;

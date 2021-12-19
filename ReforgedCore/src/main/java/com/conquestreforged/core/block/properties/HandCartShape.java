@@ -1,8 +1,8 @@
 package com.conquestreforged.core.block.properties;
 
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.StringRepresentable;
 
-public enum HandCartShape implements IStringSerializable {
+public enum HandCartShape implements StringRepresentable {
     ONE("one"),
     LEFT("left"),
     RIGHT("right"),

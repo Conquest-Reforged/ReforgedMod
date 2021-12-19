@@ -1,6 +1,6 @@
 package com.conquestreforged.core.item.group.sort;
 
-import net.minecraft.util.NonNullList;
+import net.minecraft.core.NonNullList;
 
 public interface Sorter<T> {
 

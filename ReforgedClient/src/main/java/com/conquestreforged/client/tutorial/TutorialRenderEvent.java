@@ -8,7 +8,7 @@ import com.conquestreforged.core.config.ConfigBuildEvent;
 import com.conquestreforged.core.config.section.ConfigSection;
 import com.conquestreforged.core.config.section.ConfigSectionSpec;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screen.MainMenuScreen;
+import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,7 +40,7 @@ public class TutorialRenderEvent {
 
     @SubscribeEvent
     public void render(GuiScreenEvent.InitGuiEvent.Post event) {
-        if (event.getGui() instanceof MainMenuScreen) {
+        if (event.getGui() instanceof TitleScreen) {
             List<Dependency> missing = dependencies.getMissingDependencies();
             IntroScreen introScreen = new IntroScreen(event.getGui(), section);
             DependencyScreen dependencyScreen = new DependencyScreen(event.getGui(), section, missing);

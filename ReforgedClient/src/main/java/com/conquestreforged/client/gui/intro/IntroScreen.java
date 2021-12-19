@@ -7,14 +7,16 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.AbstractGui;
-import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.widget.button.CheckboxButton;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.client.gui.components.Checkbox;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
+
+import ConfigSection;
 
 public class IntroScreen extends Screen {
 
@@ -24,7 +26,7 @@ public class IntroScreen extends Screen {
 
     private final Screen screen;
     private final ConfigSection section;
-    private final CheckboxButton check = new CheckboxButton(0, 0, 0, 0, new TranslationTextComponent("conquest.intro.checkbox"), false);
+    private final Checkbox check = new Checkbox(0, 0, 0, 0, new TranslatableComponent("conquest.intro.checkbox"), false);
 
 
     public IntroScreen(Screen parent, ConfigSection section) {

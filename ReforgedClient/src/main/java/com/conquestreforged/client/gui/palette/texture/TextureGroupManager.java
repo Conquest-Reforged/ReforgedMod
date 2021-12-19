@@ -1,16 +1,16 @@
 package com.conquestreforged.client.gui.palette.texture;
 
 import com.conquestreforged.core.util.log.Log;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.model.BakedQuad;
-import net.minecraft.client.renderer.model.IBakedModel;
+import net.minecraft.client.renderer.block.model.BakedQuad;
+import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.client.model.data.EmptyModelData;
@@ -82,11 +82,11 @@ public class TextureGroupManager {
     }
 
     private static Map<String, Integer> getTextures(BlockState state) {
-        IBakedModel model = Minecraft.getInstance().getModelManager().getBlockModelShaper().getBlockModel(state);
+        BakedModel model = Minecraft.getInstance().getModelManager().getBlockModelShaper().getBlockModel(state);
         return getTextures(state, model);
     }
 
-    private static Map<String, Integer> getTextures(BlockState state, @Nullable IBakedModel model) {
+    private static Map<String, Integer> getTextures(BlockState state, @Nullable BakedModel model) {
         if (model == null || model == Minecraft.getInstance().getModelManager().getMissingModel()) {
             return Collections.emptyMap();
         }
@@ -96,7 +96,7 @@ public class TextureGroupManager {
         Map<String, Integer> textures = new HashMap<>();
 
         // add particle texture
-        addTexture(model.getParticleTexture(nodata), textures);
+        addTexture(model.getParticleIcon(nodata), textures);
 
         // add any other textures
         for (BakedQuad quad : quads) {

@@ -13,11 +13,11 @@ import com.conquestreforged.core.item.family.block.BlockFamily;
 import com.conquestreforged.core.item.family.block.VariantFamily;
 import com.conquestreforged.core.util.RenderLayer;
 import com.google.common.base.Preconditions;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.Collections;
 import java.util.HashMap;

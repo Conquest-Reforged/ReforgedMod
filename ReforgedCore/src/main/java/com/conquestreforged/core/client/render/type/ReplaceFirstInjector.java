@@ -1,6 +1,6 @@
 package com.conquestreforged.core.client.render.type;
 
-import net.minecraft.client.renderer.IRenderTypeBuffer;
+import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 
 /**
@@ -12,7 +12,7 @@ public class ReplaceFirstInjector extends RenderTypeInjector {
     private final RenderType type;
     private volatile boolean first = true;
 
-    public ReplaceFirstInjector(IRenderTypeBuffer delegate, RenderType type) {
+    public ReplaceFirstInjector(MultiBufferSource delegate, RenderType type) {
         super(delegate);
         this.type = type;
     }

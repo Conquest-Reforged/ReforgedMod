@@ -1,10 +1,10 @@
 package com.conquestreforged.core.util;
 
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.IItemProvider;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Optional;
@@ -15,7 +15,7 @@ import java.util.function.Supplier;
  * with out creating circular dependency issues (ie Block constructors that rely on
  * Items and vice-versa
  */
-public class Provider<T extends IItemProvider> implements IItemProvider {
+public class Provider<T extends ItemLike> implements ItemLike {
 
     private final String name;
     private final Supplier<T> supplier;
@@ -45,7 +45,7 @@ public class Provider<T extends IItemProvider> implements IItemProvider {
     }
 
     @Override
-    public net.minecraft.item.Item asItem() {
+    public net.minecraft.world.item.Item asItem() {
         T t = get();
         if (t == null) {
             throw new NullPointerException("Invalid item: " + name);
@@ -61,7 +61,7 @@ public class Provider<T extends IItemProvider> implements IItemProvider {
         return block("" + name, () -> ForgeRegistries.BLOCKS.getValue(name));
     }
 
-    public static Provider.Block block(String name, Supplier<net.minecraft.block.Block> getter) {
+    public static Provider.Block block(String name, Supplier<net.minecraft.world.level.block.Block> getter) {
         return new Block(name, getter);
     }
 
@@ -73,29 +73,29 @@ public class Provider<T extends IItemProvider> implements IItemProvider {
         return item("" + name, () -> ForgeRegistries.ITEMS.getValue(name));
     }
 
-    public static Provider.Item item(String name, Supplier<net.minecraft.item.Item> getter) {
+    public static Provider.Item item(String name, Supplier<net.minecraft.world.item.Item> getter) {
         return new Item(name, getter);
     }
 
-    public static class Block extends Provider<net.minecraft.block.Block> {
+    public static class Block extends Provider<net.minecraft.world.level.block.Block> {
 
-        public Block(String name, Supplier<net.minecraft.block.Block> supplier) {
+        public Block(String name, Supplier<net.minecraft.world.level.block.Block> supplier) {
             super(name, supplier, () -> Blocks.AIR);
         }
     }
 
-    public static class Item extends Provider<net.minecraft.item.Item> {
+    public static class Item extends Provider<net.minecraft.world.item.Item> {
 
-        public Item(String name, Supplier<net.minecraft.item.Item> supplier) {
+        public Item(String name, Supplier<net.minecraft.world.item.Item> supplier) {
             super(name, supplier, () -> Items.AIR);
         }
     }
 
     public static class Stack implements Supplier<ItemStack> {
 
-        private final IItemProvider provider;
+        private final ItemLike provider;
 
-        public Stack(IItemProvider provider) {
+        public Stack(ItemLike provider) {
             this.provider = provider;
         }
 
@@ -105,7 +105,7 @@ public class Provider<T extends IItemProvider> implements IItemProvider {
         }
 
         public Optional<ItemStack> getSafely() {
-            net.minecraft.item.Item item = provider.asItem();
+            net.minecraft.world.item.Item item = provider.asItem();
             if (item == Items.AIR) {
                 return Optional.empty();
             }

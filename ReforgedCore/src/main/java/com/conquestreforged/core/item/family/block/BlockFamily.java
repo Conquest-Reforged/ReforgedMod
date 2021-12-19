@@ -3,11 +3,11 @@ package com.conquestreforged.core.item.family.block;
 import com.conquestreforged.core.block.factory.TypeList;
 import com.conquestreforged.core.item.family.Family;
 import com.conquestreforged.core.util.OptimizedList;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -17,10 +17,10 @@ public class BlockFamily extends Family<Block> {
     public static final BlockFamily EMPTY = new BlockFamily();
 
     private BlockFamily() {
-        super(ItemGroup.TAB_SEARCH, BlockFamily.BY_NAME, Collections.emptyList());
+        super(CreativeModeTab.TAB_SEARCH, BlockFamily.BY_NAME, Collections.emptyList());
     }
 
-    public BlockFamily(ItemGroup group, TypeList order) {
+    public BlockFamily(CreativeModeTab group, TypeList order) {
         super(group, order, new OptimizedList<>());
     }
 
@@ -30,7 +30,7 @@ public class BlockFamily extends Family<Block> {
     }
 
     @Override
-    protected void addItem(ItemGroup group, NonNullList<ItemStack> list, Block block) {
+    protected void addItem(CreativeModeTab group, NonNullList<ItemStack> list, Block block) {
         block.fillItemCategory(group, list);
     }
 

@@ -1,11 +1,13 @@
 package com.conquestreforged.client.tutorial.toast;
 
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.minecraft.client.gui.toasts.IToast;
-import net.minecraft.client.gui.toasts.ToastGui;
+import net.minecraft.client.gui.components.toasts.Toast;
+import net.minecraft.client.gui.components.toasts.ToastComponent;
 
-public abstract class AbstractToast implements IToast {
+import net.minecraft.client.gui.components.toasts.Toast.Visibility;
+
+public abstract class AbstractToast implements Toast {
 
     protected static final int TITLE = -11534256;
     protected static final int SUBTITLE = -16777216;
@@ -19,10 +21,11 @@ public abstract class AbstractToast implements IToast {
     }
 
     @Override
-    public Visibility render(MatrixStack matrixStack, ToastGui toastGui, long delta) {
+    public Visibility render(PoseStack matrixStack, ToastComponent toastGui, long delta) {
         if (shouldRender(toastGui)) {
-            toastGui.getMinecraft().getTextureManager().bind(TEXTURE);
-            RenderSystem.color3f(1.0F, 1.0F, 1.0F);
+            toastGui.getMinecraft().getTextureManager().bindForSetup(TEXTURE);
+            //todo used to be color3f?
+            RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
             toastGui.blit(matrixStack, 0, 0, 0, 96, 160, 32);
 
             if (getLine2().isEmpty()) {
@@ -39,7 +42,7 @@ public abstract class AbstractToast implements IToast {
 
     public abstract String getLine2();
 
-    public abstract boolean shouldRender(ToastGui gui);
+    public abstract boolean shouldRender(ToastComponent gui);
 
     public abstract Visibility getVisibility();
 }

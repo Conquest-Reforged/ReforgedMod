@@ -1,6 +1,6 @@
 package com.conquestreforged.client.gui.palette.component;
 
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 
 public class Style {
 

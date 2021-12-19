@@ -2,10 +2,10 @@ package com.conquestreforged.core.item.family;
 
 import com.conquestreforged.core.block.factory.TypeList;
 import com.conquestreforged.core.util.cache.Cache;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
 public class DeferredFamilyRegistry<T extends IForgeRegistryEntry<?>> extends Cache<ResourceLocation, DeferredFamily<T>> implements FamilyFactory<T> {
@@ -28,7 +28,7 @@ public class DeferredFamilyRegistry<T extends IForgeRegistryEntry<?>> extends Ca
     }
 
     @Override
-    public Family<T> create(ResourceLocation name, ItemGroup group, TypeList types) {
+    public Family<T> create(ResourceLocation name, CreativeModeTab group, TypeList types) {
         if (name == null) {
             return none;
         }

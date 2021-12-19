@@ -9,9 +9,9 @@ import com.conquestreforged.client.gui.painting.PaintingScreen;
 import com.conquestreforged.core.client.input.BindEvent;
 import com.conquestreforged.core.client.input.BindListener;
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.item.PaintingType;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Items;
+import net.minecraft.world.entity.decoration.Motive;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Items;
 
 public class PaintingBindListener implements BindListener {
 
@@ -21,7 +21,7 @@ public class PaintingBindListener implements BindListener {
             return;
         }
 
-        e.player.map(PlayerEntity::getMainHandItem).ifPresent(stack -> {
+        e.player.map(Player::getMainHandItem).ifPresent(stack -> {
             if (stack.getItem() instanceof PaintingHolder) {
                 PaintingHolder holder = (PaintingHolder) stack.getItem();
                 Art<?> art = holder.getArt(stack);
@@ -35,7 +35,7 @@ public class PaintingBindListener implements BindListener {
             }
 
             if (stack.getItem() == Items.PAINTING) {
-                String name = PaintingType.ALBAN.getRegistryName() + "";
+                String name = Motive.ALBAN.getRegistryName() + "";
                 Art<?> art = VanillaArt.fromName(name);
                 Painting type = VanillaPainting.INSTANCE;
                 PaintingScreen<?> screen = new PaintingScreen<>(stack, type, art);

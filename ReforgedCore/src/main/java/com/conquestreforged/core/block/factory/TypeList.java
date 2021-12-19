@@ -2,8 +2,8 @@ package com.conquestreforged.core.block.factory;
 
 import com.conquestreforged.core.util.OptimizedList;
 import com.conquestreforged.core.util.cache.Cache;
-import net.minecraft.block.AirBlock;
-import net.minecraft.block.Block;
+import net.minecraft.world.level.block.AirBlock;
+import net.minecraft.world.level.block.Block;
 
 import java.util.ArrayList;
 import java.util.Arrays;

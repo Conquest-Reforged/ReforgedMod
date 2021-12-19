@@ -6,9 +6,9 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.internal.Streams;
 import com.google.gson.stream.JsonWriter;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.ResourcePackType;
-import net.minecraft.resources.data.PackMetadataSection;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.metadata.pack.PackMetadataSection;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,17 +41,17 @@ public class VirtualMeta implements VirtualResource {
     }
 
     @Override
-    public ResourcePackType getType() {
-        return ResourcePackType.CLIENT_RESOURCES;
+    public PackType getType() {
+        return PackType.CLIENT_RESOURCES;
     }
 
     @Override
-    public JsonElement getJson(IResourceManager resourceManager) throws IOException {
+    public JsonElement getJson(ResourceManager resourceManager) throws IOException {
         return toJson();
     }
 
     @Override
-    public InputStream getInputStream(IResourceManager resourceManager) throws IOException {
+    public InputStream getInputStream(ResourceManager resourceManager) throws IOException {
         ByteStream.Output out = new ByteStream.Output();
         try (JsonWriter writer = new JsonWriter(new OutputStreamWriter(out))) {
             Streams.write(toJson(), writer);

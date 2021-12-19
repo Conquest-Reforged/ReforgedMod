@@ -1,19 +1,21 @@
 package com.conquestreforged.core.block.base;
 
 import com.conquestreforged.core.block.properties.Waterloggable;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.fluid.Fluids;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.state.DirectionProperty;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.util.Direction;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.Rotation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.Rotation;
 
 import javax.annotation.Nonnull;
+
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 /**
  * A directional, non full-cube shape that can be waterlogged
@@ -38,7 +40,7 @@ public abstract class WaterloggedHorizontalDirectionalShape extends Shape implem
 
     @Nonnull
     @Override
-    public BlockState getStateForPlacement(BlockItemUseContext context) {
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction facing = context.getHorizontalDirection().getOpposite();
         FluidState fluid = context.getLevel().getFluidState(context.getClickedPos());
         return super.getStateForPlacement(context)
@@ -52,12 +54,12 @@ public abstract class WaterloggedHorizontalDirectionalShape extends Shape implem
     }
 
     @Override
-    protected final void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
+    protected final void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(DIRECTION, WATERLOGGED);
         addProperties(builder);
     }
 
-    protected void addProperties(StateContainer.Builder<Block, BlockState> builder) {
+    protected void addProperties(StateDefinition.Builder<Block, BlockState> builder) {
 
     }
 }

@@ -2,12 +2,12 @@ package com.conquestreforged.client.bind;
 
 import com.conquestreforged.core.client.input.BindEvent;
 import com.conquestreforged.core.client.input.BindListener;
-import net.minecraft.block.BlockState;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
-import net.minecraft.state.Property;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.phys.HitResult;
 import org.lwjgl.glfw.GLFW;
 
 public class DebugBindListener implements BindListener {
@@ -18,7 +18,7 @@ public class DebugBindListener implements BindListener {
             return;
         }
 
-        RayTraceResult result = Minecraft.getInstance().hitResult;
+        HitResult result = Minecraft.getInstance().hitResult;
         if (result == null) {
             return;
         }
@@ -26,7 +26,7 @@ public class DebugBindListener implements BindListener {
         BlockPos pos = new BlockPos(result.getLocation());
         String state = toString(event.player.get().level.getBlockState(pos));
         long window = Minecraft.getInstance().getWindow().getWindow();
-        event.player.get().sendMessage(new StringTextComponent("Copied BlockInfo to clipboard!"), event.player.get().getUUID());
+        event.player.get().sendMessage(new TextComponent("Copied BlockInfo to clipboard!"), event.player.get().getUUID());
         GLFW.glfwSetClipboardString(window, '`' + state + '`');
     }
 

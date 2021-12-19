@@ -1,7 +1,7 @@
 package com.conquestreforged.core.util;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
 
 import java.util.function.Supplier;
 

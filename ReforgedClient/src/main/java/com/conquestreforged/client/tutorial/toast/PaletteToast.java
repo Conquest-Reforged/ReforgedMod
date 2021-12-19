@@ -3,8 +3,8 @@ package com.conquestreforged.client.tutorial.toast;
 import com.conquestreforged.client.BindManager;
 import com.conquestreforged.client.tutorial.Tutorials;
 import com.conquestreforged.core.config.section.ConfigSection;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
-import net.minecraft.client.gui.toasts.ToastGui;
+import net.minecraft.client.gui.screens.inventory.ContainerScreen;
+import net.minecraft.client.gui.components.toasts.ToastComponent;
 
 public class PaletteToast extends AbstractToast {
 
@@ -19,7 +19,7 @@ public class PaletteToast extends AbstractToast {
     }
 
     @Override
-    public boolean shouldRender(ToastGui gui) {
+    public boolean shouldRender(ToastComponent gui) {
         return gui.getMinecraft().screen instanceof ContainerScreen && !Tutorials.openPalette;
     }
 

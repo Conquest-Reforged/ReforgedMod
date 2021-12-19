@@ -1,7 +1,7 @@
 package com.conquestreforged.api.painting.vanilla;
 
 import com.conquestreforged.api.painting.Painting;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 
 public class VanillaPainting implements Painting {
 

@@ -2,18 +2,18 @@ package com.conquestreforged.client.gui.search;
 
 import com.conquestreforged.client.gui.search.query.Index;
 import com.conquestreforged.client.gui.search.query.Result;
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.player.ClientPlayerEntity;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.widget.TextFieldWidget;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.LazyValue;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.util.LazyLoadedValue;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Collection;
@@ -24,15 +24,15 @@ import java.util.function.Consumer;
 public class SearchScreen extends Screen implements Consumer<String> {
 
     private static final float scale = 2F;
-    private static final LazyValue<Index<ItemStack>> index = new LazyValue<>(SearchScreen::buildIndex);
+    private static final LazyLoadedValue<Index<ItemStack>> index = new LazyLoadedValue<>(SearchScreen::buildIndex);
 
-    private final TextFieldWidget search;
+    private final EditBox search;
     private final Index<ItemStack> itemIndex;
     private final SearchList searchList;
 
     public SearchScreen() {
-        super(new StringTextComponent("search"));
-        this.search = new TextFieldWidget(Minecraft.getInstance().font, 0, 0, 200, 20, new TranslationTextComponent("Search"));
+        super(new TextComponent("search"));
+        this.search = new EditBox(Minecraft.getInstance().font, 0, 0, 200, 20, new TranslatableComponent("Search"));
         this.search.setResponder(this);
         this.itemIndex = index.get();
         this.searchList = new SearchList(5, 6);
@@ -63,7 +63,7 @@ public class SearchScreen extends Screen implements Consumer<String> {
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mx, int my, float ticks) {
+    public void render(PoseStack matrixStack, int mx, int my, float ticks) {
         update();
         super.renderBackground(matrixStack);
         super.render(matrixStack, mx, my, ticks);
@@ -98,8 +98,8 @@ public class SearchScreen extends Screen implements Consumer<String> {
     }
 
     private void check() {
-        ClientPlayerEntity player = Minecraft.getInstance().player;
-        if (player == null || !player.abilities.instabuild) {
+        LocalPlayer player = Minecraft.getInstance().player;
+        if (player == null || !player.getAbilities().instabuild) {
             Minecraft.getInstance().setScreen(null);
         }
     }

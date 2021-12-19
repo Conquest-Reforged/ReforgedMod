@@ -16,6 +16,9 @@ import java.util.function.IntSupplier;
 import java.util.function.LongSupplier;
 import java.util.function.Supplier;
 
+import com.electronwill.nightconfig.core.CommentedConfig.Entry;
+import com.electronwill.nightconfig.core.UnmodifiableCommentedConfig.CommentNode;
+
 public interface ConfigSection extends CommentedConfig {
 
     void save();

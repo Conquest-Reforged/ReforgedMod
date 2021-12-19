@@ -7,9 +7,9 @@ import com.google.gson.JsonParser;
 import com.google.gson.internal.Streams;
 import com.google.gson.internal.bind.JsonTreeWriter;
 import com.google.gson.stream.JsonWriter;
-import net.minecraft.resources.IResource;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.packs.resources.Resource;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.resources.ResourceLocation;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -49,18 +49,18 @@ public class JsonTemplate {
         return "JsonTemplate{location=" + location + '}';
     }
 
-    public JsonElement getJson(IResourceManager resourceManager, JsonOverride overrides) throws IOException {
+    public JsonElement getJson(ResourceManager resourceManager, JsonOverride overrides) throws IOException {
         JsonTreeWriter writer = new JsonTreeWriter();
         apply(resourceManager, writer, overrides);
         return writer.get();
     }
 
-    public void apply(IResourceManager resourceManager, JsonWriter writer, JsonOverride overrides) throws IOException {
+    public void apply(ResourceManager resourceManager, JsonWriter writer, JsonOverride overrides) throws IOException {
         JsonObject object = getJson(resourceManager);
         write(writer, overrides, object);
     }
 
-    public InputStream getInputStream(IResourceManager resourceManager, JsonOverride overrides) throws IOException {
+    public InputStream getInputStream(ResourceManager resourceManager, JsonOverride overrides) throws IOException {
         try (ByteStream.Output out = new ByteStream.Output()) {
             try (JsonWriter writer = new JsonWriter(new OutputStreamWriter(out))) {
                 apply(resourceManager, writer, overrides);
@@ -69,10 +69,10 @@ public class JsonTemplate {
         }
     }
 
-    private JsonObject getJson(IResourceManager resourceManager) throws IOException {
+    private JsonObject getJson(ResourceManager resourceManager) throws IOException {
         synchronized (lock) {
             if (cached == null) {
-                try (IResource resource = resourceManager.getResource(location)) {
+                try (Resource resource = resourceManager.getResource(location)) {
                     try (InputStream in = resource.getInputStream()) {
                         try (Reader reader = new InputStreamReader(in)) {
                             JsonElement element = parser.parse(reader);

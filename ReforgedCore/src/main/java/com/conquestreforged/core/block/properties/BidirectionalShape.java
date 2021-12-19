@@ -1,8 +1,8 @@
 package com.conquestreforged.core.block.properties;
 
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.StringRepresentable;
 
-public enum BidirectionalShape implements IStringSerializable {
+public enum BidirectionalShape implements StringRepresentable {
     NORTH_SOUTH("northsouth"),
     EAST_WEST("eastwest");
 

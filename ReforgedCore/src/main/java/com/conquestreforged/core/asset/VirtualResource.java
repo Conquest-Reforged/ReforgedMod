@@ -1,8 +1,8 @@
 package com.conquestreforged.core.asset;
 
 import com.google.gson.JsonElement;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.ResourcePackType;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.PackType;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,9 +13,9 @@ public interface VirtualResource {
 
     String getNamespace();
 
-    ResourcePackType getType();
+    PackType getType();
 
-    JsonElement getJson(IResourceManager resourceManager) throws IOException;
+    JsonElement getJson(ResourceManager resourceManager) throws IOException;
 
-    InputStream getInputStream(IResourceManager resourceManager) throws IOException;
+    InputStream getInputStream(ResourceManager resourceManager) throws IOException;
 }

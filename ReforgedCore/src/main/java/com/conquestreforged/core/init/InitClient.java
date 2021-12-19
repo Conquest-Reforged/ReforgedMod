@@ -5,7 +5,7 @@ import com.conquestreforged.core.block.data.BlockDataRegistry;
 import com.conquestreforged.core.block.data.ColorType;
 import com.conquestreforged.core.client.color.BlockColors;
 import com.conquestreforged.core.util.log.Log;
-import net.minecraft.client.renderer.color.IItemColor;
+import net.minecraft.client.color.item.ItemColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -32,7 +32,7 @@ public class InitClient {
     @SubscribeEvent
     public static void itemColors(ColorHandlerEvent.Item event) {
         Log.debug("Registering item colors");
-        IItemColor itemColor = BlockColors.toItemColor(event.getBlockColors());
+        ItemColor itemColor = BlockColors.toItemColor(event.getBlockColors());
         for (BlockData data : BlockDataRegistry.getInstance()) {
             if (data.getProps().getColorType() == ColorType.GRASS || data.getProps().getColorType() == ColorType.FOLIAGE) {
                 event.getItemColors().register(itemColor, data.getBlock());

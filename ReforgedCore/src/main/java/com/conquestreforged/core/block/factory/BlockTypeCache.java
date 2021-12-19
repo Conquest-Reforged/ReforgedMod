@@ -7,9 +7,9 @@ import com.conquestreforged.core.block.factory.constructor.DyeConstructor;
 import com.conquestreforged.core.block.factory.constructor.PropsConstructor;
 import com.conquestreforged.core.block.factory.constructor.StateConstructor;
 import com.conquestreforged.core.util.cache.Cache;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.item.DyeColor;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.DyeColor;
 
 import java.lang.reflect.Constructor;
 import java.util.LinkedList;

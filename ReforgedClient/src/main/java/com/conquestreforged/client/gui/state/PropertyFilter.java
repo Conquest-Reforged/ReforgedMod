@@ -1,7 +1,7 @@
 package com.conquestreforged.client.gui.state;
 
-import net.minecraft.state.Property;
-import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 import java.util.function.Predicate;
 

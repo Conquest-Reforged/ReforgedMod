@@ -5,9 +5,9 @@ import com.conquestreforged.core.util.log.Log;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.DirectoryCache;
-import net.minecraft.data.IDataProvider;
-import net.minecraft.resources.IResourceManager;
+import net.minecraft.data.HashCache;
+import net.minecraft.data.DataProvider;
+import net.minecraft.server.packs.resources.ResourceManager;
 import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
 
@@ -19,7 +19,7 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ForkJoinPool;
 
-public class DataProvider implements IDataProvider {
+public class DataProviderCR implements net.minecraft.data.DataProvider {
 
     private static final Marker MARKER = MarkerManager.getMarker("DataGen");
     private static final Gson GSON = new Gson();
@@ -27,7 +27,7 @@ public class DataProvider implements IDataProvider {
     private final DataGenerator dataGenerator;
     private final VirtualResourcepack resourcepack;
 
-    public DataProvider(DataGenerator dataGenerator, VirtualResourcepack resourcepack) {
+    public DataProviderCR(DataGenerator dataGenerator, VirtualResourcepack resourcepack) {
         this.dataGenerator = dataGenerator;
         this.resourcepack = resourcepack;
     }
@@ -39,9 +39,9 @@ public class DataProvider implements IDataProvider {
 
     @Override
     @SuppressWarnings("UnstableApiUsage")
-    public void run(DirectoryCache cache) throws IOException {
+    public void run(HashCache cache) throws IOException {
         Queue<FileHash> queue = new ConcurrentLinkedQueue<>();
-        IResourceManager resourceManager = resourcepack.getResourceManager();
+        ResourceManager resourceManager = resourcepack.getResourceManager();
 
         resourcepack.forEach((filepath, resource) -> ForkJoinPool.commonPool().submit(() -> {
             Path path = dataGenerator.getOutputFolder().resolve(filepath);
@@ -50,7 +50,7 @@ public class DataProvider implements IDataProvider {
             try (BufferedWriter writer = Files.newBufferedWriter(path)) {
                 JsonElement element = resource.getJson(resourceManager);
                 String json = GSON.toJson(element);
-                String hash = IDataProvider.SHA1.hashUnencodedChars(json).toString();
+                String hash = DataProvider.SHA1.hashUnencodedChars(json).toString();
                 if (hash.equals(previousHash) && Files.exists(path)) {
                     return null;
                 }

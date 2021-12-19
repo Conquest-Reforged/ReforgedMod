@@ -1,13 +1,13 @@
 package com.conquestreforged.core.block.properties;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.IWaterLoggable;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.fluid.Fluids;
-import net.minecraft.state.BooleanProperty;
-import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.SimpleWaterloggedBlock;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
-public interface Waterloggable extends IWaterLoggable {
+public interface Waterloggable extends SimpleWaterloggedBlock {
 
     BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 

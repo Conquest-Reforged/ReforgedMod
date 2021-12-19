@@ -7,7 +7,7 @@ import com.conquestreforged.client.bind.ToggleBindListener;
 import com.conquestreforged.core.asset.lang.Translations;
 import com.conquestreforged.core.client.input.Bindings;
 import com.conquestreforged.core.util.log.Log;
-import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.client.KeyMapping;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -16,8 +16,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 @Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BindManager {
 
-    private static KeyBinding palette;
-    private static KeyBinding blockToggle;
+    private static KeyMapping palette;
+    private static KeyMapping blockToggle;
 
     @SubscribeEvent
     public static void init(FMLClientSetupEvent event) {
@@ -31,11 +31,11 @@ public class BindManager {
                 .addListener(new PaintingBindListener());
     }
 
-    public static KeyBinding getPaletteBind() {
+    public static KeyMapping getPaletteBind() {
         return palette;
     }
 
-    public static KeyBinding getBlockToggleBind() {
+    public static KeyMapping getBlockToggleBind() {
         return blockToggle;
     }
 }

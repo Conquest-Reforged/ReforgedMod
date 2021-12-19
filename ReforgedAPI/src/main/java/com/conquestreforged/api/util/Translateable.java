@@ -1,6 +1,6 @@
 package com.conquestreforged.api.util;
 
-import net.minecraft.client.resources.I18n;
+import net.minecraft.client.resources.language.I18n;
 
 /**
  * @author dags <dags@dags.me>

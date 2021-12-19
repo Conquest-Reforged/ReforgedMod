@@ -3,7 +3,7 @@ package com.conquestreforged.core.block.factory.constructor;
 import com.conquestreforged.core.block.builder.Props;
 import com.conquestreforged.core.block.factory.BlockType;
 import com.conquestreforged.core.block.factory.InitializationException;
-import net.minecraft.block.Block;
+import net.minecraft.world.level.block.Block;
 
 import java.lang.reflect.Constructor;
 

@@ -1,12 +1,12 @@
 package com.conquestreforged.client.gui.palette.component;
 
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.AbstractGui;
-import net.minecraft.client.gui.widget.button.Button;
+import net.minecraft.client.gui.GuiComponent;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.renderer.texture.DynamicTexture;
-import net.minecraft.client.renderer.texture.NativeImage;
-import net.minecraft.util.text.TranslationTextComponent;
+import com.mojang.blaze3d.platform.NativeImage;
+import net.minecraft.network.chat.TranslatableComponent;
 
 import java.awt.*;
 import java.util.function.BiConsumer;
@@ -34,7 +34,7 @@ public class ColorPicker extends Button {
     private final DynamicTexture slider = new DynamicTexture(new NativeImage(sliderWidth, sliderHeight, false));
 
     public ColorPicker(String title, int initial, Consumer<Integer> consumer) {
-        super(0, 0, pickerWidth, titleHeight + pickerHeight + sliderHeight + padding, new TranslationTextComponent(""), button -> {});
+        super(0, 0, pickerWidth, titleHeight + pickerHeight + sliderHeight + padding, new TranslatableComponent(""), button -> {});
         this.title = title;
         this.consumer = consumer;
         float[] hsb = new Color(initial).getColorComponents(new float[3]);
@@ -44,7 +44,7 @@ public class ColorPicker extends Button {
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mx, int my, float ticks) {
+    public void render(PoseStack matrixStack, int mx, int my, float ticks) {
         if (dirty) {
             renderImage();
         }
@@ -55,11 +55,11 @@ public class ColorPicker extends Button {
 
         top += 10;
         picker.bind();
-        AbstractGui.blit(matrixStack, left, top, pickerWidth, pickerHeight, 0, 0, pickerWidth, pickerHeight, pickerWidth, pickerHeight);
+        GuiComponent.blit(matrixStack, left, top, pickerWidth, pickerHeight, 0, 0, pickerWidth, pickerHeight, pickerWidth, pickerHeight);
 
         top += pickerHeight + padding;
         slider.bind();
-        AbstractGui.blit(matrixStack, left, top, sliderWidth, sliderHeight, 0, 0, sliderWidth, sliderHeight, sliderWidth, sliderHeight);
+        GuiComponent.blit(matrixStack, left, top, sliderWidth, sliderHeight, 0, 0, sliderWidth, sliderHeight, sliderWidth, sliderHeight);
     }
 
     @Override

@@ -1,10 +1,10 @@
 package com.conquestreforged.core.item.family;
 
 import com.conquestreforged.core.util.OptimizedList;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
 public class DeferredFamily<T extends IForgeRegistryEntry<?>> extends Family<T> {
@@ -14,7 +14,7 @@ public class DeferredFamily<T extends IForgeRegistryEntry<?>> extends Family<T> 
     private final FamilyRegistry<T> registry;
 
     DeferredFamily(ResourceLocation name, T empty, FamilyRegistry<T> registry) {
-        super(ItemGroup.TAB_SEARCH, new OptimizedList<>());
+        super(CreativeModeTab.TAB_SEARCH, new OptimizedList<>());
         this.name = name;
         this.empty = empty;
         this.registry = registry;
@@ -26,7 +26,7 @@ public class DeferredFamily<T extends IForgeRegistryEntry<?>> extends Family<T> 
     }
 
     @Override
-    protected void addItem(ItemGroup group, NonNullList<ItemStack> list, T item) {
+    protected void addItem(CreativeModeTab group, NonNullList<ItemStack> list, T item) {
 
     }
 

@@ -1,7 +1,7 @@
 package com.conquestreforged.client.gui.palette.component;
 
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.widget.Widget;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.gui.components.AbstractWidget;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class Panel {
 
     private final int side;
     private final boolean offScreen;
-    private final List<Widget> children = new ArrayList<>();
+    private final List<AbstractWidget> children = new ArrayList<>();
 
     private Panel(int side, boolean offScreen) {
         this.side = side;
@@ -30,7 +30,7 @@ public class Panel {
         children.clear();
     }
 
-    public void add(Widget widget) {
+    public void add(AbstractWidget widget) {
         children.add(widget);
     }
 
@@ -40,7 +40,7 @@ public class Panel {
         }
 
         int top = this.top;
-        for (Widget widget : children) {
+        for (AbstractWidget widget : children) {
             widget.setWidth(width);
             widget.x = left + offsetX;
             widget.y = top;

@@ -2,27 +2,27 @@ package com.conquestreforged.client.gui;
 
 import com.conquestreforged.client.gui.palette.component.Style;
 import com.conquestreforged.client.gui.render.Render;
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.AbstractGui;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.container.ClickType;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
+import net.minecraft.client.gui.GuiComponent;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.ClickType;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
-public abstract class CustomContainerScreen<T extends Container> extends ContainerScreen<T> {
+public abstract class CustomContainerScreen<T extends AbstractContainerMenu> extends AbstractContainerScreen<T> {
 
     private Slot clickedSlot;
     private boolean isRightMouseClick;
     private boolean isOverSlot = false;
 
-    public CustomContainerScreen(T screenContainer, PlayerInventory inv, ITextComponent titleIn) {
+    public CustomContainerScreen(T screenContainer, Inventory inv, Component titleIn) {
         super(screenContainer, inv, titleIn);
     }
 
@@ -73,7 +73,7 @@ public abstract class CustomContainerScreen<T extends Container> extends Contain
         }
     }
 
-    public void renderSlotBackGround(MatrixStack matrixStack, Slot slot, Style style, float depth, float scale) {
+    public void renderSlotBackGround(PoseStack matrixStack, Slot slot, Style style, float depth, float scale) {
         int x = slot.x + 8;
         int y = slot.y + 8;
 
@@ -86,8 +86,8 @@ public abstract class CustomContainerScreen<T extends Container> extends Contain
         this.itemRenderer.blitOffset = 0;
 
         if (style != null && style.background != null) {
-            Minecraft.getInstance().getTextureManager().bind(style.background);
-            AbstractGui.blit(matrixStack, -8, -6, 16, 16, 0, 0, 72, 72, 72, 72);
+            Minecraft.getInstance().getTextureManager().bindForSetup(style.background);
+            GuiComponent.blit(matrixStack, -8, -6, 16, 16, 0, 0, 72, 72, 72, 72);
         }
 
         RenderSystem.popMatrix();

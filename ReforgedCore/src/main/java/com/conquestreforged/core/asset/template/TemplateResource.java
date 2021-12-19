@@ -2,8 +2,8 @@ package com.conquestreforged.core.asset.template;
 
 import com.conquestreforged.core.asset.VirtualResource;
 import com.google.gson.JsonElement;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.ResourcePackType;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.PackType;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,9 +14,9 @@ public class TemplateResource implements VirtualResource {
     private final String namespace;
     private final JsonTemplate template;
     private final JsonOverride overrides;
-    private final ResourcePackType packType;
+    private final PackType packType;
 
-    public TemplateResource(ResourcePackType type, String namespace, String path, JsonOverride overrides, JsonTemplate template) {
+    public TemplateResource(PackType type, String namespace, String path, JsonOverride overrides, JsonTemplate template) {
         this.namespace = namespace;
         this.overrides = overrides;
         this.template = template;
@@ -35,17 +35,17 @@ public class TemplateResource implements VirtualResource {
     }
 
     @Override
-    public ResourcePackType getType() {
+    public PackType getType() {
         return packType;
     }
 
     @Override
-    public JsonElement getJson(IResourceManager resourceManager) throws IOException {
+    public JsonElement getJson(ResourceManager resourceManager) throws IOException {
         return template.getJson(resourceManager, overrides);
     }
 
     @Override
-    public InputStream getInputStream(IResourceManager resourceManager) throws IOException {
+    public InputStream getInputStream(ResourceManager resourceManager) throws IOException {
         return template.getInputStream(resourceManager, overrides);
     }
 
@@ -59,7 +59,7 @@ public class TemplateResource implements VirtualResource {
 
     public static TemplateResource asset(String namespace, String path, JsonOverride overrides, JsonTemplate template) {
         return new TemplateResource(
-                ResourcePackType.CLIENT_RESOURCES,
+                PackType.CLIENT_RESOURCES,
                 namespace,
                 path,
                 overrides,
@@ -69,7 +69,7 @@ public class TemplateResource implements VirtualResource {
 
     public static TemplateResource data(String namespace, String path, JsonOverride overrides, JsonTemplate template) {
         return new TemplateResource(
-                ResourcePackType.SERVER_DATA,
+                PackType.SERVER_DATA,
                 namespace,
                 path,
                 overrides,

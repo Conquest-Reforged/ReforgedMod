@@ -1,21 +1,21 @@
 package com.conquestreforged.client.gui;
 
-import net.minecraft.client.gui.screen.inventory.CreativeCraftingListener;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.container.ClickType;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
+import net.minecraft.client.gui.screens.inventory.CreativeInventoryListener;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.ClickType;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
-public abstract class CustomCreativeScreen<T extends Container> extends CustomContainerScreen<T> {
+public abstract class CustomCreativeScreen<T extends AbstractContainerMenu> extends CustomContainerScreen<T> {
 
     private boolean clickedOutside = false;
-    private CreativeCraftingListener listener;
+    private CreativeInventoryListener listener;
 
-    public CustomCreativeScreen(T screenContainer, PlayerInventory inv, ITextComponent titleIn) {
+    public CustomCreativeScreen(T screenContainer, Inventory inv, Component titleIn) {
         super(screenContainer, inv, titleIn);
     }
 
@@ -32,7 +32,7 @@ public abstract class CustomCreativeScreen<T extends Container> extends CustomCo
         super.init();
         if (this.minecraft != null && minecraft.player != null) {
             minecraft.player.inventoryMenu.removeSlotListener(listener);
-            listener = new CreativeCraftingListener(minecraft);
+            listener = new CreativeInventoryListener(minecraft);
             minecraft.player.inventoryMenu.addSlotListener(listener);
         }
     }
@@ -41,7 +41,7 @@ public abstract class CustomCreativeScreen<T extends Container> extends CustomCo
     public void removed() {
         super.removed();
         if (minecraft != null) {
-            if (minecraft.player != null && minecraft.player.inventory != null) {
+            if (minecraft.player != null && minecraft.player.getInventory() != null) {
                 minecraft.player.inventoryMenu.removeSlotListener(this.listener);
             }
             minecraft.keyboardHandler.setSendRepeatsToGui(false);
@@ -63,22 +63,22 @@ public abstract class CustomCreativeScreen<T extends Container> extends CustomCo
         onSlotClick(slot, index, button, type);
 
         if (slot == null && type != ClickType.QUICK_CRAFT) {
-            PlayerInventory playerInventory = this.minecraft.player.inventory;
-            if (!playerInventory.getCarried().isEmpty()) {
+            Inventory playerInventory = this.minecraft.player.getInventory();
+            if (!playerInventory.getSelected().isEmpty()) {
                 if (!clickedOutside) {
-                    playerInventory.setCarried(ItemStack.EMPTY);
+                    playerInventory.setPickedItem(ItemStack.EMPTY);
                     this.minecraft.player.inventoryMenu.broadcastChanges();
                     return;
                 }
 
                 if (button == 0) {
-                    this.minecraft.player.drop(playerInventory.getCarried(), true);
-                    this.minecraft.gameMode.handleCreativeModeItemDrop(playerInventory.getCarried());
-                    playerInventory.setCarried(ItemStack.EMPTY);
+                    this.minecraft.player.drop(playerInventory.getSelected(), true);
+                    this.minecraft.gameMode.handleCreativeModeItemDrop(playerInventory.getSelected());
+                    playerInventory.setPickedItem(ItemStack.EMPTY);
                 }
 
                 if (button == 1) {
-                    ItemStack stack = playerInventory.getCarried().split(1);
+                    ItemStack stack = playerInventory.getSelected().split(1);
                     this.minecraft.player.drop(stack, true);
                     this.minecraft.gameMode.handleCreativeModeItemDrop(stack);
                 }
@@ -90,14 +90,14 @@ public abstract class CustomCreativeScreen<T extends Container> extends CustomCo
         type = index == -999 && type == ClickType.PICKUP ? ClickType.THROW : type;
 
         if (type != ClickType.QUICK_CRAFT && isContainerSlot(slot)) {
-            PlayerInventory playerinventory = minecraft.player.inventory;
-            ItemStack heldStack = playerinventory.getCarried();
+            Inventory playerinventory = minecraft.player.getInventory();
+            ItemStack heldStack = playerinventory.getSelected();
             ItemStack slotStack = slot.getItem();
             if (type == ClickType.SWAP) {
                 if (!slotStack.isEmpty() && button >= 0 && button < 9) {
                     ItemStack stack = slotStack.copy();
                     stack.setCount(stack.getMaxStackSize());
-                    minecraft.player.inventory.setItem(button, stack);
+                    minecraft.player.getInventory().setItem(button, stack);
                     minecraft.player.inventoryMenu.broadcastChanges();
                 }
 
@@ -105,10 +105,10 @@ public abstract class CustomCreativeScreen<T extends Container> extends CustomCo
             }
 
             if (type == ClickType.CLONE) {
-                if (playerinventory.getCarried().isEmpty() && slot.hasItem()) {
+                if (playerinventory.getSelected().isEmpty() && slot.hasItem()) {
                     ItemStack stack = slot.getItem().copy();
                     stack.setCount(stack.getMaxStackSize());
-                    playerinventory.setCarried(stack);
+                    playerinventory.setPickedItem(stack);
                 }
 
                 return;
@@ -136,20 +136,20 @@ public abstract class CustomCreativeScreen<T extends Container> extends CustomCo
                     heldStack.shrink(1);
                 }
             } else if (!slotStack.isEmpty() && heldStack.isEmpty()) {
-                playerinventory.setCarried(slotStack.copy());
-                heldStack = playerinventory.getCarried();
+                playerinventory.setPickedItem(slotStack.copy());
+                heldStack = playerinventory.getSelected();
                 if (quickMove) {
                     heldStack.setCount(heldStack.getMaxStackSize());
                 }
             } else if (button == 0) {
-                playerinventory.setCarried(ItemStack.EMPTY);
+                playerinventory.setPickedItem(ItemStack.EMPTY);
             } else {
-                playerinventory.getCarried().shrink(1);
+                playerinventory.getSelected().shrink(1);
             }
         } else if (this.menu != null) {
             ItemStack slotStack = slot == null ? ItemStack.EMPTY : this.menu.getSlot(slot.index).getItem();
             this.menu.clicked(slot == null ? index : slot.index, button, type, this.minecraft.player);
-            if (Container.getQuickcraftHeader(button) == 2) {
+            if (AbstractContainerMenu.getQuickcraftHeader(button) == 2) {
                 int start = this.menu.slots.size() - 9;
                 for (int k = 0; k < 9; ++k) {
                     this.minecraft.gameMode.handleCreativeModeItemAdd(this.menu.getSlot(start + k).getItem(), 36 + k);

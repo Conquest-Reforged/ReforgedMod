@@ -5,9 +5,9 @@ import com.conquestreforged.core.util.ByteStream;
 import com.google.gson.JsonElement;
 import com.google.gson.internal.bind.JsonTreeWriter;
 import com.google.gson.stream.JsonWriter;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.ResourcePackType;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
@@ -39,19 +39,19 @@ public class VirtualLang implements VirtualResource {
     }
 
     @Override
-    public ResourcePackType getType() {
-        return ResourcePackType.CLIENT_RESOURCES;
+    public PackType getType() {
+        return PackType.CLIENT_RESOURCES;
     }
 
     @Override
-    public JsonElement getJson(IResourceManager resourceManager) throws IOException {
+    public JsonElement getJson(ResourceManager resourceManager) throws IOException {
         JsonTreeWriter writer = new JsonTreeWriter();
         write(writer);
         return writer.get();
     }
 
     @Override
-    public InputStream getInputStream(IResourceManager resourceManager) throws IOException {
+    public InputStream getInputStream(ResourceManager resourceManager) throws IOException {
         ByteStream.Output output = new ByteStream.Output();
         JsonWriter writer = new JsonWriter(new OutputStreamWriter(output));
         write(writer);

@@ -1,9 +1,9 @@
 package com.conquestreforged.client.gui.palette.texture;
 
 import com.conquestreforged.core.util.OptionalValue;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.Comparator;
 import java.util.LinkedList;

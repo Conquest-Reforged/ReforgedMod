@@ -2,8 +2,8 @@ package com.conquestreforged.api.painting.vanilla;
 
 import com.conquestreforged.api.painting.art.Art;
 import com.conquestreforged.api.painting.art.ArtRenderer;
-import net.minecraft.entity.item.PaintingType;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.entity.decoration.Motive;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Collections;
@@ -13,15 +13,15 @@ import java.util.stream.Collectors;
 /**
  * @author dags <dags@dags.me>
  */
-public class VanillaArt implements Art<PaintingType> {
+public class VanillaArt implements Art<Motive> {
 
-    public static final List<Art<PaintingType>> ALL = Collections.unmodifiableList(
+    public static final List<Art<Motive>> ALL = Collections.unmodifiableList(
             ForgeRegistries.PAINTING_TYPES.getValues().stream().map(VanillaArt::new).collect(Collectors.toList())
     );
 
-    private final PaintingType art;
+    private final Motive art;
 
-    private VanillaArt(PaintingType art) {
+    private VanillaArt(Motive art) {
         this.art = art;
     }
 
@@ -56,7 +56,7 @@ public class VanillaArt implements Art<PaintingType> {
     }
 
     @Override
-    public PaintingType getReference() {
+    public Motive getReference() {
         return art;
     }
 
@@ -71,7 +71,7 @@ public class VanillaArt implements Art<PaintingType> {
     }
 
     @Override
-    public List<Art<PaintingType>> getAll() {
+    public List<Art<Motive>> getAll() {
         return ALL;
     }
 
@@ -80,8 +80,8 @@ public class VanillaArt implements Art<PaintingType> {
         return ArtRenderer.VANILLA;
     }
 
-    public static Art<PaintingType> fromName(String name) {
-        PaintingType type = ForgeRegistries.PAINTING_TYPES.getValue(new ResourceLocation(name));
+    public static Art<Motive> fromName(String name) {
+        Motive type = ForgeRegistries.PAINTING_TYPES.getValue(new ResourceLocation(name));
         return Art.find(type, ALL);
     }
 }

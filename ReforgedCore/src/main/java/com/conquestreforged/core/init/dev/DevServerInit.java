@@ -5,13 +5,13 @@ import com.conquestreforged.core.asset.pack.VirtualResourcepack;
 import com.conquestreforged.core.block.data.BlockDataRegistry;
 import com.conquestreforged.core.util.log.Log;
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.IPackFinder;
-import net.minecraft.resources.IResourceManager;
-import net.minecraft.resources.ResourcePackType;
+import net.minecraft.server.packs.repository.RepositorySource;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.server.packs.PackType;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.server.FMLServerAboutToStartEvent;
+import net.minecraftforge.fmlserverevents.FMLServerAboutToStartEvent;
 
 import java.util.function.Consumer;
 
@@ -26,15 +26,15 @@ public class DevServerInit {
 
         Log.info("Registering server resources");
 
-        IResourceManager resourceManager = Minecraft.getInstance().getResourceManager();
-        Consumer<IPackFinder> resourcePackList = event.getServer().getPackRepository()::addPackFinder;
+        ResourceManager resourceManager = Minecraft.getInstance().getResourceManager();
+        Consumer<RepositorySource> resourcePackList = event.getServer().getPackRepository()::addPackFinder;
 
         BlockDataRegistry.getInstance().getNamespaces().forEach(namespace -> {
-            VirtualResourcepack.Builder builder = VirtualResourcepack.builder(namespace).type(ResourcePackType.SERVER_DATA);
+            VirtualResourcepack.Builder builder = VirtualResourcepack.builder(namespace).type(PackType.SERVER_DATA);
             BlockDataRegistry.getInstance().getData(namespace).forEach(data -> data.addServerResources(builder));
             builder.build(resourceManager);
         });
 
-        PackFinder.getInstance(ResourcePackType.SERVER_DATA).register(resourceManager, resourcePackList);
+        PackFinder.getInstance(PackType.SERVER_DATA).register(resourceManager, resourcePackList);
     }
 }

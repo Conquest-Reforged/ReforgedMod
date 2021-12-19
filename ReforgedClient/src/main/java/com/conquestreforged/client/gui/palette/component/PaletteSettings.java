@@ -7,9 +7,13 @@ import com.conquestreforged.core.config.section.ConfigSection;
 import com.conquestreforged.core.config.section.ConfigSectionSpec;
 import com.conquestreforged.core.init.dev.Environment;
 import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.components.Widget;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.widget.Widget;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
@@ -17,6 +21,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import java.awt.*;
+
+import ConfigSection;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PaletteSettings extends Screen {
@@ -37,7 +43,7 @@ public class PaletteSettings extends Screen {
     private final Panel right = Panel.right(true);
 
     public PaletteSettings() {
-        super(new StringTextComponent("Settings"));
+        super(new TextComponent("Settings"));
     }
 
     @Override
@@ -45,7 +51,7 @@ public class PaletteSettings extends Screen {
         dispose();
         super.init(mc, width, height);
         if (!Environment.isProduction() && test) {
-            add(right, new ColorPicker2(new TranslationTextComponent("Highlight Color"), highlightColor, c -> {
+            add(right, new ColorPicker2(new TranslatableComponent("Highlight Color"), highlightColor, c -> {
                 highlightColor = c;
                 config.set("highlight_color", ColorUtils.toHex(c));
             }));
@@ -63,7 +69,7 @@ public class PaletteSettings extends Screen {
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mx, int my, float ticks) {
+    public void render(PoseStack matrixStack, int mx, int my, float ticks) {
         left.tick();
         right.tick();
         super.render(matrixStack, mx, my, ticks);

@@ -1,21 +1,21 @@
 package com.conquestreforged.core.item.group.manager;
 
-import net.minecraft.enchantment.EnchantmentType;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.ITextComponent;
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
 
-public class DelegateGroup extends ItemGroup {
+public class DelegateGroup extends CreativeModeTab {
 
-    private final ItemGroup group;
+    private final CreativeModeTab group;
 
-    DelegateGroup(ItemGroup group) {
+    DelegateGroup(CreativeModeTab group) {
         super(-1, group.getRecipeFolderName());
         this.group = group;
     }
@@ -27,7 +27,7 @@ public class DelegateGroup extends ItemGroup {
 
     @Override
     @OnlyIn(Dist.CLIENT)
-    public ITextComponent getDisplayName() {
+    public Component getDisplayName() {
         return group.getDisplayName();
     }
 
@@ -50,12 +50,12 @@ public class DelegateGroup extends ItemGroup {
     }
 
     @Override
-    public ItemGroup setBackgroundSuffix(String texture) {
+    public CreativeModeTab setBackgroundSuffix(String texture) {
         return group.setBackgroundSuffix(texture);
     }
 
     @Override
-    public ItemGroup setRecipeFolderName(String pathIn) {
+    public CreativeModeTab setRecipeFolderName(String pathIn) {
         return group.setRecipeFolderName(pathIn);
     }
 
@@ -66,7 +66,7 @@ public class DelegateGroup extends ItemGroup {
     }
 
     @Override
-    public ItemGroup hideTitle() {
+    public CreativeModeTab hideTitle() {
         return group.hideTitle();
     }
 
@@ -77,7 +77,7 @@ public class DelegateGroup extends ItemGroup {
     }
 
     @Override
-    public ItemGroup hideScroll() {
+    public CreativeModeTab hideScroll() {
         return group.hideScroll();
     }
 
@@ -100,24 +100,24 @@ public class DelegateGroup extends ItemGroup {
     }
 
     @Override
-    public EnchantmentType[] getEnchantmentCategories() {
+    public EnchantmentCategory[] getEnchantmentCategories() {
         return group.getEnchantmentCategories();
     }
 
     @Override
-    public ItemGroup setEnchantmentCategories(EnchantmentType... types) {
+    public CreativeModeTab setEnchantmentCategories(EnchantmentCategory... types) {
         return group.setEnchantmentCategories(types);
     }
 
     @Override
-    public boolean hasEnchantmentCategory(@Nullable EnchantmentType enchantmentType) {
+    public boolean hasEnchantmentCategory(@Nullable EnchantmentCategory enchantmentType) {
         return group.hasEnchantmentCategory(enchantmentType);
     }
 
     @Override
     @OnlyIn(Dist.CLIENT)
     public void fillItemList(NonNullList<ItemStack> items) {
-        if (group == ItemGroup.TAB_HOTBAR) {
+        if (group == CreativeModeTab.TAB_HOTBAR) {
             return;
         }
         group.fillItemList(items);

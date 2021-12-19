@@ -2,7 +2,7 @@ package com.conquestreforged.core.asset.lang;
 
 import com.conquestreforged.core.util.Translatable;
 import com.conquestreforged.core.util.cache.Cache;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
 public class Translations extends Cache<String, String> {

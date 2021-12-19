@@ -9,14 +9,14 @@ import com.conquestreforged.client.gui.palette.shape.Bounds;
 import com.conquestreforged.client.gui.palette.shape.FloatMath;
 import com.conquestreforged.client.gui.palette.shape.Point;
 import com.conquestreforged.client.gui.palette.shape.Polygon;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.container.ContainerType;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.Container;
+import net.minecraft.world.inventory.MenuType;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 import java.util.function.BiConsumer;
@@ -24,7 +24,7 @@ import java.util.function.Consumer;
 
 public class PaletteContainer extends AbstractContainer {
 
-    public static final ContainerType<PaletteContainer> TYPE = new ContainerType<>(PaletteContainer::new);
+    public static final MenuType<PaletteContainer> TYPE = new MenuType<>(PaletteContainer::new);
     private static final ResourceLocation BACKGROUND = new ResourceLocation("conquest:textures/gui/picker/slot.png");
 
     public static final int RADIUS = 65;
@@ -36,11 +36,11 @@ public class PaletteContainer extends AbstractContainer {
     private final Style centerStyle;
     private final Style radialStyle;
     private final Style draggedStyle;
-    private final IInventory paletteInventory;
+    private final Container paletteInventory;
 
     private final Hotbar hotbar;
 
-    private PaletteContainer(int id, PlayerInventory inventory) {
+    private PaletteContainer(int id, Inventory inventory) {
         super(TYPE, id);
         this.radialCount = 0;
         this.hotbar = new Hotbar(inventory);
@@ -50,7 +50,7 @@ public class PaletteContainer extends AbstractContainer {
         this.radialStyle = Style.radial(0, BACKGROUND);
     }
 
-    public PaletteContainer(PlayerInventory inventory, IInventory palette) {
+    public PaletteContainer(Inventory inventory, Container palette) {
         super(TYPE, 0);
         this.radialCount = palette.getContainerSize() - 1;
         this.hotbar = new Hotbar(inventory);
@@ -78,7 +78,7 @@ public class PaletteContainer extends AbstractContainer {
         return draggedStyle;
     }
 
-    public void init(ContainerScreen<?> screen) {
+    public void init(AbstractContainerScreen<?> screen) {
         int centerX = screen.getXSize() / 2;
         int centerY = screen.getYSize() / 2;
 
@@ -112,7 +112,7 @@ public class PaletteContainer extends AbstractContainer {
     }
 
     @Override
-    public ItemStack quickMoveStack(PlayerEntity player, int index) {
+    public ItemStack quickMoveStack(Player player, int index) {
         if (index >= slots.size() - 9 && index < slots.size()) {
             Slot slot = slots.get(index);
             if (slot != null && slot.hasItem()) {
@@ -133,7 +133,7 @@ public class PaletteContainer extends AbstractContainer {
     }
 
     @Override
-    public boolean stillValid(PlayerEntity player) {
+    public boolean stillValid(Player player) {
         return player.isCreative();
     }
 
@@ -141,7 +141,7 @@ public class PaletteContainer extends AbstractContainer {
         return hotbar;
     }
 
-    public IInventory getPaletteInventory() {
+    public Container getPaletteInventory() {
         return paletteInventory;
     }
 
