@@ -45,26 +45,26 @@ public class Render {
         GuiComponent.blit(matrixStack, left, top, blitOffset, u, v, umax, vmax, 256, 256);
     }
 
-    public static void drawItemStackHighlight(ItemStack stack, int x, int y, Style style) {
-        drawItemStackHighlight(stack, x, y, style.highlightScale, style.highlightColor);
+    public static void drawItemStackHighlight(PoseStack poseStack, ItemStack stack, int x, int y, Style style) {
+        drawItemStackHighlight(poseStack, stack, x, y, style.highlightScale, style.highlightColor);
     }
 
-    public static void drawItemStackHighlight(ItemStack stack, int x, int y, float scale, int color) {
-        RenderSystem.pushMatrix();
-        RenderSystem.setupOutline();
-        RenderSystem.scalef(scale, scale, 1F);
+    public static void drawItemStackHighlight(PoseStack poseStack, ItemStack stack, int x, int y, float scale, int color) {
+        poseStack.pushPose();
+        //RenderSystem.setupOutline();
+        poseStack.scale(scale, scale, 1F);
         BakedModel model = Minecraft.getInstance().getItemRenderer().getItemModelShaper().getItemModel(stack);
-        ModelRender.renderModel(model, x, y, color);
-        RenderSystem.teardownOutline();
-        RenderSystem.popMatrix();
+        ModelRender.renderModel(poseStack, model, x, y, color);
+        //RenderSystem.teardownOutline();
+        poseStack.popPose();
     }
 
-    public static void drawBlockModel(BlockState state, int x, int y, float scale) {
-        RenderSystem.pushMatrix();
-        RenderSystem.translatef(x, y, 0);
-        RenderSystem.scalef(scale, scale, 1F);
+    public static void drawBlockModel(PoseStack poseStack,BlockState state, int x, int y, float scale) {
+        poseStack.pushPose();
+        poseStack.translate(x, y, 0);
+        poseStack.scale(scale, scale, 1F);
         BakedModel model = Minecraft.getInstance().getBlockRenderer().getBlockModel(state);
-        ModelRender.renderModel(state, model, 0, 0, 0x00FFFFFF);
-        RenderSystem.popMatrix();
+        ModelRender.renderModel(poseStack, state, model, 0, 0, 0x00FFFFFF);
+        poseStack.popPose();
     }
 }

@@ -1,23 +1,24 @@
 package com.conquestreforged.client.gui.render;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.platform.GlStateManager;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.LightTexture;
 import com.mojang.blaze3d.platform.Lighting;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.math.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.LightTexture;
+import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
-import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
-import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import net.minecraft.client.renderer.texture.TextureAtlas;
+import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.Direction;
-import net.minecraft.util.math.vector.*;
+import net.minecraft.core.Vec3i;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.ForgeHooksClient;
 import net.minecraftforge.client.model.pipeline.LightUtil;
 import org.lwjgl.system.MemoryStack;
@@ -27,35 +28,28 @@ import java.nio.IntBuffer;
 import java.util.List;
 import java.util.Random;
 
-import com.mojang.math.Matrix3f;
-import com.mojang.math.Matrix4f;
-import com.mojang.math.Quaternion;
-import com.mojang.math.Vector3f;
-import com.mojang.math.Vector4f;
-import net.minecraft.core.Vec3i;
-
 public class ModelRender {
 
     private static final int[] lightmap = {15728880, 15728880, 15728880, 15728880};
 
-    public static void renderModel(BakedModel model, int x, int y, int color) {
-        renderModel(ItemTransforms.TransformType.GUI, model, x, y, color);
+    public static void renderModel(PoseStack poseStack, BakedModel model, int x, int y, int color) {
+        renderModel(poseStack, ItemTransforms.TransformType.GUI, model, x, y, color);
     }
 
-    public static void renderModel(ItemTransforms.TransformType transform, BakedModel model, int x, int y, int color) {
-        RenderSystem.pushMatrix();
-        Minecraft.getInstance().getTextureManager().bind(TextureAtlas.LOCATION_BLOCKS);
+    public static void renderModel(PoseStack poseStack, ItemTransforms.TransformType transform, BakedModel model, int x, int y, int color) {
+        poseStack.pushPose();
+        Minecraft.getInstance().getTextureManager().bindForSetup(TextureAtlas.LOCATION_BLOCKS);
         Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_BLOCKS).setFilter(false, false);
-        RenderSystem.enableRescaleNormal();
-        RenderSystem.enableAlphaTest();
-        RenderSystem.defaultAlphaFunc();
+        //RenderSystem.enableRescaleNormal();
+        //RenderSystem.enableAlphaTest();
+        //RenderSystem.defaultAlphaFunc();
         RenderSystem.enableBlend();
         RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        RenderSystem.translatef((float) x, (float) y, 100.0F);
-        RenderSystem.translatef(8.0F, 8.0F, 0.0F);
-        RenderSystem.scalef(1.0F, -1.0F, 1.0F);
-        RenderSystem.scalef(16.0F, 16.0F, 16.0F);
+        poseStack.translate((float) x, (float) y, 100.0F);
+        poseStack.translate(8.0F, 8.0F, 0.0F);
+        poseStack.scale(1.0F, -1.0F, 1.0F);
+        poseStack.scale(16.0F, 16.0F, 16.0F);
         PoseStack matrixstack = new PoseStack();
         MultiBufferSource.BufferSource buffer = Minecraft.getInstance().renderBuffers().bufferSource();
         model = ForgeHooksClient.handleCameraTransforms(matrixstack, model, transform, false);
@@ -73,26 +67,26 @@ public class ModelRender {
             Lighting.setupFor3DItems();
         }
 
-        RenderSystem.disableAlphaTest();
-        RenderSystem.disableRescaleNormal();
-        RenderSystem.popMatrix();
+        //RenderSystem.disableAlphaTest();
+        //RenderSystem.disableRescaleNormal();
+        poseStack.popPose();
     }
 
-    public static void renderModel(BlockState state, BakedModel model, int x, int y, int color) {
-        RenderSystem.pushMatrix();
+    public static void renderModel(PoseStack poseStack, BlockState state, BakedModel model, int x, int y, int color) {
+        poseStack.pushPose();
         RenderSystem.enableTexture();
         Minecraft.getInstance().getTextureManager().bindForSetup(TextureAtlas.LOCATION_BLOCKS);
         Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_BLOCKS).setFilter(false, false);
-        RenderSystem.enableRescaleNormal();
-        RenderSystem.enableAlphaTest();
-        RenderSystem.defaultAlphaFunc();
+        //RenderSystem.enableRescaleNormal();
+        //RenderSystem.enableAlphaTest();
+        //RenderSystem.defaultAlphaFunc();
         RenderSystem.enableBlend();
         RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        RenderSystem.translatef((float) x, (float) y, 100.0F);
-        RenderSystem.translatef(8.0F, 8.0F, 0.0F);
-        RenderSystem.scalef(1.0F, -1.0F, 1.0F);
-        RenderSystem.scalef(16.0F, 16.0F, 16.0F);
+        poseStack.translate((float) x, (float) y, 100.0F);
+        poseStack.translate(8.0F, 8.0F, 0.0F);
+        poseStack.scale(1.0F, -1.0F, 1.0F);
+        poseStack.scale(16.0F, 16.0F, 16.0F);
         PoseStack matrix = new PoseStack();
 
         matrix.pushPose();
@@ -105,9 +99,9 @@ public class ModelRender {
         buffer.endBatch();
         RenderSystem.enableDepthTest();
 
-        RenderSystem.disableAlphaTest();
-        RenderSystem.disableRescaleNormal();
-        RenderSystem.popMatrix();
+        //RenderSystem.disableAlphaTest();
+        //RenderSystem.disableRescaleNormal();
+        poseStack.popPose();
     }
 
     private static void renderModel(PoseStack matrix, RenderType rendertype, MultiBufferSource buffer, BakedModel model, int color) {

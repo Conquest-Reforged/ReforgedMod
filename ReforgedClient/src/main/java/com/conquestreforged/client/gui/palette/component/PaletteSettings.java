@@ -6,23 +6,17 @@ import com.conquestreforged.core.config.ConfigBuildEvent;
 import com.conquestreforged.core.config.section.ConfigSection;
 import com.conquestreforged.core.config.section.ConfigSectionSpec;
 import com.conquestreforged.core.init.dev.Environment;
-import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Widget;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.gui.widget.Widget;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import java.awt.*;
-
-import ConfigSection;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PaletteSettings extends Screen {
@@ -47,19 +41,19 @@ public class PaletteSettings extends Screen {
     }
 
     @Override
-    public void init(Minecraft mc, int width, int height) {
+    protected void init() {
         dispose();
-        super.init(mc, width, height);
+        super.init();
         if (!Environment.isProduction() && test) {
             add(right, new ColorPicker2(new TranslatableComponent("Highlight Color"), highlightColor, c -> {
                 highlightColor = c;
                 config.set("highlight_color", ColorUtils.toHex(c));
             }));
-            add(right, new ColorPicker2(new TranslationTextComponent("Hovered Color"), hoveredColor, c -> {
+            add(right, new ColorPicker2(new TranslatableComponent("Hovered Color"), hoveredColor, c -> {
                 hoveredColor = c;
                 config.set("hovered_color", ColorUtils.toHex(c));
             }));
-            add(right, new ColorPicker2(new TranslationTextComponent("Selected Color"), selectedColor, c -> {
+            add(right, new ColorPicker2(new TranslatableComponent("Selected Color"), selectedColor, c -> {
                 selectedColor = c;
                 config.set("selected_color", ColorUtils.toHex(c));
             }));
@@ -89,15 +83,15 @@ public class PaletteSettings extends Screen {
     }
 
     private void dispose() {
-        for (Widget widget : buttons) {
+        for (Widget widget : renderables) {
             if (widget instanceof ColorPicker) {
                 ((ColorPicker) widget).dispose();
             }
         }
     }
 
-    private void add(Panel panel, Widget widget) {
-        super.addButton(widget);
+    private void add(Panel panel, AbstractWidget widget) {
+        super.addRenderableWidget(widget);
         panel.add(widget);
     }
 

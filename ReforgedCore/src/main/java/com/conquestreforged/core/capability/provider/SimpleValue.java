@@ -2,6 +2,7 @@ package com.conquestreforged.core.capability.provider;
 
 import com.conquestreforged.core.init.Context;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.Tag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
@@ -20,7 +21,7 @@ public class SimpleValue<V> implements Value<V> {
     public SimpleValue(ResourceLocation name, Capability<V> capability) {
         this.name = name;
         this.capability = capability;
-        this.value = capability.getDefaultInstance();
+        this.value = (V) capability;
         this.optional = LazyOptional.of(this::getValue);
     }
 
@@ -49,5 +50,15 @@ public class SimpleValue<V> implements Value<V> {
     public static <T> ValueFactory<T> factory(String name, Supplier<Capability<T>> capability) {
         ResourceLocation registryName = Context.getInstance().newResourceLocation(name);
         return () -> new SimpleValue<>(registryName, capability.get());
+    }
+
+    @Override
+    public Tag serializeNBT() {
+        return (Tag) value;
+    }
+
+    @Override
+    public void deserializeNBT(Tag nbt) {
+
     }
 }

@@ -2,17 +2,17 @@ package com.conquestreforged.client.gui;
 
 import com.conquestreforged.client.gui.palette.component.Style;
 import com.conquestreforged.client.gui.render.Render;
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiComponent;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
@@ -37,37 +37,37 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
         onSlotClick(slot, index, button, type);
     }
 
-    protected void setupRender() {
+    protected void setupRender(PoseStack poseStack) {
         isOverSlot = false;
         RenderSystem.enableBlend();
-        RenderSystem.pushMatrix();
-        RenderSystem.translatef(leftPos, topPos, 0.0F);
-        RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-        RenderSystem.enableRescaleNormal();
-        RenderSystem.glMultiTexCoord2f(33986, 240.0F, 240.0F);
-        RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+        poseStack.pushPose();
+        poseStack.translate(leftPos, topPos, 0.0F);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.enableRescaleNormal();
+        //RenderSystem.glMultiTexCoord2f(33986, 240.0F, 240.0F);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
-    protected void tearDownRender() {
-        RenderSystem.popMatrix();
+    protected void tearDownRender(PoseStack poseStack) {
+        poseStack.popPose();
         RenderSystem.disableBlend();
     }
 
-    public void renderDraggedItem(int mx, int my, float depth, Style style) {
+    public void renderDraggedItem(PoseStack poseStack, int mx, int my, float depth, Style style) {
         int zlevel = 250;
-        ItemStack held = inventory.getCarried();
+        ItemStack held = getMenu().getCarried();
         if (!held.isEmpty()) {
             this.setBlitOffset(zlevel);
             this.itemRenderer.blitOffset = zlevel;
-            RenderSystem.pushMatrix();
-            RenderSystem.translatef(mx, my, zlevel);
+            poseStack.pushPose();
+            poseStack.translate(mx, my, zlevel);
             RenderSystem.enableDepthTest();
 
-            Render.drawItemStackHighlight(held, -8, -8, style);
+            Render.drawItemStackHighlight(poseStack, held, -8, -8, style);
 
-            this.itemRenderer.renderAndDecorateItem(inventory.player, held, -8, -8);
+            this.itemRenderer.renderAndDecorateItem(held, -8, -8);
             this.itemRenderer.renderGuiItemDecorations(font, held, -8, -8, null);
-            RenderSystem.popMatrix();
+            poseStack.popPose();
             this.setBlitOffset(0);
             this.itemRenderer.blitOffset = 0F;
         }
@@ -77,9 +77,9 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
         int x = slot.x + 8;
         int y = slot.y + 8;
 
-        RenderSystem.pushMatrix();
-        RenderSystem.translatef(x, y, 1);
-        RenderSystem.scalef(scale, scale, 1);
+        matrixStack.pushPose();
+        matrixStack.translate(x, y, 1);
+        matrixStack.scale(scale, scale, 1);
 
         // set z-level
         this.setBlitOffset(0);
@@ -90,23 +90,23 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
             GuiComponent.blit(matrixStack, -8, -6, 16, 16, 0, 0, 72, 72, 72, 72);
         }
 
-        RenderSystem.popMatrix();
+        matrixStack.popPose();
     }
 
-    public void renderSlot(Slot slot, int mx, int my, float depth, float scale) {
-        renderSlot(slot, null, mx, my, depth, scale);
+    public void renderSlot(PoseStack poseStack,Slot slot, int mx, int my, float depth, float scale) {
+        renderSlot(poseStack, slot, null, mx, my, depth, scale);
     }
 
-    public void renderSlot(Slot slot, Style style, int mx, int my, float depth, float scale) {
+    public void renderSlot(PoseStack poseStack, Slot slot, Style style, int mx, int my, float depth, float scale) {
         int x = slot.x + 8;
         int y = slot.y + 8;
         int zlevel = depth == 1 ? 60 : 0;
         ItemStack itemstack = slot.getItem();
 
-        RenderSystem.pushMatrix();
+        poseStack.pushPose();
         RenderSystem.disableBlend();
-        RenderSystem.translatef(x, y, zlevel);
-        RenderSystem.scalef(scale, scale, 1);
+        poseStack.translate(x, y, zlevel);
+        poseStack.scale(scale, scale, 1);
 
         // set z-level
         this.setBlitOffset(zlevel);
@@ -115,17 +115,17 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
         if (style != null) {
             if (!isOverSlot && isMouseOver(slot, mx, my, 11, scale)) {
                 isOverSlot = true;
-                Render.drawItemStackHighlight(itemstack, -8, -8, style.highlightScale, style.hoveredColor);
+                Render.drawItemStackHighlight(poseStack, itemstack, -8, -8, style.highlightScale, style.hoveredColor);
             } else {
-                Render.drawItemStackHighlight(itemstack, -8, -8, style.highlightScale, style.highlightColor);
+                Render.drawItemStackHighlight(poseStack, itemstack, -8, -8, style.highlightScale, style.highlightColor);
             }
         }
 
         // draw item
-        this.itemRenderer.renderAndDecorateItem(inventory.player, itemstack, -8, -8);
+        this.itemRenderer.renderAndDecorateItem(itemstack, -8, -8);
         this.itemRenderer.renderGuiItemDecorations(font, itemstack, -8, -8, null);
 
-        RenderSystem.popMatrix();
+        poseStack.popPose();
 
         this.itemRenderer.blitOffset = 0.0F;
         this.setBlitOffset(0);

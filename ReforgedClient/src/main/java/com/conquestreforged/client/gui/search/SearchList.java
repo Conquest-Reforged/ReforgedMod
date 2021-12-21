@@ -140,9 +140,9 @@ public class SearchList implements GuiEventListener {
         private void render(PoseStack matrixStack, double mx, double my) {
             float top = top();
             float left = left();
-            RenderSystem.pushMatrix();
-            RenderSystem.translatef(left, top, 0);
-            RenderSystem.scalef(scale, scale, scale);
+            matrixStack.pushPose();
+            matrixStack.translate(left, top, 0);
+            matrixStack.scale(scale, scale, scale);
             fill(matrixStack, 0, 0, slotSize, slotSize, 0x55000000);
             if (mouseOver(mx, my)) {
                 hovered = this;
@@ -151,7 +151,7 @@ public class SearchList implements GuiEventListener {
             if (!stack.isEmpty()) {
                 Minecraft.getInstance().getItemRenderer().renderGuiItem(stack, stackPad, stackPad);
             }
-            RenderSystem.popMatrix();
+            matrixStack.popPose();
         }
 
         private boolean click(double mx, double my) {

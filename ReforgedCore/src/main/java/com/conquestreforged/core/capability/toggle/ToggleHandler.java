@@ -2,12 +2,8 @@ package com.conquestreforged.core.capability.toggle;
 
 import com.conquestreforged.core.capability.Capabilities;
 import com.conquestreforged.core.capability.handler.LoggableCapHandler;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.Tag;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.Direction;
-import net.minecraftforge.common.capabilities.Capability;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 import java.util.function.Supplier;
@@ -18,6 +14,7 @@ public class ToggleHandler extends LoggableCapHandler<Toggle> {
         super(Toggle.PROTOCOL_NAME);
     }
 
+    /*
     @Override
     public Tag writeNBT(Capability<Toggle> capability, Toggle instance, Direction side) {
         trace("Writing toggle data to nbt: index={}", instance.getIndex());
@@ -31,7 +28,7 @@ public class ToggleHandler extends LoggableCapHandler<Toggle> {
         CompoundTag tag = (CompoundTag) nbt;
         instance.setIndex(tag.getInt("index"));
         trace("Reading toggle data from nbt: index={}", instance.getIndex());
-    }
+    }*/
 
     @Override
     public Toggle decode(FriendlyByteBuf buffer) {

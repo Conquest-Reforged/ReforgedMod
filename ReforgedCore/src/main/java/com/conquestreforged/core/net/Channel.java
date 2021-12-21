@@ -1,16 +1,14 @@
 package com.conquestreforged.core.net;
 
 import com.conquestreforged.core.capability.CapabilityRegistrar;
-import com.conquestreforged.core.capability.handler.CapabilityHandler;
 import com.conquestreforged.core.capability.provider.SimpleValue;
 import com.conquestreforged.core.capability.provider.ValueFactory;
 import com.conquestreforged.core.init.Context;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
 import net.minecraftforge.fmllegacy.network.NetworkRegistry;
@@ -51,23 +49,23 @@ public class Channel {
     }
 
     // register a capability through this channel
-    public <T> Channel register(Class<? extends ICapabilityProvider> holder, Class<T> type, Supplier<Capability<T>> capability, CapabilityHandler<T> handler) {
-        return register(name.getPath(), holder, type, capability, handler);
+    public <T> Channel register(Class<? extends ICapabilityProvider> holder, Class<T> type, Supplier<Capability<T>> capability) {
+        return register(name.getPath(), holder, type, capability);
     }
 
     // register a capability through this channel
-    public <T> Channel register(String name, Class<? extends ICapabilityProvider> holder, Class<T> type, Supplier<Capability<T>> capability, CapabilityHandler<T> handler) {
-        return register(holder, type, SimpleValue.factory(name, capability), handler);
+    public <T> Channel register(String name, Class<? extends ICapabilityProvider> holder, Class<T> type, Supplier<Capability<T>> capability) {
+        return register(holder, type, SimpleValue.factory(name, capability));
     }
 
     // register a capability through this channel
-    public <T> Channel register(Class<? extends ICapabilityProvider> holder, Class<T> type, ValueFactory<T> factory, CapabilityHandler<T> handler) {
-        return register(holder, type, factory, handler, handler);
+    public <T> Channel register(Class<? extends ICapabilityProvider> holder, Class<T> type, ValueFactory<T> factory) {
+        return register(holder, type, factory);
     }
 
-    public <T> Channel register(Class<? extends ICapabilityProvider> holder, Class<T> type, ValueFactory<T> factory, Capability.IStorage<T> storage, MessageHandler<T> handler) {
+    public <T> Channel register(Class<? extends ICapabilityProvider> holder, Class<T> type, ValueFactory<T> factory, MessageHandler<T> handler) {
         // register the capability
-        CapabilityManager.INSTANCE.register(type, storage, type::newInstance);
+        //CapabilityManager.INSTANCE.register(type);
         // register the provider factories to the holder type
         CapabilityRegistrar.register(holder, factory);
         // create a channel message for networking

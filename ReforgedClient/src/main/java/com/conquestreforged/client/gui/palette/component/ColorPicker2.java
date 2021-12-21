@@ -1,14 +1,15 @@
 package com.conquestreforged.client.gui.palette.component;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.client.gui.components.events.GuiEventListener;
-import net.minecraft.client.gui.components.events.ContainerEventHandler;
-import net.minecraft.client.gui.components.Widget;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.Widget;
+import net.minecraft.client.gui.components.events.ContainerEventHandler;
+import net.minecraft.client.gui.components.events.GuiEventListener;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraftforge.fml.client.gui.widget.Slider;
+import net.minecraftforge.fmlclient.gui.widget.Slider;
 
 import javax.annotation.Nullable;
 import java.awt.*;
@@ -112,5 +113,11 @@ public class ColorPicker2 extends AbstractWidget implements ContainerEventHandle
 
     private static int combine(int r, int g, int b) {
         return new Color(r, g, b).getRGB();
+    }
+
+    //todo dont know wtf this is for lol
+    @Override
+    public void updateNarration(NarrationElementOutput p_169152_) {
+
     }
 }

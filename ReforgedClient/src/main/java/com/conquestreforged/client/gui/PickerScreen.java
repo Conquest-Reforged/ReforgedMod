@@ -33,8 +33,8 @@ public abstract class PickerScreen<T> extends Screen {
     }
 
     @Override
-    public void init(Minecraft mc, int width, int height) {
-        super.init(mc, width, height);
+    public void init() {
+        super.init();
         this.index = indexOf(selected, options);
         Render.hideMouse();
     }
@@ -72,7 +72,7 @@ public abstract class PickerScreen<T> extends Screen {
         int centerX = width / 2;
         int centerY = height / 2;
 
-        GlStateManager._enableAlphaTest();
+        //GlStateManager._enableAlphaTest();
         GlStateManager._enableTexture();
 
         int maxWidth = (options.size()) / 2;
@@ -157,10 +157,10 @@ public abstract class PickerScreen<T> extends Screen {
 
         float alpha = Math.min(1F, 0.4F + Math.max(0, 1F - (Math.abs(di) / 2F)));
         RenderSystem.setShaderColor(alpha, alpha, alpha, 1F);
-        RenderSystem.pushMatrix();
-        RenderSystem.translatef(0, 0, scale * 50);
+        matrixStack.pushPose();
+        matrixStack.translate(0, 0, scale * 50);
         render(option, matrixStack, tl, tt, tw, th, scale);
-        RenderSystem.popMatrix();
+        matrixStack.popPose();
     }
 
     private void drawLabel(PoseStack matrixStack, int centerX, int centerY) {

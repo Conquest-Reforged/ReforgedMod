@@ -44,7 +44,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
     protected void init() {
         super.init();
         settings.init(minecraft, width, height);
-        addWidget(settings);
+        //addWidget(settings);
         resize(width, height);
         Tutorials.openPalette = true;
     }
@@ -62,7 +62,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
 
         getMenu().updateStyle(settings);
 
-        setupRender();
+        setupRender(matrixStack);
         {
             final int mx = mouseX - leftPos;
             final int my = mouseY - topPos;
@@ -73,21 +73,21 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
             });
             getMenu().visitRadius(mx, my, (slot, depth) -> {
                 float scale = slot.getScale(mx, my, settings);
-                renderSlot(slot, slot.getStyle(), mx, my, depth, scale);
+                renderSlot(matrixStack, slot, slot.getStyle(), mx, my, depth, scale);
             });
             // render center slot
             getMenu().visitCenter(slot -> {
                 float scale = slot.getScale(mx, my, settings);
                 RenderSystem.enableBlend();
                 renderSlotBackGround(matrixStack, slot, slot.getStyle(), 1F, scale);
-                renderSlot(slot, slot.getStyle(), mx, my, 1F, scale);
+                renderSlot(matrixStack, slot, slot.getStyle(), mx, my, 1F, scale);
             });
             // render hotbar
-            getMenu().visitHotbar(slot -> renderSlot(slot, mx, my, 1F, 1F));
+            getMenu().visitHotbar(slot -> renderSlot(matrixStack, slot, mx, my, 1F, 1F));
             // render the dragged item
-            renderDraggedItem(mx, my, 1F, getMenu().getDraggedStyle());
+            renderDraggedItem(matrixStack, mx, my, 1F, getMenu().getDraggedStyle());
         }
-        tearDownRender();
+        tearDownRender(matrixStack);
 
         settings.render(matrixStack, mouseX, mouseY, partialTicks);
 
@@ -113,7 +113,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
             return;
         }
 
-        ItemStack display = inventory.getCarried();
+        ItemStack display = getMenu().getCarried();
         if (display.isEmpty()) {
             Slot slot = getMenu().getClosestSlot(mouseX - leftPos, mouseY - topPos, true);
             hovered = slot;

@@ -65,11 +65,11 @@ public class BlockStateScreen extends PickerScreen<BlockState> {
 
     @Override
     public void render(BlockState option, PoseStack matrixStack, int x, int y, int width, int height, float scale) {
-        RenderSystem.pushMatrix();
-        RenderSystem.translatef(x + (width / 2F), y + (height / 2F), 0);
-        RenderSystem.scalef(scale, scale, 1);
-        Render.drawBlockModel(option, -8, -8, 1);
-        RenderSystem.popMatrix();
+        matrixStack.pushPose();
+        matrixStack.translate(x + (width / 2F), y + (height / 2F), 0);
+        matrixStack.scale(scale, scale, 1);
+        Render.drawBlockModel(matrixStack, option, -8, -8, 1);
+        matrixStack.popPose();
     }
 
     @Override

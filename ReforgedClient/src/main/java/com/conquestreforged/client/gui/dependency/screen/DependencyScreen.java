@@ -3,23 +3,21 @@ package com.conquestreforged.client.gui.dependency.screen;
 import com.conquestreforged.client.gui.dependency.Dependency;
 import com.conquestreforged.client.tutorial.Tutorials;
 import com.conquestreforged.core.config.section.ConfigSection;
-import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.AbstractGui;
-import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.gui.widget.button.Button;
+import net.minecraft.client.gui.GuiComponent;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Checkbox;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.Util;
-import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.resources.ResourceLocation;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
-
-import ConfigSection;
 
 public class DependencyScreen extends Screen {
 
@@ -38,7 +36,7 @@ public class DependencyScreen extends Screen {
     private final Checkbox check = new Checkbox(0, 0, 0, 0, new TranslatableComponent("conquest.dependency.checkbox"), false);
 
     public DependencyScreen(Screen parent, ConfigSection section, List<Dependency> missing) {
-        super(new StringTextComponent("Dependencies"));
+        super(new TextComponent("Dependencies"));
         this.screen = parent;
         this.section = section;
         this.missing = missing;
@@ -57,9 +55,9 @@ public class DependencyScreen extends Screen {
     }
 
     @Override
-    public void init(Minecraft mc, int width, int height) {
+    protected void init() {
         Tutorials.dependencies = true;
-        super.init(mc, width, height);
+        super.init();
 
         int center = width / 2;
 
@@ -76,7 +74,7 @@ public class DependencyScreen extends Screen {
         int buttonHeightDifference = 94;
 
         for (Dependency dependency : missing) {
-            addButton(createButton(dependency, height - buttonHeightDifference, center));
+            addRenderableWidget(createButton(dependency, height - buttonHeightDifference, center));
             buttonHeightDifference -= 24;
         }
 
@@ -86,17 +84,17 @@ public class DependencyScreen extends Screen {
         //    addButton(button);
         //}
 
-        addButton(new Button(center - 50, height - 24, 100, 20, new TranslationTextComponent("conquest.dependency.close"), b -> onClose()));
+        addRenderableWidget(new Button(center - 50, height - 24, 100, 20, new TranslatableComponent("conquest.dependency.close"), b -> onClose()));
 
         check.setWidth(20);
         check.setHeight(20);
         check.y = height - 24;
         check.x = center + 50 + 8;
-        addButton(check);
+        addRenderableWidget(check);
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mx, int my, float ticks) {
+    public void render(PoseStack matrixStack, int mx, int my, float ticks) {
         renderBackground(matrixStack);
 
         //listWidget.render(mx, my, ticks);
@@ -107,8 +105,8 @@ public class DependencyScreen extends Screen {
         int paddingTop = getPaddingTop(imageHeight);
 
         RenderSystem.enableTexture();
-        Minecraft.getInstance().getTextureManager().bind(CTM);
-        AbstractGui.blit(matrixStack, imageLeft, paddingTop, imageWidth, imageHeight, 0, 0, CTM_WIDTH, CTM_HEIGHT, CTM_WIDTH, CTM_HEIGHT);
+        Minecraft.getInstance().getTextureManager().bindForSetup(CTM);
+        GuiComponent.blit(matrixStack, imageLeft, paddingTop, imageWidth, imageHeight, 0, 0, CTM_WIDTH, CTM_HEIGHT, CTM_WIDTH, CTM_HEIGHT);
 
         String message = "Missing Dependencies:";
         int titleWidth = font.width(message);
@@ -148,7 +146,7 @@ public class DependencyScreen extends Screen {
     }
 
     private static Button createButton(Dependency dependency, int heightIn, int center) {
-        return new Button(center - 85, heightIn, 170, 20, new TranslationTextComponent(dependency.getDisplayName()), btn -> {
+        return new Button(center - 85, heightIn, 170, 20, new TranslatableComponent(dependency.getDisplayName()), btn -> {
             try {
                 Util.getPlatform().openUrl(new URL(dependency.getURL()));
             } catch (MalformedURLException e) {
