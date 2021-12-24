@@ -37,7 +37,7 @@ public class PaletteToast extends AbstractToast {
 
     @Override
     public String getLine1() {
-        return String.format(line1, BindManager.getPaletteBind().getTranslatedKeyMessage());
+        return String.format(line1, BindManager.getPaletteBind().getTranslatedKeyMessage().getString());
     }
 
     @Override
