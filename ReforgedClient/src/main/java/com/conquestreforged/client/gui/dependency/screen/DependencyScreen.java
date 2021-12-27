@@ -105,7 +105,8 @@ public class DependencyScreen extends Screen {
         int paddingTop = getPaddingTop(imageHeight);
 
         RenderSystem.enableTexture();
-        Minecraft.getInstance().getTextureManager().bindForSetup(CTM);
+        RenderSystem.setShaderTexture(0, CTM);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         GuiComponent.blit(matrixStack, imageLeft, paddingTop, imageWidth, imageHeight, 0, 0, CTM_WIDTH, CTM_HEIGHT, CTM_WIDTH, CTM_HEIGHT);
 
         String message = "Missing Dependencies:";

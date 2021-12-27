@@ -82,7 +82,8 @@ public class IntroScreen extends Screen {
         int dist = 12;
 
         RenderSystem.enableTexture();
-        Minecraft.getInstance().getTextureManager().bindForSetup(LOGO);
+        RenderSystem.setShaderTexture(0, LOGO);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         GuiComponent.blit(matrixStack, getImageLeft(35), 15, 35, 35, 0, 0, LOGO_WIDTH, LOGO_HEIGHT, LOGO_WIDTH, LOGO_HEIGHT);
 
         for(int i = 0; i < message.length; i++) {

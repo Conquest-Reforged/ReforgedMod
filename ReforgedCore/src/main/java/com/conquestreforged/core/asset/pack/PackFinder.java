@@ -3,6 +3,7 @@ package com.conquestreforged.core.asset.pack;
 import com.conquestreforged.core.asset.meta.VirtualMeta;
 import com.conquestreforged.core.util.log.Log;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.*;
 import net.minecraft.server.packs.metadata.pack.PackMetadataSection;
 
@@ -48,7 +49,7 @@ public class PackFinder implements RepositorySource {
             PackMetadataSection metadata = new VirtualMeta(name, "").toMetadata();
             Pack.Position priority = Pack.Position.BOTTOM;
             //especially this line
-            Pack info = factory.create(name, (Component) supplier, client, pack, metadata, priority, PackSource.DEFAULT);
+            Pack info = factory.create(name, new TextComponent(name), client, supplier, metadata, priority, PackSource.DEFAULT, false);
             map.accept(info);
             Log.info("Added virtual pack: {}", name);
         }

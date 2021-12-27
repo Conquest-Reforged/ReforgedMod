@@ -36,12 +36,14 @@ public class Render {
     }
 
     public static void drawTexture(ResourceLocation texture, PoseStack matrixStack, int left, int top, int width, int height, float u, float v, int umax, int vmax) {
-        Minecraft.getInstance().getTextureManager().bindForSetup(texture);
+        RenderSystem.setShaderTexture(0, texture);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         GuiComponent.blit(matrixStack, left, top, u, v, width, height, umax, vmax);
     }
 
     public static void drawTexture(ResourceLocation texture, PoseStack matrixStack, int left, int top, int blitOffset, float u, float v, int umax, int vmax) {
-        Minecraft.getInstance().getTextureManager().bindForSetup(texture);
+        RenderSystem.setShaderTexture(0, texture);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         GuiComponent.blit(matrixStack, left, top, blitOffset, u, v, umax, vmax, 256, 256);
     }
 
