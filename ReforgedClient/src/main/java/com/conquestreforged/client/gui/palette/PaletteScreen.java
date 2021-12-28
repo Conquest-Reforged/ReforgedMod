@@ -92,7 +92,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
         settings.render(matrixStack, mouseX, mouseY, partialTicks);
 
         // render display text
-        renderFg(matrixStack, mouseX, mouseY);
+        renderLabels(matrixStack, mouseX, mouseY);
     }
 
     @Override
@@ -107,8 +107,9 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
         getMenu().getHotbar().renderBackground(this, matrixStack);
     }
 
-    protected void renderFg(PoseStack matrixStack, int mouseX, int mouseY) {
-        //super.drawGuiContainerForegroundLayer(mouseX, mouseY);
+    @Override
+    protected void renderLabels(PoseStack matrixStack, int mouseX, int mouseY) {
+        super.renderLabels(matrixStack, mouseX, mouseY);
         if (minecraft == null) {
             return;
         }

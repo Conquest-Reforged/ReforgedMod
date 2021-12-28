@@ -6,6 +6,7 @@ import net.minecraft.client.gui.components.toasts.Toast;
 import net.minecraft.client.gui.components.toasts.ToastComponent;
 
 import net.minecraft.client.gui.components.toasts.Toast.Visibility;
+import net.minecraft.client.renderer.texture.TextureAtlas;
 
 public abstract class AbstractToast implements Toast {
 
@@ -23,7 +24,7 @@ public abstract class AbstractToast implements Toast {
     @Override
     public Visibility render(PoseStack matrixStack, ToastComponent toastGui, long delta) {
         if (shouldRender(toastGui)) {
-            toastGui.getMinecraft().getTextureManager().bindForSetup(TEXTURE);
+            RenderSystem.setShaderTexture(0, TEXTURE);
             //todo used to be color3f?
             RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
             toastGui.blit(matrixStack, 0, 0, 0, 96, 160, 32);

@@ -8,6 +8,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiComponent;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ClickType;
@@ -66,7 +67,7 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
             Render.drawItemStackHighlight(poseStack, held, -8, -8, style);
 
             this.itemRenderer.renderAndDecorateItem(held, -8, -8);
-            this.itemRenderer.renderGuiItemDecorations(font, held, -8, -8, null);
+            this.itemRenderer.renderGuiItemDecorations(font, held, -8, -8);
             poseStack.popPose();
             this.setBlitOffset(0);
             this.itemRenderer.blitOffset = 0F;
@@ -86,7 +87,8 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
         this.itemRenderer.blitOffset = 0;
 
         if (style != null && style.background != null) {
-            Minecraft.getInstance().getTextureManager().bindForSetup(style.background);
+            RenderSystem.setShaderTexture(0, style.background);
+            RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
             GuiComponent.blit(matrixStack, -8, -6, 16, 16, 0, 0, 72, 72, 72, 72);
         }
 

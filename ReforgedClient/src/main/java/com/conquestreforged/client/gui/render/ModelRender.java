@@ -38,8 +38,9 @@ public class ModelRender {
 
     public static void renderModel(PoseStack poseStack, ItemTransforms.TransformType transform, BakedModel model, int x, int y, int color) {
         poseStack.pushPose();
-        Minecraft.getInstance().getTextureManager().bindForSetup(TextureAtlas.LOCATION_BLOCKS);
+        RenderSystem.setShaderTexture(0, TextureAtlas.LOCATION_BLOCKS);
         Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_BLOCKS).setFilter(false, false);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         //RenderSystem.enableRescaleNormal();
         //RenderSystem.enableAlphaTest();
         //RenderSystem.defaultAlphaFunc();
@@ -75,8 +76,9 @@ public class ModelRender {
     public static void renderModel(PoseStack poseStack, BlockState state, BakedModel model, int x, int y, int color) {
         poseStack.pushPose();
         RenderSystem.enableTexture();
-        Minecraft.getInstance().getTextureManager().bindForSetup(TextureAtlas.LOCATION_BLOCKS);
+        RenderSystem.setShaderTexture(0, TextureAtlas.LOCATION_BLOCKS);
         Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_BLOCKS).setFilter(false, false);
+
         //RenderSystem.enableRescaleNormal();
         //RenderSystem.enableAlphaTest();
         //RenderSystem.defaultAlphaFunc();
