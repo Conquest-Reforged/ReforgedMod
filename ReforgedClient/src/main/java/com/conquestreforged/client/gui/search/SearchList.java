@@ -1,15 +1,17 @@
 package com.conquestreforged.client.gui.search;
 
 import com.conquestreforged.client.utils.CreativeUtils;
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.gui.GuiComponent;
 import net.minecraft.client.gui.components.events.GuiEventListener;
+import net.minecraft.client.gui.narration.NarratableEntry;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.item.ItemStack;
 
-public class SearchList implements GuiEventListener {
+public class SearchList implements GuiEventListener, NarratableEntry {
 
     private static final int slotSize = 20;
     private static final int stackSize = 16;
@@ -104,6 +106,21 @@ public class SearchList implements GuiEventListener {
         return false;
     }
 
+    @Override
+    public void updateNarration(NarrationElementOutput p_169152_) {
+        return;
+    }
+
+    @Override
+    public NarrationPriority narrationPriority() {
+        return NarrationPriority.NONE;
+    }
+
+    @Override
+    public boolean isActive() {
+        return NarratableEntry.super.isActive();
+    }
+
     private class Slot extends GuiComponent {
 
         private final int col;
@@ -140,6 +157,17 @@ public class SearchList implements GuiEventListener {
         private void render(PoseStack matrixStack, double mx, double my) {
             float top = top();
             float left = left();
+            PoseStack posestack = RenderSystem.getModelViewStack();
+            posestack.pushPose();
+            posestack.translate(left, top, 0);
+            posestack.scale(scale, scale, scale);
+            RenderSystem.applyModelViewMatrix();
+            if (!stack.isEmpty()) {
+                Minecraft.getInstance().getItemRenderer().renderGuiItem(stack, stackPad, stackPad);
+            }
+            posestack.popPose();
+            RenderSystem.applyModelViewMatrix();
+
             matrixStack.pushPose();
             matrixStack.translate(left, top, 0);
             matrixStack.scale(scale, scale, scale);
@@ -148,10 +176,10 @@ public class SearchList implements GuiEventListener {
                 hovered = this;
                 fill(matrixStack, 1, 1, slotSize-1, slotSize-1, 0x55999999);
             }
-            if (!stack.isEmpty()) {
-                Minecraft.getInstance().getItemRenderer().renderGuiItem(stack, stackPad, stackPad);
-            }
             matrixStack.popPose();
+
+
+            RenderSystem.enableDepthTest();
         }
 
         private boolean click(double mx, double my) {

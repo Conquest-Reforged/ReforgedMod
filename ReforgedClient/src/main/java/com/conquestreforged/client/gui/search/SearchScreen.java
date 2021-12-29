@@ -59,7 +59,7 @@ public class SearchScreen extends Screen implements Consumer<String> {
         int centerX = width / 2;
         search.x = centerX - (search.getWidth() / 2);
         search.y = 100;
-        //children.add(searchList);
+        addWidget(searchList);
     }
 
     @Override
