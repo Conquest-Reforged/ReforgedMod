@@ -44,7 +44,7 @@ public class PaletteScreen extends CustomCreativeScreen<PaletteContainer> {
     protected void init() {
         super.init();
         settings.init(minecraft, width, height);
-        //addWidget(settings);
+        addRenderableOnly(settings);
         resize(width, height);
         Tutorials.openPalette = true;
     }

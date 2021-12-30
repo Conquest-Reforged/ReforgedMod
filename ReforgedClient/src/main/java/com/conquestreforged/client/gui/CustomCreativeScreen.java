@@ -63,22 +63,21 @@ public abstract class CustomCreativeScreen<T extends AbstractContainerMenu> exte
         onSlotClick(slot, index, button, type);
 
         if (slot == null && type != ClickType.QUICK_CRAFT) {
-            Inventory playerInventory = this.minecraft.player.getInventory();
-            if (!playerInventory.getSelected().isEmpty()) {
+            if (!this.menu.getCarried().isEmpty()) {
                 if (!clickedOutside) {
-                    playerInventory.setPickedItem(ItemStack.EMPTY);
+                    this.menu.setCarried(ItemStack.EMPTY);
                     this.minecraft.player.inventoryMenu.broadcastChanges();
                     return;
                 }
 
                 if (button == 0) {
-                    this.minecraft.player.drop(playerInventory.getSelected(), true);
-                    this.minecraft.gameMode.handleCreativeModeItemDrop(playerInventory.getSelected());
-                    playerInventory.setPickedItem(ItemStack.EMPTY);
+                    this.minecraft.player.drop(this.menu.getCarried(), true);
+                    this.minecraft.gameMode.handleCreativeModeItemDrop(this.menu.getCarried());
+                    this.menu.setCarried(ItemStack.EMPTY);
                 }
 
                 if (button == 1) {
-                    ItemStack stack = playerInventory.getSelected().split(1);
+                    ItemStack stack = this.menu.getCarried().split(1);
                     this.minecraft.player.drop(stack, true);
                     this.minecraft.gameMode.handleCreativeModeItemDrop(stack);
                 }
@@ -90,8 +89,7 @@ public abstract class CustomCreativeScreen<T extends AbstractContainerMenu> exte
         type = index == -999 && type == ClickType.PICKUP ? ClickType.THROW : type;
 
         if (type != ClickType.QUICK_CRAFT && isContainerSlot(slot)) {
-            Inventory playerinventory = minecraft.player.getInventory();
-            ItemStack heldStack = playerinventory.getSelected();
+            ItemStack heldStack = this.menu.getCarried();
             ItemStack slotStack = slot.getItem();
             if (type == ClickType.SWAP) {
                 if (!slotStack.isEmpty() && button >= 0 && button < 9) {
@@ -105,10 +103,10 @@ public abstract class CustomCreativeScreen<T extends AbstractContainerMenu> exte
             }
 
             if (type == ClickType.CLONE) {
-                if (playerinventory.getSelected().isEmpty() && slot.hasItem()) {
+                if (this.menu.getCarried().isEmpty() && slot.hasItem()) {
                     ItemStack stack = slot.getItem().copy();
                     stack.setCount(stack.getMaxStackSize());
-                    playerinventory.setPickedItem(stack);
+                    this.menu.setCarried(stack);
                 }
 
                 return;
@@ -136,15 +134,15 @@ public abstract class CustomCreativeScreen<T extends AbstractContainerMenu> exte
                     heldStack.shrink(1);
                 }
             } else if (!slotStack.isEmpty() && heldStack.isEmpty()) {
-                playerinventory.setPickedItem(slotStack.copy());
-                heldStack = playerinventory.getSelected();
+                this.menu.setCarried(slotStack.copy());
+                heldStack = this.menu.getCarried();
                 if (quickMove) {
                     heldStack.setCount(heldStack.getMaxStackSize());
                 }
             } else if (button == 0) {
-                playerinventory.setPickedItem(ItemStack.EMPTY);
+                this.menu.setCarried(ItemStack.EMPTY);
             } else {
-                playerinventory.getSelected().shrink(1);
+                this.menu.getCarried().shrink(1);
             }
         } else if (this.menu != null) {
             ItemStack slotStack = slot == null ? ItemStack.EMPTY : this.menu.getSlot(slot.index).getItem();

@@ -60,17 +60,24 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
         if (!held.isEmpty()) {
             this.setBlitOffset(zlevel);
             this.itemRenderer.blitOffset = zlevel;
-            poseStack.pushPose();
-            poseStack.translate(mx, my, zlevel);
-            RenderSystem.enableDepthTest();
 
-            Render.drawItemStackHighlight(poseStack, held, -8, -8, style);
+            PoseStack posestack = RenderSystem.getModelViewStack(); //renderAndDecorateItem requires this special PoseStack
+            posestack.pushPose();
+            RenderSystem.disableBlend();
+            posestack.translate(leftPos + mx, topPos + my, zlevel); //add leftPos and topPos since this PoseStack is separate from the rest
+            RenderSystem.applyModelViewMatrix();
+
+            //Render.drawItemStackHighlight(poseStack, held, -8, -8, style);
 
             this.itemRenderer.renderAndDecorateItem(held, -8, -8);
             this.itemRenderer.renderGuiItemDecorations(font, held, -8, -8);
-            poseStack.popPose();
+            posestack.popPose();
+            RenderSystem.applyModelViewMatrix();
+
             this.setBlitOffset(0);
             this.itemRenderer.blitOffset = 0F;
+
+            RenderSystem.enableDepthTest();
         }
     }
 
@@ -105,32 +112,38 @@ public abstract class CustomContainerScreen<T extends AbstractContainerMenu> ext
         int zlevel = depth == 1 ? 60 : 0;
         ItemStack itemstack = slot.getItem();
 
-        poseStack.pushPose();
+        PoseStack posestack = RenderSystem.getModelViewStack(); //renderAndDecorateItem requires this special PoseStack
+        posestack.pushPose();
         RenderSystem.disableBlend();
-        poseStack.translate(x, y, zlevel);
-        poseStack.scale(scale, scale, 1);
+        posestack.translate(leftPos + x, topPos + y, 1); //add leftPos and topPos since this PoseStack is separate from the rest
+        posestack.scale(scale, scale, 1);
+        RenderSystem.applyModelViewMatrix();
 
         // set z-level
-        this.setBlitOffset(zlevel);
-        this.itemRenderer.blitOffset = zlevel;
+        //this.setBlitOffset(zlevel);
+        //this.itemRenderer.blitOffset = zlevel;
 
-        if (style != null) {
+        /*if (style != null) {
             if (!isOverSlot && isMouseOver(slot, mx, my, 11, scale)) {
                 isOverSlot = true;
-                Render.drawItemStackHighlight(poseStack, itemstack, -8, -8, style.highlightScale, style.hoveredColor);
+                Render.drawItemStackHighlight(posestack, itemstack, -8, -8, style.highlightScale, style.hoveredColor);
             } else {
-                Render.drawItemStackHighlight(poseStack, itemstack, -8, -8, style.highlightScale, style.highlightColor);
+                Render.drawItemStackHighlight(posestack, itemstack, -8, -8, style.highlightScale, style.highlightColor);
             }
-        }
+        }*/
 
         // draw item
         this.itemRenderer.renderAndDecorateItem(itemstack, -8, -8);
         this.itemRenderer.renderGuiItemDecorations(font, itemstack, -8, -8, null);
 
-        poseStack.popPose();
+        posestack.popPose();
+        RenderSystem.applyModelViewMatrix();
 
-        this.itemRenderer.blitOffset = 0.0F;
-        this.setBlitOffset(0);
+
+        //this.itemRenderer.blitOffset = 0.0F;
+        //this.setBlitOffset(0);
+
+        RenderSystem.enableDepthTest();
     }
 
     public static boolean isMouseOver(Slot slot, int mx, int my, int size, float scale) {
