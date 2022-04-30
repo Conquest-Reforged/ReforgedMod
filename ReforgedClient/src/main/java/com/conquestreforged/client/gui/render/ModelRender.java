@@ -37,20 +37,22 @@ public class ModelRender {
     }
 
     public static void renderModel(PoseStack poseStack, ItemTransforms.TransformType transform, BakedModel model, int x, int y, int color) {
-        poseStack.pushPose();
-        RenderSystem.setShaderTexture(0, TextureAtlas.LOCATION_BLOCKS);
         Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_BLOCKS).setFilter(false, false);
+        RenderSystem.setShaderTexture(0, TextureAtlas.LOCATION_BLOCKS);
+        RenderSystem.enableBlend();
+        RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        PoseStack posestack = RenderSystem.getModelViewStack();
+        posestack.pushPose();
         //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         //RenderSystem.enableRescaleNormal();
         //RenderSystem.enableAlphaTest();
         //RenderSystem.defaultAlphaFunc();
-        RenderSystem.enableBlend();
-        RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        poseStack.translate((float) x, (float) y, 100.0F);
-        poseStack.translate(8.0F, 8.0F, 0.0F);
-        poseStack.scale(1.0F, -1.0F, 1.0F);
-        poseStack.scale(16.0F, 16.0F, 16.0F);
+        posestack.translate((float) x, (float) y, 100.0F);
+        posestack.translate(8.0F, 8.0F, 0.0F);
+        posestack.scale(1.0F, -1.0F, 1.0F);
+        posestack.scale(16.0F, 16.0F, 16.0F);
+        RenderSystem.applyModelViewMatrix();
         PoseStack matrixstack = new PoseStack();
         MultiBufferSource.BufferSource buffer = Minecraft.getInstance().renderBuffers().bufferSource();
         model = ForgeHooksClient.handleCameraTransforms(matrixstack, model, transform, false);
@@ -69,26 +71,27 @@ public class ModelRender {
         }
 
         //RenderSystem.disableAlphaTest();
-        //RenderSystem.disableRescaleNormal();
-        poseStack.popPose();
+        posestack.popPose();
+        RenderSystem.applyModelViewMatrix();
     }
 
     public static void renderModel(PoseStack poseStack, BlockState state, BakedModel model, int x, int y, int color) {
-        poseStack.pushPose();
+        Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_BLOCKS).setFilter(false, false);
+        RenderSystem.enableBlend();
+        RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
         RenderSystem.enableTexture();
         RenderSystem.setShaderTexture(0, TextureAtlas.LOCATION_BLOCKS);
-        Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_BLOCKS).setFilter(false, false);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        poseStack.pushPose();
 
+        PoseStack posestack = RenderSystem.getModelViewStack();
         //RenderSystem.enableRescaleNormal();
         //RenderSystem.enableAlphaTest();
         //RenderSystem.defaultAlphaFunc();
-        RenderSystem.enableBlend();
-        RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        poseStack.translate((float) x, (float) y, 100.0F);
-        poseStack.translate(8.0F, 8.0F, 0.0F);
-        poseStack.scale(1.0F, -1.0F, 1.0F);
-        poseStack.scale(16.0F, 16.0F, 16.0F);
+        posestack.translate((float) x, (float) y, 100.0F);
+        posestack.translate(8.0F, 8.0F, 0.0F);
+        posestack.scale(1.0F, -1.0F, 1.0F);
+        posestack.scale(16.0F, 16.0F, 16.0F);
         PoseStack matrix = new PoseStack();
 
         matrix.pushPose();
@@ -104,6 +107,7 @@ public class ModelRender {
         //RenderSystem.disableAlphaTest();
         //RenderSystem.disableRescaleNormal();
         poseStack.popPose();
+        RenderSystem.applyModelViewMatrix();
     }
 
     private static void renderModel(PoseStack matrix, RenderType rendertype, MultiBufferSource buffer, BakedModel model, int color) {
