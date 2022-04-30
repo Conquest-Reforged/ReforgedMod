@@ -36,7 +36,7 @@ public class ItemUtils {
         String value = state.getValue(property).toString();
         ItemStack stack = new ItemStack(state.getBlock());
         stack.getOrCreateTagElement(BLOCK_STATE_TAG).putString(property.getName(), value);
-        stack.setHoverName(new TextComponent(stack.getDisplayName() + (property.getName() + "=" + value)));
+        stack.setHoverName(new TextComponent(stack.getDisplayName().getString() + (property.getName() + "=" + value)));
         return stack;
     }
 
@@ -56,7 +56,7 @@ public class ItemUtils {
         }
         if (name.length() > 1) {
             name.append("]");
-            stack.setHoverName(new TextComponent(stack.getDisplayName() + name.toString()));
+            stack.setHoverName(new TextComponent(stack.getDisplayName().getString() + name.toString()));
         }
         return stack;
     }
