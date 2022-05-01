@@ -89,6 +89,11 @@ public class VanillaProps {
         return Props.create(Blocks.GRASS).group(CreativeModeTab.TAB_BUILDING_BLOCKS);
     }
 
+    public static Props bamboo() {
+        return Props.create(Blocks.BAMBOO).group(CreativeModeTab.TAB_BUILDING_BLOCKS);
+    }
+
+
     /**
      * Stone props but uses grass color
      */
