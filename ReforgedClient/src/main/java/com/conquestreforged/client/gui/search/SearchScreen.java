@@ -7,6 +7,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -20,6 +21,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 public class SearchScreen extends Screen implements Consumer<String> {
 
@@ -111,17 +113,19 @@ public class SearchScreen extends Screen implements Consumer<String> {
                 continue;
             }
             ItemStack stack = new ItemStack(item);
-            builder.with(stack, stack.getDisplayName().getString(), getTags(item));
+            builder.with(stack, stack.getDisplayName().getString(), getTags(stack));
         }
         return builder.build();
     }
 
-    private static Collection<String> getTags(Item item) {
+    private static Collection<String> getTags(ItemStack item) {
         List<String> tags = new LinkedList<>();
-        tags.add(item.getRegistryName().getPath());
-        for (ResourceLocation tag : item.getTags()) {
-            tags.add(tag.getPath());
+        tags.add(item.getItem().getRegistryName().getPath());
+        List<TagKey<Item>> itemTags = item.getTags().collect(Collectors.toList());
+        for (TagKey<Item> tag : itemTags) {
+            tags.add(tag.location().getPath());
         }
+
         return tags;
     }
 }

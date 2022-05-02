@@ -10,7 +10,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.GuiScreenEvent;
+import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.gui.ForgeIngameGui;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -22,14 +22,14 @@ import java.util.Optional;
 public class PaletteGuiEvents {
 
     @SubscribeEvent
-    public static void onKeyPress(GuiScreenEvent.KeyboardKeyPressedEvent.Pre event) {
-        if (event.getGui() instanceof AbstractContainerScreen) {
+    public static void onKeyPress(ScreenEvent.KeyboardKeyPressedEvent.Pre event) {
+        if (event.getScreen() instanceof AbstractContainerScreen) {
             Player player = Minecraft.getInstance().player;
             if (player == null || !player.getAbilities().instabuild) {
                 return;
             }
 
-            AbstractContainerScreen<?> screen = (AbstractContainerScreen<?>) event.getGui();
+            AbstractContainerScreen<?> screen = (AbstractContainerScreen<?>) event.getScreen();
             if (screen instanceof CreativeModeInventoryScreen) {
                 // ignore search tab in creative inventory
                 CreativeModeInventoryScreen creativeScreen = (CreativeModeInventoryScreen) screen;
@@ -43,7 +43,7 @@ public class PaletteGuiEvents {
                 // open previous screen or close if none
                 if (PaletteScreen.closesGui(event.getKeyCode())) {
                     event.setCanceled(true);
-                    event.getGui().onClose();
+                    event.getScreen().onClose();
                     return;
                 }
 

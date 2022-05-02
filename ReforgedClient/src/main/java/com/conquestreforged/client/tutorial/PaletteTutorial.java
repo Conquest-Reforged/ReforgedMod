@@ -8,7 +8,7 @@ import com.conquestreforged.core.util.log.Log;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.inventory.ContainerScreen;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.GuiScreenEvent;
+import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -33,8 +33,8 @@ public class PaletteTutorial {
     }
 
     @SubscribeEvent
-    public void openScreen(GuiScreenEvent.InitGuiEvent.Post event) {
-        if (event.getGui() instanceof ContainerScreen) {
+    public void openScreen(ScreenEvent.InitScreenEvent.Post event) {
+        if (event.getScreen() instanceof ContainerScreen) {
             MinecraftForge.EVENT_BUS.unregister(this);
 
             if (Tutorials.openPalette || tutorials.getOrElse("block_palette", false)) {

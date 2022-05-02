@@ -10,7 +10,7 @@ import com.conquestreforged.core.config.section.ConfigSectionSpec;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.GuiScreenEvent;
+import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,11 +39,11 @@ public class TutorialRenderEvent {
     }
 
     @SubscribeEvent
-    public void render(GuiScreenEvent.InitGuiEvent.Post event) {
-        if (event.getGui() instanceof TitleScreen) {
+    public void render(ScreenEvent.InitScreenEvent.Post event) {
+        if (event.getScreen() instanceof TitleScreen) {
             List<Dependency> missing = dependencies.getMissingDependencies();
-            IntroScreen introScreen = new IntroScreen(event.getGui(), section);
-            DependencyScreen dependencyScreen = new DependencyScreen(event.getGui(), section, missing);
+            IntroScreen introScreen = new IntroScreen(event.getScreen(), section);
+            DependencyScreen dependencyScreen = new DependencyScreen(event.getScreen(), section, missing);
             DependencyScreen dependencyScreen2 = new DependencyScreen(introScreen, section, missing);
 
             if ((section.getOrElse("ignore_dependencies", false) && section.getOrElse("ignore_intro", false))

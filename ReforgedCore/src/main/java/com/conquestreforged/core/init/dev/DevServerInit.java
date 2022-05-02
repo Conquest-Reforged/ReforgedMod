@@ -11,7 +11,7 @@ import net.minecraft.server.packs.PackType;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fmlserverevents.FMLServerAboutToStartEvent;
+import net.minecraftforge.event.server.ServerAboutToStartEvent;
 
 import java.util.function.Consumer;
 
@@ -19,7 +19,7 @@ import java.util.function.Consumer;
 public class DevServerInit {
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
-    public static void server(FMLServerAboutToStartEvent event) {
+    public static void server(ServerAboutToStartEvent event) {
         if (Environment.isProduction()) {
             return;
         }

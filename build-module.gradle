@@ -2,7 +2,7 @@ apply plugin: "net.minecraftforge.gradle"
 apply plugin: "eclipse"
 
 version = "mc${mc_version}-${mod_version}"
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "16"
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "17"
 
 configurations {
     compileProject

@@ -20,7 +20,7 @@ public class BlockPicker {
 
     @SubscribeEvent
     public static void onPick(InputEvent.ClickInputEvent event) {
-        if (event.getKeyBinding() != Minecraft.getInstance().options.keyPickItem) {
+        if (event.getKeyMapping() != Minecraft.getInstance().options.keyPickItem) {
             return;
         }
 

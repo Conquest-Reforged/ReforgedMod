@@ -9,7 +9,7 @@ import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraftforge.fmlclient.gui.widget.Slider;
+import net.minecraftforge.client.gui.widget.ForgeSlider;
 
 import javax.annotation.Nullable;
 import java.awt.*;
@@ -17,15 +17,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ColorPicker2 extends AbstractWidget implements ContainerEventHandler, Widget, Slider.ISlider {
+public class ColorPicker2 extends AbstractWidget implements ContainerEventHandler, Widget {
 
     private static final Button.OnPress NONE = btn -> {};
     private static final int VERT_SPACING = 2;
 
-    private final Slider red;
-    private final Slider green;
-    private final Slider blue;
-    private final List<Slider> sliders;
+    //private final ForgeSlider red;
+    //private final ForgeSlider green;
+    //private final ForgeSlider blue;
+    private final List<ForgeSlider> sliders;
     private final Consumer<Integer> consumer;
 
     public int x = 0;
@@ -39,16 +39,16 @@ public class ColorPicker2 extends AbstractWidget implements ContainerEventHandle
         int[] rgb = getComponents(color);
         this.consumer = consumer;
         this.sliders = Arrays.asList(
-                this.red = new Slider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[0], NONE, this),
-                this.green = new Slider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[1], NONE, this),
-                this.blue = new Slider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[2], NONE, this)
+                //this.red = new ForgeSlider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[0], NONE, this),
+                //this.green = new ForgeSlider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[1], NONE, this),
+                //this.blue = new ForgeSlider(0, 0, new TranslatableComponent("red"), 0, 255, rgb[2], NONE, this)
         );
     }
 
     @Override
     public void render(PoseStack matrixStack, int mx, int my, float ticks) {
         int top = y;
-        for (Slider slider : sliders) {
+        for (ForgeSlider slider : sliders) {
             slider.x = x;
             slider.y = top;
             slider.render(matrixStack, mx, my, ticks);
@@ -57,25 +57,17 @@ public class ColorPicker2 extends AbstractWidget implements ContainerEventHandle
     }
 
     @Override
-    public void onChangeSliderValue(Slider slider) {
-        int r = red.getValueInt();
-        int g = green.getValueInt();
-        int b = blue.getValueInt();
-        consumer.accept(combine(r, g, b));
-    }
-
-    @Override
     public void setHeight(int value) {
         int totalSpacing = VERT_SPACING * (sliders.size() - 1);
         int sliderHeight = (value - totalSpacing) / 3;
-        for (Slider slider : sliders) {
+        for (ForgeSlider slider : sliders) {
             slider.setHeight(sliderHeight);
         }
     }
 
     @Override
     public void setWidth(int width) {
-        for (Slider slider : sliders) {
+        for (ForgeSlider slider : sliders) {
             slider.setWidth(width);
         }
     }
@@ -115,7 +107,6 @@ public class ColorPicker2 extends AbstractWidget implements ContainerEventHandle
         return new Color(r, g, b).getRGB();
     }
 
-    //todo dont know wtf this is for lol
     @Override
     public void updateNarration(NarrationElementOutput p_169152_) {
 
