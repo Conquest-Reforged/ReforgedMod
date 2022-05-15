@@ -9,26 +9,21 @@ logoFile="conquestreforged.png"
 displayURL="https://conquestreforged.com"
 issueTrackerURL="https://github.com/Conquest-Reforged/Indev"
 
-authors="HIPPOKLEIDIS, dags-"
+authors="Hippokleides"
 
 credits='''
 
   [Developers]
-  HIPPOKLEIDIS (Project Lead)
-  ArtemisiaTR
-  dags
+  Hippokleides
 
   [Artists & Modellers]
-  Monsterfish (Art Lead)
+  Monsterfish
   ArtemisiaTR
   DeChoppy
   wheellee
 
   [Contributors]
   CreativeRealms
-  Jugbot
-  Triliton
-  WunderBread
 
   With special thanks to past
   & present backers of the mod!
