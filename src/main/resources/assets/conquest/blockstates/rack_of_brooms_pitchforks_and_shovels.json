@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": [{ "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_1" }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_2" }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_3" }],
+        "facing=west": [{ "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_1", "y": 90 }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_2", "y": 90 }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_3", "y": 90 }],
+        "facing=north": [{ "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_1", "y": 180 }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_2", "y": 180 }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_3", "y": 180 }],
+        "facing=east": [{ "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_1", "y": 270 }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_2", "y": 270 }, { "model": "conquest:block/rack_of_brooms_pitchforks_and_shovels_3", "y": 270 }]
+    }
+}

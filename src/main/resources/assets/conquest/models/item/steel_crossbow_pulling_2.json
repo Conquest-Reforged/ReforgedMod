@@ -1,0 +1,13 @@
+{
+    "parent": "conquest:item/steel_crossbow",
+    "textures": {
+        "layer0": "conquest:item/steel_crossbow_3"
+    },
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [ -90, 0, -55 ],
+            "translation": [ 8.13, -4.6, -9.13],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        }
+    }
+}

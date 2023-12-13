@@ -1,0 +1,33 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "conquest:item/simple_trident"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ -80, 260, -40 ],
+            "translation": [ -1, 4, 1.8 ],
+            "scale": [ 1.7, 1.7, 0.7 ]
+         },
+        "thirdperson_lefthand": {
+            "rotation": [ 0, -270, 45 ],
+            "translation": [ 0, 0, 10.8 ],
+            "scale": [ 1.7, 1.7, 0.7 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 145 ],
+            "translation": [ 1.13, 4.2, 1.13],
+            "scale": [ 1.36, 1.36, 0.5 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 90, -65 ],
+            "translation": [ 1.13, 4.2, 1.13],
+            "scale": [ 1.36, 1.36, 0.5 ]
+        },
+        "fixed": {
+            "rotation": [ 0.5, 0.1, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale": [ 2, 2, 1 ]
+        }            
+    }
+}

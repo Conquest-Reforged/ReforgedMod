@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:item/steel_bow",
+    "textures": {
+        "layer0": "conquest:item/steel_bow_2"
+    }
+}

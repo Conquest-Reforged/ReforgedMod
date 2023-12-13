@@ -1,20 +1,167 @@
-buildscript {
+plugins {
+    id 'net.minecraftforge.gradle' version '6.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
+    id 'eclipse'
+    id 'maven-publish'
+}
+
+archivesBaseName = project.archives_base_name
+version = project.mod_version
+group = project.maven_group
+
+// JENKINS STUFF! LEAVE THIS ALONE!
+if (System.getenv('BUILD_NUMBER') != null) {
+    version = "${version}." + System.getenv('BUILD_NUMBER')
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
+minecraft {
+    mappings channel: project.mappings, version: project.mappings_version
+
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'examplemod'
+
+            arg "-mixin.config=conquest.mixins.json"
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
+            mods {
+                conquest {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'examplemod'
+
+            arg "-mixin.config=conquest.mixins.json"
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
+            mods {
+                conquest {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        gameTestServer {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'examplemod'
+
+            arg "-mixin.config=conquest.mixins.json"
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
+            mods {
+                conquest {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
+            args '--mod', 'conquest', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                conquest {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    maven {
+        name = "CurseForge Maven" //Base
+        url = "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    flatDir {
+        dir 'libs'
+    }
+}
+
+dependencies {
+    // Base
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    // Extras
+    implementation fg.deobf("curse.maven:cyanide_forge-541676:${cyanide_version}")
+    implementation fg.deobf("curse.maven:spark-361579:${spark_version}")
+    implementation fg.deobf("curse.maven:appleskin-248787:${appleskin_version}")
+    implementation fg.deobf("curse.maven:configured-457570:${configured_version}")
+    implementation fg.deobf("curse.maven:catalogue-459701:${catalogue_version}")
+}
+
+mixin {
+    add sourceSets.main, "conquest.refmap.json"
+    config "conquest.mixins.json"
+
+    debug.verbose = true
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : "conquest",
+                "Specification-Vendor"    : "conquest",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : "conquest",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact jar
+        }
+    }
     repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: "net.minecraftforge.gradle", name: "ForgeGradle", version: "5.1.+", changing: true
+        maven {
+            url "file://${project.projectDir}/mcmodsrepo"
+        }
     }
 }
 
-allprojects {
-    apply from: file("$rootDir/build-module.gradle")
-}
-
-apply from: file("build-main.gradle")
-
-assemble {
-    dependsOn(mergeJar, renameJar)
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }

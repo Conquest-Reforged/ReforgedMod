@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "block/oak_trapdoor",
+        "top": "block/oak_trapdoor",
+        "side": "conquest:block/4_furniture/3_wood/oak_wood_stool"
+    }
+}

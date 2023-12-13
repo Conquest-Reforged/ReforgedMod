@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=north,lit=true": { "model": "conquest:block/campfire_fire", "y": 180 },
+        "facing=south,lit=true": { "model": "conquest:block/campfire_fire" },
+        "facing=east,lit=true": { "model": "conquest:block/campfire_fire", "y": 270 },
+        "facing=west,lit=true": { "model": "conquest:block/campfire_fire", "y": 90 },
+        "facing=north,lit=false": { "model": "conquest:block/campfire", "y": 180 },
+        "facing=south,lit=false": { "model": "conquest:block/campfire" },
+        "facing=east,lit=false": { "model": "conquest:block/campfire", "y": 270 },
+        "facing=west,lit=false": { "model": "conquest:block/campfire", "y": 90 }
+    }
+}

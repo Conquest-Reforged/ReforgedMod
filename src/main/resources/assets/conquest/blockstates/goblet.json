@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "conquest:block/goblet" },
+        "bites=1": { "model": "conquest:block/goblet" },
+        "bites=2": { "model": "conquest:block/goblet" },
+        "bites=3": { "model": "conquest:block/goblet" },
+        "bites=4": { "model": "conquest:block/goblet" },
+        "bites=5": { "model": "conquest:block/goblet" },
+        "bites=6": { "model": "conquest:block/goblet" }
+    }
+}

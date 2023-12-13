@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "living=true": { "model": "block/fire_coral" },
+        "living=false": { "model": "block/dead_fire_coral" }
+    }
+}

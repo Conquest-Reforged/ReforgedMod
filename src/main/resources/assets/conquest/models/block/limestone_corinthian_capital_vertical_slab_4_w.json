@@ -1,0 +1,10 @@
+{
+	"parent": "conquest:block/template_corinthian_capital_vertical_slab_4_w",
+	"textures": {
+		"3": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_corinthian_capital_frond",
+		"side": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_corinthian_capital",
+		"particle": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_corinthian_capital",
+		"up": "block/stone",
+		"down": "block/stone"
+	}
+}

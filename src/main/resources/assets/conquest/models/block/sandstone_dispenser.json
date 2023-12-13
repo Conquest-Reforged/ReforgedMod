@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "conquest:block/2_advanced_refined/1_stone/5_sandstone/sandstone_dispenser_topbottom",
+        "front": "conquest:block/2_advanced_refined/1_stone/5_sandstone/sandstone_dispenser_front",
+        "side": "conquest:block/2_advanced_refined/1_stone/5_sandstone/sandstone_dispenser_side"
+    }
+}

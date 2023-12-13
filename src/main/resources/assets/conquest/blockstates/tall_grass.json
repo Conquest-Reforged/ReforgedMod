@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "layers=1,half=lower": { "model": "block/tall_grass_bottom_1" },
+        "layers=1,half=upper":    { "model": "block/tall_grass_top_1" },
+        "layers=2,half=lower": { "model": "block/tall_grass_bottom_2" },
+        "layers=2,half=upper":    { "model": "block/tall_grass_top_2" },
+        "layers=3,half=lower": { "model": "block/tall_grass_bottom_3" },
+        "layers=3,half=upper":    { "model": "block/tall_grass_top_3" },
+        "layers=4,half=lower": { "model": "block/tall_grass_bottom_4" },
+        "layers=4,half=upper":    { "model": "block/tall_grass_top_4" },
+        "layers=5,half=lower": { "model": "block/tall_grass_bottom_5" },
+        "layers=5,half=upper":    { "model": "block/tall_grass_top_5" },
+        "layers=6,half=lower": { "model": "block/tall_grass_bottom_6" },
+        "layers=6,half=upper":    { "model": "block/tall_grass_top_6" },
+        "layers=7,half=lower": { "model": "block/tall_grass_bottom_7" },
+        "layers=7,half=upper":    { "model": "block/tall_grass_top_7" },
+        "layers=8,half=lower": { "model": "block/tall_grass_bottom" },
+        "layers=8,half=upper":    { "model": "block/tall_grass_top" }
+    }
+}

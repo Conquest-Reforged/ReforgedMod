@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+      "bottom": "conquest:block/2_advanced_refined/7_wood/red_studded_door_bottom",
+      "top": "conquest:block/2_advanced_refined/7_wood/red_studded_door_top"
+    }
+}

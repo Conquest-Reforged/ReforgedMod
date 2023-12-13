@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "shape=one,facing=south": { "model": "conquest:block/blue_schist_segmental_arch_1", "y": 90 },
+        "shape=one,facing=west": { "model": "conquest:block/blue_schist_segmental_arch_1", "y": 180 },
+        "shape=one,facing=north": { "model": "conquest:block/blue_schist_segmental_arch_1", "y": 270 },
+        "shape=one,facing=east": { "model": "conquest:block/blue_schist_segmental_arch_1" },
+
+        "shape=two,facing=south": { "model": "conquest:block/blue_schist_segmental_arch_2", "y": 270 },
+        "shape=two,facing=west": { "model": "conquest:block/blue_schist_segmental_arch_2" },
+        "shape=two,facing=north": { "model": "conquest:block/blue_schist_segmental_arch_2", "y": 90 },
+        "shape=two,facing=east": { "model": "conquest:block/blue_schist_segmental_arch_2", "y": 180 },
+
+        "shape=three,facing=south": { "model": "conquest:block/blue_schist_segmental_arch_3", "y": 270 },
+        "shape=three,facing=west": { "model": "conquest:block/blue_schist_segmental_arch_3" },
+        "shape=three,facing=north": { "model": "conquest:block/blue_schist_segmental_arch_3", "y": 90 },
+        "shape=three,facing=east": { "model": "conquest:block/blue_schist_segmental_arch_3", "y": 180 },
+
+        "shape=three_middle,facing=south": { "model": "conquest:block/blue_schist_segmental_arch_3_middle", "y": 270 },
+        "shape=three_middle,facing=west": { "model": "conquest:block/blue_schist_segmental_arch_3_middle" },
+        "shape=three_middle,facing=north": { "model": "conquest:block/blue_schist_segmental_arch_3_middle", "y": 90 },
+        "shape=three_middle,facing=east": { "model": "conquest:block/blue_schist_segmental_arch_3_middle", "y": 180 }
+    }
+}

@@ -1,0 +1,31 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "conquest:block/1_basic_refined/3_wood/beam/beam_straight",
+		"3": "conquest:block/1_basic_refined/3_wood/beam/randomtopsides",
+		"particle": "conquest:block/1_basic_refined/3_wood/beam/randomtopsides"
+	},
+	"elements": [
+		{
+			"from": [4.978, 0, 11.978],
+			"to": [10.978, 16, 15.978],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.478, -1.256, 8]},
+			"faces": {
+				"north": {"uv": [4, 4, 10, 16], "texture": "#0"},
+				"east": {"uv": [4, 0, 8, 16], "texture": "#3"},
+				"south": {"uv": [4, 4, 10, 16], "texture": "#0"},
+				"west": {"uv": [4, 16, 8, 0], "rotation": 180, "texture": "#3"},
+				"up": {"uv": [10, 11.5, 16, 15.5], "texture": "#0"},
+				"down": {"uv": [9, 12, 5, 6], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [-3.2, 2.3, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	}
+}

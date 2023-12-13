@@ -1,0 +1,8 @@
+{
+    "parent": "block/lightning_rod_bottom",
+    "ambientocclusion": false,
+    "textures": {
+        "0": "block/lightning_rod_bottom_on",
+        "particle": "block/lightning_rod_bottom_on"
+    }
+}

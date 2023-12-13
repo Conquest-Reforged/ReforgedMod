@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "conquest:block/wood_plate_with_food" },
+        "bites=1": { "model": "conquest:block/wood_plate_with_food" },
+        "bites=2": { "model": "conquest:block/wood_plate_with_food" },
+        "bites=3": { "model": "conquest:block/wood_plate_with_food" },
+        "bites=4": { "model": "conquest:block/wood_plate_with_food" },
+        "bites=5": { "model": "conquest:block/wood_plate_with_food" },
+        "bites=6": { "model": "conquest:block/wood_plate" }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "layer=1":   { "model": "conquest:block/dark_sandstone_corinthian_capital_pillar_2" },
+        "layer=2":   { "model": "conquest:block/dark_sandstone_corinthian_capital_wall_post" },
+        "layer=3":   { "model": "conquest:block/dark_sandstone_corinthian_capital_pillar_6" }
+    }
+}

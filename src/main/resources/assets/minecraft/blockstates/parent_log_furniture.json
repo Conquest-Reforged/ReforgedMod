@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "block/acacia_log" },
+        "axis=z":   { "model": "block/parent_log_furniture_side_1" },
+        "axis=x":   { "model": "block/parent_log_furniture_side_2" }
+    }
+}

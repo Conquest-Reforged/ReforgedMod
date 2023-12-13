@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:block/cross_4",
+    "textures": {
+        "cross": "conquest:block/9_organic/3_plants/cabbage/cabbage_stage_0"
+    }
+}

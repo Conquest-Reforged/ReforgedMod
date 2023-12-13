@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:block/cross_2",
+    "textures": {
+        "cross": "conquest:block/9_organic/3_plants/turnips/turnips_stage_1"
+    }
+}

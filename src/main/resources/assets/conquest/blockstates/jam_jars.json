@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "conquest:block/jam_jars" },
+        "axis=z":   { "model": "conquest:block/jam_jars_rotated" },
+        "axis=x":   { "model": "conquest:block/jam_jars_rotated", "y": 90 }
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "variants": {
+        "light=0,toggle=1,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1_unlit" },
+        "light=0,toggle=1,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1_unlit", "y": 90 },
+        "light=0,toggle=1,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1_unlit", "y": 180 },
+        "light=0,toggle=1,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1_unlit", "y": 270 },
+
+        "light=0,toggle=2,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1_a_unlit" },
+        "light=0,toggle=2,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1_a_unlit", "y": 90 },
+        "light=0,toggle=2,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1_a_unlit", "y": 180 },
+        "light=0,toggle=2,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1_a_unlit", "y": 270 },
+
+        "light=0,toggle=3,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2_unlit" },
+        "light=0,toggle=3,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2_unlit", "y": 90 },
+        "light=0,toggle=3,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2_unlit", "y": 180 },
+        "light=0,toggle=3,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2_unlit", "y": 270 },
+
+        "light=0,toggle=4,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2_a_unlit" },
+        "light=0,toggle=4,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2_a_unlit", "y": 90 },
+        "light=0,toggle=4,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2_a_unlit", "y": 180 },
+        "light=0,toggle=4,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2_a_unlit", "y": 270 },
+
+        "light=0,toggle=5,facing=south": { "model": "conquest:block/terracotta_oil_lamp_3_unlit" },
+        "light=0,toggle=5,facing=west": { "model": "conquest:block/terracotta_oil_lamp_3_unlit", "y": 90 },
+        "light=0,toggle=5,facing=north": { "model": "conquest:block/terracotta_oil_lamp_3_unlit", "y": 180 },
+        "light=0,toggle=5,facing=east": { "model": "conquest:block/terracotta_oil_lamp_3_unlit", "y": 270 },
+
+        "light=1,toggle=1,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1" },
+        "light=1,toggle=1,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 90 },
+        "light=1,toggle=1,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 180 },
+        "light=1,toggle=1,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 270 },
+
+        "light=1,toggle=2,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1_a" },
+        "light=1,toggle=2,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 90 },
+        "light=1,toggle=2,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 180 },
+        "light=1,toggle=2,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 270 },
+
+        "light=1,toggle=3,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2" },
+        "light=1,toggle=3,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 90 },
+        "light=1,toggle=3,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 180 },
+        "light=1,toggle=3,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 270 },
+
+        "light=1,toggle=4,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2_a" },
+        "light=1,toggle=4,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 90 },
+        "light=1,toggle=4,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 180 },
+        "light=1,toggle=4,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 270 },
+
+        "light=1,toggle=5,facing=south": { "model": "conquest:block/terracotta_oil_lamp_3" },
+        "light=1,toggle=5,facing=west": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 90 },
+        "light=1,toggle=5,facing=north": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 180 },
+        "light=1,toggle=5,facing=east": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 270 },
+
+        "light=2,toggle=1,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1" },
+        "light=2,toggle=1,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 90 },
+        "light=2,toggle=1,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 180 },
+        "light=2,toggle=1,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 270 },
+
+        "light=2,toggle=2,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1_a" },
+        "light=2,toggle=2,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 90 },
+        "light=2,toggle=2,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 180 },
+        "light=2,toggle=2,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 270 },
+
+        "light=2,toggle=3,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2" },
+        "light=2,toggle=3,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 90 },
+        "light=2,toggle=3,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 180 },
+        "light=2,toggle=3,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 270 },
+
+        "light=2,toggle=4,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2_a" },
+        "light=2,toggle=4,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 90 },
+        "light=2,toggle=4,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 180 },
+        "light=2,toggle=4,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 270 },
+
+        "light=2,toggle=5,facing=south": { "model": "conquest:block/terracotta_oil_lamp_3" },
+        "light=2,toggle=5,facing=west": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 90 },
+        "light=2,toggle=5,facing=north": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 180 },
+        "light=2,toggle=5,facing=east": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 270 },
+
+        "light=3,toggle=1,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1" },
+        "light=3,toggle=1,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 90 },
+        "light=3,toggle=1,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 180 },
+        "light=3,toggle=1,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1", "y": 270 },
+
+        "light=3,toggle=2,facing=south": { "model": "conquest:block/terracotta_oil_lamp_1_a" },
+        "light=3,toggle=2,facing=west": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 90 },
+        "light=3,toggle=2,facing=north": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 180 },
+        "light=3,toggle=2,facing=east": { "model": "conquest:block/terracotta_oil_lamp_1_a", "y": 270 },
+
+        "light=3,toggle=3,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2" },
+        "light=3,toggle=3,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 90 },
+        "light=3,toggle=3,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 180 },
+        "light=3,toggle=3,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2", "y": 270 },
+
+        "light=3,toggle=4,facing=south": { "model": "conquest:block/terracotta_oil_lamp_2_a" },
+        "light=3,toggle=4,facing=west": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 90 },
+        "light=3,toggle=4,facing=north": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 180 },
+        "light=3,toggle=4,facing=east": { "model": "conquest:block/terracotta_oil_lamp_2_a", "y": 270 },
+
+        "light=3,toggle=5,facing=south": { "model": "conquest:block/terracotta_oil_lamp_3" },
+        "light=3,toggle=5,facing=west": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 90 },
+        "light=3,toggle=5,facing=north": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 180 },
+        "light=3,toggle=5,facing=east": { "model": "conquest:block/terracotta_oil_lamp_3", "y": 270 }
+
+    }
+}

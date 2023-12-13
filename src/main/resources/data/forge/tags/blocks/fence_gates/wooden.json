@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:oak_fence_gate",
+    "minecraft:spruce_fence_gate",
+    "minecraft:birch_fence_gate",
+    "minecraft:jungle_fence_gate",
+    "minecraft:acacia_fence_gate",
+    "conquest:asian_acacia_wood_fence_gate",
+    "conquest:birch_wood_railing_fence_gate",
+    "conquest:spruce_wood_railing_fence_gate",
+    "conquest:rustic_fence_gate"
+  ]
+}

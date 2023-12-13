@@ -1,0 +1,30 @@
+{
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/7_wood/1_painted/thin_white_picket_fence",
+		"texture": "conquest:block/2_advanced_refined/7_wood/1_painted/thin_white_picket_fence"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 6.75, 0, 7.5 ],
+			"to": [ 9.25, 15, 8.5 ],
+			"faces": {
+				"down": { "uv": [ 13, 15, 15.5, 16 ], "texture": "#texture", "rotation": 180 },
+				"north": { "uv": [ 15.5, 1, 13, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 13, 1, 15.5, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 13, 1, 14, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 14.5, 1, 15.5, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 6.75, 15, 7.5 ],
+			"to": [ 9.25, 16, 8.5 ],
+			"faces": {
+				"up": { "uv": [ 4.5, 1, 7, 2 ], "texture": "#texture" },
+				"north": { "uv": [ 4.5, 1, 7, 2 ], "texture": "#texture" },
+				"south": { "uv": [ 4.5, 1, 7, 2 ], "texture": "#texture" },
+				"west": { "uv": [ 4.5, 1, 5.5, 2 ], "texture": "#texture" },
+				"east": { "uv": [ 6, 1, 7, 2 ], "texture": "#texture" }
+			}
+		}
+	]
+}

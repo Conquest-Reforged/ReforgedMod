@@ -1,0 +1,104 @@
+{
+    "multipart": [
+        {   "when": { "OR": [
+                {"north": true },
+                {"east": true },
+                {"south": true },
+                {"west": true }
+            ]},
+			"apply": { "model": "conquest:block/oak_wood_table_top" }
+		},
+		
+		{   "when": { "north": false, "east": false, "south": false, "west": false },
+            "apply": { "model": "conquest:block/oak_wood_table_top_none" }
+        },
+		
+        {   "when": { "north": false, "east": false },
+            "apply": { "model": "conquest:block/oak_wood_table_leg_se", "y": 270 }
+        },
+        {   "when": { "south": false, "east": false },
+            "apply": { "model": "conquest:block/oak_wood_table_leg_se" }
+        },
+        {   "when": { "south": false, "west": false },
+            "apply": { "model": "conquest:block/oak_wood_table_leg_se", "y": 90 }
+        },
+        {   "when": { "north": false, "west": false },
+            "apply": { "model": "conquest:block/oak_wood_table_leg_se", "y": 180 }
+        },
+		
+		
+		
+        {   "when": { "north": false, "east": false, "south": true },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2s", "y": 270 }
+        },
+        {   "when": { "south": false, "east": false, "west": true },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2s" }
+        },
+        {   "when": { "south": false, "west": false, "north": true },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2s", "y": 90 }
+        },
+        {   "when": { "north": false, "west": false, "east": true },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2s", "y": 180 }
+        },
+		
+		
+		
+        {   "when": { "north": true, "east": false, "south": false },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2e" }
+        },
+        {   "when": { "south": false, "east": true, "west": false },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2e", "y": 90 }
+        },
+        {   "when": { "south": true, "west": false, "north": false },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2e", "y": 180 }
+        },
+        {   "when": { "north": false, "west": true, "east": false },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_2e", "y": 270 }
+        },
+		
+		
+		
+        {   "when": { "north": false, "east": true, "west": true },
+            "apply": { "model": "conquest:block/oak_wood_table_leg_s", "y": 180 }
+        },
+        {   "when": { "east": false, "north": true, "south": true },
+			"apply": { "model": "conquest:block/oak_wood_table_leg_s", "y": 270 }
+        },
+        {   "when": { "south": false, "east": true, "west": true },
+			"apply": { "model": "conquest:block/oak_wood_table_leg_s" }
+        },
+        {   "when": { "west": false, "north": true, "south": true },
+			"apply": { "model": "conquest:block/oak_wood_table_leg_s", "y": 90 }
+		},
+		
+		
+		
+        {   "when": { "north": false, "east": true, "west": true },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_s", "y": 180 }
+        },
+        {   "when": { "east": false, "north": true, "south": true },
+			"apply": { "model": "conquest:block/oak_wood_table_plane_s", "y": 270 }
+        },
+        {   "when": { "south": false, "east": true, "west": true },
+			"apply": { "model": "conquest:block/oak_wood_table_plane_s" }
+        },
+        {   "when": { "west": false, "north": true, "south": true },
+			"apply": { "model": "conquest:block/oak_wood_table_plane_s", "y": 90 }
+		},
+		
+		
+		
+        {   "when": { "north": false, "east": false, "west": false },
+            "apply": { "model": "conquest:block/oak_wood_table_plane_s", "y": 180 }
+        },
+        {   "when": { "east": false, "north": false, "south": false },
+			"apply": { "model": "conquest:block/oak_wood_table_plane_s", "y": 270 }
+        },
+        {   "when": { "south": false, "east": false, "west": false },
+			"apply": { "model": "conquest:block/oak_wood_table_plane_s" }
+        },
+        {   "when": { "west": false, "north": false, "south": false },
+			"apply": { "model": "conquest:block/oak_wood_table_plane_s", "y": 90 }
+		}
+    ]
+}

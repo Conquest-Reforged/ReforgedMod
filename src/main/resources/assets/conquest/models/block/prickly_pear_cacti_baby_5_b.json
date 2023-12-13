@@ -1,0 +1,6 @@
+{
+    "parent": "block/plant_dense_model_5_b",
+    "textures": {
+        "texture": "conquest:block/9_organic/3_plants/prickly_pear_cacti_baby"
+    }
+}

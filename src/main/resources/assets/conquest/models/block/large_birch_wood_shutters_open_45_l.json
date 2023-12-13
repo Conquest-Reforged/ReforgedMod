@@ -1,0 +1,6 @@
+{   "parent": "conquest:block/acacia_wood_shutters_open_45_l",
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/7_wood/large_birch_wood_shutters",
+        "texture": "conquest:block/2_advanced_refined/7_wood/large_birch_wood_shutters"
+    }
+}

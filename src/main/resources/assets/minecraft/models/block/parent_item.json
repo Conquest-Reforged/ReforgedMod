@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"texture": "block/acacia_planks"
+	}
+}

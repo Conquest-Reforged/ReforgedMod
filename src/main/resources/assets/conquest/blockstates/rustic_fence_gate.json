@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=east,hinge=left,toggle=1":  { "model": "conquest:block/rustic_fence_gate_ns_r" },
+    "facing=south,hinge=left,toggle=1": { "model": "conquest:block/rustic_fence_gate_ns_r", "y": 90 },
+    "facing=west,hinge=left,toggle=1":  { "model": "conquest:block/rustic_fence_gate_ns_r", "y": 180 },
+    "facing=north,hinge=left,toggle=1": { "model": "conquest:block/rustic_fence_gate_ns_r", "y": 270 },
+
+    "facing=east,hinge=right,toggle=1":  { "model": "conquest:block/rustic_fence_gate_ns" },
+    "facing=south,hinge=right,toggle=1": { "model": "conquest:block/rustic_fence_gate_ns", "y": 90 },
+    "facing=west,hinge=right,toggle=1":  { "model": "conquest:block/rustic_fence_gate_ns", "y": 180 },
+    "facing=north,hinge=right,toggle=1": { "model": "conquest:block/rustic_fence_gate_ns", "y": 270 },
+
+    "facing=east,hinge=left,toggle=2":  { "model": "conquest:block/rustic_fence_gate_ns_open_r" },
+    "facing=south,hinge=left,toggle=2": { "model": "conquest:block/rustic_fence_gate_ns_open_r", "y": 90 },
+    "facing=west,hinge=left,toggle=2":  { "model": "conquest:block/rustic_fence_gate_ns_open_r", "y": 180 },
+    "facing=north,hinge=left,toggle=2": { "model": "conquest:block/rustic_fence_gate_ns_open_r", "y": 270 },
+
+    "facing=east,hinge=right,toggle=2":  { "model": "conquest:block/rustic_fence_gate_ns_open" },
+    "facing=south,hinge=right,toggle=2": { "model": "conquest:block/rustic_fence_gate_ns_open", "y": 90 },
+    "facing=west,hinge=right,toggle=2":  { "model": "conquest:block/rustic_fence_gate_ns_open", "y": 180 },
+    "facing=north,hinge=right,toggle=2": { "model": "conquest:block/rustic_fence_gate_ns_open", "y": 270 }
+  }
+}

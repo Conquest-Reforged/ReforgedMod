@@ -1,0 +1,20 @@
+{
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/wooden_cross_railing",
+		"texture": "conquest:block/1_basic_refined/3_wood/wooden_cross_railing"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 7.25, 0, 7.25 ],
+			"to": [ 8.75, 16, 8.75 ],
+			"faces": {
+				"down": { "uv": [ 14.5, 14.5, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 1.5, 1.5 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0, 1.5, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 14.5, 0, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 14.5, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 1.5, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

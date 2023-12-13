@@ -1,0 +1,133 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"5": "conquest:block/4_furniture/3_wood/cabinet/inner",
+		"6": "conquest:block/4_furniture/3_wood/cabinet/front",
+		"7": "conquest:block/4_furniture/3_wood/cabinet/top",
+		"8": "conquest:block/4_furniture/3_wood/cabinet/back",
+		"9": "conquest:block/4_furniture/3_wood/cabinet/door_outer",
+		"10": "conquest:block/4_furniture/3_wood/cabinet/door_inner",
+		"12": "conquest:block/4_furniture/3_wood/cabinet/sides",
+		"particle": "conquest:block/4_furniture/3_wood/cabinet/door_outer"
+	},
+	"elements": [
+		{
+			"from": [0, 1, 8],
+			"to": [16, 1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 16]},
+			"faces": {
+				"down": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#7"}
+			}
+		},
+		{
+			"from": [0, 0, 10],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#5"},
+				"east": {"uv": [0, 0, 6.5, 16], "texture": "#12"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#8"},
+				"west": {"uv": [6.5, 0, 0, 16], "texture": "#8"},
+				"up": {"uv": [0, 9.5, 16, 16], "texture": "#7"}
+			}
+		},
+		{
+			"from": [14.5, 2.5, 8],
+			"to": [16, 13.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 1.5]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 1.5, 13.5], "texture": "#6"},
+				"east": {"uv": [14, 2, 16, 13], "texture": "#8"},
+				"west": {"uv": [0, 2, 2, 13], "texture": "#8"}
+			}
+		},
+		{
+			"from": [1.59694, 2.5, -4.88599],
+			"to": [2.09694, 13.5, 8.11401],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.84694, 8, 1.61401]},
+			"faces": {
+				"north": {"uv": [1.5, 2, 1, 13.5], "texture": "#10"},
+				"east": {"uv": [14.5, 2, 1, 13.5], "texture": "#10"},
+				"south": {"uv": [1.5, 2, 1, 13.5], "texture": "#9"},
+				"west": {"uv": [14.5, 2, 1, 13.5], "texture": "#9"},
+				"up": {"uv": [1, 3.5, 14, 3], "rotation": 90, "texture": "#10"},
+				"down": {"uv": [1, 13.5, 14.5, 13], "rotation": 270, "texture": "#10"}
+			}
+		},
+		{
+			"from": [0, 2.5, 8],
+			"to": [1.5, 13.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 1.5]},
+			"faces": {
+				"north": {"uv": [0.5, 2.5, 2, 13.5], "texture": "#6"},
+				"east": {"uv": [14, 2, 16, 13], "texture": "#8"},
+				"west": {"uv": [6, 1.5, 8, 12.5], "texture": "#8"}
+			}
+		},
+		{
+			"from": [0, 13.5, 8],
+			"to": [16, 16, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 1.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2.5], "texture": "#6"},
+				"east": {"uv": [14, 0, 16, 2.5], "texture": "#8"},
+				"west": {"uv": [0, 0, 2, 2.5], "texture": "#12"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#7"},
+				"down": {"uv": [8.5, 0, 10.5, 16], "rotation": 90, "texture": "#7"}
+			}
+		},
+		{
+			"from": [0, 0, 8],
+			"to": [16, 2.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -5.5, 1.5]},
+			"faces": {
+				"north": {"uv": [0, 13.5, 16, 16], "texture": "#8"},
+				"east": {"uv": [14, 13.5, 16, 16], "texture": "#8"},
+				"west": {"uv": [0, 13.5, 2, 16], "texture": "#12"},
+				"up": {"uv": [0, 0, 2, 16], "rotation": 270, "texture": "#8"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [70, 86, 0],
+			"translation": [1.25, 5.25, 2.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [70, -84.75, 0],
+			"translation": [-1.75, 5.25, 2.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 116.75, 0],
+			"translation": [0, 0, -4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 283, 0],
+			"translation": [0, 0, -4]
+		},
+		"ground": {
+			"translation": [0, 4.5, 0]
+		},
+		"gui": {
+			"rotation": [30, 90, 0],
+			"translation": [0, 3, 0],
+			"scale": [0.725, 0.725, 0.725]
+		},
+		"head": {
+			"translation": [2.5, 15.75, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"rotation": [0, -134, 0],
+			"translation": [3.5, -1.5, -13.25],
+			"scale": [1.8, 1.8, 1.8]
+		}
+	},
+	"groups": [
+		{
+			"name": "state5",
+			"origin": [8, -5.5, 1.5],
+			"children": [0, 1, 2, 3, 4, 5, 6]
+		}
+	]
+}

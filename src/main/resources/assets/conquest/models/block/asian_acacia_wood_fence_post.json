@@ -1,0 +1,21 @@
+{
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_fence_gate",
+		"top": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_fence_top",
+		"post": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_fence"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 6, 0, 6 ],
+			"to": [ 10, 16, 10 ],
+			"faces": {
+				"down": { "uv": [ 6, 6, 10, 10 ], "texture": "#top" },
+				"up": { "uv": [ 6, 6, 10, 10 ], "texture": "#top" },
+				"north": { "uv": [ 6, 0, 10, 16 ], "texture": "#post" },
+				"south": { "uv": [ 6, 0, 10, 16 ], "texture": "#post" },
+				"west": { "uv": [ 6, 0, 10, 16 ], "texture": "#post" },
+				"east": { "uv": [ 6, 0, 10, 16 ], "texture": "#post" }
+			}
+		}
+	]
+}

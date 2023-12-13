@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/bear_hide", "y": 90 },
+        "facing=west": { "model": "conquest:block/bear_hide", "y": 180 },
+        "facing=north": { "model": "conquest:block/bear_hide", "y": 270 },
+        "facing=east": { "model": "conquest:block/bear_hide" }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "conquest:block/broken_rusty_round_barrel_side", "y": 90 },
+        "facing=south": { "model": "conquest:block/broken_rusty_round_barrel_side", "y": 180 },
+        "facing=west": { "model": "conquest:block/broken_rusty_round_barrel_side", "y": 270 },
+        "facing=north": { "model": "conquest:block/broken_rusty_round_barrel_side" },
+        "facing=up": { "model": "conquest:block/broken_rusty_round_barrel" },
+        "facing=down": { "model": "conquest:block/broken_rusty_round_barrel_down" }
+    }
+}

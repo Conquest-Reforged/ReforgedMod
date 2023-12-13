@@ -1,0 +1,6 @@
+{
+    "parent": "block/plant_dense_model_7_c",
+    "textures": {
+        "texture": "conquest:block/9_organic/3_plants/small_grape_vine_medium"
+    }
+}

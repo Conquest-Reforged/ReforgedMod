@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layers=1": { "model": "block/nether_sprouts_1" },
+        "layers=2": { "model": "block/nether_sprouts_2" },
+        "layers=3": { "model": "block/nether_sprouts_3" },
+        "layers=4": { "model": "block/nether_sprouts_4" },
+        "layers=5": { "model": "block/nether_sprouts_5" },
+        "layers=6": { "model": "block/nether_sprouts_6" },
+        "layers=7": { "model": "block/nether_sprouts_7" },
+        "layers=8": { "model": "block/nether_sprouts" }
+    }
+}

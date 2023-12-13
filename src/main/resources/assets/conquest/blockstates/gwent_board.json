@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "toggle=1,facing=south": { "model": "conquest:block/gwent_board_2" },
+    "toggle=1,facing=west": { "model": "conquest:block/gwent_board_2", "y": 90 },
+    "toggle=1,facing=north": { "model": "conquest:block/gwent_board_2", "y": 180 },
+    "toggle=1,facing=east": { "model": "conquest:block/gwent_board_2", "y": 270 },
+    "toggle=2,facing=south": { "model": "conquest:block/gwent_board_1" },
+    "toggle=2,facing=west": { "model": "conquest:block/gwent_board_1", "y": 90 },
+    "toggle=2,facing=north": { "model": "conquest:block/gwent_board_1", "y": 180 },
+    "toggle=2,facing=east": { "model": "conquest:block/gwent_board_1", "y": 270 }
+  }
+}

@@ -1,0 +1,9 @@
+{	
+	"parent": "block/light_blue_candle_one_candle_lit",
+	"textures": {
+		"particle": "block/light_blue_candle",
+		"candle": "block/light_blue_candle",
+		"stand": "block/candle_stand",
+		"flame2": "block/candle"
+	}
+}

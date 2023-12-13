@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/smooth_round_arch_2.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "minecraft:block/cobblestone",
+        "keystones": "minecraft:block/cobblestone",
+        "underside1": "minecraft:block/cobblestone",
+        "underside2": "minecraft:block/cobblestone",
+        "underside3": "minecraft:block/cobblestone"
+    }
+}

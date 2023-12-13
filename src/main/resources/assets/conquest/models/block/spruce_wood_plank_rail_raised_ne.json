@@ -1,0 +1,6 @@
+{
+    "parent": "block/template_rail_raised_ne",
+    "textures": {
+        "rail": "conquest:block/1_basic_refined/3_wood/spruce_wood_plank_rail"
+    }
+}

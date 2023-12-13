@@ -1,0 +1,35 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl 2.020
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000 
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd conquest:block/9_organic/2_leaves/caribbean_royal_palm_dead_leaves
+
+newmtl 3.020
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000 
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd conquest:block/9_organic/2_leaves/caribbean_royal_palm_leaves_old
+
+newmtl 4.015
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000 
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd conquest:block/9_organic/2_leaves/caribbean_royal_palm_leaves_dry

@@ -1,0 +1,52 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/side",
+		"3": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/1_1",
+		"4": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/1",
+		"particle": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/side"
+	},
+	"elements": [
+		{
+			"from": [-3.42248, 0, 8.04627],
+			"to": [19.57752, 16, 8.10877],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.89123, 0, -3.57752],
+			"to": [7.95373, 16, 19.42248],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [0.075, 0, -0.01707],
+			"to": [0.106, 16, 15.98293],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.08079, 6.00388, 8.73293]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#4"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [0, 0.06563, 0],
+			"to": [16, 0.09662, 16],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.0155, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		}
+	]
+}

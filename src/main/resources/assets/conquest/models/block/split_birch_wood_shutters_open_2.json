@@ -1,0 +1,5 @@
+{   "parent": "conquest:block/parent_wood_shutters_open_2",
+    "textures": {
+        "texture": "conquest:block/2_advanced_refined/7_wood/split_birch_wood_shutters"
+    }
+}

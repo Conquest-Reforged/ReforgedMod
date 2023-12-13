@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/crate_of_hops", "y": 90 },
+        "toggle=1,facing=west": { "model": "conquest:block/crate_of_hops", "y": 180},
+        "toggle=1,facing=north": { "model": "conquest:block/crate_of_hops", "y": 270 },
+        "toggle=1,facing=east": { "model": "conquest:block/crate_of_hops" },
+        "toggle=2,facing=south": { "model": "conquest:block/crate_of_hops_tilted", "y": 90 },
+        "toggle=2,facing=west": { "model": "conquest:block/crate_of_hops_tilted", "y": 180 },
+        "toggle=2,facing=north": { "model": "conquest:block/crate_of_hops_tilted", "y": 270 },
+        "toggle=2,facing=east": { "model": "conquest:block/crate_of_hops_tilted" }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/pressure_plate_up",
+    "textures": {
+        "texture": "conquest:block/7_tools/3_utility/quill_and_parchment"
+    }
+}

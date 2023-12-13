@@ -1,0 +1,46 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl 1
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_corbel_alt
+
+newmtl 1.001
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_corbel_alt
+
+newmtl 4_1
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_corbel
+
+newmtl 4_1.001
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_corbel

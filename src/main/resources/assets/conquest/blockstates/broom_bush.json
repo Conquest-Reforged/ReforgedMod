@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "layers=1": { "model": "conquest:block/broom_bush_1" },
+    "layers=2": { "model": "conquest:block/broom_bush_2" },
+    "layers=3": { "model": "conquest:block/broom_bush_3" },
+    "layers=4": { "model": "conquest:block/broom_bush_4" },
+    "layers=5": { "model": "conquest:block/broom_bush_5" },
+    "layers=6": { "model": "conquest:block/broom_bush_6" },
+    "layers=7": { "model": "conquest:block/broom_bush_7" },
+    "layers=8": { "model": "conquest:block/broom_bush_8" }
+  }
+}

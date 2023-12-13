@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "block/oak_log_branches",
+		"branches2": "blocks/texture"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 8],
+			"to": [8, 16, 24],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#branches2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#branches2"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#branches2"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#branches2"},
+				"up": {"uv": [0, 0, 16, 0], "rotation": 270, "texture": "#branches2"},
+				"down": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#branches2"}
+			}
+		}
+	]
+}

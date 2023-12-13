@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:item/elven_longbow",
+    "textures": {
+        "layer0": "conquest:item/elven_longbow_3"
+    }
+}

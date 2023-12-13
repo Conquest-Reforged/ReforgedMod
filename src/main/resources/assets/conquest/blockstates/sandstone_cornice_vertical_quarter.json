@@ -1,0 +1,63 @@
+{
+    "variants": {
+      "layer=1,s=false,e=false,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2", "y": 180, "uvlock": true },
+      "layer=1,s=false,e=false,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2", "y": 270, "uvlock": true },
+      "layer=1,s=false,e=false,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2", "uvlock": true },
+      "layer=1,s=false,e=false,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2", "y": 90, "uvlock": true },
+
+      "layer=1,s=true,e=false,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_s", "y": 180, "uvlock": true },
+      "layer=1,s=true,e=false,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_s", "y": 270, "uvlock": true },
+      "layer=1,s=true,e=false,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_s", "uvlock": true },
+      "layer=1,s=true,e=false,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_s", "y": 90, "uvlock": true },
+
+      "layer=1,s=false,e=true,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_e", "y": 180, "uvlock": true },
+      "layer=1,s=false,e=true,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_e", "y": 270, "uvlock": true },
+      "layer=1,s=false,e=true,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_e", "uvlock": true },
+      "layer=1,s=false,e=true,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_e", "y": 90, "uvlock": true },
+
+      "layer=1,s=true,e=true,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_es", "y": 180, "uvlock": true },
+      "layer=1,s=true,e=true,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_es", "y": 270, "uvlock": true },
+      "layer=1,s=true,e=true,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_es", "uvlock": true },
+      "layer=1,s=true,e=true,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_2_es", "y": 90, "uvlock": true },
+
+      "layer=2,s=false,e=false,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4", "y": 180, "uvlock": true },
+      "layer=2,s=false,e=false,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4", "y": 270, "uvlock": true },
+      "layer=2,s=false,e=false,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4", "uvlock": true },
+      "layer=2,s=false,e=false,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4", "y": 90, "uvlock": true },
+
+      "layer=2,s=true,e=false,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_s", "y": 180, "uvlock": true },
+      "layer=2,s=true,e=false,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_s", "y": 270, "uvlock": true },
+      "layer=2,s=true,e=false,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_s", "uvlock": true },
+      "layer=2,s=true,e=false,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_s", "y": 90, "uvlock": true },
+
+      "layer=2,s=false,e=true,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_e", "y": 180, "uvlock": true },
+      "layer=2,s=false,e=true,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_e", "y": 270, "uvlock": true },
+      "layer=2,s=false,e=true,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_e", "uvlock": true },
+      "layer=2,s=false,e=true,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_e", "y": 90, "uvlock": true },
+
+      "layer=2,s=true,e=true,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_es", "y": 180, "uvlock": true },
+      "layer=2,s=true,e=true,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_es", "y": 270, "uvlock": true },
+      "layer=2,s=true,e=true,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_es", "uvlock": true },
+      "layer=2,s=true,e=true,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_4_es", "y": 90, "uvlock": true },
+
+      "layer=3,s=false,e=false,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6", "y": 180, "uvlock": true },
+      "layer=3,s=false,e=false,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6", "y": 270, "uvlock": true },
+      "layer=3,s=false,e=false,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6", "uvlock": true },
+      "layer=3,s=false,e=false,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6", "y": 90, "uvlock": true },
+
+      "layer=3,s=true,e=false,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_s", "y": 180, "uvlock": true },
+      "layer=3,s=true,e=false,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_s", "y": 270, "uvlock": true },
+      "layer=3,s=true,e=false,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_s", "uvlock": true },
+      "layer=3,s=true,e=false,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_s", "y": 90, "uvlock": true },
+
+      "layer=3,s=false,e=true,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_e", "y": 180, "uvlock": true },
+      "layer=3,s=false,e=true,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_e", "y": 270, "uvlock": true },
+      "layer=3,s=false,e=true,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_e", "uvlock": true },
+      "layer=3,s=false,e=true,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_e", "y": 90, "uvlock": true },
+
+      "layer=3,s=true,e=true,facing=south": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_es", "y": 180, "uvlock": true },
+      "layer=3,s=true,e=true,facing=west": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_es", "y": 270, "uvlock": true },
+      "layer=3,s=true,e=true,facing=north": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_es", "uvlock": true },
+      "layer=3,s=true,e=true,facing=east": { "model": "conquest:block/sandstone_cornice_vertical_quarter_6_es", "y": 90, "uvlock": true }
+    }
+}

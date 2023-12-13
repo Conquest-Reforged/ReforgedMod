@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=down":  { "model": "conquest:block/sandstone_dropper_vertical", "x": 180 },
+        "facing=up":    { "model": "conquest:block/sandstone_dropper_vertical" },
+        "facing=north": { "model": "conquest:block/sandstone_dropper" },
+        "facing=south": { "model": "conquest:block/sandstone_dropper", "y": 180 },
+        "facing=west":  { "model": "conquest:block/sandstone_dropper", "y": 270 },
+        "facing=east":  { "model": "conquest:block/sandstone_dropper", "y": 90 }
+    }
+}

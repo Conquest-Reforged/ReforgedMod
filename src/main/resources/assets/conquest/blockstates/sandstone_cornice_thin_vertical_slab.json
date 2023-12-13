@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/sandstone_cornice_vertical_slab_thin", "uvlock": true },
+        "facing=west": { "model": "conquest:block/sandstone_cornice_vertical_slab_thin", "y": 90, "uvlock": true },
+        "facing=north": { "model": "conquest:block/sandstone_cornice_vertical_slab_thin", "y": 180, "uvlock": true },
+        "facing=east": { "model": "conquest:block/sandstone_cornice_vertical_slab_thin", "y": 270, "uvlock": true }
+    }
+}

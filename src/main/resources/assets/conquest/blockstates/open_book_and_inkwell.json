@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/open_book_and_inkwell" },
+        "facing=west": { "model": "conquest:block/open_book_and_inkwell", "y": 90 },
+        "facing=north": { "model": "conquest:block/open_book_and_inkwell", "y": 180 },
+        "facing=east": { "model": "conquest:block/open_book_and_inkwell", "y": 270 }
+    }
+}

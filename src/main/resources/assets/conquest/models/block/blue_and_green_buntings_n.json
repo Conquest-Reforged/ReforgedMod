@@ -1,0 +1,17 @@
+{
+"textures": {
+    "particle": "conquest:block/3_decoration/4_cloth/blue_and_green_buntings",
+    "bars": "conquest:block/3_decoration/4_cloth/blue_and_green_buntings",
+    "edge": "conquest:block/3_decoration/4_cloth/blue_and_green_buntings"
+},
+"elements": [ 
+{
+    "from": [ 8, 0, 0 ],
+    "to": [ 8.0625, 16, 10 ],
+    "faces": {
+        "west":  { "uv": [ 16, 0, 6, 16 ], "texture": "#bars" },
+        "east":  { "uv": [ 6, 0, 16, 16 ], "texture": "#bars" }
+    }
+}
+]
+}

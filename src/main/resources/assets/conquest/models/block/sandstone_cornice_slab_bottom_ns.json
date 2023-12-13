@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/template_cornice_slab_bottom_ns",
+	"textures": {
+		"end": "conquest:block/1_basic_refined/1_stone/5_sandstone/large_sandstone_block_topbottom",
+		"side": "conquest:block/2_advanced_refined/1_stone/5_sandstone/sandstone_cornice"
+	}
+}

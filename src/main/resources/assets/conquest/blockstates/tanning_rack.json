@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "shape=one,facing=south": { "model": "conquest:block/tanning_rack", "y": 180 },
+        "shape=one,facing=west": { "model": "conquest:block/tanning_rack", "y": 270 },
+        "shape=one,facing=north": { "model": "conquest:block/tanning_rack" },
+        "shape=one,facing=east": { "model": "conquest:block/tanning_rack", "y": 90 },
+
+        "shape=edge_l,facing=north": { "model": "conquest:block/tanning_rack_left" },
+        "shape=edge_l,facing=east": { "model": "conquest:block/tanning_rack_left", "y": 90 },
+        "shape=edge_l,facing=south": { "model": "conquest:block/tanning_rack_left", "y": 180 },
+        "shape=edge_l,facing=west": { "model": "conquest:block/tanning_rack_left", "y": 270 },
+
+        "shape=edge_r,facing=north": { "model": "conquest:block/tanning_rack_right" },
+        "shape=edge_r,facing=east": { "model": "conquest:block/tanning_rack_right", "y": 90 },
+        "shape=edge_r,facing=south": { "model": "conquest:block/tanning_rack_right", "y": 180 },
+        "shape=edge_r,facing=west": { "model": "conquest:block/tanning_rack_right", "y": 270 },
+
+        "shape=middle,facing=north": { "model": "conquest:block/tanning_rack_middle" },
+        "shape=middle,facing=east": { "model": "conquest:block/tanning_rack_middle", "y": 90 },
+        "shape=middle,facing=south": { "model": "conquest:block/tanning_rack_middle", "y": 180 },
+        "shape=middle,facing=west": { "model": "conquest:block/tanning_rack_middle", "y": 270 }
+    }
+}

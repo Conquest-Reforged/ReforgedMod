@@ -1,0 +1,24 @@
+{
+    "credit": "Made with Blockbench",
+    "parent": "block/block",
+    "textures": {
+        "top": "conquest:block/2_advanced_refined/1_stone/mesoamerican_dispenser_front_1",
+        "ew": "conquest:block/2_advanced_refined/1_stone/mesoamerican_dispenser_top",
+        "ns": "conquest:block/2_advanced_refined/1_stone/mesoamerican_dispenser_back",
+        "particle": "conquest:block/2_advanced_refined/1_stone/mesoamerican_dispenser_back"
+    },
+    "elements": [
+        {
+            "from": [0, 0, 0],
+            "to": [16, 16, 16],
+            "faces": {
+                "north": {"uv": [0, 0, 16, 16], "texture": "#ns", "cullface": "north"},
+                "east": {"uv": [0, 0, 16, 16], "texture": "#ew", "cullface": "east"},
+                "south": {"uv": [0, 0, 16, 16], "texture": "#ns", "cullface": "south"},
+                "west": {"uv": [16, 0, 0, 16], "texture": "#ew", "cullface": "west"},
+                "up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up"},
+                "down": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "down"}
+            }
+        }
+    ]
+}

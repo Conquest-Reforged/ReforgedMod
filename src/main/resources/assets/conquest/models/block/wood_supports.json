@@ -1,0 +1,83 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "conquest:block/1_basic_refined/3_wood/beam/randomtopsides",
+		"particle": "conquest:block/1_basic_refined/3_wood/beam/beam_texture",
+		"2_0": "conquest:block/1_basic_refined/3_wood/beam/beam_texture"
+	},
+	"elements": [
+		{
+			"from": [0, 14, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 2, 16], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"west": {"uv": [2, 0, 4, 16], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#1"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [11.08286, 3.50586, 2.472],
+			"to": [21.38286, 6.50586, 5.472],
+			"rotation": {"angle": -45, "axis": "z", "origin": [14.50786, 8.72986, 7.281]},
+			"faces": {
+				"north": {"uv": [7.5, 10.8, 10.5, 0.5], "rotation": 270, "texture": "#2_0"},
+				"east": {"uv": [11, 10.5, 8, 13.5], "rotation": 180, "texture": "#2_0"},
+				"south": {"uv": [5, 11.3, 8, 1], "rotation": 90, "texture": "#2_0"},
+				"up": {"uv": [8, 11.8, 11, 1.5], "rotation": 90, "texture": "#2_0"},
+				"down": {"uv": [8, 11.9, 11, 3], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [11.08286, 3.50586, 10.472],
+			"to": [21.38286, 6.50586, 13.472],
+			"rotation": {"angle": -45, "axis": "z", "origin": [14.50786, 8.72986, 7.281]},
+			"faces": {
+				"north": {"uv": [7.5, 10.8, 10.5, 0.5], "rotation": 270, "texture": "#2_0"},
+				"east": {"uv": [11, 10.5, 8, 13.5], "rotation": 180, "texture": "#2_0"},
+				"south": {"uv": [5, 11.3, 8, 1], "rotation": 90, "texture": "#2_0"},
+				"up": {"uv": [8, 11.8, 11, 1.5], "rotation": 90, "texture": "#2_0"},
+				"down": {"uv": [8, 11.9, 11, 3], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [2.022, 3.5, 2.472],
+			"to": [11.097, 6.5, 5.472],
+			"rotation": {"angle": -45, "axis": "z", "origin": [14.522, 8.744, 7.25]},
+			"faces": {
+				"north": {"uv": [5, 12.05, 8, 2.5], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [5, 11.05, 8, 1.5], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [11, 4.5, 8, 7.5], "rotation": 180, "texture": "#1"},
+				"up": {"uv": [12, 9.55, 15, 0], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [12, 9.55, 15, 0], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [2.022, 3.5, 10.472],
+			"to": [11.097, 6.5, 13.472],
+			"rotation": {"angle": -45, "axis": "z", "origin": [14.522, 8.744, 7.25]},
+			"faces": {
+				"north": {"uv": [5, 12.05, 8, 2.5], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [5, 11, 8, 1.45], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [11, 4.5, 8, 7.5], "rotation": 180, "texture": "#1"},
+				"up": {"uv": [12, 9.55, 15, 0], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [12, 9.55, 15, 0], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [20, 135, 0],
+			"translation": [0.3, -1.2, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	}
+}

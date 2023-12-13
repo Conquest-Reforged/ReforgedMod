@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "toggle=1,facing=east": { "model": "conquest:block/steel_vertical_beam" },
+        "toggle=1,facing=south":{ "model": "conquest:block/steel_vertical_beam", "y": 90 },
+        "toggle=1,facing=west": { "model": "conquest:block/steel_vertical_beam", "y": 180 },
+        "toggle=1,facing=north":{ "model": "conquest:block/steel_vertical_beam", "y": 270 },
+        "toggle=2,facing=east": { "model": "conquest:block/steel_vertical_beam_support" },
+        "toggle=2,facing=south":{ "model": "conquest:block/steel_vertical_beam_support", "y": 90 },
+        "toggle=2,facing=west": { "model": "conquest:block/steel_vertical_beam_support", "y": 180 },
+        "toggle=2,facing=north":{ "model": "conquest:block/steel_vertical_beam_support", "y": 270 },
+        "toggle=3,facing=east": { "model": "conquest:block/steel_vertical_beam_support_3" },
+        "toggle=3,facing=south":{ "model": "conquest:block/steel_vertical_beam_support_3", "y": 90 },
+        "toggle=3,facing=west": { "model": "conquest:block/steel_vertical_beam_support_3", "y": 180 },
+        "toggle=3,facing=north":{ "model": "conquest:block/steel_vertical_beam_support_3", "y": 270 },
+        "toggle=4,facing=east": { "model": "conquest:block/steel_vertical_beam_support_1" },
+        "toggle=4,facing=south":{ "model": "conquest:block/steel_vertical_beam_support_1", "y": 90 },
+        "toggle=4,facing=west": { "model": "conquest:block/steel_vertical_beam_support_1", "y": 180 },
+        "toggle=4,facing=north":{ "model": "conquest:block/steel_vertical_beam_support_1", "y": 270 },
+        "toggle=5,facing=east": { "model": "conquest:block/steel_vertical_beam_support_2" },
+        "toggle=5,facing=south":{ "model": "conquest:block/steel_vertical_beam_support_2", "y": 90 },
+        "toggle=5,facing=west": { "model": "conquest:block/steel_vertical_beam_support_2", "y": 180 },
+        "toggle=5,facing=north":{ "model": "conquest:block/steel_vertical_beam_support_2", "y": 270 },
+        "toggle=6,facing=east": { "model": "conquest:block/steel_vertical_beam_support_bottom" },
+        "toggle=6,facing=south":{ "model": "conquest:block/steel_vertical_beam_support_bottom", "y": 90 },
+        "toggle=6,facing=west": { "model": "conquest:block/steel_vertical_beam_support_bottom", "y": 180 },
+        "toggle=6,facing=north":{ "model": "conquest:block/steel_vertical_beam_support_bottom", "y": 270 }
+    }
+}

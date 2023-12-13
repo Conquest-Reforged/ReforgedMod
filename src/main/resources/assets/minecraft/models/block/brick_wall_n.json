@@ -1,0 +1,8 @@
+{
+    "parent": "block/wall_n_topbottom",
+    "textures": {
+        "wall": "block/bricks",
+        "top": "block/bricks_top",
+        "bottom": "block/bricks_top"
+    }
+}

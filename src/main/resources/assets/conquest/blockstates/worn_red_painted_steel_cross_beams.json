@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/worn_red_painted_steel_cross_beams", "y": 90 },
+        "facing=west": { "model": "conquest:block/worn_red_painted_steel_cross_beams" },
+        "facing=north": { "model": "conquest:block/worn_red_painted_steel_cross_beams", "y": 90 },
+        "facing=east": { "model": "conquest:block/worn_red_painted_steel_cross_beams" }
+    }
+}

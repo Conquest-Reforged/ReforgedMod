@@ -1,0 +1,16 @@
+{
+    "parent": "conquest:block/item",
+    "textures": {
+        "particle": "conquest:block/7_tools/3_utility/pile_of_paper_on_the_ground",
+        "texture": "conquest:block/7_tools/3_utility/pile_of_paper_on_the_ground"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 1, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0,  0, 16, 16 ], "texture": "#texture", "cullface": "down" },
+                "up":    { "uv": [ 0,  0, 16, 16 ], "texture": "#texture" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "bites=0": [
+            { "model": "conquest:block/wine_goblet_1" },
+            { "model": "conquest:block/wine_goblet_2" }
+            ],
+        "bites=1": { "model": "conquest:block/wine_goblet_1" },
+        "bites=2": { "model": "conquest:block/wine_goblet_1" },
+        "bites=3": { "model": "conquest:block/wine_goblet_1" },
+        "bites=4": { "model": "conquest:block/wine_goblet_1" },
+        "bites=5": { "model": "conquest:block/wine_goblet_1" },
+        "bites=6": { "model": "conquest:block/wine_goblet_1" }
+    }
+}

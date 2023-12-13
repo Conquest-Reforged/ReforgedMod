@@ -1,0 +1,32 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"conquest:block/split_oak_wood_shutters_closed"
+  },
+  "variants": {
+    "facing=north,activated=1":{"model":"conquest:block/split_oak_wood_shutters_closed"},
+    "facing=east,activated=1":{"model":"conquest:block/split_oak_wood_shutters_closed", "y": 90},
+    "facing=south,activated=1":{"model":"conquest:block/split_oak_wood_shutters_closed","y": 180},
+    "facing=west,activated=1":{"model":"conquest:block/split_oak_wood_shutters_closed", "y": 270},
+
+    "facing=north,activated=3":{"model":"conquest:block/split_oak_wood_shutters_open"},
+    "facing=east,activated=3":{"model":"conquest:block/split_oak_wood_shutters_open", "y": 90},
+    "facing=south,activated=3":{"model":"conquest:block/split_oak_wood_shutters_open","y": 180},
+    "facing=west,activated=3":{"model":"conquest:block/split_oak_wood_shutters_open", "y": 270},
+
+    "facing=north,activated=2":{"model":"conquest:block/split_oak_wood_shutters_open_1"},
+    "facing=east,activated=2":{"model":"conquest:block/split_oak_wood_shutters_open_1", "y": 90},
+    "facing=south,activated=2":{"model":"conquest:block/split_oak_wood_shutters_open_1","y": 180},
+    "facing=west,activated=2":{"model":"conquest:block/split_oak_wood_shutters_open_1", "y": 270},
+
+    "facing=north,activated=4":{"model":"conquest:block/split_oak_wood_shutters_open_2"},
+    "facing=east,activated=4":{"model":"conquest:block/split_oak_wood_shutters_open_2", "y": 90},
+    "facing=south,activated=4":{"model":"conquest:block/split_oak_wood_shutters_open_2","y": 180},
+    "facing=west,activated=4":{"model":"conquest:block/split_oak_wood_shutters_open_2", "y": 270},
+
+    "facing=north,activated=5":{"model":"conquest:block/split_oak_wood_shutters_open_3"},
+    "facing=east,activated=5":{"model":"conquest:block/split_oak_wood_shutters_open_3", "y": 90},
+    "facing=south,activated=5":{"model":"conquest:block/split_oak_wood_shutters_open_3","y": 180},
+    "facing=west,activated=5":{"model":"conquest:block/split_oak_wood_shutters_open_3", "y": 270}
+  }
+}

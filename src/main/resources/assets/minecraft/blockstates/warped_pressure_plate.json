@@ -1,0 +1,39 @@
+
+{
+  "variants": {
+    "powered=false": [
+    {
+      "model": "minecraft:block/warped_pressure_plate"
+    },
+    {
+      "model": "minecraft:block/warped_pressure_plate",
+        "y": 90
+    },
+    {
+      "model": "minecraft:block/warped_pressure_plate",
+        "y": 180
+    },
+    {
+      "model": "minecraft:block/warped_pressure_plate",
+        "y": 270
+    }],
+
+    "powered=true": [
+    {
+      "model": "minecraft:block/warped_pressure_plate_pressed"
+    },
+    {
+      "model": "minecraft:block/warped_pressure_plate_pressed",
+        "y": 90
+    },
+    {
+      "model": "minecraft:block/warped_pressure_plate_pressed",
+        "y": 180
+    },
+    {
+      "model": "minecraft:block/warped_pressure_plate_pressed",
+        "y": 270
+    }
+	]
+  }
+}

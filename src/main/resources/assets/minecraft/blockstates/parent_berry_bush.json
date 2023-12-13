@@ -1,0 +1,331 @@
+{
+    "variants": {
+        "layers=1,age=0": [
+            {"model":"block/parent_shrub_model_1_a"},
+            {"model":"block/parent_shrub_model_1_b"},
+            {"model":"block/parent_shrub_model_1_c"}
+        ],
+        "layers=1,age=1": [
+            {"model":"block/parent_shrub_model_1_a"},
+            {"model":"block/parent_shrub_model_1_b"},
+            {"model":"block/parent_shrub_model_1_c"}
+        ],
+        "layers=1,age=2": [
+            {"model":"block/parent_shrub_model_1_a"},
+            {"model":"block/parent_shrub_model_1_b"},
+            {"model":"block/parent_shrub_model_1_c"}
+        ],
+        "layers=1,age=3": [
+            {"model":"block/parent_shrub_model_1_a"},
+            {"model":"block/parent_shrub_model_1_b"},
+            {"model":"block/parent_shrub_model_1_c"}
+        ],
+        "layers=1,age=4": [
+            {"model":"block/parent_shrub_model_1_a"},
+            {"model":"block/parent_shrub_model_1_b"},
+            {"model":"block/parent_shrub_model_1_c"}
+        ],
+        "layers=1,age=5": [
+            {"model":"block/parent_shrub_model_1_a"},
+            {"model":"block/parent_shrub_model_1_b"},
+            {"model":"block/parent_shrub_model_1_c"}
+        ],
+        "layers=1,age=6": [
+            {"model":"block/parent_shrub_model_1_a"},
+            {"model":"block/parent_shrub_model_1_b"},
+            {"model":"block/parent_shrub_model_1_c"}
+        ],
+        "layers=1,age=7": [
+            {"model":"block/parent_berry_bush_model_1_a"},
+            {"model":"block/parent_berry_bush_model_1_b"},
+            {"model":"block/parent_berry_bush_model_1_c"}
+        ],
+
+        "layers=2,age=0": [
+            {"model":"block/parent_shrub_model_2_a"},
+            {"model":"block/parent_shrub_model_2_b"},
+            {"model":"block/parent_shrub_model_2_c"}
+        ],
+        "layers=2,age=1": [
+            {"model":"block/parent_shrub_model_2_a"},
+            {"model":"block/parent_shrub_model_2_b"},
+            {"model":"block/parent_shrub_model_2_c"}
+        ],
+        "layers=2,age=2": [
+            {"model":"block/parent_shrub_model_2_a"},
+            {"model":"block/parent_shrub_model_2_b"},
+            {"model":"block/parent_shrub_model_2_c"}
+        ],
+        "layers=2,age=3": [
+            {"model":"block/parent_shrub_model_2_a"},
+            {"model":"block/parent_shrub_model_2_b"},
+            {"model":"block/parent_shrub_model_2_c"}
+        ],
+        "layers=2,age=4": [
+            {"model":"block/parent_shrub_model_2_a"},
+            {"model":"block/parent_shrub_model_2_b"},
+            {"model":"block/parent_shrub_model_2_c"}
+        ],
+        "layers=2,age=5": [
+            {"model":"block/parent_shrub_model_2_a"},
+            {"model":"block/parent_shrub_model_2_b"},
+            {"model":"block/parent_shrub_model_2_c"}
+        ],
+        "layers=2,age=6": [
+            {"model":"block/parent_shrub_model_2_a"},
+            {"model":"block/parent_shrub_model_2_b"},
+            {"model":"block/parent_shrub_model_2_c"}
+        ],
+        "layers=2,age=7": [
+            {"model":"block/parent_berry_bush_model_2_a"},
+            {"model":"block/parent_berry_bush_model_2_b"},
+            {"model":"block/parent_berry_bush_model_2_c"}
+        ],
+
+        "layers=3,age=0": [
+            {"model":"block/parent_shrub_model_3_a"},
+            {"model":"block/parent_shrub_model_3_b"},
+            {"model":"block/parent_shrub_model_3_c"}
+        ],
+        "layers=3,age=1": [
+            {"model":"block/parent_shrub_model_3_a"},
+            {"model":"block/parent_shrub_model_3_b"},
+            {"model":"block/parent_shrub_model_3_c"}
+        ],
+        "layers=3,age=2": [
+            {"model":"block/parent_shrub_model_3_a"},
+            {"model":"block/parent_shrub_model_3_b"},
+            {"model":"block/parent_shrub_model_3_c"}
+        ],
+        "layers=3,age=3": [
+            {"model":"block/parent_shrub_model_3_a"},
+            {"model":"block/parent_shrub_model_3_b"},
+            {"model":"block/parent_shrub_model_3_c"}
+        ],
+        "layers=3,age=4": [
+            {"model":"block/parent_shrub_model_3_a"},
+            {"model":"block/parent_shrub_model_3_b"},
+            {"model":"block/parent_shrub_model_3_c"}
+        ],
+        "layers=3,age=5": [
+            {"model":"block/parent_shrub_model_3_a"},
+            {"model":"block/parent_shrub_model_3_b"},
+            {"model":"block/parent_shrub_model_3_c"}
+        ],
+        "layers=3,age=6": [
+            {"model":"block/parent_shrub_model_3_a"},
+            {"model":"block/parent_shrub_model_3_b"},
+            {"model":"block/parent_shrub_model_3_c"}
+        ],
+        "layers=3,age=7": [
+            {"model":"block/parent_berry_bush_model_3_a"},
+            {"model":"block/parent_berry_bush_model_3_b"},
+            {"model":"block/parent_berry_bush_model_3_c"}
+        ],
+
+        "layers=4,age=0": [
+            {"model":"block/parent_shrub_model_4_a"},
+            {"model":"block/parent_shrub_model_4_b"},
+            {"model":"block/parent_shrub_model_4_c"}
+        ],
+        "layers=4,age=1": [
+            {"model":"block/parent_shrub_model_4_a"},
+            {"model":"block/parent_shrub_model_4_b"},
+            {"model":"block/parent_shrub_model_4_c"}
+        ],
+        "layers=4,age=2": [
+            {"model":"block/parent_shrub_model_4_a"},
+            {"model":"block/parent_shrub_model_4_b"},
+            {"model":"block/parent_shrub_model_4_c"}
+        ],
+        "layers=4,age=3": [
+            {"model":"block/parent_shrub_model_4_a"},
+            {"model":"block/parent_shrub_model_4_b"},
+            {"model":"block/parent_shrub_model_4_c"}
+        ],
+        "layers=4,age=4": [
+            {"model":"block/parent_shrub_model_4_a"},
+            {"model":"block/parent_shrub_model_4_b"},
+            {"model":"block/parent_shrub_model_4_c"}
+        ],
+        "layers=4,age=5": [
+            {"model":"block/parent_shrub_model_4_a"},
+            {"model":"block/parent_shrub_model_4_b"},
+            {"model":"block/parent_shrub_model_4_c"}
+        ],
+        "layers=4,age=6": [
+            {"model":"block/parent_shrub_model_4_a"},
+            {"model":"block/parent_shrub_model_4_b"},
+            {"model":"block/parent_shrub_model_4_c"}
+        ],
+        "layers=4,age=7": [
+            {"model":"block/parent_berry_bush_model_4_a"},
+            {"model":"block/parent_berry_bush_model_4_b"},
+            {"model":"block/parent_berry_bush_model_4_c"}
+        ],
+
+        "layers=5,age=0": [
+            {"model":"block/parent_shrub_model_5_a"},
+            {"model":"block/parent_shrub_model_5_b"},
+            {"model":"block/parent_shrub_model_5_c"}
+        ],
+        "layers=5,age=1": [
+            {"model":"block/parent_shrub_model_5_a"},
+            {"model":"block/parent_shrub_model_5_b"},
+            {"model":"block/parent_shrub_model_5_c"}
+        ],
+        "layers=5,age=2": [
+            {"model":"block/parent_shrub_model_5_a"},
+            {"model":"block/parent_shrub_model_5_b"},
+            {"model":"block/parent_shrub_model_5_c"}
+        ],
+        "layers=5,age=3": [
+            {"model":"block/parent_shrub_model_5_a"},
+            {"model":"block/parent_shrub_model_5_b"},
+            {"model":"block/parent_shrub_model_5_c"}
+        ],
+        "layers=5,age=4": [
+            {"model":"block/parent_shrub_model_5_a"},
+            {"model":"block/parent_shrub_model_5_b"},
+            {"model":"block/parent_shrub_model_5_c"}
+        ],
+        "layers=5,age=5": [
+            {"model":"block/parent_shrub_model_5_a"},
+            {"model":"block/parent_shrub_model_5_b"},
+            {"model":"block/parent_shrub_model_5_c"}
+        ],
+        "layers=5,age=6": [
+            {"model":"block/parent_shrub_model_5_a"},
+            {"model":"block/parent_shrub_model_5_b"},
+            {"model":"block/parent_shrub_model_5_c"}
+        ],
+        "layers=5,age=7": [
+            {"model":"block/parent_berry_bush_model_5_a"},
+            {"model":"block/parent_berry_bush_model_5_b"},
+            {"model":"block/parent_berry_bush_model_5_c"}
+        ],
+
+        "layers=6,age=0": [
+            {"model":"block/parent_shrub_model_6_a"},
+            {"model":"block/parent_shrub_model_6_b"},
+            {"model":"block/parent_shrub_model_6_c"}
+        ],
+        "layers=6,age=1": [
+            {"model":"block/parent_shrub_model_6_a"},
+            {"model":"block/parent_shrub_model_6_b"},
+            {"model":"block/parent_shrub_model_6_c"}
+        ],
+        "layers=6,age=2": [
+            {"model":"block/parent_shrub_model_6_a"},
+            {"model":"block/parent_shrub_model_6_b"},
+            {"model":"block/parent_shrub_model_6_c"}
+        ],
+        "layers=6,age=3": [
+            {"model":"block/parent_shrub_model_6_a"},
+            {"model":"block/parent_shrub_model_6_b"},
+            {"model":"block/parent_shrub_model_6_c"}
+        ],
+        "layers=6,age=4": [
+            {"model":"block/parent_shrub_model_6_a"},
+            {"model":"block/parent_shrub_model_6_b"},
+            {"model":"block/parent_shrub_model_6_c"}
+        ],
+        "layers=6,age=5": [
+            {"model":"block/parent_shrub_model_6_a"},
+            {"model":"block/parent_shrub_model_6_b"},
+            {"model":"block/parent_shrub_model_6_c"}
+        ],
+        "layers=6,age=6": [
+            {"model":"block/parent_shrub_model_6_a"},
+            {"model":"block/parent_shrub_model_6_b"},
+            {"model":"block/parent_shrub_model_6_c"}
+        ],
+        "layers=6,age=7": [
+            {"model":"block/parent_berry_bush_model_6_a"},
+            {"model":"block/parent_berry_bush_model_6_b"},
+            {"model":"block/parent_berry_bush_model_6_c"}
+        ],
+
+        "layers=7,age=0": [
+            {"model":"block/parent_shrub_model_7_a"},
+            {"model":"block/parent_shrub_model_7_b"},
+            {"model":"block/parent_shrub_model_7_c"}
+        ],
+        "layers=7,age=1": [
+            {"model":"block/parent_shrub_model_7_a"},
+            {"model":"block/parent_shrub_model_7_b"},
+            {"model":"block/parent_shrub_model_7_c"}
+        ],
+        "layers=7,age=2": [
+            {"model":"block/parent_shrub_model_7_a"},
+            {"model":"block/parent_shrub_model_7_b"},
+            {"model":"block/parent_shrub_model_7_c"}
+        ],
+        "layers=7,age=3": [
+            {"model":"block/parent_shrub_model_7_a"},
+            {"model":"block/parent_shrub_model_7_b"},
+            {"model":"block/parent_shrub_model_7_c"}
+        ],
+        "layers=7,age=4": [
+            {"model":"block/parent_shrub_model_7_a"},
+            {"model":"block/parent_shrub_model_7_b"},
+            {"model":"block/parent_shrub_model_7_c"}
+        ],
+        "layers=7,age=5": [
+            {"model":"block/parent_shrub_model_7_a"},
+            {"model":"block/parent_shrub_model_7_b"},
+            {"model":"block/parent_shrub_model_7_c"}
+        ],
+        "layers=7,age=6": [
+            {"model":"block/parent_shrub_model_7_a"},
+            {"model":"block/parent_shrub_model_7_b"},
+            {"model":"block/parent_shrub_model_7_c"}
+        ],
+        "layers=7,age=7": [
+            {"model":"block/parent_berry_bush_model_7_a"},
+            {"model":"block/parent_berry_bush_model_7_b"},
+            {"model":"block/parent_berry_bush_model_7_c"}
+        ],
+
+        "layers=8,age=0": [
+            {"model":"block/parent_shrub_model_8_a"},
+            {"model":"block/parent_shrub_model_8_b"},
+            {"model":"block/parent_shrub_model_8_c"}
+        ],
+        "layers=8,age=1": [
+            {"model":"block/parent_shrub_model_8_a"},
+            {"model":"block/parent_shrub_model_8_b"},
+            {"model":"block/parent_shrub_model_8_c"}
+        ],
+        "layers=8,age=2": [
+            {"model":"block/parent_shrub_model_8_a"},
+            {"model":"block/parent_shrub_model_8_b"},
+            {"model":"block/parent_shrub_model_8_c"}
+        ],
+        "layers=8,age=3": [
+            {"model":"block/parent_shrub_model_8_a"},
+            {"model":"block/parent_shrub_model_8_b"},
+            {"model":"block/parent_shrub_model_8_c"}
+        ],
+        "layers=8,age=4": [
+            {"model":"block/parent_shrub_model_8_a"},
+            {"model":"block/parent_shrub_model_8_b"},
+            {"model":"block/parent_shrub_model_8_c"}
+        ],
+        "layers=8,age=5": [
+            {"model":"block/parent_shrub_model_8_a"},
+            {"model":"block/parent_shrub_model_8_b"},
+            {"model":"block/parent_shrub_model_8_c"}
+        ],
+        "layers=8,age=6": [
+            {"model":"block/parent_shrub_model_8_a"},
+            {"model":"block/parent_shrub_model_8_b"},
+            {"model":"block/parent_shrub_model_8_c"}
+        ],
+        "layers=8,age=7": [
+            {"model":"block/parent_berry_bush_model_8_a"},
+            {"model":"block/parent_berry_bush_model_8_b"},
+            {"model":"block/parent_berry_bush_model_8_c"}
+        ]
+    }
+}

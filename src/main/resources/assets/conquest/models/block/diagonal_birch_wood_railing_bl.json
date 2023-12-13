@@ -1,0 +1,126 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/birch/wall_of_birch_logs",
+		"texture": "conquest:block/1_basic_refined/3_wood/birch/wall_of_birch_logs",
+		"down": "conquest:block/1_basic_refined/3_wood/birch/wall_of_birch_logs_side"
+	},
+	"elements": [
+		{
+			"name": "fence_slant",
+			"from": [0, -9.5, 10.5],
+			"to": [3, -8, 13.5],
+			"faces": {
+				"north": {"uv": [0, 7, 1.5, 10], "rotation": 90, "texture": "#down"},
+				"east": {"uv": [0, 7, 1.5, 10], "rotation": 90, "texture": "#down"},
+				"south": {"uv": [0, 7, 1.5, 10], "rotation": 90, "texture": "#down"},
+				"west": {"uv": [0, 7, 1.5, 10], "rotation": 90, "texture": "#down"},
+				"up": {"uv": [7.5, 0, 10.5, 3], "texture": "#texture"},
+				"down": {"uv": [8.5, 9, 11.5, 12], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "fence_slant",
+			"from": [0.5, 6, 8],
+			"to": [2.5, 8, 19.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [0.5, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 5.5, 10, 7.5], "texture": "#down"},
+				"east": {"uv": [13.5, 4.5, 2.5, 6.5], "texture": "#down"},
+				"south": {"uv": [10.5, 7, 12.5, 9], "texture": "#down"},
+				"west": {"uv": [2, 4.5, 13, 6.5], "texture": "#down"},
+				"up": {"uv": [2.5, 4.5, 13.5, 6.5], "rotation": 90, "texture": "#down"},
+				"down": {"uv": [13.5, 4.5, 2.5, 6.5], "rotation": 90, "texture": "#down"}
+			}
+		},
+		{
+			"name": "fence_slant",
+			"from": [0.5, 14, 0],
+			"to": [2.5, 16, 11.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [0.5, 16, 0]},
+			"faces": {
+				"north": {"uv": [8, 5.5, 10, 7.5], "texture": "#down"},
+				"east": {"uv": [12, 4.5, 1, 6.5], "texture": "#down"},
+				"south": {"uv": [10.5, 7, 12.5, 9], "texture": "#down"},
+				"west": {"uv": [4, 4.5, 15, 6.5], "texture": "#down"},
+				"up": {"uv": [2.5, 12.5, 13.5, 14.5], "rotation": 90, "texture": "#down"},
+				"down": {"uv": [13.5, 12.5, 2.5, 14.5], "rotation": 90, "texture": "#down"}
+			}
+		},
+		{
+			"name": "fence_slant",
+			"from": [0.5, -0.5, 8],
+			"to": [2.5, 1.5, 19.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [0.5, 1.5, 8]},
+			"faces": {
+				"north": {"uv": [8, 5.5, 10, 7.5], "texture": "#down"},
+				"east": {"uv": [13.5, 4.5, 2.5, 6.5], "texture": "#down"},
+				"south": {"uv": [10.5, 7, 12.5, 9], "texture": "#down"},
+				"west": {"uv": [2, 4.5, 13, 6.5], "texture": "#down"},
+				"up": {"uv": [2.5, 4.5, 13.5, 6.5], "rotation": 90, "texture": "#down"},
+				"down": {"uv": [13.5, 4.5, 2.5, 6.5], "rotation": 90, "texture": "#down"}
+			}
+		},
+		{
+			"name": "fence_slant",
+			"from": [0.5, 7.5, 0],
+			"to": [2.5, 9.5, 11.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [0.5, 9.5, 0]},
+			"faces": {
+				"north": {"uv": [8, 5.5, 10, 7.5], "texture": "#down"},
+				"east": {"uv": [16, 12.5, 5, 14.5], "texture": "#down"},
+				"south": {"uv": [10.5, 7, 12.5, 9], "texture": "#down"},
+				"west": {"uv": [0, 12.5, 11, 14.5], "texture": "#down"},
+				"up": {"uv": [0, 12.5, 11, 14.5], "rotation": 90, "texture": "#down"},
+				"down": {"uv": [16, 12.5, 5, 14.5], "rotation": 90, "texture": "#down"}
+			}
+		},
+		{
+			"name": "fence_slant",
+			"from": [0, -8, 10.5],
+			"to": [3, 8, 13.5],
+			"faces": {
+				"north": {"uv": [0, 7, 16, 10], "rotation": 90, "texture": "#down"},
+				"east": {"uv": [0, 7, 16, 10], "rotation": 90, "texture": "#down"},
+				"south": {"uv": [0, 7, 16, 10], "rotation": 90, "texture": "#down"},
+				"west": {"uv": [0, 7, 16, 10], "rotation": 90, "texture": "#down"},
+				"up": {"uv": [7.5, 0, 10.5, 3], "texture": "#texture"},
+				"down": {"uv": [3.5, 11.5, 6.5, 14.5], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "fence_slant",
+			"from": [0, -1.5, 2.5],
+			"to": [3, 0, 5.5],
+			"faces": {
+				"north": {"uv": [0.5, 7, 2, 10], "rotation": 90, "texture": "#down"},
+				"east": {"uv": [2, 7, 3.5, 10], "rotation": 90, "texture": "#down"},
+				"south": {"uv": [9, 7, 10.5, 10], "rotation": 90, "texture": "#down"},
+				"west": {"uv": [1, 7, 2.5, 10], "rotation": 90, "texture": "#down"},
+				"up": {"uv": [7.5, 0, 10.5, 3], "texture": "#texture"},
+				"down": {"uv": [8.5, 9, 11.5, 12], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "fence_slant",
+			"from": [0, 0, 2.5],
+			"to": [3, 16, 5.5],
+			"faces": {
+				"north": {"uv": [16, 7, 0, 10], "rotation": 90, "texture": "#down"},
+				"east": {"uv": [16, 7, 0, 10], "rotation": 90, "texture": "#down"},
+				"south": {"uv": [16, 7, 0, 10], "rotation": 90, "texture": "#down"},
+				"west": {"uv": [16, 7, 0, 10], "rotation": 90, "texture": "#down"},
+				"up": {"uv": [7.5, 0, 10.5, 3], "texture": "#texture"},
+				"down": {"uv": [3.5, 11.5, 6.5, 14.5], "texture": "#texture"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 135, 0],
+			"translation": [-3.5, 4.75, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"parent": "conquest:block/item",
+	"textures": {
+		"particle": "conquest:item/bow_saw",
+		"texture": "conquest:item/bow_saw"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Element",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 1, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "cullface": "down" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

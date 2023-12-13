@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/cell_bars_vertical_slab", "y": 180 },
+        "facing=west": { "model": "conquest:block/cell_bars_vertical_slab", "y": 270 },
+        "facing=north": { "model": "conquest:block/cell_bars_vertical_slab" },
+        "facing=east": { "model": "conquest:block/cell_bars_vertical_slab", "y": 90 }
+    }
+}

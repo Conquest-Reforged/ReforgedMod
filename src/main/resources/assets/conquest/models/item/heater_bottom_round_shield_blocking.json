@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:item/shield_blocking",
+    "textures": {
+        "layer0": "conquest:item/heater_bottom_round_shield"
+    }
+}

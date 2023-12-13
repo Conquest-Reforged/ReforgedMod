@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/mounted_rack_of_tongs_and_hammers", "y": 180 },
+        "facing=west": { "model": "conquest:block/mounted_rack_of_tongs_and_hammers", "y": 270 },
+        "facing=north": { "model": "conquest:block/mounted_rack_of_tongs_and_hammers" },
+        "facing=east": { "model": "conquest:block/mounted_rack_of_tongs_and_hammers", "y": 90 }
+    }
+}

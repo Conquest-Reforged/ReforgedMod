@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/smooth_segmental_arch_3.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/3_plaster/peach_plaster",
+        "keystones": "conquest:block/2_advanced_refined/3_plaster/peach_plaster",
+        "underside1": "conquest:block/2_advanced_refined/3_plaster/peach_plaster",
+        "underside2": "conquest:block/2_advanced_refined/3_plaster/peach_plaster",
+        "underside3": "conquest:block/2_advanced_refined/3_plaster/peach_plaster"
+    }
+}

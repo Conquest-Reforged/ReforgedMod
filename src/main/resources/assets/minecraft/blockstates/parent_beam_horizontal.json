@@ -1,0 +1,37 @@
+{
+    "variants": {
+        "type=top,activated=1,facing=east": { "model": "block/parent_beam_horizontal_ns", "y": 90 },
+        "type=top,activated=1,facing=south":{ "model": "block/parent_beam_horizontal_ns", "y": 180 },
+        "type=top,activated=1,facing=west": { "model": "block/parent_beam_horizontal_ns", "y": 270 },
+        "type=top,activated=1,facing=north":{ "model": "block/parent_beam_horizontal_ns" },
+        "type=top,activated=2,facing=east": { "model": "block/parent_beam_horizontal_ne", "y": 90 },
+        "type=top,activated=2,facing=south":{ "model": "block/parent_beam_horizontal_ne", "y": 180 },
+        "type=top,activated=2,facing=west": { "model": "block/parent_beam_horizontal_ne", "y": 270 },
+        "type=top,activated=2,facing=north":{ "model": "block/parent_beam_horizontal_ne" },
+        "type=top,activated=3,facing=east": { "model": "block/parent_beam_horizontal_nse", "y": 90 },
+        "type=top,activated=3,facing=south":{ "model": "block/parent_beam_horizontal_nse", "y": 180 },
+        "type=top,activated=3,facing=west": { "model": "block/parent_beam_horizontal_nse", "y": 270 },
+        "type=top,activated=3,facing=north":{ "model": "block/parent_beam_horizontal_nse" },
+        "type=top,activated=4,facing=east": { "model": "block/parent_beam_horizontal_nsew", "y": 90 },
+        "type=top,activated=4,facing=south":{ "model": "block/parent_beam_horizontal_nsew", "y": 180 },
+        "type=top,activated=4,facing=west": { "model": "block/parent_beam_horizontal_nsew", "y": 270 },
+        "type=top,activated=4,facing=north":{ "model": "block/parent_beam_horizontal_nsew" },
+
+        "type=bottom,activated=1,facing=east": { "model": "block/parent_beam_horizontal_ns_bottom", "y": 90 },
+        "type=bottom,activated=1,facing=south":{ "model": "block/parent_beam_horizontal_ns_bottom", "y": 180 },
+        "type=bottom,activated=1,facing=west": { "model": "block/parent_beam_horizontal_ns_bottom", "y": 270 },
+        "type=bottom,activated=1,facing=north":{ "model": "block/parent_beam_horizontal_ns_bottom" },
+        "type=bottom,activated=2,facing=east": { "model": "block/parent_beam_horizontal_ne_bottom", "y": 90 },
+        "type=bottom,activated=2,facing=south":{ "model": "block/parent_beam_horizontal_ne_bottom", "y": 180 },
+        "type=bottom,activated=2,facing=west": { "model": "block/parent_beam_horizontal_ne_bottom", "y": 270 },
+        "type=bottom,activated=2,facing=north":{ "model": "block/parent_beam_horizontal_ne_bottom" },
+        "type=bottom,activated=3,facing=east": { "model": "block/parent_beam_horizontal_nse_bottom", "y": 90 },
+        "type=bottom,activated=3,facing=south":{ "model": "block/parent_beam_horizontal_nse_bottom", "y": 180 },
+        "type=bottom,activated=3,facing=west": { "model": "block/parent_beam_horizontal_nse_bottom", "y": 270 },
+        "type=bottom,activated=3,facing=north":{ "model": "block/parent_beam_horizontal_nse_bottom" },
+        "type=bottom,activated=4,facing=east": { "model": "block/parent_beam_horizontal_nsew_bottom", "y": 90 },
+        "type=bottom,activated=4,facing=south":{ "model": "block/parent_beam_horizontal_nsew_bottom", "y": 180 },
+        "type=bottom,activated=4,facing=west": { "model": "block/parent_beam_horizontal_nsew_bottom", "y": 270 },
+        "type=bottom,activated=4,facing=north":{ "model": "block/parent_beam_horizontal_nsew_bottom" }
+    }
+}

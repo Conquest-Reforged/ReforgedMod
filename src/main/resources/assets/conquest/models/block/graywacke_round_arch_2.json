@@ -1,0 +1,12 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_round_arch_2.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/graywacke_mortar_wall",
+        "keystones": "conquest:block/1_basic_refined/1_stone/graywacke_mortar_wall_arch/arch2",
+        "underside1": "conquest:block/1_basic_refined/1_stone/graywacke_mortar_wall",
+        "underside2": "conquest:block/1_basic_refined/1_stone/graywacke_mortar_wall"
+    }
+}

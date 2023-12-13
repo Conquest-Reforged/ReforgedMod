@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=egg": { "model": "block/dragon_egg" },
+        "type=small": { "model": "block/parent_sphere_small" },
+        "type=large": { "model": "block/parent_sphere" }
+    }
+}

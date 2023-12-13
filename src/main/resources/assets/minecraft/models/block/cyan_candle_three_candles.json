@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cyan_candle_three_candles_lit",
+  "textures": {
+	"particle": "block/candle_with_skull",
+	"holder": "block/candle_with_skull",
+	"candle": "block/candle",
+	"flame": "block/empty"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "layers=1,type=bottom": { "model": "block/parent_slab_bottom_1_overlay_top_inverted", "uvlock": true },
+        "layers=1,type=top": { "model": "block/parent_slab_top_1_overlay_top_inverted", "uvlock": true },
+        "layers=2,type=bottom": { "model": "block/parent_slab_bottom_2_overlay_top_inverted", "uvlock": true },
+        "layers=2,type=top": { "model": "block/parent_slab_top_2_overlay_top_inverted", "uvlock": true },
+        "layers=3,type=bottom": { "model": "block/parent_slab_bottom_3_overlay_top_inverted", "uvlock": true },
+        "layers=3,type=top": { "model": "block/parent_slab_top_3_overlay_top_inverted", "uvlock": true },
+        "layers=4,type=bottom": { "model": "block/parent_slab_bottom_4_overlay_top_inverted", "uvlock": true },
+        "layers=4,type=top": { "model": "block/parent_slab_top_4_overlay_top_inverted", "uvlock": true },
+        "layers=5,type=bottom": { "model": "block/parent_slab_bottom_5_overlay_top_inverted", "uvlock": true },
+        "layers=5,type=top": { "model": "block/parent_slab_top_5_overlay_top_inverted", "uvlock": true },
+        "layers=6,type=bottom": { "model": "block/parent_slab_bottom_6_overlay_top_inverted", "uvlock": true },
+        "layers=6,type=top": { "model": "block/parent_slab_top_6_overlay_top_inverted", "uvlock": true },
+        "layers=7,type=bottom": { "model": "block/parent_slab_bottom_7_overlay_top_inverted", "uvlock": true },
+        "layers=7,type=top": { "model": "block/parent_slab_top_7_overlay_top_inverted", "uvlock": true },
+        "layers=8,type=bottom": { "model": "block/parent_cube", "uvlock": true },
+        "layers=8,type=top": { "model": "block/parent_cube", "uvlock": true }
+
+    }
+}

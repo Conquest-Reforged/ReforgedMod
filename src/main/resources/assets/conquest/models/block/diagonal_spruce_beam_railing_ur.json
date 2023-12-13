@@ -1,0 +1,45 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/tarred_spruce_wood_beam",
+		"texture": "conquest:block/1_basic_refined/3_wood/tarred_spruce_wood_beam"
+	},
+	"elements": [
+		{
+			"name": "Railing",
+			"from": [14.51, 4, 8],
+			"to": [16.01, 8, 19.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [16.01, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.5, 0, 1, 4], "texture": "#texture"},
+				"east": {"uv": [12, 11.314, 16, 0], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [1.5, 0, 0, 4], "texture": "#texture"},
+				"west": {"uv": [4, 11.314, 0, 0], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [13.5, 4.5, 15, 15.814], "texture": "#texture"},
+				"down": {"uv": [14.5, 4.5, 16, 15.814], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [14.51, 12, 0],
+			"to": [16.01, 16, 11.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [16.01, 16, 0]},
+			"faces": {
+				"north": {"uv": [16, 0, 14.5, 4], "texture": "#texture"},
+				"east": {"uv": [12, 15.814, 16, 4.5], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [2.5, 0, 1, 4], "texture": "#texture"},
+				"west": {"uv": [4, 15.814, 0, 4.5], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [13.5, 0, 15, 11.314], "texture": "#texture"},
+				"down": {"uv": [14.5, 0, 16, 11.314], "texture": "#texture"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 135, 0],
+			"translation": [-3.5, 4.75, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	}
+}

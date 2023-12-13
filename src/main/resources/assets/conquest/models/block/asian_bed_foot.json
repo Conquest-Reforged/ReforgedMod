@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"4": "conquest:block/4_furniture/3_wood/asian_bed/bed_feet_side_l",
+		"5": "conquest:block/4_furniture/3_wood/asian_bed/bed_feet_bottom",
+		"top": "conquest:block/4_furniture/3_wood/asian_bed/bed_feet_top",
+		"end": "conquest:block/4_furniture/3_wood/asian_bed/bed_feet_end",
+		"particle": "conquest:block/4_furniture/3_wood/asian_bed/bed_feet_end"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 9, 16],
+			"faces": {
+				"north": {"uv": [0, 7, 16, 16], "texture": "#end"},
+				"east": {"uv": [0, 7, 16, 16], "texture": "#4"},
+				"west": {"uv": [16, 7, 0, 16], "texture": "#4"},
+				"up": {"uv": [16, 16, 0, 0], "texture": "#top"}
+			}
+		},
+		{
+			"from": [0, 3, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "texture": "#5"}
+			}
+		}
+	]
+}

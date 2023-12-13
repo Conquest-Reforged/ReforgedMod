@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/metal_telescope" },
+        "facing=west": { "model": "conquest:block/metal_telescope", "y": 90 },
+        "facing=north": { "model": "conquest:block/metal_telescope", "y": 180 },
+        "facing=east": { "model": "conquest:block/metal_telescope", "y": 270 }
+    }
+}

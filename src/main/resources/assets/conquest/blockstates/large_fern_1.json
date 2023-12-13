@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layers=1": [{ "model": "conquest:block/large_fern_1_1" }, { "model": "conquest:block/large_fern_1_1", "y": 90 }, { "model": "conquest:block/large_fern_1_1", "y": 180 }, { "model": "conquest:block/large_fern_1_1", "y": 270 }],
+        "layers=2": [{ "model": "conquest:block/large_fern_1_2" }, { "model": "conquest:block/large_fern_1_2", "y": 90 }, { "model": "conquest:block/large_fern_1_2", "y": 180 }, { "model": "conquest:block/large_fern_1_2", "y": 270 }],
+        "layers=3": [{ "model": "conquest:block/large_fern_1_3" }, { "model": "conquest:block/large_fern_1_3", "y": 90 }, { "model": "conquest:block/large_fern_1_3", "y": 180 }, { "model": "conquest:block/large_fern_1_3", "y": 270 }],
+        "layers=4": [{ "model": "conquest:block/large_fern_1_4" }, { "model": "conquest:block/large_fern_1_4", "y": 90 }, { "model": "conquest:block/large_fern_1_4", "y": 180 }, { "model": "conquest:block/large_fern_1_4", "y": 270 }],
+        "layers=5": [{ "model": "conquest:block/large_fern_1_5" }, { "model": "conquest:block/large_fern_1_5", "y": 90 }, { "model": "conquest:block/large_fern_1_5", "y": 180 }, { "model": "conquest:block/large_fern_1_5", "y": 270 }],
+        "layers=6": [{ "model": "conquest:block/large_fern_1_6" }, { "model": "conquest:block/large_fern_1_6", "y": 90 }, { "model": "conquest:block/large_fern_1_6", "y": 180 }, { "model": "conquest:block/large_fern_1_6", "y": 270 }],
+        "layers=7": [{ "model": "conquest:block/large_fern_1_7" }, { "model": "conquest:block/large_fern_1_7", "y": 90 }, { "model": "conquest:block/large_fern_1_7", "y": 180 }, { "model": "conquest:block/large_fern_1_7", "y": 270 }],
+        "layers=8": [{ "model": "conquest:block/large_fern_1" }, { "model": "conquest:block/large_fern_1", "y": 90 }, { "model": "conquest:block/large_fern_1", "y": 180 }, { "model": "conquest:block/large_fern_1", "y": 270 }]
+    }
+}

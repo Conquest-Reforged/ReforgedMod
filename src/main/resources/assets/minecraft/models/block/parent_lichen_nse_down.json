@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/acacia_planks",
+		"single": "block/acacia_planks"
+	},
+	"elements": [
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 15.969],
+			"to": [16, 16, 15.97],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#single"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 0.03],
+			"to": [16, 16, 0.031],
+			"shade": false,
+			"faces": {
+				"south": {"uv": [16, 0, 0, 16], "texture": "#single"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [15.969, 0, 0],
+			"to": [15.97, 16, 16],
+			"shade": false,
+			"faces": {
+				"west": {"uv": [16, 0, 0, 16], "texture": "#single"}
+			}
+		}
+	]
+}

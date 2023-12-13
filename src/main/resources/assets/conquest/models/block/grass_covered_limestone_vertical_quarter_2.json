@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"north": "conquest:block/8_topography/4_grass_leaves/grass_covered_limestone",
+		"south": "conquest:block/8_topography/4_grass_leaves/grass_covered_limestone",
+		"east": "conquest:block/8_topography/4_grass_leaves/grass_covered_limestone",
+		"west": "conquest:block/8_topography/4_grass_leaves/grass_covered_limestone",
+		"top": "block/grass_block_top",
+		"bottom": "block/dirt",
+		"particle": "conquest:block/8_topography/4_grass_leaves/grass_covered_limestone"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [4, 16, 4],
+			"faces": {
+				"north": {"uv": [12, 0, 16, 16], "texture": "#north"},
+				"east": {"uv": [12, 0, 16, 16], "texture": "#east"},
+				"south": {"uv": [0, 0, 4, 16], "texture": "#south"},
+				"west": {"uv": [0, 0, 4, 16], "texture": "#west"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#top", "tintindex": 0},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#bottom"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [4, 0, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

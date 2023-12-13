@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "bottom=true": { "model": "conquest:block/metal_scaffolding_unstable" },
+    "bottom=false": { "model": "conquest:block/metal_scaffolding_stable" }
+  }
+}

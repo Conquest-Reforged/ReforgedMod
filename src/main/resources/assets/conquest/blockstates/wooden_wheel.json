@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "conquest:block/wooden_wheel" },
+        "facing=east": { "model": "conquest:block/wooden_wheel", "y": 90 },
+        "facing=south": { "model": "conquest:block/wooden_wheel", "y": 180 },
+        "facing=west": { "model": "conquest:block/wooden_wheel", "y": 270 },
+        "facing=up": { "model": "conquest:block/wooden_wheel", "x": 270 },
+        "facing=down": { "model": "conquest:block/wooden_wheel", "x": 90 }
+    }
+}

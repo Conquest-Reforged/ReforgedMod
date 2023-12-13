@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "layer=1":   { "model": "conquest:block/sandstone_plinth_pillar_2" },
+        "layer=2":   { "model": "conquest:block/sandstone_plinth_wall_post" },
+        "layer=3":   { "model": "conquest:block/sandstone_plinth_pillar_6" }
+    }
+}

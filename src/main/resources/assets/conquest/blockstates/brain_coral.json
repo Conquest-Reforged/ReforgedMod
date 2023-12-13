@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "living=true": { "model": "block/brain_coral" },
+        "living=false": { "model": "block/dead_brain_coral" }
+    }
+}

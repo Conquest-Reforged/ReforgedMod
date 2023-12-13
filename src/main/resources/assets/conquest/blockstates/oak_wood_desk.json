@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "shape=one,facing=south": { "model": "conquest:block/oak_wood_desk", "y": 90 },
+        "shape=one,facing=west": { "model": "conquest:block/oak_wood_desk", "y": 180 },
+        "shape=one,facing=north": { "model": "conquest:block/oak_wood_desk", "y": 270 },
+        "shape=one,facing=east": { "model": "conquest:block/oak_wood_desk" },
+
+        "shape=edge_l,facing=north": { "model": "conquest:block/oak_wood_desk_half", "y": 90 },
+        "shape=edge_l,facing=east": { "model": "conquest:block/oak_wood_desk_half", "y": 180 },
+        "shape=edge_l,facing=south": { "model": "conquest:block/oak_wood_desk_half", "y": 270 },
+        "shape=edge_l,facing=west": { "model": "conquest:block/oak_wood_desk_half" },
+
+        "shape=edge_r,facing=north": { "model": "conquest:block/oak_wood_desk_half", "y": 270 },
+        "shape=edge_r,facing=east": { "model": "conquest:block/oak_wood_desk_half" },
+        "shape=edge_r,facing=south": { "model": "conquest:block/oak_wood_desk_half", "y": 90 },
+        "shape=edge_r,facing=west": { "model": "conquest:block/oak_wood_desk_half", "y": 180 },
+
+        "shape=middle,facing=north": { "model": "conquest:block/oak_wood_desk_middle", "y": 90 },
+        "shape=middle,facing=east": { "model": "conquest:block/oak_wood_desk_middle", "y": 180 },
+        "shape=middle,facing=south": { "model": "conquest:block/oak_wood_desk_middle", "y": 270 },
+        "shape=middle,facing=west": { "model": "conquest:block/oak_wood_desk_middle" }
+    }
+}

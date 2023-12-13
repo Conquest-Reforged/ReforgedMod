@@ -1,0 +1,7 @@
+{
+    "parent": "conquest:block/steel_vertical_beam_support_2",
+    "textures": {
+        "0": "conquest:block/2_advanced_refined/2_metal/red_painted_steel_beam",
+		"particle": "conquest:block/2_advanced_refined/2_metal/red_painted_steel_beam"
+    }
+}

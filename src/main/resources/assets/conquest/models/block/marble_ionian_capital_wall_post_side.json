@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_ionian_capital_wall_post_side",
+	"textures": {
+		"texture": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_ionian_capital",
+		"particle": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_ionian_capital",
+		"texture1": "block/quartz_block_top",
+		"texture2": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_ionian_capital_spirals"
+	}
+}

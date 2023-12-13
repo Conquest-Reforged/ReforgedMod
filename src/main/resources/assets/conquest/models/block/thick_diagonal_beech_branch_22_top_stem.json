@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "conquest:block/9_organic/1_wood/beech_log",
+		"log": "conquest:block/9_organic/1_wood/beech_log"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [4.99947, 4.7873, -2],
+			"to": [10.99947, 10.7873, 2.89844],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.45847, 6.494, 9]},
+			"faces": {
+				"north": {"uv": [10, 8.5, 16, 14.5], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 2, 10, 6.89844], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [8, 5, 14, 11], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4, 2.5, 10, 7.39844], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [10, 0, 16, 4.89844], "texture": "#log"},
+				"down": {"uv": [10, 0, 16, 4.89844], "rotation": 180, "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [5.019, 9.70922, 1],
+			"to": [11.019, 15.70922, 17],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [0.478, 11.69322, 14.5]},
+			"faces": {
+				"north": {"uv": [10, 8.5, 16, 14.5], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 0, 10, 16], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [8, 5, 14, 11], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4.5, 0, 10.5, 16], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [10, 0, 16, 16], "texture": "#log"},
+				"down": {"uv": [10, 0, 16, 16], "rotation": 180, "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [5.019, 10.285, -7.5],
+			"to": [11.019, 16.285, -1.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [0.478, 12.269, 12]},
+			"faces": {
+				"north": {"uv": [10, 8.5, 16, 14.5], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [3.5, 10, 9.5, 16], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [8, 5, 14, 11], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4, 10, 10, 16], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [10, 10, 16, 16], "texture": "#log"},
+				"down": {"uv": [10, 10, 16, 16], "rotation": 180, "texture": "#log"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "beam_diagonal_nsse4",
+			"origin": [-8.5, 14, 26],
+			"children": [0, 1, 2]
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/dark_green_sphagnum_moss_e",
+	"textures": {
+		"1": "conquest:block/9_organic/3_plants/alpine_bearberry/1_3",
+		"3": "conquest:block/9_organic/3_plants/alpine_bearberry/side",
+		"4": "conquest:block/9_organic/3_plants/alpine_bearberry/1",
+		"particle": "conquest:block/9_organic/3_plants/alpine_bearberry/1_3"
+	}
+}

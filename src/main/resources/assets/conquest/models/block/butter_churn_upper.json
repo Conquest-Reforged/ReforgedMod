@@ -1,0 +1,10 @@
+{
+	"loader": "forge:obj",
+	"model": "conquest:models/obj/butter_churn_upper.obj",
+	"ambientToFullbright": true,
+	"flip-v": true,
+	"textures": {
+		"particle": "conquest:block/3_decoration/3_wood/butter_churn/butter_churn_side",
+		"stick": "conquest:block/3_decoration/3_wood/butter_churn/butter_churn_stick"
+	}
+}

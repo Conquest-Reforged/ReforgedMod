@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "conquest:block/iron_door_knob", "y": 270 },
+        "facing=south": { "model": "conquest:block/iron_door_knob" },
+        "facing=west": { "model": "conquest:block/iron_door_knob", "y": 90 },
+        "facing=north": { "model": "conquest:block/iron_door_knob", "y": 180 },
+        "facing=up": { "model": "conquest:block/iron_door_knob", "x": 90 },
+        "facing=down": { "model": "conquest:block/iron_door_knob", "x": 270 }
+    }
+}

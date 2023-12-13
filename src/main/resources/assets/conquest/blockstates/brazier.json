@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "light=0": { "model": "conquest:block/brazier_unlit" },
+        "light=1": { "model": "conquest:block/brazier" },
+        "light=2": { "model": "conquest:block/brazier" },
+        "light=3": { "model": "conquest:block/brazier" }
+    }
+}

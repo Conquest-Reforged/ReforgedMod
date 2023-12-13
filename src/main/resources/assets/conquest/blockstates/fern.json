@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layers=1": { "model": "block/fern_1" },
+        "layers=2": { "model": "block/fern_2" },
+        "layers=3": { "model": "block/fern_3" },
+        "layers=4": { "model": "block/fern_4" },
+        "layers=5": { "model": "block/fern_5" },
+        "layers=6": { "model": "block/fern_6" },
+        "layers=7": { "model": "block/fern_7" },
+        "layers=8": { "model": "block/fern" }
+    }
+}

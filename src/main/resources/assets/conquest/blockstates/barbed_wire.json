@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "conquest:block/barbed_wire", "x": 90 },
+        "axis=z":   { "model": "conquest:block/barbed_wire" },
+        "axis=x":   { "model": "conquest:block/barbed_wire", "y": 90 }
+    }
+}

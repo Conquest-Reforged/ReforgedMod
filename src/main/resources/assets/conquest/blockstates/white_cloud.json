@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "opacity=0": { "model": "conquest:block/white_cloud_0" },
+        "opacity=1": { "model": "conquest:block/white_cloud_1" },
+        "opacity=2": { "model": "conquest:block/white_cloud_2" },
+        "opacity=3": { "model": "conquest:block/white_cloud_3" },
+        "opacity=4": { "model": "conquest:block/white_cloud_4" },
+        "opacity=5": { "model": "conquest:block/white_cloud_5" },
+        "opacity=6": { "model": "conquest:block/white_cloud_6" },
+        "opacity=7": { "model": "conquest:block/white_cloud_7" },
+        "opacity=8": { "model": "conquest:block/white_cloud_8" },
+        "opacity=9": { "model": "conquest:block/white_cloud_9" },
+        "opacity=10": { "model": "conquest:block/white_cloud_10" },
+        "opacity=11": { "model": "conquest:block/white_cloud_11" },
+        "opacity=12": { "model": "conquest:block/white_cloud_12" },
+        "opacity=13": { "model": "conquest:block/white_cloud_13" },
+        "opacity=14": { "model": "conquest:block/white_cloud_14" },
+        "opacity=15": { "model": "conquest:block/white_cloud_15" }
+    }
+}

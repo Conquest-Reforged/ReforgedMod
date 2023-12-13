@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_fancy_balustrade_post",
+	"textures": {
+		"texture": "conquest:block/2_advanced_refined/1_stone/2_limestone/fancy_limestone_balustrade",
+		"particle": "conquest:block/2_advanced_refined/1_stone/2_limestone/fancy_limestone_balustrade",
+		"texture1": "block/stone",
+		"texture2": "conquest:block/2_advanced_refined/1_stone/2_limestone/fancy_limestone_balustrade_top"
+	}
+}

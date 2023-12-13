@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "conquest:block/limestone_cornice_capital_down_flat", "uvlock": true }
+    }
+}

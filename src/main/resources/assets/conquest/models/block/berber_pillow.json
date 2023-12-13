@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/parent_cushion",
+	"textures": {
+		"top": "conquest:block/3_decoration/4_cloth/berber_pillow",
+		"side": "conquest:block/3_decoration/4_cloth/berber_pillow_side"
+	}
+}

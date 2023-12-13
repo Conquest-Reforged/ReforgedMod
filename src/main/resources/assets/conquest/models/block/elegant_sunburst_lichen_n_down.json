@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/dark_green_sphagnum_moss_n_down",
+	"textures": {
+		"particle": "conquest:block/9_organic/3_plants/elegant_sunburst_lichen/single",
+		"side": "conquest:block/9_organic/3_plants/elegant_sunburst_lichen/single"
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "conquest:block/circular_saw", "y": 270 },
+        "facing=south": { "model": "conquest:block/circular_saw" },
+        "facing=west": { "model": "conquest:block/circular_saw", "y": 90 },
+        "facing=north": { "model": "conquest:block/circular_saw", "y": 180 },
+        "facing=up": { "model": "conquest:block/circular_saw_bottom" },
+        "facing=down": { "model": "conquest:block/circular_saw_top" }
+    }
+}

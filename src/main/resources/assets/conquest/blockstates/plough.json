@@ -1,0 +1,34 @@
+{
+    "variants": {
+        "facing=south,part=head": {
+            "model": "conquest:block/plough_head"
+        },
+        "facing=west,part=head": {
+            "model": "conquest:block/plough_head",
+            "y": 90
+        },
+        "facing=north,part=head": {
+            "model": "conquest:block/plough_head",
+            "y": 180
+        },
+        "facing=east,part=head": {
+            "model": "conquest:block/plough_head",
+            "y": 270
+        },
+        "facing=south,part=foot": {
+            "model": "conquest:block/plough_base"
+        },
+        "facing=west,part=foot": {
+            "model": "conquest:block/plough_base",
+            "y": 90
+        },
+        "facing=north,part=foot": {
+            "model": "conquest:block/plough_base",
+            "y": 180
+        },
+        "facing=east,part=foot": {
+            "model": "conquest:block/plough_base",
+            "y": 270
+        }
+    }
+}

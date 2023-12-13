@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/directional_farmland" },
+        "facing=west": { "model": "conquest:block/directional_farmland", "y": 90 },
+        "facing=north": { "model": "conquest:block/directional_farmland", "y": 180 },
+        "facing=east": { "model": "conquest:block/directional_farmland", "y": 270 }
+    }
+}

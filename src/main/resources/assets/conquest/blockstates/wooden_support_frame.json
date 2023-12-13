@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"conquest:block/wooden_support_frame"
+  },
+  "variants": {
+    "toggle=1,facing=down": { "model": "conquest:block/wooden_support_frame" },
+    "toggle=1,facing=up": { "model": "conquest:block/wooden_support_frame","x": 180 },
+    "toggle=1,facing=north": { "model": "conquest:block/wooden_support_frame", "x": 90, "y": 180 },
+    "toggle=1,facing=east": { "model": "conquest:block/wooden_support_frame", "x": 90, "y": 270 },
+    "toggle=1,facing=south": { "model": "conquest:block/wooden_support_frame", "x": 90 },
+    "toggle=1,facing=west": { "model": "conquest:block/wooden_support_frame", "x": 90, "y": 90 },
+
+    "toggle=2,facing=down": { "model": "conquest:block/wooden_support_frame", "y": 90 },
+    "toggle=2,facing=up": { "model": "conquest:block/wooden_support_frame","x": 180, "y": 90 },
+    "toggle=2,facing=north": { "model": "conquest:block/wooden_support_frame_1", "x": 90, "y": 180},
+    "toggle=2,facing=east": { "model": "conquest:block/wooden_support_frame_1","x": 90, "y": 270 },
+    "toggle=2,facing=south": { "model": "conquest:block/wooden_support_frame_1","x": 90 },
+    "toggle=2,facing=west": { "model": "conquest:block/wooden_support_frame_1","x": 90, "y": 90 }
+  }
+}

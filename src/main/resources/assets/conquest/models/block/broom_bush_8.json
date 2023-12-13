@@ -1,0 +1,128 @@
+{
+	"textures": {
+		"particle": "conquest:block/9_organic/3_plants/broom_bush",
+		"texture": "conquest:block/9_organic/3_plants/broom_bush"
+	},
+	"elements": [
+		{
+			"name": "Cube1",
+			"from": [13.5, 0, -10.5],
+			"to": [13.501, 27, 21.5],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [13.5, 0, 21.5]},
+			"faces": {
+				"east": {"uv": [0, 3, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 2.5, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [-7.5, 0, 7],
+			"to": [24.5, 27, 7.001],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "x", "origin": [-7.5, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [7, 0, -8.5],
+			"to": [7.001, 27, 23.5],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "z", "origin": [7, 0, 23.5]},
+			"faces": {
+				"east": {"uv": [0, 3, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 2.5, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [-4, 0, 18.5],
+			"to": [28, 27, 18.501],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [-4, 0, 18.5]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [7.5, 0, -8],
+			"to": [7.501, 27, 24],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "z", "origin": [7.5, 0, 24]},
+			"faces": {
+				"east": {"uv": [0, 3, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 2.5, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [-7.5, 0, 7],
+			"to": [24.5, 27, 7.001],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [0, 2.5, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [-7.5, 0, 7],
+			"to": [24.5, 27, 7.001],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "x", "origin": [-7.5, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [7.5, 0, -8],
+			"to": [7.501, 27, 24],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [7.5, 0, 24]},
+			"faces": {
+				"east": {"uv": [0, 3, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 2.5, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [7, 0, -8.5],
+			"to": [7.001, 27, 23.5],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [7, 0, 23.5]},
+			"faces": {
+				"east": {"uv": [0, 3, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 2.5, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [-7.5, 0, 7],
+			"to": [24.5, 27, 7.001],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [-7.5, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube1",
+			"from": [-7.5, 0, 7],
+			"to": [24.5, 27, 7.001],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [-7.5, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#texture"}
+			}
+		}
+	]
+}

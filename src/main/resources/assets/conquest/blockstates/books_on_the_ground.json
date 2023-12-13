@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "conquest:block/books_on_the_ground_1", "weight": 100 },
+      { "model": "conquest:block/books_on_the_ground_2", "weight": 100 },
+      { "model": "conquest:block/books_on_the_ground_3", "weight": 100 },
+      { "model": "conquest:block/books_on_the_ground_4", "weight": 100 }
+      ]
+  }
+}

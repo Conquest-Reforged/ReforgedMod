@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"north": "conquest:block/8_topography/4_grass_leaves/taiga_grass",
+		"south": "conquest:block/8_topography/4_grass_leaves/taiga_grass",
+		"east": "conquest:block/8_topography/4_grass_leaves/taiga_grass",
+		"west": "conquest:block/8_topography/4_grass_leaves/taiga_grass",
+		"top": "conquest:block/8_topography/4_grass_leaves/taiga_grass",
+		"particle": "conquest:block/8_topography/4_grass_leaves/taiga_grass",
+		"bottom": "block/dirt"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [14, 16, 14],
+			"faces": {
+				"north": {"uv": [2, 0, 16, 16], "texture": "#north", "tintindex": 0},
+				"east": {"uv": [2, 0, 16, 16], "texture": "#east", "tintindex": 0},
+				"south": {"uv": [0, 0, 14, 16], "texture": "#south", "tintindex": 0},
+				"west": {"uv": [0, 0, 14, 16], "texture": "#west", "tintindex": 0},
+				"up": {"uv": [0, 0, 14, 14], "texture": "#top", "tintindex": 0},
+				"down": {"uv": [0, 2, 14, 16], "texture": "#bottom"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [4, 0, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

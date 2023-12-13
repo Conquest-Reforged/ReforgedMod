@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "conquest:block/birch_wood_slotted_shutters_open", "y": 90 },
+        "facing=south": { "model": "conquest:block/birch_wood_slotted_shutters_open", "y": 180 },
+        "facing=west": { "model": "conquest:block/birch_wood_slotted_shutters_open", "y": 270 },
+        "facing=north": { "model": "conquest:block/birch_wood_slotted_shutters_open" },
+        "facing=up": { "model": "conquest:block/birch_wood_slotted_shutters_bottom" },
+        "facing=down": { "model": "conquest:block/birch_wood_slotted_shutters_top" }
+    }
+}

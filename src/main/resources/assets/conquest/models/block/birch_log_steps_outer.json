@@ -1,0 +1,157 @@
+{
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/birch/wall_of_birch_logs_side",
+		"texture": "conquest:block/1_basic_refined/3_wood/birch/wall_of_birch_logs_side",
+		"top": "conquest:block/1_basic_refined/3_wood/birch/light_birch_wood_planks"
+	},
+	"elements": [ 	 
+		{
+			"from": [ -3.3137, 4, 10 ],
+			"to": [ 19.3113, 8, 14 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45 },
+			"faces": {
+				"down": { "uv": [ 0, 11.5, 16, 7.5 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 16, 16, 12 ], "texture": "#texture", "rotation": 180 },
+				"north": { "uv": [ 0, 0, 16, 4 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 16, 4 ], "texture": "#texture" },
+				"west": { "uv": [ 16, 0, 12, 4 ], "texture": "#texture" },
+				"east": { "uv": [ 4, 0, 0, 4 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 10, 4, -3.3137 ],
+			"to": [ 14, 8, 19.3113 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -45 },
+			"faces": {
+				"down": { "uv": [ 0, 7.5, 16, 11.5 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 0, 6, 16, 10 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 12, 8, 16, 12 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 7.5, 4, 11.5 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 7.5, 16, 11.5 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 7.5, 16, 11.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 0, 4.5, 0 ],
+			"to": [ 8, 6.5, 16 ],
+			"faces": {
+				"down": { "uv": [ 16, 12, 0, 4 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 0, 4, 16, 12 ], "texture": "#top", "rotation": 90 },
+				"north": { "uv": [ 8, 11.5, 16, 13.5 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 11.5, 8, 13.5 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 11.5, 16, 13.5 ], "texture": "#texture" },
+				"east": { "uv": [ 16, 11.5, 0, 13.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 8, 4.5, 0 ],
+			"to": [ 16, 6.5, 8 ],
+			"faces": {
+				"down": { "uv": [ 8, 12, 0, 4 ], "texture": "#texture", "rotation": 180 },
+				"up": { "uv": [ 0, 4, 8, 12 ], "texture": "#top", "rotation": 180 },
+				"north": { "uv": [ 0, 11.5, 8, 13.5 ], "texture": "#texture" },
+				"south": { "uv": [ 16, 11.5, 8, 13.5 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 11.5, 16, 13.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 2, 2.5, 0 ],
+			"to": [ 6, 4.5, 16 ],
+			"faces": {
+				"down": { "uv": [ 16, 10, 0, 6 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 10, 13.5, 14, 15.5 ], "texture": "#texture" },
+				"south": { "uv": [ 2, 13.5, 6, 15.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 0, 2.505, 2 ],
+			"to": [ 16, 4.505, 6 ],
+			"faces": {
+				"down": { "uv": [ 16, 10, 0, 6 ], "texture": "#texture", "rotation": 180 },
+				"west": { "uv": [ 2, 13.5, 6, 15.5 ], "texture": "#texture" },
+				"east": { "uv": [ 10, 13.5, 14, 15.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ -0.1317, 8.3536, 0.005 ],
+			"to": [ 1.3683, 11.1786, 15.995 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45 },
+			"faces": {
+				"north": { "uv": [ 14.5, 13.5, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 13.5, 1.5, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 13.5, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 0.005, 8.3536, -0.1317 ],
+			"to": [ 15.995, 11.1786, 1.3683 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -45 },
+			"faces": {
+				"north": { "uv": [ 0, 13.5, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 13.5, 1.5, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 14.5, 13.5, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 8.9749, 2.6967, 0.005 ],
+			"to": [ 10.4749, 5.5217, 15.995 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -45 },
+			"faces": {
+				"north": { "uv": [ 16, 13.5, 14.5, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 1.5, 13.5, 0, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 16, 13.5, 0, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 0.005, 2.6967, 8.9749 ],
+			"to": [ 15.995, 5.5217, 10.4749 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 45 },
+			"faces": {
+				"south": { "uv": [ 16, 13.5, 0, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 1.5, 13.5, 0, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 16, 13.5, 14.5, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 8, 12.5, 8 ],
+			"to": [ 16, 14.5, 16 ],
+			"faces": {
+				"down": { "uv": [ 16, 12, 8, 4 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 8, 4, 16, 12 ], "texture": "#top", "rotation": 90 },
+				"north": { "uv": [ 0, 3.5, 8, 5.5 ], "texture": "#texture" },
+				"south": { "uv": [ 8, 3.5, 0, 5.5 ], "texture": "#texture" },
+				"west": { "uv": [ 8, 3.5, 16, 5.5 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 3.5, 0, 5.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 10, 10.5, 8 ],
+			"to": [ 14, 12.5, 16 ],
+			"faces": {
+				"down": { "uv": [ 8, 10, 0, 6 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 10, 13.5, 14, 15.5 ], "texture": "#texture" },
+				"south": { "uv": [ 2, 13.5, 6, 15.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 11.182, 8.3536, 8.005 ],
+			"to": [ 12.682, 11.1786, 15.995 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45 },
+			"faces": {
+				"north": { "uv": [ 14.5, 13.5, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 13.5, 1.5, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 8, 13.5, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 8.9749, 14.0104, 8.005 ],
+			"to": [ 10.4749, 16.8354, 15.995 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -45 },
+			"faces": {
+				"north": { "uv": [ 16, 13.5, 14.5, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 1.5, 13.5, 0, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 13.5, 0, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

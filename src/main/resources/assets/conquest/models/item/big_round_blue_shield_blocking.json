@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:item/shield_blocking",
+    "textures": {
+        "layer0": "conquest:item/big_round_blue_shield"
+    }
+}

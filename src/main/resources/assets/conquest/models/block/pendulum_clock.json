@@ -1,0 +1,67 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"5": "conquest:block/3_decoration/3_wood/pendulum_clock",
+		"particle": "conquest:block/3_decoration/3_wood/pendulum_clock"
+	},
+	"elements": [
+		{
+			"from": [3, 1, 10.5],
+			"to": [13, 14, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [5, 0.25, 10, 6.75], "texture": "#5"},
+				"east": {"uv": [0.75, 1.5, 3.5, 8], "texture": "#5"},
+				"south": {"uv": [0, 1.75, 4.75, 8.25], "texture": "#5"},
+				"west": {"uv": [0.75, 1.5, 3.5, 8], "texture": "#5"}
+			}
+		},
+		{
+			"from": [1, 14, 7.75],
+			"to": [15, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]},
+			"faces": {
+				"north": {"uv": [8.5, 14.5, 15.5, 15.5], "texture": "#5"},
+				"east": {"uv": [8.5, 14.5, 12.625, 15.5], "texture": "#5"},
+				"south": {"uv": [8.5, 14.5, 15.5, 15.5], "texture": "#5"},
+				"west": {"uv": [8.5, 14.5, 12.625, 15.5], "texture": "#5"},
+				"up": {"uv": [0.5, 11.75, 7.5, 15.875], "texture": "#5"},
+				"down": {"uv": [0.5, 11.75, 7.5, 15.875], "texture": "#5"}
+			}
+		},
+		{
+			"from": [0.75, 0, 7.5],
+			"to": [15, 1, 16],
+			"faces": {
+				"north": {"uv": [8.5, 14.5, 16, 15], "texture": "#5"},
+				"east": {"uv": [8.5, 14.5, 12.75, 15], "texture": "#5"},
+				"south": {"uv": [8.5, 14.5, 16, 15], "texture": "#5"},
+				"west": {"uv": [8.5, 14.5, 12.75, 15], "texture": "#5"},
+				"up": {"uv": [0.5, 11.75, 7.625, 16], "texture": "#5"},
+				"down": {"uv": [0.5, 11.75, 7.625, 16], "texture": "#5"}
+			}
+		},
+		{
+			"from": [2.16406, -2.75, 9.25],
+			"to": [13.91406, 20.75, 9.251],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.66406, 8.25, 8]},
+			"faces": {
+				"north": {"uv": [10, 2.75, 15.875, 14.5], "texture": "#5"},
+				"east": {"uv": [0, 0, 0.0005, 6.75], "texture": "#5"},
+				"south": {"uv": [15.875, 2.5, 10, 14.25], "texture": "#5"},
+				"west": {"uv": [0, 0, 0.0005, 6.75], "texture": "#5"},
+				"up": {"uv": [0, 0, 7.5, 0.0005], "texture": "#5"},
+				"down": {"uv": [0, 0, 7.5, 0.0005], "texture": "#5"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [20, 220, 0],
+			"translation": [1, -1, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

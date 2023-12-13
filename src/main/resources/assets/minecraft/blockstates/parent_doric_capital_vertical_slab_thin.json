@@ -1,0 +1,8 @@
+{
+    "variants": {
+      "facing=south": { "model": "block/parent_doric_capital_vertical_slab_thin", "y": 180, "uvlock": true },
+      "facing=west": { "model": "block/parent_doric_capital_vertical_slab_thin", "y": 270, "uvlock": true },
+      "facing=north": { "model": "block/parent_doric_capital_vertical_slab_thin", "uvlock": true },
+      "facing=east": { "model": "block/parent_doric_capital_vertical_slab_thin", "y": 90, "uvlock": true }
+    }
+}

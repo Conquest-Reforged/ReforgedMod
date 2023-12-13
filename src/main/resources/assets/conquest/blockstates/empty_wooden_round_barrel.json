@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "conquest:block/empty_wooden_round_barrel", "x": 90, "y": 90 },
+        "facing=south": { "model": "conquest:block/empty_wooden_round_barrel", "x": 90, "y": 180 },
+        "facing=west": { "model": "conquest:block/empty_wooden_round_barrel", "x": 90, "y": 270 },
+        "facing=north": { "model": "conquest:block/empty_wooden_round_barrel", "x": 90 },
+        "facing=up": { "model": "conquest:block/empty_wooden_round_barrel" },
+        "facing=down": { "model": "conquest:block/empty_wooden_round_barrel", "x": 180 }
+    }
+}

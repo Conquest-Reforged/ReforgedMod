@@ -1,0 +1,48 @@
+{
+    "variants": {
+        "east=false,north=false,south=false,up=false,west=false": { "model": "block/parent_branch_post" },
+        "east=false,north=true,south=false,up=false,west=false":  [
+            { "model": "block/parent_branch_n" },
+            { "model": "block/parent_branch_n_1" }
+        ],
+        "east=true,north=false,south=false,up=false,west=false":  [
+            { "model": "block/parent_branch_n", "y": 90 },
+            { "model": "block/parent_branch_n_1", "y": 90 }
+        ],
+        "east=false,north=false,south=true,up=false,west=false":  [
+            { "model": "block/parent_branch_n", "y": 180 },
+            { "model": "block/parent_branch_n_1", "y": 180 }
+        ],
+        "east=false,north=false,south=false,up=false,west=true":  [
+            { "model": "block/parent_branch_n", "y": 270 },
+            { "model": "block/parent_branch_n_1", "y": 270 }
+        ],
+        "east=true,north=true,south=false,up=false,west=false":   { "model": "block/parent_branch_ne" },
+        "east=true,north=false,south=true,up=false,west=false":   { "model": "block/parent_branch_ne", "y": 90 },
+        "east=false,north=false,south=true,up=false,west=true":   { "model": "block/parent_branch_ne", "y": 180 },
+        "east=false,north=true,south=false,up=false,west=true":   { "model": "block/parent_branch_ne", "y": 270 },
+        "east=false,north=true,south=true,up=false,west=false":   { "model": "block/parent_branch_ns" },
+        "east=true,north=false,south=false,up=false,west=true":   { "model": "block/parent_branch_ns", "y": 90 },
+        "east=true,north=true,south=true,up=false,west=false":    { "model": "block/parent_branch_nse" },
+        "east=true,north=false,south=true,up=false,west=true":    { "model": "block/parent_branch_nse", "y": 90 },
+        "east=false,north=true,south=true,up=false,west=true":    { "model": "block/parent_branch_nse", "y": 180 },
+        "east=true,north=true,south=false,up=false,west=true":    { "model": "block/parent_branch_nse", "y": 270 },
+        "east=true,north=true,south=true,up=false,west=true":     { "model": "block/parent_branch_nsew" },
+        "east=false,north=false,south=false,up=true,west=false":  { "model": "block/parent_branch_post" },
+        "east=false,north=true,south=false,up=true,west=false":   [{ "model": "block/parent_branch_n_up" }, { "model": "block/parent_branch_n_up_1" }],
+        "east=true,north=false,south=false,up=true,west=false":   [{ "model": "block/parent_branch_n_up", "y": 90 }, { "model": "block/parent_branch_n_up_1", "y": 90 }],
+        "east=false,north=false,south=true,up=true,west=false":   [{ "model": "block/parent_branch_n_up", "y": 180 }, { "model": "block/parent_branch_n_up_1", "y": 180 }],
+        "east=false,north=false,south=false,up=true,west=true":   [{ "model": "block/parent_branch_n_up", "y": 270 }, { "model": "block/parent_branch_n_up_1", "y": 270 }],
+        "east=true,north=true,south=false,up=true,west=false":    { "model": "block/parent_branch_ne_up" },
+        "east=true,north=false,south=true,up=true,west=false":    { "model": "block/parent_branch_ne_up", "y": 90 },
+        "east=false,north=false,south=true,up=true,west=true":    { "model": "block/parent_branch_ne_up", "y": 180 },
+        "east=false,north=true,south=false,up=true,west=true":    { "model": "block/parent_branch_ne_up", "y": 270 },
+        "east=false,north=true,south=true,up=true,west=false":    { "model": "block/parent_branch_ns_up" },
+        "east=true,north=false,south=false,up=true,west=true":    { "model": "block/parent_branch_ns_up", "y": 90 },
+        "east=true,north=true,south=true,up=true,west=false":     { "model": "block/parent_branch_nse_up" },
+        "east=true,north=false,south=true,up=true,west=true":     { "model": "block/parent_branch_nse_up", "y": 90 },
+        "east=false,north=true,south=true,up=true,west=true":     { "model": "block/parent_branch_nse_up", "y": 180 },
+        "east=true,north=true,south=false,up=true,west=true":     { "model": "block/parent_branch_nse_up", "y": 270 },
+        "east=true,north=true,south=true,up=true,west=true":      { "model": "block/parent_branch_nsew_up" }
+    }
+}

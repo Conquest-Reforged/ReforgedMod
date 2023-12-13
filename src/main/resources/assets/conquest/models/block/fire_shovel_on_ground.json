@@ -1,0 +1,44 @@
+{
+	"textures": {
+		"particle": "conquest:block/7_tools/3_utility/metal_tool",
+		"all": "conquest:block/7_tools/3_utility/metal_tool"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 10.5, 0, 6 ],
+			"to": [ 16.5, 0.5, 10 ],
+			"rotation": { "origin": [ 10.5, 0, 8 ], "axis": "z", "angle": 22.5 },
+			"faces": {
+				"down": { "uv": [ 12, 3, 16, 9 ], "texture": "#all", "rotation": 270 },
+				"up": { "uv": [ 2, 10, 6, 16 ], "texture": "#all", "rotation": 270 },
+				"north": { "uv": [ 0, 15.75, 0.5, 9.75 ], "texture": "#all", "rotation": 90 },
+				"south": { "uv": [ 0, 15.75, 0.5, 9.75 ], "texture": "#all", "rotation": 270 },
+				"west": { "uv": [ 8, 9, 14, 15 ], "texture": "#all" },
+				"east": { "uv": [ 10, 11.5, 10.5, 15.5 ], "texture": "#all", "rotation": 270 }
+			}
+		},
+		{
+			"from": [ 10.5, 0.5, 6 ],
+			"to": [ 16.5, 1.5, 10 ],
+			"rotation": { "origin": [ 10.5, 0, 8 ], "axis": "z", "angle": 22.5 },
+			"faces": {
+				"north": { "uv": [ 0.5, 0, 1.5, 6 ], "texture": "#all", "rotation": 90 },
+				"south": { "uv": [ 0, 0, 1, 6 ], "texture": "#all", "rotation": 270 },
+				"west": { "uv": [ 0.5, 8, 1.5, 12 ], "texture": "#all", "rotation": 90 }
+			}
+		},
+		{
+			"from": [ -2.5, 0.125, 7.625 ],
+			"to": [ 11.5, 0.875, 8.375 ],
+			"rotation": { "origin": [ 4.5, 0.5, 8 ], "axis": "x", "angle": -45 },
+			"faces": {
+				"down": { "uv": [ 0, 2, 1, 16 ], "texture": "#all", "rotation": 270 },
+				"up": { "uv": [ 0, 2, 1, 16 ], "texture": "#all", "rotation": 270 },
+				"north": { "uv": [ 1, 2, 2, 16 ], "texture": "#all", "rotation": 90 },
+				"south": { "uv": [ 1, 2, 2, 16 ], "texture": "#all", "rotation": 270 },
+				"west": { "uv": [ 0, 0, 0.75, 0.75 ], "texture": "#all" },
+				"east": { "uv": [ 0, 0, 0.75, 0.75 ], "texture": "#all", "rotation": 180 }
+			}
+		}
+	]
+}

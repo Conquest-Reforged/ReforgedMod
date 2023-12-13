@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"conquest:block/sandstone_dragon_head"
+  },
+  "variants": {
+    "facing=north": { "model": "conquest:block/sandstone_dragon_head" },
+    "facing=east": { "model": "conquest:block/sandstone_dragon_head", "y": 90 },
+    "facing=south": { "model": "conquest:block/sandstone_dragon_head", "y": 180 },
+    "facing=west": { "model": "conquest:block/sandstone_dragon_head", "y": 270 }
+  }
+}

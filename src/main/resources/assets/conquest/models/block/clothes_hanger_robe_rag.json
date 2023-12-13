@@ -1,0 +1,88 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"hanger": "conquest:block/4_furniture/3_wood/clothes_hanger/coathook",
+		"particle": "conquest:block/4_furniture/3_wood/clothes_hanger/wood",
+		"wood": "conquest:block/4_furniture/3_wood/clothes_hanger/wood",
+		"coat2": "conquest:block/4_furniture/3_wood/clothes_hanger/greencoat",
+		"cloak": "conquest:block/4_furniture/3_wood/clothes_hanger/cloak3"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 1],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#hanger"},
+				"east": {"uv": [1, 0, 0, 8], "texture": "#hanger"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#hanger"},
+				"west": {"uv": [0, 0, 1, 8], "texture": "#hanger"},
+				"up": {"uv": [0, 16, 16, 15], "texture": "#hanger"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#hanger"}
+			}
+		},
+		{
+			"from": [0, 15, 1],
+			"to": [16, 16, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#wood"},
+				"east": {"uv": [0.5, 0, 7.5, 1], "texture": "#hanger"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#wood"},
+				"west": {"uv": [1, 0, 8, 1], "texture": "#hanger"},
+				"up": {"uv": [0, 9, 16, 16], "texture": "#wood"},
+				"down": {"uv": [0, 7.5, 16, 14.5], "texture": "#wood"}
+			}
+		},
+		{
+			"from": [0, 9, 1],
+			"to": [0.001, 15, 7],
+			"faces": {
+				"east": {"uv": [7, 1, 1, 7], "texture": "#hanger"},
+				"west": {"uv": [1, 1, 7, 7], "texture": "#hanger"}
+			}
+		},
+		{
+			"from": [15.95, 9, 1],
+			"to": [15.951, 15, 7],
+			"faces": {
+				"east": {"uv": [7, 1, 1, 7], "texture": "#hanger"},
+				"west": {"uv": [1, 1, 7, 7], "texture": "#hanger"}
+			}
+		},
+		{
+			"from": [11.5, 12, 1],
+			"to": [12.5, 13, 2],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#hanger"},
+				"east": {"uv": [1, 1, 2, 2], "texture": "#hanger"},
+				"south": {"uv": [5, 9, 6, 10], "texture": "#hanger"},
+				"west": {"uv": [3, 9, 4, 10], "texture": "#hanger"},
+				"up": {"uv": [5, 8.5, 6, 9.5], "texture": "#hanger"},
+				"down": {"uv": [1.5, 1.5, 2.5, 2.5], "texture": "#hanger"}
+			}
+		},
+		{
+			"from": [1.0612, 3, 1.2768],
+			"to": [7.0612, 13.5, 1.2778],
+			"faces": {
+				"north": {"uv": [11, 2.5, 5, 13], "texture": "#cloak"},
+				"south": {"uv": [5, 2.5, 11, 13], "texture": "#cloak"}
+			}
+		},
+		{
+			"from": [4.5, -1, 1.0602],
+			"to": [14.5, 15, 1.0612],
+			"faces": {
+				"north": {"uv": [6, 1, 1, 9], "texture": "#coat2"},
+				"south": {"uv": [1, 1, 6, 9], "texture": "#coat2"}
+			}
+		},
+		{
+			"from": [4.5, -11.5, 1.0602],
+			"to": [15.5, -1, 1.0612],
+			"faces": {
+				"north": {"uv": [6.5, 9, 1, 14.25], "texture": "#coat2"},
+				"south": {"uv": [1, 9, 6.5, 14.25], "texture": "#coat2"}
+			}
+		}
+	]
+}

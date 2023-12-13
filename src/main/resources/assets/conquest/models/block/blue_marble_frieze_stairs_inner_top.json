@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/1_stone/3_marble/blue_marble_frieze_stairs",
+		"side": "conquest:block/2_advanced_refined/1_stone/3_marble/blue_marble_frieze_stairs",
+		"top": "block/quartz_block_top",
+		"bottom": "block/quartz_block_bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [8, 8, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 8, 8, 16], "texture": "#side", "cullface": "west"},
+				"down": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [8, 0, 8],
+			"to": [16, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0, 8, 8, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [8, 8, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [8, 8, 16, 16], "texture": "#side"},
+				"down": {"uv": [0, 0, 8, 8], "rotation": 90, "texture": "#bottom"}
+			}
+		}
+	]
+}

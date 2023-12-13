@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "type=top,hinge=left,facing=south": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_left" },
+        "type=top,hinge=left,facing=west": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_left", "y": 90 },
+        "type=top,hinge=left,facing=north": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_right", "y": 180 },
+        "type=top,hinge=left,facing=east": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_right", "y": 270 },
+
+        "type=top,hinge=right,facing=south": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_right" },
+        "type=top,hinge=right,facing=west": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_right", "y": 90 },
+        "type=top,hinge=right,facing=north": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_left", "y": 180 },
+        "type=top,hinge=right,facing=east": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_left", "y": 270 },
+        
+        "type=bottom,hinge=left,facing=south": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_left" },
+        "type=bottom,hinge=left,facing=west": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_left", "y": 90 },
+        "type=bottom,hinge=left,facing=north": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_right", "y": 180 },
+        "type=bottom,hinge=left,facing=east": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_right", "y": 270 },
+
+        "type=bottom,hinge=right,facing=south": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_right" },
+        "type=bottom,hinge=right,facing=west": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_right", "y": 90 },
+        "type=bottom,hinge=right,facing=north": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_left", "y": 180 },
+        "type=bottom,hinge=right,facing=east": { "model": "conquest:block/horizontally_bundled_firewood_vertical_corner_slab_bottom_left", "y": 270 }
+    }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/broom_bush_7",
+	"textures": {
+		"particle": "conquest:block/9_organic/3_plants/lavender",
+		"texture": "conquest:block/9_organic/3_plants/lavender"
+	}
+}

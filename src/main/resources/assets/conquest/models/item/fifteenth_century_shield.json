@@ -1,0 +1,14 @@
+{
+    "parent": "conquest:item/shield",
+    "textures": {
+        "layer0": "conquest:item/fifteenth_century_shield"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "conquest:item/fifteenth_century_shield_blocking"
+        }
+    ]
+}

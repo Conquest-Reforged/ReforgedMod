@@ -1,0 +1,33 @@
+{
+    "multipart": [
+        {   "when": { "age": "0" },
+            "apply": [
+                { "model": "conquest:block/golden_bamboo1_age0" },
+                { "model": "conquest:block/golden_bamboo2_age0" },
+                { "model": "conquest:block/golden_bamboo3_age0" },
+                { "model": "conquest:block/golden_bamboo4_age0" }
+            ]
+        },
+        {   "when": { "age": "1" },
+            "apply": [
+                { "model": "conquest:block/golden_bamboo1_age1" },
+                { "model": "conquest:block/golden_bamboo2_age1" },
+                { "model": "conquest:block/golden_bamboo3_age1" },
+                { "model": "conquest:block/golden_bamboo4_age1" },
+                { "model": "conquest:block/golden_bamboo2_age1" },
+                { "model": "conquest:block/golden_bamboo3_age1" },
+                { "model": "conquest:block/golden_bamboo4_age1" },
+                { "model": "conquest:block/golden_bamboo2_age1" },
+                { "model": "conquest:block/golden_bamboo3_age1" },
+                { "model": "conquest:block/golden_bamboo4_age1" },
+                { "model": "conquest:block/golden_bamboo5_age1" }
+            ]
+        },
+        {   "when": { "leaves": "small" },
+            "apply": { "model": "conquest:block/golden_bamboo_small_leaves" }
+        },
+        {   "when": { "leaves": "large" },
+            "apply": { "model": "conquest:block/golden_bamboo_large_leaves" }
+        }
+    ]
+}

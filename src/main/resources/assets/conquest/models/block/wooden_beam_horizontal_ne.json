@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/beam/beam_straight",
+		"texture": "conquest:block/1_basic_refined/3_wood/beam/beam_straight"
+	},
+	"elements": [
+		{
+			"from": [16, 12.001, 5.001],
+			"to": [21, 15.999, 10.999],
+			"faces": {
+				"north": {"uv": [5, 11, 9.5, 16], "rotation": 270, "texture": "#texture"},
+				"east": {"uv": [4.5, 0, 10.5, 4], "texture": "#texture"},
+				"south": {"uv": [4.5, 5.5, 9, 10.5], "rotation": 270, "texture": "#texture"},
+				"up": {"uv": [4, 11, 10, 16], "rotation": 90, "texture": "#texture"},
+				"down": {"uv": [16, 16, 10, 11], "rotation": 270, "texture": "#texture"}
+			}
+		},
+		{
+			"from": [5.001, 12.001, -5],
+			"to": [10.999, 15.999, 0],
+			"faces": {
+				"north": {"uv": [5, 0, 11, 4], "texture": "#texture"},
+				"east": {"uv": [5, 11, 9.5, 16], "rotation": 90, "texture": "#texture"},
+				"west": {"uv": [4.5, 11, 9, 16], "rotation": 270, "texture": "#texture"},
+				"up": {"uv": [4, 11, 10, 16], "texture": "#texture"},
+				"down": {"uv": [16, 16, 10, 11], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [11, 12, 5],
+			"to": [16, 16, 11],
+			"faces": {
+				"north": {"uv": [5, 4, 9.5, 9], "rotation": 270, "texture": "#texture"},
+				"east": {"uv": [5, 0, 11, 4], "texture": "#texture"},
+				"south": {"uv": [5, 11, 9.5, 16], "rotation": 270, "texture": "#texture"},
+				"up": {"uv": [4, 4, 10, 9], "rotation": 90, "texture": "#texture"},
+				"down": {"uv": [16, 16, 10, 11], "rotation": 270, "texture": "#texture"}
+			}
+		},
+		{
+			"from": [5, 12, 0],
+			"to": [11, 16, 11],
+			"faces": {
+				"north": {"uv": [5, 0, 11, 4], "texture": "#texture"},
+				"east": {"uv": [4.5, 4, 9, 15], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [4, 5.5, 10, 9.5], "texture": "#texture"},
+				"west": {"uv": [4.5, 5, 9, 16], "rotation": 270, "texture": "#texture"},
+				"up": {"uv": [4, 5, 10, 16], "texture": "#texture"},
+				"down": {"uv": [16, 16, 10, 5], "texture": "#texture"}
+			}
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "conquest:block/big_bread" },
+        "bites=1": { "model": "conquest:block/big_bread_slice1" },
+        "bites=2": { "model": "conquest:block/big_bread_slice2" },
+        "bites=3": { "model": "conquest:block/big_bread_slice3" },
+        "bites=4": { "model": "conquest:block/big_bread_slice4" },
+        "bites=5": { "model": "conquest:block/big_bread_slice5" },
+        "bites=6": { "model": "conquest:block/big_bread_slice6" }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "layer=1": { "model": "conquest:block/asian_acacia_wood_fence_post" },
+        "layer=2": { "model": "conquest:block/asian_acacia_wood_wall_post" },
+        "layer=3": { "model": "conquest:block/asian_acacia_wood_pillar_6" }
+    }
+}

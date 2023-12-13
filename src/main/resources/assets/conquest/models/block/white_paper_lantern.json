@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "conquest:block/3_decoration/4_cloth/white_paper_lantern"
+    }
+}

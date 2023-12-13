@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "conquest:block/4_furniture/2_metal/iron_oven_topbottom",
+        "front": "conquest:block/4_furniture/2_metal/flaming_iron_oven_front",
+        "side": "conquest:block/4_furniture/2_metal/iron_oven_side"
+    }
+}

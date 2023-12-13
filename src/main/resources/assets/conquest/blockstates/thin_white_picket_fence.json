@@ -1,0 +1,51 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"conquest:block/thin_white_picket_fence_nsew"
+  },
+  "variants": {
+    "toggle=false,east=false,north=false,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_post" },
+
+    "toggle=false,east=false,north=true,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_n" },
+    "toggle=false,east=true,north=false,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_n", "y": 90 },
+    "toggle=false,east=false,north=false,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_n", "y": 180 },
+    "toggle=false,east=false,north=false,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_n", "y": 270 },
+
+    "toggle=false,east=true,north=true,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_ne" },
+    "toggle=false,east=true,north=false,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_ne", "y": 90 },
+    "toggle=false,east=false,north=false,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_ne", "y": 180 },
+    "toggle=false,east=false,north=true,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_ne", "y": 270 },
+
+    "toggle=false,east=false,north=true,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_ns" },
+    "toggle=false,east=true,north=false,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_ns", "y": 90 },
+
+    "toggle=false,east=true,north=true,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_nse" },
+    "toggle=false,east=true,north=false,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_nse", "y": 90 },
+    "toggle=false,east=false,north=true,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_nse", "y": 180 },
+    "toggle=false,east=true,north=true,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_nse", "y": 270 },
+
+    "toggle=false,east=true,north=true,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_nsew" },
+
+    "toggle=true,east=false,north=false,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_post_flipped" },
+
+    "toggle=true,east=false,north=true,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_n_flipped" },
+    "toggle=true,east=true,north=false,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_n_flipped", "y": 90 },
+    "toggle=true,east=false,north=false,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_n_flipped", "y": 180 },
+    "toggle=true,east=false,north=false,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_n_flipped", "y": 270 },
+
+    "toggle=true,east=true,north=true,south=false,west=false": { "model": "conquest:block/thin_white_picket_fence_ne_flipped" },
+    "toggle=true,east=true,north=false,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_ne_flipped", "y": 90 },
+    "toggle=true,east=false,north=false,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_ne_flipped", "y": 180 },
+    "toggle=true,east=false,north=true,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_ne_flipped", "y": 270 },
+
+    "toggle=true,east=false,north=true,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_ns_flipped" },
+    "toggle=true,east=true,north=false,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_ns_flipped", "y": 90 },
+
+    "toggle=true,east=true,north=true,south=true,west=false": { "model": "conquest:block/thin_white_picket_fence_nse_flipped" },
+    "toggle=true,east=true,north=false,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_nse_flipped", "y": 90 },
+    "toggle=true,east=false,north=true,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_nse_flipped", "y": 180 },
+    "toggle=true,east=true,north=true,south=false,west=true": { "model": "conquest:block/thin_white_picket_fence_nse_flipped", "y": 270 },
+
+    "toggle=true,east=true,north=true,south=true,west=true": { "model": "conquest:block/thin_white_picket_fence_nsew_flipped" }
+  }
+}

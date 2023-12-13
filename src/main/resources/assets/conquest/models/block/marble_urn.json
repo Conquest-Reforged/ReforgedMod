@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/stone_urn",
+	"textures": {
+		"particle": "conquest:block/3_decoration/1_stone/marble_urn",
+		"texture": "conquest:block/3_decoration/1_stone/marble_urn"
+	}
+}

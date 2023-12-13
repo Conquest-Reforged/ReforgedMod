@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/7_wood/acacia_wood_shutters",
+		"texture": "conquest:block/2_advanced_refined/7_wood/acacia_wood_shutters"
+	},
+	"elements": [
+		{
+			"from": [14.5, 0, -1],
+			"to": [16, 16, 15],
+			"rotation": {"angle": 45, "axis": "y", "origin": [16, 0, 15]},
+			"faces": {
+				"north": {"uv": [1.5, 0, 0, 16], "texture": "#texture"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"south": {"uv": [14, 0, 15.5, 16], "texture": "#texture"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"up": {"uv": [16, 14.5, 0, 16], "rotation": 90, "texture": "#texture"},
+				"down": {"uv": [0, 14.5, 16, 16], "rotation": 90, "texture": "#texture"}
+			}
+		}
+	]
+}

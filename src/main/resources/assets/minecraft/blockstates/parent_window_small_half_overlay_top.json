@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "facing=south,up=false,down=false": { "model": "block/parent_window_small_half_updown_overlay_top", "uvlock": true },
+        "facing=west,up=false,down=false": { "model": "block/parent_window_small_half_updown_overlay_top", "y": 90, "uvlock": true },
+        "facing=north,up=false,down=false": { "model": "block/parent_window_small_half_updown_overlay_top", "y": 180, "uvlock": true },
+        "facing=east,up=false,down=false": { "model": "block/parent_window_small_half_updown_overlay_top", "y": 270, "uvlock": true },
+
+        "facing=south,up=true,down=false": { "model": "block/parent_window_small_half_down_overlay_top", "uvlock": true },
+        "facing=west,up=true,down=false": { "model": "block/parent_window_small_half_down_overlay_top", "y": 90, "uvlock": true },
+        "facing=north,up=true,down=false": { "model": "block/parent_window_small_half_down_overlay_top", "y": 180, "uvlock": true },
+        "facing=east,up=true,down=false": { "model": "block/parent_window_small_half_down_overlay_top", "y": 270, "uvlock": true },
+
+        "facing=south,up=false,down=true": { "model": "block/parent_window_small_half_up_overlay_top", "uvlock": true },
+        "facing=west,up=false,down=true": { "model": "block/parent_window_small_half_up_overlay_top", "y": 90, "uvlock": true },
+        "facing=north,up=false,down=true": { "model": "block/parent_window_small_half_up_overlay_top", "y": 180, "uvlock": true },
+        "facing=east,up=false,down=true": { "model": "block/parent_window_small_half_up_overlay_top", "y": 270, "uvlock": true },
+
+        "facing=south,up=true,down=true": { "model": "block/parent_window_small_half_overlay_top", "uvlock": true },
+        "facing=west,up=true,down=true": { "model": "block/parent_window_small_half_overlay_top", "y": 90, "uvlock": true },
+        "facing=north,up=true,down=true": { "model": "block/parent_window_small_half_overlay_top", "y": 180, "uvlock": true },
+        "facing=east,up=true,down=true": { "model": "block/parent_window_small_half_overlay_top", "y": 270, "uvlock": true }
+    }
+}

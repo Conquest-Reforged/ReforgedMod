@@ -1,0 +1,8 @@
+{
+"__comment": "Designed by Jugbot with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+"parent": "conquest:block/oak_wood_table_leg_se",
+"textures": {
+    "particle": "minecraft:block/crafting_table_top",
+    "4": "conquest:block/4_furniture/3_wood/stage_floor"
+}
+}

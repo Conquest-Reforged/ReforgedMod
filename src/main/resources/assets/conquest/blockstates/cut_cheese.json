@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "conquest:block/cut_cheese_6" },
+        "bites=1": { "model": "conquest:block/cut_cheese_5" },
+        "bites=2": { "model": "conquest:block/cut_cheese_4" },
+        "bites=3": { "model": "conquest:block/cut_cheese_3" },
+        "bites=4": { "model": "conquest:block/cut_cheese_2" },
+        "bites=5": { "model": "conquest:block/cut_cheese_1" },
+        "bites=6": { "model": "conquest:block/cut_cheese_0" }
+    }
+}

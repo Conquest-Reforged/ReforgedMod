@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "conquest:block/red_white_green_gothic_frieze" },
+    "axis=x": { "model": "conquest:block/red_white_green_gothic_frieze_x" },
+    "axis=z": { "model": "conquest:block/red_white_green_gothic_frieze_z" }
+  }
+}

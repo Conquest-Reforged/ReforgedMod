@@ -32,3 +32,4 @@ src/generated/
 .gource/logs/
 .gource/timeline.txt
 .gource/*.stream
+/src/generated/

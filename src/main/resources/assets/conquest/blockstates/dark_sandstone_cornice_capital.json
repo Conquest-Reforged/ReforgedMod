@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "conquest:block/dark_sandstone_cornice_capital_down_flat", "uvlock": true }
+    }
+}

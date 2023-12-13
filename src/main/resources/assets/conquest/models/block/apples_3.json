@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"yellow": "conquest:block/6_foodstuffs/4_food/apples/yellowredapple",
+		"orange": "conquest:block/6_foodstuffs/4_food/apples/orangeapple",
+		"particle": "conquest:block/6_foodstuffs/4_food/apples/redapple"
+	},
+	"elements": [
+		{
+			"name": "Element",
+			"from": [1, 0, 1],
+			"to": [5, 4, 5],
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#orange"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#orange"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#orange"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#orange"},
+				"up": {"uv": [0, 8, 4, 12], "texture": "#orange"},
+				"down": {"uv": [4, 12, 8, 16], "texture": "#orange"}
+			}
+		},
+		{
+			"name": "Element",
+			"from": [6, 0, 12],
+			"to": [10, 4, 16],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#yellow"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#yellow"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#yellow"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#yellow"},
+				"up": {"uv": [0, 8, 4, 12], "texture": "#yellow"},
+				"down": {"uv": [4, 12, 8, 16], "texture": "#yellow"}
+			}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "conquest:block/2_advanced_refined/2_metal/metal_dispenser_top",
+        "front": "conquest:block/2_advanced_refined/2_metal/metal_dropper_front",
+        "side": "conquest:block/2_advanced_refined/2_metal/metal_dispenser_side"
+    }
+}

@@ -1,0 +1,33 @@
+{
+	"textures": {
+		"particle": "conquest:block/7_tools/3_utility/hammer",
+		"all": "conquest:block/7_tools/3_utility/hammer"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 7.5, -0.5, 7.5 ],
+			"to": [ 8.5, 11.5, 8.5 ],
+			"rotation": { "origin": [ 8, 5.5, 8 ], "axis": "y", "angle": 45 },
+			"faces": {
+				"down": { "uv": [ 15, 0, 16, 1 ], "texture": "#all" },
+				"up": { "uv": [ 15, 0, 16, 1 ], "texture": "#all" },
+				"north": { "uv": [ 15, 0, 16, 12 ], "texture": "#all" },
+				"south": { "uv": [ 15, 0, 16, 12 ], "texture": "#all" },
+				"west": { "uv": [ 14, 0, 15, 12 ], "texture": "#all" },
+				"east": { "uv": [ 14, 0, 15, 12 ], "texture": "#all" }
+			}
+		},
+		{
+			"from": [ 5, 0, 6.5 ],
+			"to": [ 11, 3, 9.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 3, 6, 6 ], "texture": "#all" },
+				"up": { "uv": [ 0, 3, 6, 6 ], "texture": "#all" },
+				"north": { "uv": [ 0, 0, 6, 3 ], "texture": "#all" },
+				"south": { "uv": [ 0, 0, 6, 3 ], "texture": "#all" },
+				"west": { "uv": [ 6, 0, 9, 3 ], "texture": "#all" },
+				"east": { "uv": [ 6, 0, 9, 3 ], "texture": "#all" }
+			}
+		}
+	]
+}

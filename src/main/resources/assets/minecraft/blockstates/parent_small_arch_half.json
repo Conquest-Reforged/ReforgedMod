@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "block/parent_small_arch_half", "y": 180 },
+        "facing=west": { "model": "block/parent_small_arch_half", "y": 270 },
+        "facing=north": { "model": "block/parent_small_arch_half" },
+        "facing=east": { "model": "block/parent_small_arch_half", "y": 90 }
+    }
+}

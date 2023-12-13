@@ -1,0 +1,9 @@
+{
+	"loader": "forge:obj",
+	"ambientToFullbright": true,
+	"flip-v": true,
+	"model": "conquest:models/block/obj/white_painted_corbel_diagonal.obj",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_corbel_alt"
+	}
+}

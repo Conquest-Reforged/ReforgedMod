@@ -1,0 +1,6 @@
+{
+	"parent": "conquest:block/parent_t_flange",
+	"textures": {
+		"pipe": "conquest:block/2_advanced_refined/2_metal/pipe_old"
+	}
+}

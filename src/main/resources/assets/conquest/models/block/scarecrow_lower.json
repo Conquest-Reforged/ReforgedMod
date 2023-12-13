@@ -1,0 +1,44 @@
+{
+	"parent": "minecraft:block/block",
+	"textures": {
+		"particle": "conquest:block/3_decoration/3_wood/strawhat",
+		"texture": "conquest:block/3_decoration/3_wood/scarecrow"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 12, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [13.5, 0, 14.5, 6], "texture": "#texture"},
+				"east": {"uv": [14.5, 0, 15.5, 6], "texture": "#texture"},
+				"south": {"uv": [13.5, 0, 14.5, 6], "texture": "#texture"},
+				"west": {"uv": [14.5, 0, 15.5, 6], "texture": "#texture"},
+				"down": {"uv": [13.5, 0, 14.5, 1], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [4, 10, 6],
+			"to": [12, 12, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 11, 8]},
+			"faces": {
+				"north": {"uv": [3.75, 6, 7.75, 7], "texture": "#texture"},
+				"east": {"uv": [11.5, 6, 13.5, 7], "texture": "#texture"},
+				"south": {"uv": [3.75, 6, 7.75, 7], "texture": "#texture"},
+				"west": {"uv": [13.5, 6, 11.5, 7], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [4, 12, 6],
+			"to": [12, 16, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 18, 8]},
+			"faces": {
+				"north": {"uv": [3.75, 4, 7.75, 6], "texture": "#texture"},
+				"east": {"uv": [11.5, 4, 13.5, 6], "texture": "#texture"},
+				"south": {"uv": [3.75, 4, 7.75, 6], "texture": "#texture"},
+				"west": {"uv": [13.5, 4, 11.5, 6], "texture": "#texture"},
+				"down": {"uv": [4, 10.25, 8, 12.25], "texture": "#texture"}
+			}
+		}
+	]
+}

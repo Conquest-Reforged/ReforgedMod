@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "conquest:block/9_organic/2_leaves/dead_deciduous_branches_1"
+  }
+}

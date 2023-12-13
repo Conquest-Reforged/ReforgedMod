@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "east=false,north=false,south=false,west=false": { "model": "conquest:block/limestone_cornice" },
+
+        "east=false,north=true,south=false,west=false": { "model": "conquest:block/limestone_cornice_n" },
+        "east=true,north=false,south=false,west=false": { "model": "conquest:block/limestone_cornice_n", "y": 90, "uvlock": true },
+        "east=false,north=false,south=true,west=false": { "model": "conquest:block/limestone_cornice_n", "y": 180, "uvlock": true },
+        "east=false,north=false,south=false,west=true": { "model": "conquest:block/limestone_cornice_n", "y": 270, "uvlock": true },
+
+        "east=true,north=true,south=false,west=false": { "model": "conquest:block/limestone_cornice_ne" },
+        "east=true,north=false,south=true,west=false": { "model": "conquest:block/limestone_cornice_ne", "y": 90, "uvlock": true },
+        "east=false,north=false,south=true,west=true": { "model": "conquest:block/limestone_cornice_ne", "y": 180, "uvlock": true },
+        "east=false,north=true,south=false,west=true": { "model": "conquest:block/limestone_cornice_ne", "y": 270, "uvlock": true },
+
+        "east=false,north=true,south=true,west=false": { "model": "conquest:block/limestone_cornice_ns" },
+        "east=true,north=false,south=false,west=true": { "model": "conquest:block/limestone_cornice_ns_1", "y": 90, "uvlock": true },
+
+        "east=true,north=true,south=true,west=false": { "model": "conquest:block/limestone_cornice_nse" },
+        "east=true,north=false,south=true,west=true": { "model": "conquest:block/limestone_cornice_nse", "y": 90, "uvlock": true },
+        "east=false,north=true,south=true,west=true": { "model": "conquest:block/limestone_cornice_nse", "y": 180, "uvlock": true },
+        "east=true,north=true,south=false,west=true": { "model": "conquest:block/limestone_cornice_nse", "y": 270, "uvlock": true },
+
+        "east=true,north=true,south=true,west=true": { "model": "conquest:block/limestone_cornice_nsew" }
+    }
+}

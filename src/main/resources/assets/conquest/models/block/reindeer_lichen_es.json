@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/dark_green_sphagnum_moss_es",
+	"textures": {
+		"2": "conquest:block/9_organic/3_plants/reindeer_lichen/side",
+		"3": "conquest:block/9_organic/3_plants/reindeer_lichen/2_3",
+		"4": "conquest:block/9_organic/3_plants/reindeer_lichen/2",
+		"particle": "conquest:block/9_organic/3_plants/reindeer_lichen/1"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "block/arch_twometer_shape",
+	"textures": {
+		"side": "block/acacia_planks"
+	}
+}

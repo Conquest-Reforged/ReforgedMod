@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/thin_block",
+	"textures": {
+		"1": "conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_wood_trellis_side",
+		"particle": "conquest:block/2_advanced_refined/7_wood/1_painted/overgrown_white_painted_wood_trellis",
+		"texture": "conquest:block/2_advanced_refined/7_wood/1_painted/overgrown_white_painted_wood_trellis"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 14.5],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"east": {"uv": [1.5, 0, 0, 16], "texture": "#1", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [16, 0, 14.5, 16], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [16, 0, 0, 1.5], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [16, 14.5, 0, 16], "texture": "#1", "cullface": "down"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [3, -1, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

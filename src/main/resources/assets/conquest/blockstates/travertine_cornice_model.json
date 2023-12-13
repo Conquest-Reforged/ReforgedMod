@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/travertine_cornice_model", "y": 180, "uvlock": true },
+        "facing=west": { "model": "conquest:block/travertine_cornice_model", "y": 270, "uvlock": true },
+        "facing=north": { "model": "conquest:block/travertine_cornice_model", "uvlock": true },
+        "facing=east": { "model": "conquest:block/travertine_cornice_model", "y": 90, "uvlock": true }
+    }
+}

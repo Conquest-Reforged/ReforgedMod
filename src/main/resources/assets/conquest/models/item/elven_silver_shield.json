@@ -1,0 +1,14 @@
+{
+    "parent": "conquest:item/shield",
+    "textures": {
+        "layer0": "conquest:item/elven_silver_shield"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "conquest:item/elven_silver_shield_blocking"
+        }
+    ]
+}

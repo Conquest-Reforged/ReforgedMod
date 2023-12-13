@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/terracotta_urn" },
+        "toggle=1,facing=west": { "model": "conquest:block/terracotta_urn", "y": 90 },
+        "toggle=1,facing=north": { "model": "conquest:block/terracotta_urn", "y": 180 },
+        "toggle=1,facing=east": { "model": "conquest:block/terracotta_urn", "y": 270 },
+        "toggle=2,facing=south": { "model": "conquest:block/terracotta_urn_filled" },
+        "toggle=2,facing=west": { "model": "conquest:block/terracotta_urn_filled", "y": 90 },
+        "toggle=2,facing=north": { "model": "conquest:block/terracotta_urn_filled", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/terracotta_urn_filled", "y": 270 }
+    }
+}

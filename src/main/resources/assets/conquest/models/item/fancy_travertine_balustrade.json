@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "conquest:block/2_advanced_refined/1_stone/3_marble/fancy_travertine_balustrade"
+  }
+}

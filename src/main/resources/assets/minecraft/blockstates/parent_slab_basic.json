@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/parent_slab_bottom_4", "uvlock": true },
+        "type=top": { "model": "block/parent_slab_top_4", "uvlock": true }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east": { "model": "conquest:block/clothes_hanger_corner", "y": 180 },
+        "facing=south":{ "model": "conquest:block/clothes_hanger_corner", "y": 270 },
+        "facing=west": { "model": "conquest:block/clothes_hanger_corner" },
+        "facing=north":{ "model": "conquest:block/clothes_hanger_corner", "y": 90 }
+    }
+}

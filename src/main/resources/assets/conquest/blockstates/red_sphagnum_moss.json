@@ -1,0 +1,37 @@
+{
+	"variants": {
+            "down=true,east=false,north=false,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss" },
+            "down=true,east=false,north=true,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss_n" },
+            "down=true,east=true,north=false,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss_e" },
+            "down=true,east=false,north=false,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_s" },
+            "down=true,east=false,north=false,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_w" },
+            "down=true,east=true,north=true,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss_ne" },
+            "down=true,east=true,north=false,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_es" },
+            "down=true,east=false,north=false,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_sw" },
+            "down=true,east=false,north=true,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_wn" },
+            "down=true,east=false,north=true,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_ns" },
+            "down=true,east=true,north=false,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_ew" },
+            "down=true,east=true,north=true,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_nse" },
+            "down=true,east=true,north=false,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_sew" },
+            "down=true,east=false,north=true,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_nsw" },
+            "down=true,east=true,north=true,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_new" },
+            "down=true,east=true,north=true,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_nsew" },
+
+            "down=false,east=false,north=false,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss" },
+            "down=false,east=false,north=true,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss_n_down" },
+            "down=false,east=true,north=false,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss_e_down" },
+            "down=false,east=false,north=false,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_s_down" },
+            "down=false,east=false,north=false,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_w_down" },
+            "down=false,east=true,north=true,south=false,west=false": { "model": "conquest:block/red_sphagnum_moss_ne_down" },
+            "down=false,east=true,north=false,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_es_down" },
+            "down=false,east=false,north=false,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_sw_down" },
+            "down=false,east=false,north=true,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_wn_down" },
+            "down=false,east=false,north=true,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_ns_down" },
+            "down=false,east=true,north=false,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_we_down" },
+            "down=false,east=true,north=true,south=true,west=false": { "model": "conquest:block/red_sphagnum_moss_nse_down" },
+            "down=false,east=true,north=false,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_sew_down" },
+            "down=false,east=false,north=true,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_nsw_down" },
+            "down=false,east=true,north=true,south=false,west=true": { "model": "conquest:block/red_sphagnum_moss_new_down" },
+            "down=false,east=true,north=true,south=true,west=true": { "model": "conquest:block/red_sphagnum_moss_nsew_down" }
+            }
+}

@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "conquest:block/roman_chair"
+        },
+        "facing=south": {
+            "model": "conquest:block/roman_chair",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "conquest:block/roman_chair",
+            "y": 180
+        },
+        "facing=north": {
+            "model": "conquest:block/roman_chair",
+            "y": 270
+        }
+    }
+}

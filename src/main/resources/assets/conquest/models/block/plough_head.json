@@ -1,0 +1,46 @@
+{
+	"parent": "minecraft:block/block",
+	"textures": {
+		"particle": "conquest:block/7_tools/3_utility/plough_beams",
+		"beam": "conquest:block/7_tools/3_utility/plough_beams"
+	},
+	"elements": [
+		{
+			"from": [7.01, 14.1418, -4.47153],
+			"to": [8.99, 18.1418, -2.47153],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 8.65552, -3.57115]},
+			"faces": {
+				"north": {"uv": [0, 4.5, 2, 8.5], "rotation": 180, "texture": "#beam"},
+				"east": {"uv": [2, 12, 4, 16], "rotation": 180, "texture": "#beam"},
+				"south": {"uv": [1.5, 4.5, 3.5, 8.5], "rotation": 180, "texture": "#beam"},
+				"west": {"uv": [2, 0, 4, 4], "texture": "#beam"}
+			}
+		},
+		{
+			"from": [7, 14, 2.5],
+			"to": [9, 16, 18.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8.65552, -3.57115]},
+			"faces": {
+				"north": {"uv": [6, 7.5, 8, 9.5], "texture": "#beam"},
+				"east": {"uv": [2, 0, 0, 16], "rotation": 270, "texture": "#beam"},
+				"south": {"uv": [6, 7.5, 8, 9.5], "texture": "#beam"},
+				"west": {"uv": [2, 16, 0, 0], "rotation": 270, "texture": "#beam"},
+				"up": {"uv": [0, 0, 2, 16], "rotation": 180, "texture": "#beam"},
+				"down": {"uv": [0, 16, 2, 0], "rotation": 180, "texture": "#beam"}
+			}
+		},
+		{
+			"from": [0, 14.25, 14],
+			"to": [16, 15.75, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15, 15]},
+			"faces": {
+				"north": {"uv": [2, 0, 3.5, 16], "rotation": 90, "texture": "#beam"},
+				"east": {"uv": [6, 7.5, 8, 9.5], "texture": "#beam"},
+				"south": {"uv": [2, 0, 3.5, 16], "rotation": 90, "texture": "#beam"},
+				"west": {"uv": [6, 7.5, 8, 9.5], "texture": "#beam"},
+				"up": {"uv": [2, 0, 4, 16], "rotation": 270, "texture": "#beam"},
+				"down": {"uv": [2, 0, 4, 16], "rotation": 90, "texture": "#beam"}
+			}
+		}
+	]
+}

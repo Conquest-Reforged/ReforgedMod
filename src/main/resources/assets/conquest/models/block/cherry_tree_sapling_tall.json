@@ -1,0 +1,31 @@
+{
+    "__comment": "Conquest Reforged",
+    "textures": {
+        "particle": "conquest:block/9_organic/1_wood/1_saplings/cherry_tree_sapling_tall",
+        "texture": "conquest:block/9_organic/1_wood/1_saplings/cherry_tree_sapling_tall"
+    },
+    "elements": [
+        {
+            "__comment": "PlaneX1",
+            "from": [ -3, -0.25, -3 ],
+            "to": [ -2.999, 31.75, 29 ],
+            "shade": false,
+            "rotation": { "origin": [ -3, -0.25, -3 ], "axis": "y", "angle": 45 },
+            "faces": {
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+            }
+        },
+        {
+            "__comment": "PlaneX1",
+            "from": [ 19, -0.25, -3 ],
+            "to": [ 19.001, 31.75, 29 ],
+            "shade": false,
+            "rotation": { "origin": [ 19, -0.25, -3 ], "axis": "y", "angle": -45 },
+            "faces": {
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+            }
+        }
+    ]
+}

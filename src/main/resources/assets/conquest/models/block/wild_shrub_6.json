@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/nightshade_6",
+	"textures": {
+		"2": "conquest:block/9_organic/3_plants/wild_shrub",
+		"particle": "conquest:block/9_organic/3_plants/wild_shrub"
+	}
+}

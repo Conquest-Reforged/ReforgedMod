@@ -1,0 +1,39 @@
+{
+"__comment": "Designed by Jugbot with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+"textures": {
+    "particle": "conquest:block/9_organic/1_wood/palm_tree_trunk",
+    "texture": "conquest:block/9_organic/1_wood/palm_tree_trunk"
+},
+"elements": [ 
+{
+    "from": [ 4, 0, 4 ],
+    "to": [ 12, 16, 12 ],
+    "faces": {
+        "down":  { "uv": [ 12, 12, 4, 4 ], "texture": "#texture" },
+        "up":    { "uv": [ 4, 4, 12, 12 ], "texture": "#texture" },
+        "north": { "uv": [ 4, 0, 12, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 4, 0, 12, 16 ], "texture": "#texture" },
+        "west":  { "uv": [ 4, 0, 12, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 4, 0, 12, 16 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 0, 0, 0 ],
+    "to": [ 0.0625, 16, 22.6274 ],
+    "rotation": { "origin": [ 0, 0, 0 ], "axis": "y", "angle": 45 },
+    "faces": {
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 0, 0, 16 ],
+    "to": [ 22.6274, 16, 16.0625 ],
+    "rotation": { "origin": [ 0, 0, 16 ], "axis": "y", "angle": 45 },
+    "faces": {
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+    }
+}
+]
+}

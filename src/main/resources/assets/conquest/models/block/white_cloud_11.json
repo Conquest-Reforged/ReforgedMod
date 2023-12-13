@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "conquest:block/8_topography/7_ice_snow/cloud/cloud_white_11"
+    }
+}

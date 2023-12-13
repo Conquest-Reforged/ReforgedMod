@@ -1,0 +1,46 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"1": "conquest:block/1_basic_refined/3_wood/beam/randomtopsides",
+		"particle": "conquest:block/1_basic_refined/3_wood/beam/beam_texture",
+		"2_0": "conquest:block/1_basic_refined/3_wood/beam/beam_texture"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [6.018, 6.004, 10],
+			"to": [10.018, 10.004, 21.31],
+			"rotation": {"angle": -45, "axis": "x", "origin": [1.478, 7.994, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0], "texture": "#2_0"},
+				"east": {"uv": [4, 4.5, 8, 16], "rotation": 90, "texture": "#2_0"},
+				"south": {"uv": [8, 7.5, 12, 11.5], "rotation": 90, "texture": "#2_0"},
+				"west": {"uv": [4, 4.5, 8, 16], "rotation": 90, "texture": "#2_0"},
+				"up": {"uv": [8, 0, 12, 11.5], "texture": "#2_0"},
+				"down": {"uv": [8, 0, 12, 11.5], "rotation": 180, "texture": "#2_0"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [5.997, 3.71701, 0.51285],
+			"to": [9.997, 19.03701, 4.51285],
+			"rotation": {"angle": -45, "axis": "x", "origin": [7.998, 13.46701, 2.51285]},
+			"faces": {
+				"north": {"uv": [8, 4.5, 12, 19.82], "texture": "#1"},
+				"east": {"uv": [4, 0, 0, 15], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [12, 0.5, 16, 15.82], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [0, 0, 4, 15], "rotation": 180, "texture": "#1"},
+				"up": {"uv": [8, 12, 12, 16], "rotation": 90, "texture": "#2_0"},
+				"down": {"uv": [8, 0.5, 12, 4.5], "texture": "#2_0"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [-3.2, 2.3, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	}
+}

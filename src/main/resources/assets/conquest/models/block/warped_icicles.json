@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "conquest:block/8_topography/7_ice_snow/warped_icicles"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "conquest:block/marble_cornice_capital_down_flat", "uvlock": true }
+    }
+}

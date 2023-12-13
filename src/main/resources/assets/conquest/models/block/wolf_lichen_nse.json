@@ -1,0 +1,11 @@
+{
+	"parent": "conquest:block/dark_green_sphagnum_moss_nse",
+	"textures": {
+		"1": "conquest:block/9_organic/3_plants/wolf_lichen/side",
+		"3": "conquest:block/9_organic/3_plants/wolf_lichen/3_3",
+		"4": "conquest:block/9_organic/3_plants/wolf_lichen/2",
+		"5": "conquest:block/9_organic/3_plants/wolf_lichen/2_3",
+		"6": "conquest:block/9_organic/3_plants/wolf_lichen/3",
+		"particle": "conquest:block/9_organic/3_plants/wolf_lichen/3_3"
+	}
+}

@@ -1,0 +1,401 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"2": "conquest:block/2_advanced_refined/2_metal/metal_stairs",
+		"cap": "conquest:block/2_advanced_refined/2_metal/metal_grate",
+		"particle": "conquest:block/2_advanced_refined/2_metal/old_iron_block_straight",
+		"side": "conquest:block/2_advanced_refined/2_metal/old_iron_block_straight"
+	},
+	"elements": [
+		{
+			"name": "iron_stairs",
+			"from": [-4.08719, 7.19818, 15],
+			"to": [7.22651, 11.19818, 16],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [8.5, 0, 12.5, 11], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [3.5, 0, 7.5, 11], "rotation": 270, "texture": "#side"},
+				"west": {"uv": [1.5, 6.5, 2.5, 10.5], "texture": "#side"},
+				"up": {"uv": [7.5, 5, 8.5, 16], "rotation": 90, "texture": "#side"},
+				"down": {"uv": [3, 5, 4, 16], "rotation": 270, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs",
+			"from": [7.22652, 7.19818, 15],
+			"to": [18.54022, 11.19818, 16],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [8.5, 0, 12.5, 11], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [1.5, 6.5, 2.5, 10.5], "texture": "#side"},
+				"south": {"uv": [3.5, 0, 7.5, 11], "rotation": 270, "texture": "#side"},
+				"up": {"uv": [7.5, 5, 8.5, 16], "rotation": 90, "texture": "#side"},
+				"down": {"uv": [3, 5, 4, 16], "rotation": 270, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs",
+			"from": [-4.08719, 7.19818, 0],
+			"to": [7.22651, 11.19818, 1],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [8.5, 0, 12.5, 11], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [3.5, 0, 7.5, 11], "rotation": 270, "texture": "#side"},
+				"west": {"uv": [1.5, 6.5, 2.5, 10.5], "texture": "#side"},
+				"up": {"uv": [7.5, 5, 8.5, 16], "rotation": 90, "texture": "#side"},
+				"down": {"uv": [3, 5, 4, 16], "rotation": 270, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs",
+			"from": [7.22652, 7.19818, 0],
+			"to": [18.54022, 11.19818, 1],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [8.5, 0, 12.5, 11], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [1.5, 6.5, 2.5, 10.5], "texture": "#side"},
+				"south": {"uv": [3.5, 0, 7.5, 11], "rotation": 270, "texture": "#side"},
+				"up": {"uv": [7.5, 5, 8.5, 16], "rotation": 90, "texture": "#side"},
+				"down": {"uv": [3, 5, 4, 16], "rotation": 270, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)6",
+			"from": [7.8076, 11, 1.5076],
+			"to": [8.3076, 12, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 3, 14.5, 3.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)10",
+			"from": [8.3076, 12, 1.5076],
+			"to": [11.8076, 12.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 4.5, 14.5, 8], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 10.5, 14.5, 14], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)4",
+			"from": [8.3076, 11, 7.5076],
+			"to": [11.8076, 12, 8.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)2",
+			"from": [8.3076, 11, 1.5076],
+			"to": [11.8076, 11.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 9.5, 14.5, 13], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 2.5, 14.5, 6], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)5",
+			"from": [7.8076, 11, 1.0076],
+			"to": [12.3076, 12, 1.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)1",
+			"from": [7.8076, 11, 14.5076],
+			"to": [12.3076, 12, 15.0076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)8",
+			"from": [11.8076, 11, 1.5076],
+			"to": [12.3076, 12, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 6, 14.5, 6.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)7",
+			"from": [3.8076, 7, 1.5076],
+			"to": [4.3076, 8, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 3, 14.5, 3.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)11",
+			"from": [4.3076, 8, 1.5076],
+			"to": [7.8076, 8.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 4.5, 14.5, 8], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 10.5, 14.5, 14], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)5",
+			"from": [4.3076, 7, 7.5076],
+			"to": [7.8076, 8, 8.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)3",
+			"from": [4.3076, 7, 1.5076],
+			"to": [7.8076, 7.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 9.5, 14.5, 13], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 2.5, 14.5, 6], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)6",
+			"from": [3.8076, 7, 1.0076],
+			"to": [8.3076, 8, 1.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)2",
+			"from": [3.8076, 7, 14.5076],
+			"to": [8.3076, 8, 15.0076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)9",
+			"from": [7.8076, 7, 1.5076],
+			"to": [8.3076, 8, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 6, 14.5, 6.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)8",
+			"from": [-0.1924, 3, 1.5076],
+			"to": [0.3076, 4, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 3, 14.5, 3.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)12",
+			"from": [0.3076, 4, 1.5076],
+			"to": [3.8076, 4.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 4.5, 14.5, 8], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 10.5, 14.5, 14], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)6",
+			"from": [0.3076, 3, 7.5076],
+			"to": [3.8076, 4, 8.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)4",
+			"from": [0.3076, 3, 1.5076],
+			"to": [3.8076, 3.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 9.5, 14.5, 13], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 2.5, 14.5, 6], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)7",
+			"from": [-0.1924, 3, 1.0076],
+			"to": [4.3076, 4, 1.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)3",
+			"from": [-0.1924, 3, 14.5076],
+			"to": [4.3076, 4, 15.0076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)10",
+			"from": [3.8076, 3, 1.5076],
+			"to": [4.3076, 4, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 6, 14.5, 6.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)9",
+			"from": [11.8076, 15, 1.5076],
+			"to": [12.3076, 16, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 3, 14.5, 3.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)13",
+			"from": [12.3076, 16, 1.5076],
+			"to": [15.8076, 16.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 4.5, 14.5, 8], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 10.5, 14.5, 14], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)7",
+			"from": [12.3076, 15, 7.5076],
+			"to": [15.8076, 16, 8.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)5",
+			"from": [12.3076, 15, 1.5076],
+			"to": [15.8076, 15.001, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"up": {"uv": [1.5, 9.5, 14.5, 13], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 2.5, 14.5, 6], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)8",
+			"from": [11.8076, 15, 1.0076],
+			"to": [16.3076, 16, 1.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)4",
+			"from": [11.8076, 15, 14.5076],
+			"to": [16.3076, 16, 15.0076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"east": {"uv": [15, 4, 16, 4.5], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 4, 1, 4.5], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [0, 0, 0.5, 4.5], "rotation": 270, "texture": "#cap"},
+				"down": {"uv": [0, 0, 0.5, 4.5], "rotation": 90, "texture": "#cap"}
+			}
+		},
+		{
+			"name": "iron_stairs (step)11",
+			"from": [15.8076, 15, 1.5076],
+			"to": [16.3076, 16, 14.5076],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.40147, 8.3076]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 1, 13], "rotation": 90, "texture": "#side"},
+				"up": {"uv": [1.5, 4, 14.5, 4.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [1.5, 6, 14.5, 6.5], "rotation": 270, "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

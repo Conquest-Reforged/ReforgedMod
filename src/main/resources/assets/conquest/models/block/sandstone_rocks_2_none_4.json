@@ -1,0 +1,52 @@
+{
+	"textures": {
+		"1": "conquest:block/8_topography/1_stone/red_sandstone",
+		"2": "conquest:block/8_topography/1_stone/orange_sandstone",
+		"particle": "conquest:block/8_topography/1_stone/tan_sandstone",
+		"texture": "conquest:block/8_topography/1_stone/tan_sandstone"
+	},
+	"elements": [
+		{
+			"name": "Cube12",
+			"from": [5.5, -11.5, 2.5],
+			"to": [16.5, -7.5, 9.5],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.5, -18, 9.5]},
+			"faces": {
+				"north": {"uv": [0, 6, 11, 10], "texture": "#2"},
+				"east": {"uv": [6.5, 6, 13.5, 10], "texture": "#2"},
+				"south": {"uv": [5, 6, 16, 10], "texture": "#2"},
+				"west": {"uv": [2.5, 6, 9.5, 10], "texture": "#2"},
+				"up": {"uv": [4.5, 2.5, 15.5, 9.5], "texture": "#2"},
+				"down": {"uv": [4.5, 6.5, 15.5, 13.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "Cube12",
+			"from": [1.5, -11, 2.5],
+			"to": [8.5, -6.5, 13],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [1.5, -11, 13]},
+			"faces": {
+				"north": {"uv": [3.48183, 5, 10.48183, 9.5], "texture": "#1"},
+				"east": {"uv": [2.20074, 5, 12.70074, 9.5], "texture": "#1"},
+				"south": {"uv": [5.51817, 5, 12.51817, 9.5], "texture": "#1"},
+				"west": {"uv": [3.29926, 5, 13.79926, 9.5], "texture": "#1"},
+				"up": {"uv": [5.51817, 3.29926, 12.51817, 13.79926], "texture": "#1"},
+				"down": {"uv": [5.51817, 2.20074, 12.51817, 12.70074], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Cube12",
+			"from": [7.5, -9.5, 0],
+			"to": [18, -5, 7],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [7.5, -9.5, 0]},
+			"faces": {
+				"north": {"uv": [1.5, 9, 12, 13.5], "texture": "#texture"},
+				"east": {"uv": [4.5, 9, 11.5, 13.5], "texture": "#texture"},
+				"south": {"uv": [4, 9, 14.5, 13.5], "texture": "#texture"},
+				"west": {"uv": [4.5, 9, 11.5, 13.5], "texture": "#texture"},
+				"up": {"uv": [4, 4.5, 14.5, 11.5], "texture": "#texture"},
+				"down": {"uv": [4, 4.5, 14.5, 11.5], "texture": "#texture"}
+			}
+		}
+	]
+}

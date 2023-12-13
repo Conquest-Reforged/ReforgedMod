@@ -1,0 +1,22 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"bottom": "conquest:block/2_advanced_refined/3_plaster/white_plaster",
+		"particle": "conquest:block/2_advanced_refined/3_plaster/red_white_green_gothic_frieze",
+		"north": "conquest:block/2_advanced_refined/3_plaster/red_white_green_gothic_frieze"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		}
+	]
+}

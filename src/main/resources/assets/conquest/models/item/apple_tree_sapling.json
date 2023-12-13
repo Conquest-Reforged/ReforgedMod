@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "conquest:block/9_organic/1_wood/1_saplings/apple_tree_sapling"
+  }
+}

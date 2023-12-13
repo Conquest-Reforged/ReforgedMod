@@ -1,0 +1,51 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1_texture": "block/acacia_planks",
+		"particle": "block/acacia_planks"
+	},
+	"elements": [
+		{
+			"name": "Box3",
+			"from": [-11.25, 21, -0.20935],
+			"to": [1, 32, 8.5094],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-3.5, 12.94703, 7.99685]},
+			"faces": {
+				"north": {"uv": [11.5, 16, 0, 5], "texture": "#1_texture"},
+				"east": {"uv": [0, 16, 8.71875, 5], "texture": "#1_texture"},
+				"south": {"uv": [15.5, 16, 4, 5], "texture": "#1_texture"},
+				"west": {"uv": [0, 16, 8.71875, 5], "texture": "#1_texture"},
+				"up": {"uv": [3, 8.719, 15.25, 0], "rotation": 180, "texture": "#1_texture"},
+				"down": {"uv": [3, 8.719, 15.25, 0], "rotation": 180, "texture": "#1_texture"}
+			}
+		},
+		{
+			"name": "Box3",
+			"from": [-6.26261, 7.26117, -0.35315],
+			"to": [6.48739, 25.29242, 8.14685],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [0.91268, 10.66395, 7.98969]},
+			"faces": {
+				"north": {"uv": [12, 14.5, 0, 0], "texture": "#1_texture"},
+				"east": {"uv": [0, 16, 8.5, 0], "texture": "#1_texture"},
+				"south": {"uv": [15, 14.5, 3, 0], "texture": "#1_texture"},
+				"west": {"uv": [0, 16, 8.5, 0], "texture": "#1_texture"},
+				"up": {"uv": [0, 8.5, 12.75, 0], "rotation": 180, "texture": "#1_texture"},
+				"down": {"uv": [0, 8.5, 12.75, 0], "rotation": 180, "texture": "#1_texture"}
+			}
+		},
+		{
+			"name": "Box3",
+			"from": [-4.65791, -7.18468, -0.2406],
+			"to": [8.46709, 11.28407, 8.2594],
+			"rotation": {"angle": 45, "axis": "z", "origin": [3.44393, 8.16395, 7.89594]},
+			"faces": {
+				"north": {"uv": [13, 16, 0, 0], "texture": "#1_texture"},
+				"east": {"uv": [0, 16, 8.5, 0], "texture": "#1_texture"},
+				"south": {"uv": [14.5, 16, 1.5, 0], "texture": "#1_texture"},
+				"west": {"uv": [0, 16, 8.5, 0], "texture": "#1_texture"},
+				"up": {"uv": [0, 8.5, 13.125, 0], "rotation": 180, "texture": "#1_texture"},
+				"down": {"uv": [0, 8.5, 13.125, 0], "rotation": 180, "texture": "#1_texture"}
+			}
+		}
+	]
+}

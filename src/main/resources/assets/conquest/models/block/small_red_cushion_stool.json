@@ -1,0 +1,7 @@
+{
+    "parent": "block/daylight_detector",
+    "textures": {
+        "top": "conquest:block/4_furniture/3_wood/red_cushion_stool_top",
+        "side": "conquest:block/4_furniture/3_wood/red_cushion_stool"
+    }
+}

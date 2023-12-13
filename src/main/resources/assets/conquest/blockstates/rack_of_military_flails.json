@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/rack_of_military_flails" },
+        "facing=west": { "model": "conquest:block/rack_of_military_flails", "y": 90 },
+        "facing=north": { "model": "conquest:block/rack_of_military_flails", "y": 180 },
+        "facing=east": { "model": "conquest:block/rack_of_military_flails", "y": 270 }
+    }
+}

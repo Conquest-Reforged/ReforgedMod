@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "conquest:block/sandstone_ionian_capital_fence_post" },
+        "axis=z":   { "model": "conquest:block/sandstone_ionian_capital_fence_post_side" },
+        "axis=x":   { "model": "conquest:block/sandstone_ionian_capital_fence_post_side", "y": 90 }
+    }
+}

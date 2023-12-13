@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:block/cross_5",
+    "textures": {
+        "cross": "conquest:block/9_organic/3_plants/young_tree"
+    }
+}

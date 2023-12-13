@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "toggle=1,facing=north": { "model": "conquest:block/towel_rack" },
+        "toggle=1,facing=east": { "model": "conquest:block/towel_rack", "y": 90 },
+        "toggle=1,facing=south": { "model": "conquest:block/towel_rack", "y": 180 },
+        "toggle=1,facing=west": { "model": "conquest:block/towel_rack", "y": 270 },
+        "toggle=2,facing=north": { "model": "conquest:block/towel_rack_filled" },
+        "toggle=2,facing=east": { "model": "conquest:block/towel_rack_filled", "y": 90 },
+        "toggle=2,facing=south": { "model": "conquest:block/towel_rack_filled", "y": 180 },
+        "toggle=2,facing=west": { "model": "conquest:block/towel_rack_filled", "y": 270 }
+    }
+}

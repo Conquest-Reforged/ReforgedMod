@@ -1,0 +1,54 @@
+{
+    "multipart": [
+        {   "when": {  "facing": "north" },
+            "apply": { "model": "block/parent_branch_horizontal_post" }
+        },
+        {   "when": {  "facing": "east" },
+            "apply": { "model": "block/parent_branch_horizontal_post", "y": 90 }
+        },
+        {   "when": {  "facing": "south" },
+            "apply": { "model": "block/parent_branch_horizontal_post", "y": 180 }
+        },
+        {   "when": {  "facing": "west" },
+            "apply": { "model": "block/parent_branch_horizontal_post", "y": 270 }
+        },
+
+        {   "when": {  "facing": "north", "up": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal_up" }
+        },
+        {   "when": {  "facing": "east", "up": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal_up", "y": 90 }
+        },
+        {   "when": {  "facing": "south", "up": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal_up", "y": 180 }
+        },
+        {   "when": {  "facing": "west", "up": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal_up", "y": 270 }
+        },
+
+        {   "when": {  "facing": "north", "side1": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal" }
+        },
+        {   "when": {  "facing": "north", "side2": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal", "y": 180, "x": 180 }
+        },
+        {   "when": {  "facing": "east", "side1": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal", "y": 270, "x": 180 }
+        },
+        {   "when": {  "facing": "east", "side2": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal", "y": 90 }
+        },
+        {   "when": {  "facing": "south", "side1": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal", "y": 180 }
+        },
+        {   "when": {  "facing": "south", "side2": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal", "x": 180 }
+        },
+        {   "when": {  "facing": "west", "side1": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal", "y": 90, "x": 180 }
+        },
+        {   "when": {  "facing": "west", "side2": true },
+            "apply": { "model": "block/parent_branch_horizontal_diagonal", "y": 270 }
+        }
+    ]
+}

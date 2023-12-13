@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "top": "conquest:block/2_advanced_refined/1_stone/7_travertine/yellow_travertine_decor_pillar_single",
+    "bottom": "conquest:block/2_advanced_refined/1_stone/7_travertine/yellow_travertine_decor_pillar_single",
+    "wall": "conquest:block/2_advanced_refined/1_stone/7_travertine/yellow_travertine_decor_pillar_middle"
+  }
+}

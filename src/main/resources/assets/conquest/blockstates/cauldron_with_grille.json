@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "level=0": { "model": "conquest:block/cauldron_with_grille" },
+        "level=1": { "model": "conquest:block/cauldron_with_grille_level1" },
+        "level=2": { "model": "conquest:block/cauldron_with_grille_level2" },
+        "level=3": { "model": "conquest:block/cauldron_with_grille_level3" }
+    }
+}

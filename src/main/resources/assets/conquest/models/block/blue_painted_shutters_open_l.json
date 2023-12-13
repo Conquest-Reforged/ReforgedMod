@@ -1,0 +1,6 @@
+{   "parent": "conquest:block/acacia_wood_shutters_open_l",
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/7_wood/1_painted/blue_painted_shutters",
+        "texture": "conquest:block/2_advanced_refined/7_wood/1_painted/blue_painted_shutters"
+    }
+}

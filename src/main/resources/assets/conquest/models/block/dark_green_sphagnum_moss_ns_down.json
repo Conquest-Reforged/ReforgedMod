@@ -1,0 +1,27 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/single",
+		"single": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/single"
+	},
+	"elements": [
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 0.03],
+			"to": [16, 16, 0.031],
+			"shade": false,
+			"faces": {
+				"south": {"uv": [16, 0, 0, 16], "texture": "#single"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 15.93775],
+			"to": [16, 16, 15.93875],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#single"}
+			}
+		}
+	]
+}

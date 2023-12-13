@@ -1,0 +1,11 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "conquest:block/diagonal_oak_branch_67_branches_tip",
+	"textures": {
+		"branch4": "conquest:block/9_organic/1_wood/acacia_log_branches_4",
+		"branch5": "conquest:block/9_organic/1_wood/acacia_log_branches_5",
+		"branch6": "conquest:block/9_organic/1_wood/acacia_log_branches_6",
+		"particle": "block/acacia_log",
+		"log": "block/acacia_log"
+	}
+}

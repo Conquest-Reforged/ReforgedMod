@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "conquest:block/9_organic/2_leaves/orange_autumnal_larch_needles_1"
+  }
+}

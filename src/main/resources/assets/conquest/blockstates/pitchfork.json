@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/pitchfork" },
+        "toggle=1,facing=west": { "model": "conquest:block/pitchfork", "y": 90 },
+        "toggle=1,facing=north": { "model": "conquest:block/pitchfork", "y": 180 },
+        "toggle=1,facing=east": { "model": "conquest:block/pitchfork", "y": 270 },
+
+        "toggle=2,facing=south": { "model": "conquest:block/pitchfork_leaned" },
+        "toggle=2,facing=west": { "model": "conquest:block/pitchfork_leaned", "y": 90 },
+        "toggle=2,facing=north": { "model": "conquest:block/pitchfork_leaned", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/pitchfork_leaned", "y": 270 }
+    }
+}

@@ -1,0 +1,64 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "conquest:block/1_basic_refined/3_wood/beam/beam_texture",
+		"particle": "conquest:block/1_basic_refined/3_wood/beam/beam_texture"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [11.988, 6.005, -5.5],
+			"to": [15.988, 10.005, 6],
+			"rotation": {"angle": -45, "axis": "x", "origin": [7.478, 7.994, 8]},
+			"faces": {
+				"north": {"uv": [8, 12, 12, 16], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [4, 0.5, 8, 12], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [4, 4, 8, 15.5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [8, 0.5, 12, 12], "texture": "#0"},
+				"down": {"uv": [4, 0.5, 8, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [12.018, 6.004, -5.5],
+			"to": [16.018, 10.004, 6],
+			"rotation": {"angle": 45, "axis": "x", "origin": [7.478, 7.994, 8]},
+			"faces": {
+				"north": {"uv": [8, 2, 4, 6], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [4, 16, 8, 4.5], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [4, 16, 8, 4.5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [8, 16, 12, 4.5], "texture": "#0"},
+				"down": {"uv": [4, 12.5, 8, 1], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [11.998, 6.004, 6],
+			"to": [15.998, 10.004, 21.5],
+			"rotation": {"angle": 45, "axis": "x", "origin": [7.478, 7.994, 8]},
+			"faces": {
+				"north": {"uv": [12, 0, 16, 4], "texture": "#0"},
+				"east": {"uv": [4, 0.5, 8, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [8, 12, 12, 16], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [8, 0.5, 4, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8, 0.5, 12, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [8, 0.5, 12, 16], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [-3.2, 2.3, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	},
+	"groups": [
+		{
+			"name": "beam_diagonal_nwsesw",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2]
+		}
+	]
+}

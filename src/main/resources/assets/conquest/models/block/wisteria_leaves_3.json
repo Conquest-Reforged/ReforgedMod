@@ -1,0 +1,7 @@
+{
+	"parent": "block/parent_leaves_3",
+	"textures": {
+		"outer": "conquest:block/9_organic/2_leaves/wisteria_leaves",
+		"inner": "conquest:block/9_organic/2_leaves/wisteria_leaves_inner"
+	}
+}

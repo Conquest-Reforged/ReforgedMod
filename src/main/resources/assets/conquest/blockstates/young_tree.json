@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "layers=1": { "model": "conquest:block/young_tree_1" },
+    "layers=2": { "model": "conquest:block/young_tree_2" },
+    "layers=3": { "model": "conquest:block/young_tree_3" },
+    "layers=4": { "model": "conquest:block/young_tree_4" },
+    "layers=5": { "model": "conquest:block/young_tree_5" },
+    "layers=6": { "model": "conquest:block/young_tree_6" },
+    "layers=7": { "model": "conquest:block/young_tree_7" },
+    "layers=8": { "model": "conquest:block/young_tree_8" }
+  }
+}

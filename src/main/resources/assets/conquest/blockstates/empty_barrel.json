@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "level=0": { "model": "conquest:block/empty_barrel" },
+        "level=1": { "model": "conquest:block/empty_barrel_level1" },
+        "level=2": { "model": "conquest:block/empty_barrel_level2" },
+        "level=3": { "model": "conquest:block/empty_barrel_level3" }
+    }
+}

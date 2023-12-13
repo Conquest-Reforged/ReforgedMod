@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "down=false,layer=1": { "model": "block/parent_pillar_2" },
+        "down=false,layer=2": { "model": "block/parent_pillar_4" },
+        "down=false,layer=3": { "model": "block/parent_pillar_6" },
+
+        "down=true,layer=1": { "model": "block/parent_stump_down_2" },
+        "down=true,layer=2": { "model": "block/parent_stump_down_4" },
+        "down=true,layer=3": { "model": "block/parent_stump_down_6" }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "tankards=1,facing=north": [{ "model": "conquest:block/metal_tankard", "y": 270 }, { "model": "conquest:block/metal_tankard_filled", "y": 270 }, { "model": "conquest:block/metal_tankard_filled_1", "y": 270 }],
+    "tankards=1,facing=east": [{ "model": "conquest:block/metal_tankard" }, { "model": "conquest:block/metal_tankard_filled" }, { "model": "conquest:block/metal_tankard_filled_1" }],
+    "tankards=1,facing=south": [{ "model": "conquest:block/metal_tankard", "y": 90 }, { "model": "conquest:block/metal_tankard_filled", "y": 90 }, { "model": "conquest:block/metal_tankard_filled_1", "y": 90 }],
+    "tankards=1,facing=west": [{ "model": "conquest:block/metal_tankard", "y": 180 }, { "model": "conquest:block/metal_tankard_filled", "y": 180 }, { "model": "conquest:block/metal_tankard_filled_1", "y": 180 }],
+
+    "tankards=2,facing=north": { "model": "conquest:block/metal_tankards", "y": 270 },
+    "tankards=2,facing=east": { "model": "conquest:block/metal_tankards" },
+    "tankards=2,facing=south": { "model": "conquest:block/metal_tankards", "y": 90 },
+    "tankards=2,facing=west": { "model": "conquest:block/metal_tankards", "y": 180 }
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"variants": {
+            "down=true,east=false,north=false,south=false,west=false": { "model": "block/parent_lichen" },
+            "down=true,east=false,north=true,south=false,west=false": { "model": "block/parent_lichen_n" },
+            "down=true,east=true,north=false,south=false,west=false": { "model": "block/parent_lichen_n", "y": 90 },
+            "down=true,east=false,north=false,south=true,west=false": { "model": "block/parent_lichen_n", "y": 180 },
+            "down=true,east=false,north=false,south=false,west=true": { "model": "block/parent_lichen_n", "y": 270 },
+            "down=true,east=true,north=true,south=false,west=false": { "model": "block/parent_lichen_ne" },
+            "down=true,east=true,north=false,south=true,west=false": { "model": "block/parent_lichen_ne", "y": 90 },
+            "down=true,east=false,north=false,south=true,west=true": { "model": "block/parent_lichen_ne", "y": 180 },
+            "down=true,east=false,north=true,south=false,west=true": { "model": "block/parent_lichen_ne", "y": 270 },
+            "down=true,east=false,north=true,south=true,west=false": { "model": "block/parent_lichen_ns" },
+            "down=true,east=true,north=false,south=false,west=true": { "model": "block/parent_lichen_ns", "y": 90 },
+            "down=true,east=true,north=true,south=true,west=false": { "model": "block/parent_lichen_nse" },
+            "down=true,east=true,north=false,south=true,west=true": { "model": "block/parent_lichen_nse", "y": 90 },
+            "down=true,east=false,north=true,south=true,west=true": { "model": "block/parent_lichen_nse", "y": 180 },
+            "down=true,east=true,north=true,south=false,west=true": { "model": "block/parent_lichen_nse", "y": 270 },
+            "down=true,east=true,north=true,south=true,west=true": { "model": "block/parent_lichen_nsew" },
+
+            "down=false,east=false,north=false,south=false,west=false": { "model": "block/parent_lichen" },
+            "down=false,east=false,north=true,south=false,west=false": { "model": "block/parent_lichen_n_down" },
+            "down=false,east=true,north=false,south=false,west=false": { "model": "block/parent_lichen_n_down", "y": 90 },
+            "down=false,east=false,north=false,south=true,west=false": { "model": "block/parent_lichen_n_down", "y": 180 },
+            "down=false,east=false,north=false,south=false,west=true": { "model": "block/parent_lichen_n_down", "y": 270 },
+            "down=false,east=true,north=true,south=false,west=false": { "model": "block/parent_lichen_ne_down" },
+            "down=false,east=true,north=false,south=true,west=false": { "model": "block/parent_lichen_ne_down", "y": 90 },
+            "down=false,east=false,north=false,south=true,west=true": { "model": "block/parent_lichen_ne_down", "y": 180 },
+            "down=false,east=false,north=true,south=false,west=true": { "model": "block/parent_lichen_ne_down", "y": 270 },
+            "down=false,east=false,north=true,south=true,west=false": { "model": "block/parent_lichen_ns_down" },
+            "down=false,east=true,north=false,south=false,west=true": { "model": "block/parent_lichen_ns_down", "y": 90 },
+            "down=false,east=true,north=true,south=true,west=false": { "model": "block/parent_lichen_nse_down" },
+            "down=false,east=true,north=false,south=true,west=true": { "model": "block/parent_lichen_nse_down", "y": 90 },
+            "down=false,east=false,north=true,south=true,west=true": { "model": "block/parent_lichen_nse_down", "y": 180 },
+            "down=false,east=true,north=true,south=false,west=true": { "model": "block/parent_lichen_nse_down", "y": 270 },
+            "down=false,east=true,north=true,south=true,west=true": { "model": "block/parent_lichen_nsew_down" }
+            }
+}

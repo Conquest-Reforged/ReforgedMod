@@ -1,0 +1,117 @@
+{
+	"parent": "block/block",
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 3, 1 ],
+			"scale":  [ 0.75, 0.75, 0.75 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 3, 1 ],
+			"scale":  [ 0.75, 0.75, 0.75 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ -30, 225, 0 ],
+			"translation":  [ 0, 2, 0 ],
+			"scale":  [ 0.75, 0.75, 0.75 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ -30, 225, 0 ],
+			"translation":  [ 0, 2, 0 ],
+			"scale":  [ 0.75, 0.75, 0.75 ]
+		},
+		"gui": {
+			"rotation":  [ 30, 225, 0 ],
+			"scale":  [ 0.85, 0.85, 0.85 ]
+		}
+	},
+	"textures": {
+		"particle": "conquest:block/3_decoration/2_metal/torch_with_grille/torch_new",
+		"texture": "conquest:block/3_decoration/2_metal/torch_with_grille/torch_new",
+		"coal": "conquest:block/8_topography/2_ores_crystals/stack_of_glowing_embers",
+		"fire": "conquest:block/3_decoration/2_metal/torch_with_grille/torch_fire"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 7.5, 0, 7.5 ],
+			"to": [ 8.5, 11, 8.5 ],
+			"faces": {
+				"down": { "uv": [ 6.5, 1.5, 7.5, 2.5 ], "texture": "#texture", "cullface": "down" },
+				"up": { "uv": [ 5, 0, 6, 1 ], "texture": "#texture" },
+				"north": { "uv": [ 9, 0, 8, 11 ], "texture": "#texture" },
+				"south": { "uv": [ 6, 0, 5, 11 ], "texture": "#texture" },
+				"west": { "uv": [ 3.5, 0, 4.5, 11 ], "texture": "#texture" },
+				"east": { "uv": [ 6.5, 0, 7.5, 11 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 6.5, 10.995, 6.5 ],
+			"to": [ 9.5, 10.996, 9.5 ],
+			"faces": {
+				"down": { "uv": [ 12.5, 4.5, 9.5, 7.5 ], "texture": "#texture" },
+				"up": { "uv": [ 5.5, 16, 2.5, 13 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 6.25, 11, 6.875 ],
+			"to": [ 9.75, 15, 6.876 ],
+			"faces": {
+				"north": { "uv": [ 0, 4, 3.5, 8 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 3.5, 4 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 6.875, 11, 6.25 ],
+			"to": [ 6.876, 15, 9.75 ],
+			"faces": {
+				"west": { "uv": [ 0, 4, 3.5, 8 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 3.5, 4 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 6.25, 11, 9.125 ],
+			"to": [ 9.75, 15, 9.126 ],
+			"faces": {
+				"north": { "uv": [ 0, 0, 3.5, 4 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 4, 3.5, 8 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 9.125, 11, 6.25 ],
+			"to": [ 9.126, 15, 9.75 ],
+			"faces": {
+				"west": { "uv": [ 0, 0, 3.5, 4 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 4, 3.5, 8 ], "texture": "#texture" }
+			}
+		},
+		{
+			"from": [ 7, 11, 7 ],
+			"to": [ 9, 12, 9 ],
+			"faces": {
+				"down": { "uv": [ 12.5, 11, 14.5, 13 ], "texture": "#coal" },
+				"up": { "uv": [ 7.5, 4.5, 9.5, 6.5 ], "texture": "#coal" },
+				"north": { "uv": [ 7.5, 6, 9.5, 7 ], "texture": "#coal" },
+				"south": { "uv": [ 8.5, 11.5, 10.5, 12.5 ], "texture": "#coal" },
+				"west": { "uv": [ 7.5, 11.5, 9.5, 12.5 ], "texture": "#coal" },
+				"east": { "uv": [ 7.5, 5.5, 9.5, 6.5 ], "texture": "#coal" }
+			}
+		},
+		{
+			"from": [ 8, 12, 6.5 ],
+			"to": [ 8.001, 17, 9.5 ],
+			"rotation": { "origin": [ 8, 24.5, 8 ], "axis": "y", "angle": 45 },
+			"faces": {
+				"west": { "uv": [ 6.25, 6.5, 9.25, 11.5 ], "texture": "#fire" },
+				"east": { "uv": [ 6.25, 6.5, 9.25, 11.5 ], "texture": "#fire" }
+			}
+		},
+		{
+			"from": [ 6.5, 12, 8 ],
+			"to": [ 9.5, 17, 8.001 ],
+			"rotation": { "origin": [ 8, 14.5, 8 ], "axis": "y", "angle": 45 },
+			"faces": {
+				"north": { "uv": [ 6.25, 6.5, 9.25, 11.5 ], "texture": "#fire" },
+				"south": { "uv": [ 6.25, 6.5, 9.25, 11.5 ], "texture": "#fire" }
+			}
+		}
+	]
+}

@@ -1,0 +1,5 @@
+{   "parent": "block/template_trapdoor_top",
+    "textures": {
+        "texture": "conquest:block/3_decoration/3_wood/cage_bars"
+    }
+}

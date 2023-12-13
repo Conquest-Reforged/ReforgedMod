@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "":   { "model": "conquest:block/sandstone_plinth_fence_post" }
+    }
+}

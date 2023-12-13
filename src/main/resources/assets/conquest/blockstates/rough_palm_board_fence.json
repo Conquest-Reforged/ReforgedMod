@@ -1,0 +1,47 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"conquest:block/rough_palm_board_fence_post"
+  },
+  "variants": {
+    "east=false,north=false,south=false,west=false": { "model": "conquest:block/rough_palm_board_fence_post" },
+
+    "east=false,north=true,south=false,west=false": [
+      { "model": "conquest:block/rough_palm_board_fence_ns", "weight": 200 },
+      { "model": "conquest:block/rough_palm_board_fence_ns_1", "weight": 40 }
+    ],
+    "east=true,north=false,south=false,west=false": [
+      { "model": "conquest:block/rough_palm_board_fence_ns", "y": 90, "weight": 200 },
+      { "model": "conquest:block/rough_palm_board_fence_ns_1", "y": 90, "weight": 40 }
+    ],
+    "east=false,north=false,south=true,west=false": [
+      { "model": "conquest:block/rough_palm_board_fence_ns", "weight": 200 },
+      { "model": "conquest:block/rough_palm_board_fence_ns_1", "weight": 40 }
+    ],
+    "east=false,north=false,south=false,west=true": [
+      { "model": "conquest:block/rough_palm_board_fence_ns", "y": 90, "weight": 200 },
+      { "model": "conquest:block/rough_palm_board_fence_ns_1", "y": 90, "weight": 40 }
+    ],
+
+    "east=true,north=true,south=false,west=false": { "model": "conquest:block/rough_palm_board_fence_ne" },
+    "east=true,north=false,south=true,west=false": { "model": "conquest:block/rough_palm_board_fence_ne_90", "y": 90 },
+    "east=false,north=false,south=true,west=true": { "model": "conquest:block/rough_palm_board_fence_ne_180", "y": 180 },
+    "east=false,north=true,south=false,west=true": { "model": "conquest:block/rough_palm_board_fence_ne_270", "y": 270 },
+
+    "east=false,north=true,south=true,west=false": [
+      { "model": "conquest:block/rough_palm_board_fence_ns", "weight": 200 },
+      { "model": "conquest:block/rough_palm_board_fence_ns_1", "weight": 40 }
+    ],
+    "east=true,north=false,south=false,west=true": [
+      { "model": "conquest:block/rough_palm_board_fence_ns", "y": 90, "weight": 200 },
+      { "model": "conquest:block/rough_palm_board_fence_ns_1", "y": 90, "weight": 40 }
+    ],
+
+    "east=true,north=true,south=true,west=false": { "model": "conquest:block/rough_palm_board_fence_nse" },
+    "east=true,north=false,south=true,west=true": { "model": "conquest:block/rough_palm_board_fence_nse", "y": 90 },
+    "east=false,north=true,south=true,west=true": { "model": "conquest:block/rough_palm_board_fence_nse", "y": 180 },
+    "east=true,north=true,south=false,west=true": { "model": "conquest:block/rough_palm_board_fence_nse", "y": 270 },
+
+    "east=true,north=true,south=true,west=true": { "model": "conquest:block/rough_palm_board_fence_nsew" }
+  }
+}

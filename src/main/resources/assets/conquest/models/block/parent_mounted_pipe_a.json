@@ -1,0 +1,59 @@
+{
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "#pipe"
+	},
+	"elements": [
+		{
+			"from": [7.5, 10.3125, 11.51563],
+			"to": [8.5, 11.3125, 16.01563],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.9375, 7.8125, 10.89063]},
+			"faces": {
+				"east": {"uv": [5, 0, 4.5, 2.25], "rotation": 270, "texture": "#pipe"},
+				"south": {"uv": [5, 0, 4.5, 0.5], "texture": "#pipe"},
+				"west": {"uv": [5, 0, 4.5, 2.25], "rotation": 270, "texture": "#pipe"},
+				"up": {"uv": [5, 0, 4.5, 2.25], "texture": "#pipe"},
+				"down": {"uv": [5, 0, 4.5, 2.25], "texture": "#pipe"}
+			}
+		},
+		{
+			"from": [7.5, 4.3125, 11.51563],
+			"to": [8.5, 5.3125, 16.01563],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.9375, 7.8125, 10.89063]},
+			"faces": {
+				"east": {"uv": [5, 0, 4.5, 2.25], "rotation": 270, "texture": "#pipe"},
+				"south": {"uv": [5, 0, 4.5, 0.5], "texture": "#pipe"},
+				"west": {"uv": [5, 0, 4.5, 2.25], "rotation": 270, "texture": "#pipe"},
+				"up": {"uv": [5, 0, 4.5, 2.25], "texture": "#pipe"},
+				"down": {"uv": [5, 0, 4.5, 2.25], "texture": "#pipe"}
+			}
+		},
+		{
+			"from": [7.5, 4.3125, 4.51563],
+			"to": [8.5, 11.3125, 11.51563],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.9375, 7.8125, 10.89063]},
+			"faces": {
+				"north": {"uv": [5, 0, 4.5, 3.5], "rotation": 180, "texture": "#pipe"},
+				"east": {"uv": [0.25, 0.25, 3.75, 3.75], "rotation": 180, "texture": "#pipe"},
+				"south": {"uv": [5, 0, 4.5, 3.5], "texture": "#pipe"},
+				"west": {"uv": [0.25, 0.25, 3.75, 3.75], "rotation": 180, "texture": "#pipe"},
+				"up": {"uv": [5, 0, 4.5, 3.5], "texture": "#pipe"},
+				"down": {"uv": [5, 0, 4.5, 3.5], "texture": "#pipe"}
+			}
+		},
+		{
+			"from": [0, 5, 5],
+			"to": [16, 11, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [11, 8, 14, 0], "rotation": 90, "texture": "#pipe"},
+				"east": {"uv": [0.5, 0.5, 3.5, 3.5], "rotation": 180, "texture": "#pipe"},
+				"south": {"uv": [11, 8, 14, 0], "rotation": 270, "texture": "#pipe"},
+				"west": {"uv": [0.5, 0.5, 3.5, 3.5], "rotation": 180, "texture": "#pipe"},
+				"up": {"uv": [11, 8, 14, 0], "rotation": 270, "texture": "#pipe"},
+				"down": {"uv": [11, 8, 14, 0], "rotation": 270, "texture": "#pipe"}
+			}
+		}
+	]
+}

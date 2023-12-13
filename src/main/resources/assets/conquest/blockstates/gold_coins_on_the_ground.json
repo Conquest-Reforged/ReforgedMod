@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "conquest:block/gold_coins_on_the_ground" }
+  }
+}

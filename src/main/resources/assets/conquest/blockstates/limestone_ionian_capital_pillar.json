@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "conquest:block/limestone_ionian_capital_wall_post" },
+        "axis=z":   { "model": "conquest:block/limestone_ionian_capital_wall_post_side" },
+        "axis=x":   { "model": "conquest:block/limestone_ionian_capital_wall_post_side", "y": 90 }
+    }
+}

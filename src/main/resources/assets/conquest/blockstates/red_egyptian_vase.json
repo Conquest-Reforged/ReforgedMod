@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "conquest:block/red_egyptian_vase" },
+    "facing=west": { "model": "conquest:block/red_egyptian_vase", "y": 90 },
+    "facing=north": { "model": "conquest:block/red_egyptian_vase" },
+    "facing=east": { "model": "conquest:block/red_egyptian_vase", "y": 90 }
+  }
+}

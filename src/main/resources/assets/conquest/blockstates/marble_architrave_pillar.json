@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "layer=1":   { "model": "conquest:block/marble_architrave_pillar_2" },
+        "layer=2":   { "model": "conquest:block/marble_architrave_pillar_4" },
+        "layer=3":   { "model": "conquest:block/marble_architrave_pillar_6" }
+    }
+}

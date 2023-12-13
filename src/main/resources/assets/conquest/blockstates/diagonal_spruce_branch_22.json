@@ -1,0 +1,34 @@
+{
+    "variants": {
+        "type=bottom,toggle=1,facing=south": { "model": "conquest:block/diagonal_spruce_branch_22" },
+        "type=bottom,toggle=1,facing=west": { "model": "conquest:block/diagonal_spruce_branch_22", "y": 90 },
+        "type=bottom,toggle=1,facing=north": { "model": "conquest:block/diagonal_spruce_branch_22", "y": 180 },
+        "type=bottom,toggle=1,facing=east": { "model": "conquest:block/diagonal_spruce_branch_22", "y": 270 },
+
+        "type=top,toggle=1,facing=south": { "model": "conquest:block/diagonal_spruce_branch_22_top" },
+        "type=top,toggle=1,facing=west": { "model": "conquest:block/diagonal_spruce_branch_22_top", "y": 90 },
+        "type=top,toggle=1,facing=north": { "model": "conquest:block/diagonal_spruce_branch_22_top", "y": 180 },
+        "type=top,toggle=1,facing=east": { "model": "conquest:block/diagonal_spruce_branch_22_top", "y": 270 },
+
+        "type=bottom,toggle=2,facing=south": { "model": "conquest:block/diagonal_spruce_branch_22_branches" },
+        "type=bottom,toggle=2,facing=west": { "model": "conquest:block/diagonal_spruce_branch_22_branches", "y": 90 },
+        "type=bottom,toggle=2,facing=north": { "model": "conquest:block/diagonal_spruce_branch_22_branches", "y": 180 },
+        "type=bottom,toggle=2,facing=east": { "model": "conquest:block/diagonal_spruce_branch_22_branches", "y": 270 },
+
+        "type=top,toggle=2,facing=south": { "model": "conquest:block/diagonal_spruce_branch_22_top_branches" },
+        "type=top,toggle=2,facing=west": { "model": "conquest:block/diagonal_spruce_branch_22_top_branches", "y": 90 },
+        "type=top,toggle=2,facing=north": { "model": "conquest:block/diagonal_spruce_branch_22_top_branches", "y": 180 },
+        "type=top,toggle=2,facing=east": { "model": "conquest:block/diagonal_spruce_branch_22_top_branches", "y": 270 },
+
+        "type=bottom,toggle=3,facing=south": { "model": "conquest:block/diagonal_spruce_branch_22_stem" },
+        "type=bottom,toggle=3,facing=west": { "model": "conquest:block/diagonal_spruce_branch_22_stem", "y": 90 },
+        "type=bottom,toggle=3,facing=north": { "model": "conquest:block/diagonal_spruce_branch_22_stem", "y": 180 },
+        "type=bottom,toggle=3,facing=east": { "model": "conquest:block/diagonal_spruce_branch_22_stem", "y": 270 },
+
+        "type=top,toggle=3,facing=south": { "model": "conquest:block/diagonal_spruce_branch_22_top_stem" },
+        "type=top,toggle=3,facing=west": { "model": "conquest:block/diagonal_spruce_branch_22_top_stem", "y": 90 },
+        "type=top,toggle=3,facing=north": { "model": "conquest:block/diagonal_spruce_branch_22_top_stem", "y": 180 },
+        "type=top,toggle=3,facing=east": { "model": "conquest:block/diagonal_spruce_branch_22_top_stem", "y": 270 }
+
+    }
+}

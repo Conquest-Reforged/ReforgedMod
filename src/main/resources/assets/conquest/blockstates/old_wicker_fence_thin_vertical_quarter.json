@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/old_wicker_fence_thin_vertical_quarter", "uvlock": true },
+        "facing=west": { "model": "conquest:block/old_wicker_fence_thin_vertical_quarter", "y": 90, "uvlock": true },
+        "facing=north": { "model": "conquest:block/old_wicker_fence_thin_vertical_quarter", "y": 180, "uvlock": true },
+        "facing=east": { "model": "conquest:block/old_wicker_fence_thin_vertical_quarter", "y": 270, "uvlock": true }
+    }
+}

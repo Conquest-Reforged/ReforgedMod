@@ -1,0 +1,6 @@
+{
+    "parent": "block/template_rail_raised_ne",
+    "textures": {
+        "rail": "conquest:block/3_decoration/4_cloth/rope/rope"
+    }
+}

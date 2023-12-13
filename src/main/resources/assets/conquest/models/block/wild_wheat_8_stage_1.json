@@ -1,0 +1,6 @@
+{
+	"parent": "block/plant_dense_model_8_a",
+	"textures": {
+		"texture": "conquest:block/9_organic/3_plants/wild_wheat/wild_wheat_stage_1"
+	}
+}

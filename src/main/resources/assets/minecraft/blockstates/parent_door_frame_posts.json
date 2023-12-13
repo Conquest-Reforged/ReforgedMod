@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "block/parent_door_frame_single", "y": 180 },
+        "toggle=1,facing=west": { "model": "block/parent_door_frame_single", "y": 270 },
+        "toggle=1,facing=north": { "model": "block/parent_door_frame_single" },
+        "toggle=1,facing=east": { "model": "block/parent_door_frame_single", "y": 90 },
+
+        "toggle=2,facing=south": { "model": "block/parent_door_frame_left", "y": 180 },
+        "toggle=2,facing=west": { "model": "block/parent_door_frame_left", "y": 270 },
+        "toggle=2,facing=north": { "model": "block/parent_door_frame_left" },
+        "toggle=2,facing=east": { "model": "block/parent_door_frame_left", "y": 90 },
+
+        "toggle=3,facing=south": { "model": "block/parent_door_frame_right", "y": 180 },
+        "toggle=3,facing=west": { "model": "block/parent_door_frame_right", "y": 270 },
+        "toggle=3,facing=north": { "model": "block/parent_door_frame_right" },
+        "toggle=3,facing=east": { "model": "block/parent_door_frame_right", "y": 90 }
+    }
+}

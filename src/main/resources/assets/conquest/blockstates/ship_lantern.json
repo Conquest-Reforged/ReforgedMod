@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "light=0": { "model": "conquest:block/ship_lantern" },
+        "light=1": { "model": "conquest:block/ship_lantern" },
+        "light=2": { "model": "conquest:block/ship_lantern" },
+        "light=3": { "model": "conquest:block/ship_lantern" }
+    }
+}

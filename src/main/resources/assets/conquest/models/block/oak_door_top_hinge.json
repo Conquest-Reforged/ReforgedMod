@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "block/oak_door_bottom",
+        "top": "conquest:block/2_advanced_refined/7_wood/oak_door_top"
+    }
+}

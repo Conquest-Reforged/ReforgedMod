@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/acacia_planks",
+		"side": "block/acacia_planks"
+	},
+	"elements": [
+		{
+			"name": "Box1",
+			"from": [0, 0, 0],
+			"to": [4, 4, 4],
+			"faces": {
+				"north": {"uv": [12, 12, 16, 16], "texture": "#side"},
+				"east": {"uv": [12, 12, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#side"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#side"},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#side"}
+			}
+		},
+		{
+			"name": "Box2",
+			"from": [0, 0, 0],
+			"to": [4, 4, 4],
+			"faces": {
+				"up": {"uv": [0, 0, 4, 4], "texture": "#side", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [3.5, 0.5, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

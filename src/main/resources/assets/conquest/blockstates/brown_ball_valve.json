@@ -1,0 +1,43 @@
+{
+    "variants": {
+        "valve=1,toggle=1,facing=south": { "model": "conquest:block/brown_ball_valve_closed", "y": 180 },
+        "valve=1,toggle=1,facing=west": { "model": "conquest:block/brown_ball_valve_closed", "y": 270 },
+        "valve=1,toggle=1,facing=north": { "model": "conquest:block/brown_ball_valve_closed" },
+        "valve=1,toggle=1,facing=east": { "model": "conquest:block/brown_ball_valve_closed", "y": 90 },
+
+        "valve=1,toggle=2,facing=south": { "model": "conquest:block/brown_ball_valve_closed", "x": 90 , "y": 90 },
+        "valve=1,toggle=2,facing=west": { "model": "conquest:block/brown_ball_valve_closed", "x": 90, "y": 180 },
+        "valve=1,toggle=2,facing=north": { "model": "conquest:block/brown_ball_valve_closed", "x": 90, "y": 270 },
+        "valve=1,toggle=2,facing=east": { "model": "conquest:block/brown_ball_valve_closed", "x": 90 },
+
+        "valve=1,toggle=3,facing=south": { "model": "conquest:block/brown_ball_valve_closed_a", "y": 180 },
+        "valve=1,toggle=3,facing=west": { "model": "conquest:block/brown_ball_valve_closed_a", "y": 270 },
+        "valve=1,toggle=3,facing=north": { "model": "conquest:block/brown_ball_valve_closed_a" },
+        "valve=1,toggle=3,facing=east": { "model": "conquest:block/brown_ball_valve_closed_a", "y": 90 },
+
+        "valve=1,toggle=4,facing=south": { "model": "conquest:block/brown_ball_valve_closed", "x": 270 , "y": 90 },
+        "valve=1,toggle=4,facing=west": { "model": "conquest:block/brown_ball_valve_closed", "x": 270, "y": 180 },
+        "valve=1,toggle=4,facing=north": { "model": "conquest:block/brown_ball_valve_closed", "x": 270, "y": 270 },
+        "valve=1,toggle=4,facing=east": { "model": "conquest:block/brown_ball_valve_closed", "x": 270 },
+
+        "valve=2,toggle=1,facing=south": { "model": "conquest:block/brown_ball_valve_open", "y": 180 },
+        "valve=2,toggle=1,facing=west": { "model": "conquest:block/brown_ball_valve_open", "y": 270 },
+        "valve=2,toggle=1,facing=north": { "model": "conquest:block/brown_ball_valve_open" },
+        "valve=2,toggle=1,facing=east": { "model": "conquest:block/brown_ball_valve_open", "y": 90 },
+
+        "valve=2,toggle=2,facing=south": { "model": "conquest:block/brown_ball_valve_open", "x": 90 , "y": 90 },
+        "valve=2,toggle=2,facing=west": { "model": "conquest:block/brown_ball_valve_open", "x": 90, "y": 180 },
+        "valve=2,toggle=2,facing=north": { "model": "conquest:block/brown_ball_valve_open", "x": 90, "y": 270 },
+        "valve=2,toggle=2,facing=east": { "model": "conquest:block/brown_ball_valve_open", "x": 90 },
+
+        "valve=2,toggle=3,facing=south": { "model": "conquest:block/brown_ball_valve_open_a", "y": 180 },
+        "valve=2,toggle=3,facing=west": { "model": "conquest:block/brown_ball_valve_open_a", "y": 270 },
+        "valve=2,toggle=3,facing=north": { "model": "conquest:block/brown_ball_valve_open_a" },
+        "valve=2,toggle=3,facing=east": { "model": "conquest:block/brown_ball_valve_open_a", "y": 90 },
+
+        "valve=2,toggle=4,facing=south": { "model": "conquest:block/brown_ball_valve_open", "x": 270 , "y": 90 },
+        "valve=2,toggle=4,facing=west": { "model": "conquest:block/brown_ball_valve_open", "x": 270, "y": 180 },
+        "valve=2,toggle=4,facing=north": { "model": "conquest:block/brown_ball_valve_open", "x": 270, "y": 270 },
+        "valve=2,toggle=4,facing=east": { "model": "conquest:block/brown_ball_valve_open", "x": 270 }
+    }
+}

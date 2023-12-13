@@ -1,0 +1,80 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/oak_log",
+		"log": "block/oak_log"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [4, 0, 4],
+			"to": [12, 16, 12],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 12, 8]},
+			"faces": {
+				"north": {"uv": [4, 0, 12, 16], "texture": "#log"},
+				"east": {"uv": [4.5, 0, 12.5, 16], "texture": "#log"},
+				"south": {"uv": [4, 0, 12, 16], "texture": "#log"},
+				"west": {"uv": [4, 0, 12, 16], "texture": "#log"},
+				"up": {"uv": [3.5, 0, 11.5, 8], "texture": "#log"},
+				"down": {"uv": [5.5, 0, 13.5, 8], "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [4.01114, 8, 0],
+			"to": [11.98614, 16, 1.825],
+			"rotation": {"angle": 0, "axis": "x", "origin": [7.98614, 10.38447, 3.5]},
+			"faces": {
+				"north": {"uv": [4, 0, 12, 8], "texture": "#log"},
+				"east": {"uv": [7, 5.5, 15, 7.5], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [4, 0, 12, 8], "rotation": 90, "texture": "#log"},
+				"west": {"uv": [2.5, 6, 10.5, 8], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [3.5, 0, 11.5, 2], "rotation": 180, "texture": "#log"},
+				"down": {"uv": [5.5, 3.825, 13.5, 1.825], "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [4.01114, 6.5, 1.825],
+			"to": [11.98614, 14.5, 4],
+			"rotation": {"angle": 0, "axis": "x", "origin": [7.98614, 10.38447, 3.33614]},
+			"faces": {
+				"north": {"uv": [4, 0, 12, 8], "texture": "#log"},
+				"east": {"uv": [7, 3.5, 15, 5.5], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [4, 0, 12, 8], "rotation": 90, "texture": "#log"},
+				"west": {"uv": [2.5, 3, 10.5, 5], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [3.5, 0, 11.5, 4], "rotation": 180, "texture": "#log"},
+				"down": {"uv": [5.5, 6, 13.5, 2], "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [4.03614, 3.06225, -0.54508],
+			"to": [11.96114, 11.06225, 3.45492],
+			"rotation": {"angle": -45, "axis": "x", "origin": [7.98614, 10.38447, 3.5]},
+			"faces": {
+				"north": {"uv": [4, 0, 11.95, 8], "texture": "#log"},
+				"east": {"uv": [7, 0, 15, 4], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [4, 0, 12, 7.95], "rotation": 90, "texture": "#log"},
+				"west": {"uv": [2.5, 6, 10.5, 10], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [3.5, 0, 11.45, 4], "rotation": 180, "texture": "#log"},
+				"down": {"uv": [5.5, 6, 13.45, 2], "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [4.03614, 10.93555, -0.21873],
+			"to": [11.96114, 14.93555, 9.03127],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.98614, 10.28447, 3.5]},
+			"faces": {
+				"north": {"uv": [3.5, 0, 11.45, 4], "texture": "#log"},
+				"east": {"uv": [7, 0, 16.05, 4], "rotation": 180, "texture": "#log"},
+				"south": {"uv": [5.5, 6, 13.45, 2], "texture": "#log"},
+				"west": {"uv": [2.5, 6, 11.55, 10], "texture": "#log"},
+				"up": {"uv": [4, 0, 13.05, 7.95], "rotation": 90, "texture": "#log"},
+				"down": {"uv": [4, 0, 11.95, 9.05], "rotation": 180, "texture": "#log"}
+			}
+		}
+	]
+}

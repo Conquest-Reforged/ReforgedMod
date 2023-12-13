@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:block/cross_64x_7",
+    "textures": {
+        "texture": "conquest:block/9_organic/3_plants/barley/barley_stage_1"
+    }
+}

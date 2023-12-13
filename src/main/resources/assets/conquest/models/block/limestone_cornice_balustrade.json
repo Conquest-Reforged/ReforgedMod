@@ -1,0 +1,9 @@
+{
+    "parent": "conquest:block/template_cornice_balustrade",
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_cornice",
+        "body": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_cornice",
+        "top": "block/stone",
+        "bottom": "block/stone"
+    }
+}

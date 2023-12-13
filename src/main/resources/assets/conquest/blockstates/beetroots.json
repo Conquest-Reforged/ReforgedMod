@@ -1,0 +1,43 @@
+{
+    "variants": {
+        "layers=1,age=0": { "model": "conquest:block/beetroot_1_stage_0" },
+        "layers=1,age=1": { "model": "conquest:block/beetroot_1_stage_1" },
+        "layers=1,age=2": { "model": "conquest:block/beetroot_1_stage_2" },
+        "layers=1,age=3": { "model": "conquest:block/beetroot_1_stage_3" },
+
+        "layers=2,age=0": { "model": "conquest:block/beetroot_2_stage_0" },
+        "layers=2,age=1": { "model": "conquest:block/beetroot_2_stage_1" },
+        "layers=2,age=2": { "model": "conquest:block/beetroot_2_stage_2" },
+        "layers=2,age=3": { "model": "conquest:block/beetroot_2_stage_3" },
+
+        "layers=3,age=0": { "model": "conquest:block/beetroot_3_stage_0" },
+        "layers=3,age=1": { "model": "conquest:block/beetroot_3_stage_1" },
+        "layers=3,age=2": { "model": "conquest:block/beetroot_3_stage_2" },
+        "layers=3,age=3": { "model": "conquest:block/beetroot_3_stage_3" },
+
+        "layers=4,age=0": { "model": "conquest:block/beetroot_4_stage_0" },
+        "layers=4,age=1": { "model": "conquest:block/beetroot_4_stage_1" },
+        "layers=4,age=2": { "model": "conquest:block/beetroot_4_stage_2" },
+        "layers=4,age=3": { "model": "conquest:block/beetroot_4_stage_3" },
+
+        "layers=5,age=0": { "model": "conquest:block/beetroot_5_stage_0" },
+        "layers=5,age=1": { "model": "conquest:block/beetroot_5_stage_1" },
+        "layers=5,age=2": { "model": "conquest:block/beetroot_5_stage_2" },
+        "layers=5,age=3": { "model": "conquest:block/beetroot_5_stage_3" },
+
+        "layers=6,age=0": { "model": "conquest:block/beetroot_6_stage_0" },
+        "layers=6,age=1": { "model": "conquest:block/beetroot_6_stage_1" },
+        "layers=6,age=2": { "model": "conquest:block/beetroot_6_stage_2" },
+        "layers=6,age=3": { "model": "conquest:block/beetroot_6_stage_3" },
+
+        "layers=7,age=0": { "model": "conquest:block/beetroot_7_stage_0" },
+        "layers=7,age=1": { "model": "conquest:block/beetroot_7_stage_1" },
+        "layers=7,age=2": { "model": "conquest:block/beetroot_7_stage_2" },
+        "layers=7,age=3": { "model": "conquest:block/beetroot_7_stage_3" },
+
+        "layers=8,age=0": { "model": "block/beetroots_stage0" },
+        "layers=8,age=1": { "model": "block/beetroots_stage1" },
+        "layers=8,age=2": { "model": "block/beetroots_stage2" },
+        "layers=8,age=3": { "model": "block/beetroots_stage3" }
+    }
+}

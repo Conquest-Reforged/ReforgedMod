@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/black_candle_one_candle_lit",
+	"textures": {
+		"particle": "block/small_candles",
+		"holder": "block/small_candles",
+		"candle": "block/candle"
+	}
+}

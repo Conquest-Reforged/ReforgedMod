@@ -1,35 +1,31 @@
 modLoader="javafml"
-loaderVersion="[36,)"
-license="All rights reserved"
+loaderVersion="[40,)"
+license="ARR"
+issueTrackerURL="https://github.com/Conquest-Reforged/ConquestReforged"
+
 [[mods]]
 modId="conquest"
-displayName="${name}"
-version="${version}"
-logoFile="conquestreforged.png"
-displayURL="https://conquestreforged.com"
-issueTrackerURL="https://github.com/Conquest-Reforged/Indev"
-
-authors="Hippokleides"
-
-credits='''
-
-  [Developers]
-  Hippokleides
-
-  [Artists & Modellers]
-  Monsterfish
-  ArtemisiaTR
-  DeChoppy
-  wheellee
-
-  [Contributors]
-  CreativeRealms
-
-  With special thanks to past
-  & present backers of the mod!
-'''
-
+version="7.0.4-forge"
+displayName="Conquest Reforged"
+displayURL="https://conquestreforged.com/mod"
+logoFile= "conquestreforged.png"
+credits='''Conquest Reforged Team'''
+authors="Conquest Reforged Team"
 description='''
-Description:
- Conquest Reforged adds hundreds of high quality textures to Minecraft for builders to use in their worlds, allowing players to delve into an endless amount of themes and building styles.
+Conquest Reforged adds hundreds of high quality textures to Minecraft for builders to use in their worlds, allowing players to delve into an endless amount of themes and building styles.
 '''
+
+# Base
+[[dependencies.conquest]]
+modId="forge"
+mandatory=true
+versionRange="[40,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.conquest]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.2, 1.19)"
+ordering="NONE"
+side="BOTH"

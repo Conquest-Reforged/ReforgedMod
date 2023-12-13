@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "facing=south,type=bottom": { "model": "block/parent_slab_corner_overlay_top", "uvlock": true },
+        "facing=west,type=bottom": { "model": "block/parent_slab_corner_overlay_top", "y": 90, "uvlock": true },
+        "facing=north,type=bottom": { "model": "block/parent_slab_corner_overlay_top", "y": 180, "uvlock": true },
+        "facing=east,type=bottom": { "model": "block/parent_slab_corner_overlay_top", "y": 270, "uvlock": true },
+
+        "facing=south,type=top": { "model": "block/parent_slab_corner_overlay_top_top", "y": 90, "uvlock": true },
+        "facing=west,type=top": { "model": "block/parent_slab_corner_overlay_top_top", "y": 180, "uvlock": true },
+        "facing=north,type=top": { "model": "block/parent_slab_corner_overlay_top_top", "y": 270, "uvlock": true },
+        "facing=east,type=top": { "model": "block/parent_slab_corner_overlay_top_top", "uvlock": true }
+    }
+}

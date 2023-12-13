@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "conquest:block/3_decoration/4_cloth/rope/hanging_rope"
+    }
+}

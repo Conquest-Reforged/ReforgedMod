@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_wood_trellis_side",
+		"3": "conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_wood_trellis",
+		"particle": "conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_wood_trellis"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 16, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#1"}
+			}
+		},
+		{
+			"from": [9, 0, 6.9875],
+			"to": [16, 16, 9.01875],
+			"faces": {
+				"north": {"uv": [0, 0, 7, 16], "texture": "#3"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"south": {"uv": [9, 0, 16, 16], "texture": "#3"},
+				"west": {"uv": [0, 0, 2.03125, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 2.03125, 7], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 0, 2.03125, 7], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7, 0, 0],
+			"to": [9, 16, 7],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"east": {"uv": [9, 0, 16, 16], "texture": "#3"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 7, 16], "texture": "#3"},
+				"up": {"uv": [0, 0, 2, 7], "texture": "#1"},
+				"down": {"uv": [0, 0, 2, 7], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [0, 1,
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"children": []
+		},
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"children": [2]
+		}
+	]
+}

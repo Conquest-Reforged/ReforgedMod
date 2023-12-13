@@ -1,0 +1,139 @@
+{
+    "variants": {
+        "layers=1,age=0": { "model": "conquest:block/wild_wheat_1_stage_1" },
+        "layers=1,age=1": { "model": "conquest:block/wild_wheat_1_stage_1" },
+        "layers=1,age=2": { "model": "conquest:block/wild_wheat_1_stage_1" },
+        "layers=1,age=3": { "model": "conquest:block/wild_wheat_1_stage_4" },
+        "layers=1,age=4": { "model": "conquest:block/wild_wheat_1_stage_4" },
+        "layers=1,age=5": { "model": "conquest:block/wild_wheat_1_stage_4" },
+        "layers=1,age=6": [
+            { "model": "conquest:block/wild_wheat_1_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_1_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_1_c_stage_6" }
+        ],
+        "layers=1,age=7": [
+            { "model": "conquest:block/wild_wheat_1_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_1_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_1_c_stage_7" }
+        ],
+
+        "layers=2,age=0": { "model": "conquest:block/wild_wheat_2_stage_1" },
+        "layers=2,age=1": { "model": "conquest:block/wild_wheat_2_stage_1" },
+        "layers=2,age=2": { "model": "conquest:block/wild_wheat_2_stage_1" },
+        "layers=2,age=3": { "model": "conquest:block/wild_wheat_2_stage_4" },
+        "layers=2,age=4": { "model": "conquest:block/wild_wheat_2_stage_4" },
+        "layers=2,age=5": { "model": "conquest:block/wild_wheat_2_stage_4" },
+        "layers=2,age=6": [
+            { "model": "conquest:block/wild_wheat_2_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_2_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_2_c_stage_6" }
+        ],
+        "layers=2,age=7": [
+            { "model": "conquest:block/wild_wheat_2_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_2_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_2_c_stage_7" }
+        ],
+
+        "layers=3,age=0": { "model": "conquest:block/wild_wheat_3_stage_1" },
+        "layers=3,age=1": { "model": "conquest:block/wild_wheat_3_stage_1" },
+        "layers=3,age=2": { "model": "conquest:block/wild_wheat_3_stage_1" },
+        "layers=3,age=3": { "model": "conquest:block/wild_wheat_3_stage_4" },
+        "layers=3,age=4": { "model": "conquest:block/wild_wheat_3_stage_4" },
+        "layers=3,age=5": { "model": "conquest:block/wild_wheat_3_stage_4" },
+        "layers=3,age=6": [
+            { "model": "conquest:block/wild_wheat_3_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_3_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_3_c_stage_6" }
+        ],
+        "layers=3,age=7": [
+            { "model": "conquest:block/wild_wheat_3_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_3_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_3_c_stage_7" }
+        ],
+
+        "layers=4,age=0": { "model": "conquest:block/wild_wheat_4_stage_1" },
+        "layers=4,age=1": { "model": "conquest:block/wild_wheat_4_stage_1" },
+        "layers=4,age=2": { "model": "conquest:block/wild_wheat_4_stage_1" },
+        "layers=4,age=3": { "model": "conquest:block/wild_wheat_4_stage_4" },
+        "layers=4,age=4": { "model": "conquest:block/wild_wheat_4_stage_4" },
+        "layers=4,age=5": { "model": "conquest:block/wild_wheat_4_stage_4" },
+        "layers=4,age=6": [
+            { "model": "conquest:block/wild_wheat_4_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_4_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_4_c_stage_6" }
+        ],
+        "layers=4,age=7": [
+            { "model": "conquest:block/wild_wheat_4_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_4_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_4_c_stage_7" }
+        ],
+
+        "layers=5,age=0": { "model": "conquest:block/wild_wheat_5_stage_1" },
+        "layers=5,age=1": { "model": "conquest:block/wild_wheat_5_stage_1" },
+        "layers=5,age=2": { "model": "conquest:block/wild_wheat_5_stage_1" },
+        "layers=5,age=3": { "model": "conquest:block/wild_wheat_5_stage_4" },
+        "layers=5,age=4": { "model": "conquest:block/wild_wheat_5_stage_4" },
+        "layers=5,age=5": { "model": "conquest:block/wild_wheat_5_stage_4" },
+        "layers=5,age=6": [
+            { "model": "conquest:block/wild_wheat_5_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_5_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_5_c_stage_6" }
+        ],
+        "layers=5,age=7": [
+            { "model": "conquest:block/wild_wheat_5_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_5_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_5_c_stage_7" }
+        ],
+
+        "layers=6,age=0": { "model": "conquest:block/wild_wheat_6_stage_1" },
+        "layers=6,age=1": { "model": "conquest:block/wild_wheat_6_stage_1" },
+        "layers=6,age=2": { "model": "conquest:block/wild_wheat_6_stage_1" },
+        "layers=6,age=3": { "model": "conquest:block/wild_wheat_6_stage_4" },
+        "layers=6,age=4": { "model": "conquest:block/wild_wheat_6_stage_4" },
+        "layers=6,age=5": { "model": "conquest:block/wild_wheat_6_stage_4" },
+        "layers=6,age=6": [
+            { "model": "conquest:block/wild_wheat_6_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_6_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_6_c_stage_6" }
+        ],
+        "layers=6,age=7": [
+            { "model": "conquest:block/wild_wheat_6_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_6_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_6_c_stage_7" }
+        ],
+
+        "layers=7,age=0": { "model": "conquest:block/wild_wheat_7_stage_1" },
+        "layers=7,age=1": { "model": "conquest:block/wild_wheat_7_stage_1" },
+        "layers=7,age=2": { "model": "conquest:block/wild_wheat_7_stage_1" },
+        "layers=7,age=3": { "model": "conquest:block/wild_wheat_7_stage_4" },
+        "layers=7,age=4": { "model": "conquest:block/wild_wheat_7_stage_4" },
+        "layers=7,age=5": { "model": "conquest:block/wild_wheat_7_stage_4" },
+        "layers=7,age=6": [
+            { "model": "conquest:block/wild_wheat_7_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_7_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_7_c_stage_6" }
+        ],
+        "layers=7,age=7": [
+            { "model": "conquest:block/wild_wheat_7_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_7_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_7_c_stage_7" }
+        ],
+
+        "layers=8,age=0": { "model": "conquest:block/wild_wheat_8_stage_1" },
+        "layers=8,age=1": { "model": "conquest:block/wild_wheat_8_stage_1" },
+        "layers=8,age=2": { "model": "conquest:block/wild_wheat_8_stage_1" },
+        "layers=8,age=3": { "model": "conquest:block/wild_wheat_8_stage_4" },
+        "layers=8,age=4": { "model": "conquest:block/wild_wheat_8_stage_4" },
+        "layers=8,age=5": { "model": "conquest:block/wild_wheat_8_stage_4" },
+        "layers=8,age=6": [
+            { "model": "conquest:block/wild_wheat_8_a_stage_6" },
+            { "model": "conquest:block/wild_wheat_8_b_stage_6" },
+            { "model": "conquest:block/wild_wheat_8_c_stage_6" }
+        ],
+        "layers=8,age=7": [
+            { "model": "conquest:block/wild_wheat_8_a_stage_7" },
+            { "model": "conquest:block/wild_wheat_8_b_stage_7" },
+            { "model": "conquest:block/wild_wheat_8_c_stage_7" }
+        ]
+    }
+}

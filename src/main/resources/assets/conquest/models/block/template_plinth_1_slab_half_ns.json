@@ -1,0 +1,81 @@
+{
+	"parent": "block/block",
+	"elements": [
+		{
+			"name": "Long Side",
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#end"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#end"}
+			}
+		},
+		{
+			"name": "Long Side9",
+			"from": [-2, 0, 0],
+			"to": [0, 1.5, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"west": {"uv": [0, 6.5, 16, 8], "texture": "#side"},
+				"down": {"uv": [0, 0, 16, 2], "rotation": 90, "texture": "#end"}
+			}
+		},
+		{
+			"name": "Long Side9",
+			"from": [-3, 1.5, 0],
+			"to": [0, 4, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"west": {"uv": [0, 4, 16, 6.5], "texture": "#side"},
+				"down": {"uv": [0, 0, 16, 3], "rotation": 90, "texture": "#end"}
+			}
+		},
+		{
+			"name": "Long Side9",
+			"from": [-5, 4, 0],
+			"to": [0, 7.993, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"west": {"uv": [0, 0, 16, 3.992], "texture": "#side"},
+				"up": {"uv": [0, 0, 5, 16], "rotation": 180, "texture": "#end"},
+				"down": {"uv": [11, 0, 16, 16], "rotation": 180, "texture": "#end"}
+			}
+		},
+		{
+			"name": "Long Side9",
+			"from": [16, 0, 0],
+			"to": [18, 1.5, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0, 6.5, 16, 8], "texture": "#side"},
+				"down": {"uv": [0, 0, 16, 2], "rotation": 270, "texture": "#end"}
+			}
+		},
+		{
+			"name": "Long Side9",
+			"from": [16, 1.5, 0],
+			"to": [19, 4, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0, 4, 16, 6.5], "texture": "#side"},
+				"down": {"uv": [0, 0, 16, 3], "rotation": 270, "texture": "#end"}
+			}
+		},
+		{
+			"name": "Long Side9",
+			"from": [16, 4, 0],
+			"to": [21, 7.997, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 4], "texture": "#side"},
+				"up": {"uv": [0, 0, 4.5, 16], "texture": "#end"},
+				"down": {"uv": [11, 0, 16, 16], "texture": "#end"}
+			}
+		}
+	]
+}

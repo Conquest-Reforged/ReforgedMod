@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "toggle=1,facing=down":  { "model": "block/chain_command_block", "x": 90 },
+        "toggle=1,facing=up":    { "model": "block/chain_command_block", "x": 270 },
+        "toggle=1,facing=north": { "model": "block/chain_command_block" },
+        "toggle=1,facing=south": { "model": "block/chain_command_block", "y": 180 },
+        "toggle=1,facing=west":  { "model": "block/chain_command_block", "y": 270 },
+        "toggle=1,facing=east":  { "model": "block/chain_command_block", "y": 90 },
+        "toggle=2,facing=down":  { "model": "block/chain_command_block_conditional", "x": 90 },
+        "toggle=2,facing=up":    { "model": "block/chain_command_block_conditional", "x": 270 },
+        "toggle=2,facing=north": { "model": "block/chain_command_block_conditional" },
+        "toggle=2,facing=south": { "model": "block/chain_command_block_conditional", "y": 180 },
+        "toggle=2,facing=west":  { "model": "block/chain_command_block_conditional", "y": 270 },
+        "toggle=2,facing=east":  { "model": "block/chain_command_block_conditional", "y": 90 }
+    }
+}

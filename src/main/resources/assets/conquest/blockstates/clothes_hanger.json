@@ -1,0 +1,24 @@
+{
+    "variants": {
+        "toggle=1,facing=east": { "model": "conquest:block/clothes_hanger", "y": 270 },
+        "toggle=1,facing=south":{ "model": "conquest:block/clothes_hanger" },
+        "toggle=1,facing=west": { "model": "conquest:block/clothes_hanger", "y": 90 },
+        "toggle=1,facing=north":{ "model": "conquest:block/clothes_hanger", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/clothes_hanger_keys", "y": 270 },
+        "toggle=2,facing=south":{ "model": "conquest:block/clothes_hanger_keys" },
+        "toggle=2,facing=west": { "model": "conquest:block/clothes_hanger_keys", "y": 90 },
+        "toggle=2,facing=north":{ "model": "conquest:block/clothes_hanger_keys", "y": 180 },
+        "toggle=3,facing=east": { "model": "conquest:block/clothes_hanger_robe_hat", "y": 270 },
+        "toggle=3,facing=south":{ "model": "conquest:block/clothes_hanger_robe_hat" },
+        "toggle=3,facing=west": { "model": "conquest:block/clothes_hanger_robe_hat", "y": 90 },
+        "toggle=3,facing=north":{ "model": "conquest:block/clothes_hanger_robe_hat", "y": 180 },
+        "toggle=4,facing=east": { "model": "conquest:block/clothes_hanger_robe_rag", "y": 270 },
+        "toggle=4,facing=south":{ "model": "conquest:block/clothes_hanger_robe_rag" },
+        "toggle=4,facing=west": { "model": "conquest:block/clothes_hanger_robe_rag", "y": 90 },
+        "toggle=4,facing=north":{ "model": "conquest:block/clothes_hanger_robe_rag", "y": 180 },
+        "toggle=5,facing=east": { "model": "conquest:block/clothes_hanger_rope_keys", "y": 270 },
+        "toggle=5,facing=south":{ "model": "conquest:block/clothes_hanger_rope_keys" },
+        "toggle=5,facing=west": { "model": "conquest:block/clothes_hanger_rope_keys", "y": 90 },
+        "toggle=5,facing=north":{ "model": "conquest:block/clothes_hanger_rope_keys", "y": 180 }
+    }
+}

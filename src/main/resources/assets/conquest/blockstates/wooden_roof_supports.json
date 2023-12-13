@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "conquest:block/wooden_roof_supports" },
+    "facing=east": { "model": "conquest:block/wooden_roof_supports", "y": 90 },
+    "facing=south": { "model": "conquest:block/wooden_roof_supports", "y": 180 },
+    "facing=west": { "model": "conquest:block/wooden_roof_supports", "y": 270 }
+  }
+}

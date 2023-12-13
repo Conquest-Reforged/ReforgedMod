@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "conquest:block/7_tools/1_weapons/spears"
+    }
+}

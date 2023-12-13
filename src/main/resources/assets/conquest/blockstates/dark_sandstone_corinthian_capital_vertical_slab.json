@@ -1,0 +1,123 @@
+{
+    "variants": {
+        "layer=1,s=false,e=false,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2", "y": 180, "uvlock": true },
+        "layer=1,s=false,e=false,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2", "y": 270, "uvlock": true },
+        "layer=1,s=false,e=false,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2", "uvlock": true },
+        "layer=1,s=false,e=false,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2", "y": 90, "uvlock": true },
+
+        "layer=1,s=true,e=false,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_s", "y": 180, "uvlock": true },
+        "layer=1,s=true,e=false,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_s", "y": 270, "uvlock": true },
+        "layer=1,s=true,e=false,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_s", "uvlock": true },
+        "layer=1,s=true,e=false,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_s", "y": 90, "uvlock": true },
+
+        "layer=1,s=false,e=true,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_e", "y": 180, "uvlock": true },
+        "layer=1,s=false,e=true,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_e", "y": 270, "uvlock": true },
+        "layer=1,s=false,e=true,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_e", "uvlock": true },
+        "layer=1,s=false,e=true,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_e", "y": 90, "uvlock": true },
+
+        "layer=1,s=false,e=false,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_w", "y": 180, "uvlock": true },
+        "layer=1,s=false,e=false,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_w", "y": 270, "uvlock": true },
+        "layer=1,s=false,e=false,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_w", "uvlock": true },
+        "layer=1,s=false,e=false,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_w", "y": 90, "uvlock": true },
+
+        "layer=1,s=true,e=true,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_es", "y": 180, "uvlock": true },
+        "layer=1,s=true,e=true,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_es", "y": 270, "uvlock": true },
+        "layer=1,s=true,e=true,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_es", "uvlock": true },
+        "layer=1,s=true,e=true,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_es", "y": 90, "uvlock": true },
+
+        "layer=1,s=false,e=true,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_ew", "y": 180, "uvlock": true },
+        "layer=1,s=false,e=true,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_ew", "y": 270, "uvlock": true },
+        "layer=1,s=false,e=true,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_ew", "uvlock": true },
+        "layer=1,s=false,e=true,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_ew", "y": 90, "uvlock": true },
+
+        "layer=1,s=true,e=false,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_sw", "y": 180, "uvlock": true },
+        "layer=1,s=true,e=false,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_sw", "y": 270, "uvlock": true },
+        "layer=1,s=true,e=false,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_sw", "uvlock": true },
+        "layer=1,s=true,e=false,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_sw", "y": 90, "uvlock": true },
+
+        "layer=1,s=true,e=true,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_esw", "y": 180, "uvlock": true },
+        "layer=1,s=true,e=true,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_esw", "y": 270, "uvlock": true },
+        "layer=1,s=true,e=true,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_esw", "uvlock": true },
+        "layer=1,s=true,e=true,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_2_esw", "y": 90, "uvlock": true },
+
+        "layer=2,s=false,e=false,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4", "y": 180, "uvlock": true },
+        "layer=2,s=false,e=false,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4", "y": 270, "uvlock": true },
+        "layer=2,s=false,e=false,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4", "uvlock": true },
+        "layer=2,s=false,e=false,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4", "y": 90, "uvlock": true },
+
+        "layer=2,s=true,e=false,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_s", "y": 180, "uvlock": true },
+        "layer=2,s=true,e=false,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_s", "y": 270, "uvlock": true },
+        "layer=2,s=true,e=false,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_s", "uvlock": true },
+        "layer=2,s=true,e=false,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_s", "y": 90, "uvlock": true },
+
+        "layer=2,s=false,e=true,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_e", "y": 180, "uvlock": true },
+        "layer=2,s=false,e=true,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_e", "y": 270, "uvlock": true },
+        "layer=2,s=false,e=true,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_e", "uvlock": true },
+        "layer=2,s=false,e=true,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_e", "y": 90, "uvlock": true },
+
+        "layer=2,s=false,e=false,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_w", "y": 180, "uvlock": true },
+        "layer=2,s=false,e=false,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_w", "y": 270, "uvlock": true },
+        "layer=2,s=false,e=false,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_w", "uvlock": true },
+        "layer=2,s=false,e=false,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_w", "y": 90, "uvlock": true },
+
+        "layer=2,s=true,e=true,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_es", "y": 180, "uvlock": true },
+        "layer=2,s=true,e=true,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_es", "y": 270, "uvlock": true },
+        "layer=2,s=true,e=true,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_es", "uvlock": true },
+        "layer=2,s=true,e=true,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_es", "y": 90, "uvlock": true },
+
+        "layer=2,s=false,e=true,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_ew", "y": 180, "uvlock": true },
+        "layer=2,s=false,e=true,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_ew", "y": 270, "uvlock": true },
+        "layer=2,s=false,e=true,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_ew", "uvlock": true },
+        "layer=2,s=false,e=true,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_ew", "y": 90, "uvlock": true },
+
+        "layer=2,s=true,e=false,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_sw", "y": 180, "uvlock": true },
+        "layer=2,s=true,e=false,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_sw", "y": 270, "uvlock": true },
+        "layer=2,s=true,e=false,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_sw", "uvlock": true },
+        "layer=2,s=true,e=false,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_sw", "y": 90, "uvlock": true },
+
+        "layer=2,s=true,e=true,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_esw", "y": 180, "uvlock": true },
+        "layer=2,s=true,e=true,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_esw", "y": 270, "uvlock": true },
+        "layer=2,s=true,e=true,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_esw", "uvlock": true },
+        "layer=2,s=true,e=true,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_4_esw", "y": 90, "uvlock": true },
+
+        "layer=3,s=false,e=false,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6", "y": 180, "uvlock": true },
+        "layer=3,s=false,e=false,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6", "y": 270, "uvlock": true },
+        "layer=3,s=false,e=false,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6", "uvlock": true },
+        "layer=3,s=false,e=false,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6", "y": 90, "uvlock": true },
+
+        "layer=3,s=true,e=false,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_s", "y": 180, "uvlock": true },
+        "layer=3,s=true,e=false,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_s", "y": 270, "uvlock": true },
+        "layer=3,s=true,e=false,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_s", "uvlock": true },
+        "layer=3,s=true,e=false,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_s", "y": 90, "uvlock": true },
+
+        "layer=3,s=false,e=true,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_e", "y": 180, "uvlock": true },
+        "layer=3,s=false,e=true,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_e", "y": 270, "uvlock": true },
+        "layer=3,s=false,e=true,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_e", "uvlock": true },
+        "layer=3,s=false,e=true,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_e", "y": 90, "uvlock": true },
+
+        "layer=3,s=false,e=false,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_w", "y": 180, "uvlock": true },
+        "layer=3,s=false,e=false,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_w", "y": 270, "uvlock": true },
+        "layer=3,s=false,e=false,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_w", "uvlock": true },
+        "layer=3,s=false,e=false,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_w", "y": 90, "uvlock": true },
+
+        "layer=3,s=true,e=true,w=false,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_es", "y": 180, "uvlock": true },
+        "layer=3,s=true,e=true,w=false,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_es", "y": 270, "uvlock": true },
+        "layer=3,s=true,e=true,w=false,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_es", "uvlock": true },
+        "layer=3,s=true,e=true,w=false,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_es", "y": 90, "uvlock": true },
+
+        "layer=3,s=false,e=true,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_ew", "y": 180, "uvlock": true },
+        "layer=3,s=false,e=true,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_ew", "y": 270, "uvlock": true },
+        "layer=3,s=false,e=true,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_ew", "uvlock": true },
+        "layer=3,s=false,e=true,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_ew", "y": 90, "uvlock": true },
+
+        "layer=3,s=true,e=false,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_sw", "y": 180, "uvlock": true },
+        "layer=3,s=true,e=false,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_sw", "y": 270, "uvlock": true },
+        "layer=3,s=true,e=false,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_sw", "uvlock": true },
+        "layer=3,s=true,e=false,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_sw", "y": 90, "uvlock": true },
+
+        "layer=3,s=true,e=true,w=true,facing=south": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_esw", "y": 180, "uvlock": true },
+        "layer=3,s=true,e=true,w=true,facing=west": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_esw", "y": 270, "uvlock": true },
+        "layer=3,s=true,e=true,w=true,facing=north": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_esw", "uvlock": true },
+        "layer=3,s=true,e=true,w=true,facing=east": { "model": "conquest:block/dark_sandstone_corinthian_capital_vertical_slab_6_esw", "y": 90, "uvlock": true }
+    }
+}

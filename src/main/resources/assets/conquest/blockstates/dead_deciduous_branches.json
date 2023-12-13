@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "conquest:block/dead_deciduous_branches" },
+			{ "model": "conquest:block/dead_deciduous_branches_1", "y": 90 },
+			{ "model": "conquest:block/dead_deciduous_branches_2", "y": 180 },
+			{ "model": "conquest:block/dead_deciduous_branches_3", "y": 270 }
+        ]
+    }
+}

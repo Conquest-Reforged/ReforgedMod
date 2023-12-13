@@ -1,0 +1,10 @@
+{
+	"parent": "conquest:block/dark_green_sphagnum_moss_wn",
+	"textures": {
+		"1": "conquest:block/9_organic/3_plants/green_sphagnum_moss/2_3",
+		"2": "conquest:block/9_organic/3_plants/green_sphagnum_moss/side",
+		"3": "conquest:block/9_organic/3_plants/green_sphagnum_moss/2_1",
+		"4": "conquest:block/9_organic/3_plants/green_sphagnum_moss/2",
+		"particle": "conquest:block/9_organic/3_plants/green_sphagnum_moss/side"
+	}
+}

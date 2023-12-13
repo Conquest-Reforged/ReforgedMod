@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_cr",
+  "textures": {
+    "wall": "minecraft:block/bricks",
+    "top": "minecraft:block/bricks_topbottom",
+    "bottom": "minecraft:block/bricks_topbottom"
+  }
+}

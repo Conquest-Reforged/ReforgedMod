@@ -1,0 +1,33 @@
+{
+    "variants": {
+        "layer=1,facing=south,type=bottom": { "model": "block/parent_slab_quarter_2_beam" },
+        "layer=1,facing=west,type=bottom": { "model": "block/parent_slab_quarter_2_beam", "y": 90 },
+        "layer=1,facing=north,type=bottom": { "model": "block/parent_slab_quarter_2_beam", "y": 180 },
+        "layer=1,facing=east,type=bottom": { "model": "block/parent_slab_quarter_2_beam", "y": 270 },
+
+        "layer=1,facing=south,type=top": { "model": "block/parent_slab_quarter_2_top_beam", "y": 180 },
+        "layer=1,facing=west,type=top": { "model": "block/parent_slab_quarter_2_top_beam", "y": 270 },
+        "layer=1,facing=north,type=top": { "model": "block/parent_slab_quarter_2_top_beam" },
+        "layer=1,facing=east,type=top": { "model": "block/parent_slab_quarter_2_top_beam", "y": 90 },
+
+        "layer=2,facing=south,type=bottom": { "model": "block/parent_slab_quarter_4_beam" },
+        "layer=2,facing=west,type=bottom": { "model": "block/parent_slab_quarter_4_beam", "y": 90 },
+        "layer=2,facing=north,type=bottom": { "model": "block/parent_slab_quarter_4_beam", "y": 180 },
+        "layer=2,facing=east,type=bottom": { "model": "block/parent_slab_quarter_4_beam", "y": 270 },
+
+        "layer=2,facing=south,type=top": { "model": "block/parent_slab_quarter_4_top_beam", "y": 180 },
+        "layer=2,facing=west,type=top": { "model": "block/parent_slab_quarter_4_top_beam", "y": 270 },
+        "layer=2,facing=north,type=top": { "model": "block/parent_slab_quarter_4_top_beam" },
+        "layer=2,facing=east,type=top": { "model": "block/parent_slab_quarter_4_top_beam", "y": 90 },
+
+        "layer=3,facing=south,type=bottom": { "model": "block/parent_slab_quarter_6_beam" },
+        "layer=3,facing=west,type=bottom": { "model": "block/parent_slab_quarter_6_beam", "y": 90 },
+        "layer=3,facing=north,type=bottom": { "model": "block/parent_slab_quarter_6_beam", "y": 180 },
+        "layer=3,facing=east,type=bottom": { "model": "block/parent_slab_quarter_6_beam", "y": 270 },
+
+        "layer=3,facing=south,type=top": { "model": "block/parent_slab_quarter_6_top_beam", "y": 180 },
+        "layer=3,facing=west,type=top": { "model": "block/parent_slab_quarter_6_top_beam", "y": 270 },
+        "layer=3,facing=north,type=top": { "model": "block/parent_slab_quarter_6_top_beam" },
+        "layer=3,facing=east,type=top": { "model": "block/parent_slab_quarter_6_top_beam", "y": 90 }
+    }
+}

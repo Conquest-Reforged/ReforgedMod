@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "facing=south,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth" },
+        "facing=west,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth", "y": 90 },
+        "facing=north,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth", "y": 180 },
+        "facing=east,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth", "y": 270 },
+
+        "facing=south,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth", "x": 180, "y": 90 },
+        "facing=west,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth", "x": 180, "y": 180 },
+        "facing=north,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth", "x": 180, "y": 270 },
+        "facing=east,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_eighth", "x": 180 }
+    }
+}

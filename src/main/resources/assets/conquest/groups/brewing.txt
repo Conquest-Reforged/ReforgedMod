@@ -1,0 +1,13 @@
+minecraft:brewing_stand
+minecraft:glowstone_dust
+minecraft:blaze_rod
+minecraft:blaze_powder
+minecraft:ghast_tear
+minecraft:gold_nugget
+minecraft:nether_wart
+minecraft:spider_eye
+minecraft:fermented_spider_eye
+minecraft:magma_cream
+minecraft:glistering_melon_slice
+minecraft:glass_bottle
+minecraft:potion

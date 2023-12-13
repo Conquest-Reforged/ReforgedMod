@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "toggle=1,facing=north": { "model": "conquest:block/crosscut_saw" },
+        "toggle=1,facing=east": { "model": "conquest:block/crosscut_saw", "y": 90 },
+        "toggle=1,facing=south": { "model": "conquest:block/crosscut_saw", "y": 180 },
+        "toggle=1,facing=west": { "model": "conquest:block/crosscut_saw", "y": 270 },
+
+        "toggle=2,facing=north": { "model": "conquest:block/crosscut_saw_on_ground", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/crosscut_saw_on_ground", "y": 270 },
+        "toggle=2,facing=south": { "model": "conquest:block/crosscut_saw_on_ground" },
+        "toggle=2,facing=west": { "model": "conquest:block/crosscut_saw_on_ground", "y": 90 }
+    }
+}

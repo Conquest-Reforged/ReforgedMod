@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orange_candle_one_candle_lit",
+	"textures": {
+		"particle": "block/candle",
+		"candle": "block/candle",
+		"wheel": "block/wheel_chandelier"
+	}
+}

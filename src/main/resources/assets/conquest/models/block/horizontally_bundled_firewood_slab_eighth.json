@@ -1,0 +1,31 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"1": "conquest:block/1_basic_refined/3_wood/bundled_firewood",
+		"particle": "conquest:block/1_basic_refined/3_wood/bundled_firewood_topbottom",
+		"side": "conquest:block/1_basic_refined/3_wood/bundled_firewood_topbottom"
+	},
+	"elements": [
+		{
+			"name": "Box1",
+			"from": [0, 0, 0],
+			"to": [8, 8, 8],
+			"faces": {
+				"north": {"uv": [8, 0, 16, 8], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [8, 8, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 8, 8], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [0, 8, 8, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 8, 8], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 8], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [3.5, 0.5, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

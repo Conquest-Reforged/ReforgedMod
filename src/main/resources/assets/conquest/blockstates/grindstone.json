@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "conquest:block/grindstone"
+        },
+        "facing=south": {
+            "model": "conquest:block/grindstone",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "conquest:block/grindstone",
+            "y": 180
+        },
+        "facing=north": {
+            "model": "conquest:block/grindstone",
+            "y": 270
+        }
+    }
+}

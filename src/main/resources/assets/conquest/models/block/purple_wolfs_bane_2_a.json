@@ -1,0 +1,6 @@
+{
+	"parent": "conquest:block/parent_plant_dense_64x_2_a",
+	"textures": {
+		"texture": "conquest:block/9_organic/3_plants/purple_wolfs_bane"
+	}
+}

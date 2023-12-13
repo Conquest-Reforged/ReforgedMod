@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"log": "block/birch_log",
+		"particle": "block/birch_log"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [6.019, 12.01, 0],
+			"to": [10.019, 16.01, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.478, 13.994, 13.5]},
+			"faces": {
+				"north": {"uv": [12, 8.5, 16, 12.5], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 2, 8, 15], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [8, 5, 12, 9], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4, 2.5, 8, 15.5], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [12, 0, 16, 13], "texture": "#log"},
+				"down": {"uv": [12, 0, 16, 13], "rotation": 180, "texture": "#log"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "beam_diagonal_nsse4",
+			"origin": [-8.5, 14, 26],
+			"children": [0]
+		}
+	]
+}

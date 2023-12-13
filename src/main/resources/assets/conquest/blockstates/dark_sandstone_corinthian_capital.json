@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "east=false,north=false,south=false,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital" },
+
+        "east=false,north=true,south=false,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital_n" },
+        "east=true,north=false,south=false,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital_n", "y": 90, "uvlock": true },
+        "east=false,north=false,south=true,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital_n", "y": 180, "uvlock": true },
+        "east=false,north=false,south=false,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_n", "y": 270, "uvlock": true },
+
+        "east=true,north=true,south=false,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital_ne" },
+        "east=true,north=false,south=true,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital_ne", "y": 90, "uvlock": true },
+        "east=false,north=false,south=true,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_ne", "y": 180, "uvlock": true },
+        "east=false,north=true,south=false,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_ne", "y": 270, "uvlock": true },
+
+        "east=false,north=true,south=true,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital_ns" },
+        "east=true,north=false,south=false,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_ns_1", "y": 90, "uvlock": true },
+
+        "east=true,north=true,south=true,west=false": { "model": "conquest:block/dark_sandstone_corinthian_capital_nse" },
+        "east=true,north=false,south=true,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_nse", "y": 90, "uvlock": true },
+        "east=false,north=true,south=true,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_nse", "y": 180, "uvlock": true },
+        "east=true,north=true,south=false,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_nse", "y": 270, "uvlock": true },
+
+        "east=true,north=true,south=true,west=true": { "model": "conquest:block/dark_sandstone_corinthian_capital_fullplain" }
+    }
+}

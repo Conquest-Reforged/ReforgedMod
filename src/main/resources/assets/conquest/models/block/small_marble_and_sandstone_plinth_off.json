@@ -1,0 +1,24 @@
+{
+    "parent": "block/block",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/1_stone/3_marble/small_marble_and_sandstone_plinth",
+        "bottom": "conquest:block/2_advanced_refined/1_stone/3_marble/small_marble_and_sandstone_plinth_top",
+        "top": "conquest:block/2_advanced_refined/1_stone/3_marble/small_marble_and_sandstone_plinth_top",
+        "side": "conquest:block/2_advanced_refined/1_stone/3_marble/small_marble_and_sandstone_plinth",
+        "eye": "conquest:block/2_advanced_refined/1_stone/3_marble/small_marble_and_sandstone_plinth_eye"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 13, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top" },
+                "north": { "uv": [ 0, 3, 16, 16 ], "texture": "#side" },
+                "south": { "uv": [ 0, 3, 16, 16 ], "texture": "#side" },
+                "west":  { "uv": [ 0, 3, 16, 16 ], "texture": "#side" },
+                "east":  { "uv": [ 0, 3, 16, 16 ], "texture": "#side" }
+            }
+        }
+    ]
+}

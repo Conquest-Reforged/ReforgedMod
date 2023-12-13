@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_corinthian_capital_fence_post",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/1_stone/5_sandstone/sandstone_corinthian_capital",
+		"side": "conquest:block/2_advanced_refined/1_stone/5_sandstone/sandstone_corinthian_capital",
+		"up": "conquest:block/1_basic_refined/1_stone/5_sandstone/large_sandstone_block_topbottom",
+		"down": "conquest:block/1_basic_refined/1_stone/5_sandstone/large_sandstone_block_topbottom"
+	}
+}

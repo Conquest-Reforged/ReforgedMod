@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45" },
+        "toggle=1,facing=west": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45", "y": 90 },
+        "toggle=1,facing=north": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45", "y": 180 },
+        "toggle=1,facing=east": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45", "y": 270 },
+
+        "toggle=2,facing=south": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_a" },
+        "toggle=2,facing=west": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_a", "y": 90 },
+        "toggle=2,facing=north": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_a", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_a", "y": 270 },
+
+        "toggle=3,facing=south": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_stem" },
+        "toggle=3,facing=west": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_stem", "y": 90 },
+        "toggle=3,facing=north": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_stem", "y": 180 },
+        "toggle=3,facing=east": { "model": "conquest:block/thick_diagonal_spruce_branch_67_45_stem", "y": 270 }
+    }
+}

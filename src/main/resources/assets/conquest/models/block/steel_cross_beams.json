@@ -1,0 +1,71 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "conquest:block/2_advanced_refined/2_metal/steel_beam",
+		"particle": "conquest:block/2_advanced_refined/2_metal/steel_beam"
+	},
+	"elements": [
+		{
+			"from": [4.98828, -5.24689, 5.8592],
+			"to": [10.98829, 8.74139, 9.8592],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.00391, 8.46014, 7.8592]},
+			"faces": {
+				"north": {"uv": [0, 2, 6, 15.801], "texture": "#0"},
+				"east": {"uv": [6, 2, 10, 15.801], "texture": "#0"},
+				"south": {"uv": [0, 2, 6, 15.801], "texture": "#0"},
+				"west": {"uv": [6, 2, 10, 15.80078], "texture": "#0"},
+				"down": {"uv": [10, 0, 14, 6.00001], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"from": [5.01953, -3.93795, 3.64861],
+			"to": [10.97266, 9.50736, 7.64861],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8.01953, 5.75736, 5.64861]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 5.953, 15.945], "texture": "#0"},
+				"east": {"uv": [6, 2.5, 10, 15.945], "texture": "#0"},
+				"south": {"uv": [0, 2.5, 5.953, 15.945], "texture": "#0"},
+				"west": {"uv": [6, 2.5, 10, 15.94531], "texture": "#0"},
+				"down": {"uv": [10, 0, 14, 5.95313], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"from": [5.0039, 8.74139, 5.85139],
+			"to": [11.00391, 21.49139, 9.85139],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.01953, 8.46014, 7.85139]},
+			"faces": {
+				"north": {"uv": [0, 0, 6.00001, 12.57031], "texture": "#0"},
+				"east": {"uv": [6, 0, 10, 12.57031], "texture": "#0"},
+				"south": {"uv": [0, 0, 6.00001, 12.57031], "texture": "#0"},
+				"west": {"uv": [6, 0, 10, 12.57031], "texture": "#0"},
+				"up": {"uv": [10, 0, 14, 6.00001], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [5.01172, 9.50736, 3.6408],
+			"to": [10.96485, 22.54252, 7.6408],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8.01172, 5.75736, 5.6408]},
+			"faces": {
+				"north": {"uv": [0, 0, 5.95313, 13.10547], "texture": "#0"},
+				"east": {"uv": [6, 0, 10, 13.10547], "texture": "#0"},
+				"south": {"uv": [0, 0, 5.95313, 13.10547], "texture": "#0"},
+				"west": {"uv": [6, 0, 10, 13.10547], "texture": "#0"},
+				"up": {"uv": [10, 0, 14, 5.95313], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.6, 0.6, 0.6]
+		}
+	},
+	"groups": [
+		{
+			"name": "sidewaycross",
+			"origin": [8.19542, 8.21014, 7.75],
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

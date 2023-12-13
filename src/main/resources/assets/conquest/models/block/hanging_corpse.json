@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "conquest:block/9_organic/6_waste/hanging_corpse"
+    }
+}

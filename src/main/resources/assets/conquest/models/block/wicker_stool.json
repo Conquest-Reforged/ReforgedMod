@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "conquest:block/4_furniture/3_wood/wicker_stool",
+        "top": "conquest:block/4_furniture/3_wood/wicker_stool_top",
+        "side": "conquest:block/4_furniture/3_wood/wicker_stool"
+    }
+}

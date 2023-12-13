@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"end": "block/oak_planks",
+		"particle": "block/acacia_planks",
+		"side": "block/acacia_planks"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": { "texture": "#end", "cullface": "north"},
+				"east": { "texture": "#side", "cullface": "east"},
+				"south": { "texture": "#end", "cullface": "south"},
+				"west": { "texture": "#side", "cullface": "west"},
+				"up": { "texture": "#end", "cullface": "up"},
+				"down": { "texture": "#end", "cullface": "down"}
+			}
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:block/blue_candle_cake_lit",
+	"textures": {
+		"particle": "block/cake_side",
+		"bottom": "block/cake_bottom",
+		"top": "block/cake_top",
+		"side": "block/cake_side",
+		"flame": "block/candle",
+		"candle": "block/blue_candle"
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/lime_mortar_orange_clay_brick_facade_segmental_arch_2_right.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/1_clay/lime_mortar_orange_clay_brick_arch/1",
+        "keystones": "conquest:block/1_basic_refined/1_stone/1_clay/lime_mortar_orange_clay_brick_arch/keystones",
+        "underside1": "conquest:block/1_basic_refined/1_stone/1_clay/lime_mortar_orange_clay_brick_arch/1",
+        "underside2": "conquest:block/1_basic_refined/1_stone/1_clay/lime_mortar_orange_clay_brick_arch/2",
+        "mortar": "conquest:block/1_basic_refined/1_stone/1_clay/lime_mortar_orange_clay_brick_arch/mortar"
+    }
+}

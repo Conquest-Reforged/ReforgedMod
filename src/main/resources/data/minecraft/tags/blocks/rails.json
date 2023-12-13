@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:rail",
+    "minecraft:powered_rail",
+    "minecraft:detector_rail",
+    "minecraft:activator_rail",
+    "conquest:wooden_rail",
+    "conquest:rope_on_the_ground",
+    "conquest:chains_on_the_ground",
+    "conquest:ash_wood_plank_rail",
+    "conquest:goat_sallow_wood_plank_rail",
+    "conquest:spruce_wood_plank_rail",
+    "conquest:willow_wood_plank_rail"
+  ]
+}

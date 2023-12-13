@@ -1,0 +1,30 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/1_stone/3_limestone/overgrown_limestone_cobble",
+		"bottom": "conquest:block/1_basic_refined/1_stone/3_limestone/overgrown_limestone_cobble",
+		"top": "block/grass_block_top",
+		"overlay": "conquest:block/1_basic_refined/1_stone/3_limestone/overgrown_limestone_cobble_overlay_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 0.05, 0],
+			"to": [16, 16.05, 16],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "up"}
+			}
+		}
+	]
+}

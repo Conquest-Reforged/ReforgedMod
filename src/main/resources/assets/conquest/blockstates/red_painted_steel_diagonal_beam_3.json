@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom,facing=south": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_a", "y": 90 },
+        "type=bottom,facing=west": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_a", "y": 180 },
+        "type=bottom,facing=north": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_a", "y": 270 },
+        "type=bottom,facing=east": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_a" },
+
+        "type=top,facing=south": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_b", "y": 90 },
+        "type=top,facing=west": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_b", "y": 180 },
+        "type=top,facing=north": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_b", "y": 270 },
+        "type=top,facing=east": { "model": "conquest:block/red_painted_steel_diagonal_beam_3_b" }
+    }
+}

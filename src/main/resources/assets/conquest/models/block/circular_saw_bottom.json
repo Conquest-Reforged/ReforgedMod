@@ -1,0 +1,15 @@
+{   "parent": "block/thin_block",
+    "textures": {
+        "particle": "conquest:block/7_tools/3_utility/circular_saw",
+        "wool": "conquest:block/7_tools/3_utility/circular_saw"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 0.5, 16 ],
+            "faces": {
+                "down":  { "texture": "#wool", "cullface": "down" },
+                "up":    { "texture": "#wool", "cullface": "up" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=down":  { "model": "conquest:block/sandstone_dispenser_vertical", "x": 180 },
+        "facing=up":    { "model": "conquest:block/sandstone_dispenser_vertical" },
+        "facing=north": { "model": "conquest:block/sandstone_dispenser" },
+        "facing=south": { "model": "conquest:block/sandstone_dispenser", "y": 180 },
+        "facing=west":  { "model": "conquest:block/sandstone_dispenser", "y": 270 },
+        "facing=east":  { "model": "conquest:block/sandstone_dispenser", "y": 90 }
+    }
+}

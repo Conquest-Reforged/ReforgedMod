@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/scythe", "y": 180 },
+        "facing=west": { "model": "conquest:block/scythe", "y": 270 },
+        "facing=north": { "model": "conquest:block/scythe" },
+        "facing=east": { "model": "conquest:block/scythe", "y": 90 }
+    }
+}

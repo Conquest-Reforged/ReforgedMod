@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:item/musket",
+    "textures": {
+        "layer0": "conquest:item/musket"
+    }
+}

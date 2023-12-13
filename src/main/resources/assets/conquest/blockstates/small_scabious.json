@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "layers=1": { "model": "conquest:block/small_scabious_1" },
+    "layers=2": { "model": "conquest:block/small_scabious_2" },
+    "layers=3": { "model": "conquest:block/small_scabious_3" },
+    "layers=4": { "model": "conquest:block/small_scabious_4" },
+    "layers=5": { "model": "conquest:block/small_scabious_5" },
+    "layers=6": { "model": "conquest:block/small_scabious_6" },
+    "layers=7": { "model": "conquest:block/small_scabious_7" },
+    "layers=8": { "model": "conquest:block/small_scabious_8" }
+  }
+}

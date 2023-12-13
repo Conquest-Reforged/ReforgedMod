@@ -1,0 +1,5 @@
+{   "parent": "block/template_wood_trellis_open",
+    "textures": {
+        "texture": "conquest:block/2_advanced_refined/7_wood/oak_wood_trellis"
+    }
+}

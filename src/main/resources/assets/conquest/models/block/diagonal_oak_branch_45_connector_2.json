@@ -1,0 +1,73 @@
+{
+	"parent": "block/block",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "minecraft:block/oak_log_1",
+		"log": "minecraft:block/oak_log_1"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [6.019, 6.01, 8],
+			"to": [10.019, 10.01, 21.2],
+			"rotation": {"angle": 45, "axis": "x", "origin": [1.478, 7.994, 8]},
+			"faces": {
+				"north": {"uv": [12, 5, 8, 9], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 15, 8, 2], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [16, 8.5, 12, 12.5], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4, 15.5, 8, 2.5], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [12, 13, 16, 0], "texture": "#log"},
+				"down": {"uv": [12, 13, 16, 0], "rotation": 180, "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [6.04, 5.99, -5.5],
+			"to": [10.04, 9.99, 8],
+			"rotation": {"angle": 45, "axis": "x", "origin": [1.478, 7.994, 8]},
+			"faces": {
+				"north": {"uv": [16, 11.5, 12, 15.5], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 12.5, 8, 0], "rotation": 90, "texture": "#log"},
+				"south": {"uv": [12, 8.5, 8, 12.5], "texture": "#log"},
+				"west": {"uv": [4, 12.5, 8, 0], "rotation": 90, "texture": "#log"},
+				"up": {"uv": [8, 12.5, 12, 0], "texture": "#log"},
+				"down": {"uv": [12, 12.5, 8, 0], "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [-5.5, 5.99, 6.46],
+			"to": [8, 9.99, 10.46],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.994, 15.022]},
+			"faces": {
+				"north": {"uv": [4, 12.5, 8, 0], "rotation": 90, "texture": "#log"},
+				"east": {"uv": [12, 8.5, 8, 12.5], "texture": "#log"},
+				"south": {"uv": [4, 12.5, 8, 0], "rotation": 90, "texture": "#log"},
+				"west": {"uv": [16, 11.5, 12, 15.5], "rotation": 180, "texture": "#log"},
+				"up": {"uv": [12, 0, 8, 12.5], "rotation": 90, "texture": "#log"},
+				"down": {"uv": [8, 0, 12, 12.5], "rotation": 270, "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [8, 5.99, 6.4],
+			"to": [21.5, 9.99, 10.4],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 7.994, 15.022]},
+			"faces": {
+				"north": {"uv": [4, 0, 8, 12.5], "rotation": 90, "texture": "#log"},
+				"east": {"uv": [12, 11.5, 16, 15.5], "rotation": 180, "texture": "#log"},
+				"south": {"uv": [4, 0, 8, 12.5], "rotation": 90, "texture": "#log"},
+				"west": {"uv": [8, 8.5, 12, 12.5], "texture": "#log"},
+				"up": {"uv": [12, 12.5, 8, 0], "rotation": 90, "texture": "#log"},
+				"down": {"uv": [8, 12.5, 12, 0], "rotation": 270, "texture": "#log"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "beam_diagonal_nsse3",
+			"origin": [-8.5, -40, -40],
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

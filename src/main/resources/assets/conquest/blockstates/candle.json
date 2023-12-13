@@ -1,0 +1,51 @@
+{
+    "variants": {
+        "facing=east,light=0": { "model": "conquest:block/candle_wall_unlit" },
+        "facing=south,light=0": { "model": "conquest:block/candle_wall_unlit", "y": 90 },
+        "facing=west,light=0": { "model": "conquest:block/candle_wall_unlit", "y": 180 },
+        "facing=north,light=0": { "model": "conquest:block/candle_wall_unlit", "y": 270 },
+        "facing=down,light=0": [
+            { "model": "conquest:block/candle_hanging_unlit" },
+            { "model": "conquest:block/candle_hanging_unlit", "y": 90 },
+            { "model": "conquest:block/candle_hanging_unlit", "y": 180 },
+            { "model": "conquest:block/candle_hanging_unlit", "y": 270 }
+        ],
+        "facing=up,light=0": { "model": "conquest:block/candle_unlit" },
+
+        "facing=east,light=1": { "model": "conquest:block/candle_wall" },
+        "facing=south,light=1": { "model": "conquest:block/candle_wall", "y": 90 },
+        "facing=west,light=1": { "model": "conquest:block/candle_wall", "y": 180 },
+        "facing=north,light=1": { "model": "conquest:block/candle_wall", "y": 270 },
+        "facing=down,light=1": [
+            { "model": "conquest:block/candle_hanging" },
+            { "model": "conquest:block/candle_hanging", "y": 90 },
+            { "model": "conquest:block/candle_hanging", "y": 180 },
+            { "model": "conquest:block/candle_hanging", "y": 270 }
+        ],
+        "facing=up,light=1": { "model": "conquest:block/candle" },
+
+        "facing=east,light=2": { "model": "conquest:block/candle_wall" },
+        "facing=south,light=2": { "model": "conquest:block/candle_wall", "y": 90 },
+        "facing=west,light=2": { "model": "conquest:block/candle_wall", "y": 180 },
+        "facing=north,light=2": { "model": "conquest:block/candle_wall", "y": 270 },
+        "facing=down,light=2": [
+            { "model": "conquest:block/candle_hanging" },
+            { "model": "conquest:block/candle_hanging", "y": 90 },
+            { "model": "conquest:block/candle_hanging", "y": 180 },
+            { "model": "conquest:block/candle_hanging", "y": 270 }
+        ],
+        "facing=up,light=2": { "model": "conquest:block/candle" },
+
+        "facing=east,light=3": { "model": "conquest:block/candle_wall" },
+        "facing=south,light=3": { "model": "conquest:block/candle_wall", "y": 90 },
+        "facing=west,light=3": { "model": "conquest:block/candle_wall", "y": 180 },
+        "facing=north,light=3": { "model": "conquest:block/candle_wall", "y": 270 },
+        "facing=down,light=3": [
+            { "model": "conquest:block/candle_hanging" },
+            { "model": "conquest:block/candle_hanging", "y": 90 },
+            { "model": "conquest:block/candle_hanging", "y": 180 },
+            { "model": "conquest:block/candle_hanging", "y": 270 }
+        ],
+        "facing=up,light=3": { "model": "conquest:block/candle" }
+    }
+}

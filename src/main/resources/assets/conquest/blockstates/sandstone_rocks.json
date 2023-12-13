@@ -1,0 +1,1056 @@
+{
+    "variants": {
+        "layers=1,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+        "layers=1,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_1", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_1", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_1", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_1", "weight": 40 }
+        ],
+
+        "layers=2,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+        "layers=2,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_2", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_2", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_2", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_2", "weight": 40 }
+        ],
+
+        "layers=3,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+        "layers=3,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_3", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_3", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_3", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_3", "weight": 40 }
+        ],
+
+        "layers=4,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+        "layers=4,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_4", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_4", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_4", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_4", "weight": 40 }
+        ],
+
+
+        "layers=5,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+        "layers=5,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_5", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_5", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_5", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_5", "weight": 40 }
+        ],
+
+        "layers=6,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+        "layers=6,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_6", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_6", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_6", "weight": 40 }
+        ],
+
+
+        "layers=7,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+        "layers=7,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_7", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_7", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none_7", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none_7", "weight": 40 }
+        ],
+
+
+
+        "layers=8,east=false,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_8", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_none_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_6_n", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_none", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_none", "weight": 40 }
+        ],
+        "layers=8,east=false,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_8", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_n_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_6_n", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_n", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_n", "weight": 40 }
+        ],
+        "layers=8,east=true,north=false,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_2_none_8", "weight": 30, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_3_n_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_5_none_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_6_n", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_7_n", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_8_n", "weight": 40, "y": 90 }
+        ],
+        "layers=8,east=false,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_2_none_8", "weight": 30, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_3_n_8", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_5_none_8", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_6_n", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_7_n", "weight": 40, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_8_n", "weight": 40, "y": 180 }
+        ],
+        "layers=8,east=false,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_2_none_8", "weight": 30, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_3_n_8", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_5_none_8", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_6_n", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_7_n", "weight": 40, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_8_n", "weight": 40, "y": 270 }
+        ],
+        "layers=8,east=true,north=true,south=false,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_ne_8", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_ne_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_ne_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_6_ne", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_ne", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40 }
+        ],
+        "layers=8,east=true,north=false,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_2_ne_8", "weight": 30, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_3_ne_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_5_ne_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_6_ne", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_7_ne", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40, "y": 90 }
+        ],
+        "layers=8,east=false,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_2_ne_8", "weight": 30, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_3_ne_8", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_5_ne_8", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_6_ne", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_7_ne", "weight": 40, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40, "y": 180 }
+        ],
+        "layers=8,east=false,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_2_ne_8", "weight": 30, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_3_ne_8", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_5_ne_8", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_6_ne", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_7_ne", "weight": 40, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40, "y": 270 }
+        ],
+        "layers=8,east=false,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_none_8", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_n_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_none_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_6_n", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_n", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_n", "weight": 40 }
+        ],
+        "layers=8,east=true,north=false,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_2_none_8", "weight": 30, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_3_n_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_5_none_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_6_n", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_7_n", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_8_n", "weight": 40, "y": 90 }
+        ],
+        "layers=8,east=true,north=true,south=true,west=false": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_nse_8", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_5_nse_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_6_nse", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_nse", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40 }
+        ],
+        "layers=8,east=true,north=false,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_2_nse_8", "weight": 30, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_3_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_5_nse_8", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_6_nse", "weight": 50, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_7_nse", "weight": 40, "y": 90 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40, "y": 90 }
+        ],
+        "layers=8,east=false,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_2_nse_8", "weight": 30, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_3_8", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_5_nse_8", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_6_nse", "weight": 50, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_7_nse", "weight": 40, "y": 180 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40, "y": 180 }
+        ],
+        "layers=8,east=true,north=true,south=false,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_2_nse_8", "weight": 30, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_3_8", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_5_nse_8", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_6_nse", "weight": 50, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_7_nse", "weight": 40, "y": 270 },
+            { "model": "conquest:block/sandstone_rocks_8_ne", "weight": 40, "y": 270 }
+        ],
+        "layers=8,east=true,north=true,south=true,west=true": [
+            { "model": "conquest:block/sandstone_rocks_1_8", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_2_8", "weight": 30 },
+            { "model": "conquest:block/sandstone_rocks_3_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_4_8", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_5_8", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_6", "weight": 50 },
+            { "model": "conquest:block/sandstone_rocks_7_nse", "weight": 40 },
+            { "model": "conquest:block/sandstone_rocks_8", "weight": 40 }
+        ]
+    }
+}

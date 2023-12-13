@@ -1,0 +1,92 @@
+{
+    "variants": {
+        "layers=1": [
+            { "model": "block/cacti2_1", "weight": 50 },
+            { "model": "block/cacti1_1", "weight": 4 },
+            { "model": "block/cacti1_1", "weight": 4, "y": 90 },
+            { "model": "block/cacti1_1", "weight": 4, "y": 180 },
+            { "model": "block/cacti1_1", "weight": 4, "y": 270 },
+            { "model": "block/cacti0_1", "weight": 4 },
+            { "model": "block/cacti0_1", "weight": 4, "y": 90 },
+            { "model": "block/cacti0_1", "weight": 4, "y": 180 },
+            { "model": "block/cacti0_1", "weight": 4, "y": 270 }
+        ],
+        "layers=2": [
+            { "model": "block/cacti2_2", "weight": 50 },
+            { "model": "block/cacti1_2", "weight": 4 },
+            { "model": "block/cacti1_2", "weight": 4, "y": 90 },
+            { "model": "block/cacti1_2", "weight": 4, "y": 180 },
+            { "model": "block/cacti1_2", "weight": 4, "y": 270 },
+            { "model": "block/cacti0_2", "weight": 4 },
+            { "model": "block/cacti0_2", "weight": 4, "y": 90 },
+            { "model": "block/cacti0_2", "weight": 4, "y": 180 },
+            { "model": "block/cacti0_2", "weight": 4, "y": 270 }
+        ],
+        "layers=3": [
+            { "model": "block/cacti2_3", "weight": 50 },
+            { "model": "block/cacti1_3", "weight": 4 },
+            { "model": "block/cacti1_3", "weight": 4, "y": 90 },
+            { "model": "block/cacti1_3", "weight": 4, "y": 180 },
+            { "model": "block/cacti1_3", "weight": 4, "y": 270 },
+            { "model": "block/cacti0_3", "weight": 4 },
+            { "model": "block/cacti0_3", "weight": 4, "y": 90 },
+            { "model": "block/cacti0_3", "weight": 4, "y": 180 },
+            { "model": "block/cacti0_3", "weight": 4, "y": 270 }
+        ],
+        "layers=4": [
+            { "model": "block/cacti2_4", "weight": 50 },
+            { "model": "block/cacti1_4", "weight": 4 },
+            { "model": "block/cacti1_4", "weight": 4, "y": 90 },
+            { "model": "block/cacti1_4", "weight": 4, "y": 180 },
+            { "model": "block/cacti1_4", "weight": 4, "y": 270 },
+            { "model": "block/cacti0_4", "weight": 4 },
+            { "model": "block/cacti0_4", "weight": 4, "y": 90 },
+            { "model": "block/cacti0_4", "weight": 4, "y": 180 },
+            { "model": "block/cacti0_4", "weight": 4, "y": 270 }
+        ],
+        "layers=5": [
+            { "model": "block/cacti2_5", "weight": 50 },
+            { "model": "block/cacti1_5", "weight": 4 },
+            { "model": "block/cacti1_5", "weight": 4, "y": 90 },
+            { "model": "block/cacti1_5", "weight": 4, "y": 180 },
+            { "model": "block/cacti1_5", "weight": 4, "y": 270 },
+            { "model": "block/cacti0_5", "weight": 4 },
+            { "model": "block/cacti0_5", "weight": 4, "y": 90 },
+            { "model": "block/cacti0_5", "weight": 4, "y": 180 },
+            { "model": "block/cacti0_5", "weight": 4, "y": 270 }
+        ],
+        "layers=6": [
+            { "model": "block/cacti2_6", "weight": 50 },
+            { "model": "block/cacti1_6", "weight": 4 },
+            { "model": "block/cacti1_6", "weight": 4, "y": 90 },
+            { "model": "block/cacti1_6", "weight": 4, "y": 180 },
+            { "model": "block/cacti1_6", "weight": 4, "y": 270 },
+            { "model": "block/cacti0_6", "weight": 4 },
+            { "model": "block/cacti0_6", "weight": 4, "y": 90 },
+            { "model": "block/cacti0_6", "weight": 4, "y": 180 },
+            { "model": "block/cacti0_6", "weight": 4, "y": 270 }
+        ],
+        "layers=7": [
+            { "model": "block/cacti2_7", "weight": 50 },
+            { "model": "block/cacti1_7", "weight": 4 },
+            { "model": "block/cacti1_7", "weight": 4, "y": 90 },
+            { "model": "block/cacti1_7", "weight": 4, "y": 180 },
+            { "model": "block/cacti1_7", "weight": 4, "y": 270 },
+            { "model": "block/cacti0_7", "weight": 4 },
+            { "model": "block/cacti0_7", "weight": 4, "y": 90 },
+            { "model": "block/cacti0_7", "weight": 4, "y": 180 },
+            { "model": "block/cacti0_7", "weight": 4, "y": 270 }
+        ],
+        "layers=8": [
+            { "model": "block/cacti2", "weight": 50 },
+            { "model": "block/cacti1", "weight": 4 },
+            { "model": "block/cacti1", "weight": 4, "y": 90 },
+            { "model": "block/cacti1", "weight": 4, "y": 180 },
+            { "model": "block/cacti1", "weight": 4, "y": 270 },
+            { "model": "block/cacti0", "weight": 4 },
+            { "model": "block/cacti0", "weight": 4, "y": 90 },
+            { "model": "block/cacti0", "weight": 4, "y": 180 },
+            { "model": "block/cacti0", "weight": 4, "y": 270 }
+        ]
+    }
+}

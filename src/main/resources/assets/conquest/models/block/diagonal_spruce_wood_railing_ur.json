@@ -1,0 +1,120 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/tarred_spruce_wood_beam",
+		"texture": "conquest:block/1_basic_refined/3_wood/tarred_spruce_wood_beam"
+	},
+	"elements": [
+		{
+			"name": "Railing",
+			"from": [14.51, 11, 1],
+			"to": [16.01, 12, 4],
+			"faces": {
+				"north": {"uv": [15, 1.5, 16, 0], "rotation": 90, "texture": "#texture"},
+				"east": {"uv": [15, 3, 16, 0], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [15, 1.5, 16, 0], "rotation": 90, "texture": "#texture"},
+				"west": {"uv": [15, 3, 16, 0], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [1.5, 0, 0, 3], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [14.51, 0, 12],
+			"to": [16.01, 1, 15],
+			"faces": {
+				"north": {"uv": [15, 7.5, 16, 6], "rotation": 90, "texture": "#texture"},
+				"east": {"uv": [15, 9, 16, 6], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [15, 7.5, 16, 6], "rotation": 90, "texture": "#texture"},
+				"west": {"uv": [8.5, 14, 9.5, 11], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [1.5, 1, 0, 4], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [14.51, 5.5, 6.5],
+			"to": [16.01, 6.5, 9.5],
+			"faces": {
+				"north": {"uv": [15, 7.5, 16, 6], "rotation": 90, "texture": "#texture"},
+				"east": {"uv": [15, 9, 16, 6], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [15, 7.5, 16, 6], "rotation": 90, "texture": "#texture"},
+				"west": {"uv": [15, 9, 16, 6], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [1.5, 1, 0, 4], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [13.01, 4, 8],
+			"to": [14.51, 8, 19.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [14.51, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.5, 0, 1, 4], "texture": "#texture"},
+				"east": {"uv": [12, 11.314, 16, 0], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [1.5, 0, 0, 4], "texture": "#texture"},
+				"west": {"uv": [4, 11.314, 0, 0], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [13.5, 4.5, 15, 15.814], "texture": "#texture"},
+				"down": {"uv": [14.5, 4.5, 16, 15.814], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [13.01, 12, 0],
+			"to": [14.51, 16, 11.3137],
+			"rotation": {"angle": 45, "axis": "x", "origin": [14.51, 16, 0]},
+			"faces": {
+				"north": {"uv": [16, 0, 14.5, 4], "texture": "#texture"},
+				"east": {"uv": [12, 15.814, 16, 4.5], "rotation": 90, "texture": "#texture"},
+				"south": {"uv": [2.5, 0, 1, 4], "texture": "#texture"},
+				"west": {"uv": [4, 15.814, 0, 4.5], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [13.5, 0, 15, 11.314], "texture": "#texture"},
+				"down": {"uv": [14.5, 0, 16, 11.314], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [14.51, -16, 12],
+			"to": [16.01, 0, 15],
+			"faces": {
+				"north": {"uv": [14.5, 0, 16, 16], "texture": "#texture"},
+				"east": {"uv": [3, 0, 0, 16], "texture": "#texture"},
+				"south": {"uv": [13.5, 0, 15, 16], "texture": "#texture"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#texture"},
+				"up": {"uv": [1.5, 1, 0, 4], "texture": "#texture"},
+				"down": {"uv": [1.5, 1, 0, 4], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [14.51, -10.5, 6.5],
+			"to": [16.01, 5.5, 9.5],
+			"faces": {
+				"north": {"uv": [1.5, 0, 0, 16], "texture": "#texture"},
+				"east": {"uv": [3, 0, 0, 16], "texture": "#texture"},
+				"south": {"uv": [13.5, 0, 15, 16], "texture": "#texture"},
+				"west": {"uv": [16, 0, 13, 16], "texture": "#texture"},
+				"up": {"uv": [1.5, 1, 0, 4], "texture": "#texture"},
+				"down": {"uv": [1.5, 1, 0, 4], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Railing",
+			"from": [14.51, -5, 1],
+			"to": [16.01, 11, 4],
+			"faces": {
+				"north": {"uv": [1.5, 0, 0, 16], "texture": "#texture"},
+				"east": {"uv": [3, 0, 0, 16], "texture": "#texture"},
+				"south": {"uv": [13.5, 0, 15, 16], "texture": "#texture"},
+				"west": {"uv": [16, 0, 13, 16], "texture": "#texture"},
+				"up": {"uv": [1.5, 1, 0, 4], "texture": "#texture"},
+				"down": {"uv": [1.5, 1, 0, 4], "texture": "#texture"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 135, 0],
+			"translation": [-3.5, 4.75, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	}
+}

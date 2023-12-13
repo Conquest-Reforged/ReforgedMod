@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minecraft:block/stripped_warped_stem_x"
+    },
+    "axis=y": {
+      "model": "minecraft:block/stripped_warped_stem"
+    },
+    "axis=z": {
+      "model": "minecraft:block/stripped_warped_stem_z"
+    }
+  }
+}

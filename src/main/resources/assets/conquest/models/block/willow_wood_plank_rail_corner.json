@@ -1,0 +1,6 @@
+{
+    "parent": "block/rail_curved",
+    "textures": {
+        "rail": "conquest:block/1_basic_refined/3_wood/willow_wood_planks"
+    }
+}

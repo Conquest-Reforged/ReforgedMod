@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"7_1": "conquest:block/1_basic_refined/3_wood/beam/randomtopsides",
+		"particle": "conquest:block/1_basic_refined/3_wood/beam/beam_texture"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [6, 0, 6],
+			"to": [10, 16, 10],
+			"rotation": {"angle": 0, "axis": "x", "origin": [1.478, 7.994, 8]},
+			"faces": {
+				"north": {"uv": [12, 0, 16, 16], "rotation": 180, "texture": "#7_1"},
+				"east": {"uv": [12, 0, 16, 16], "rotation": 180, "texture": "#7_1"},
+				"south": {"uv": [12, 0, 16, 16], "rotation": 180, "texture": "#7_1"},
+				"west": {"uv": [12, 0, 16, 16], "texture": "#7_1"},
+				"up": {"uv": [12, 0, 16, 4], "texture": "#7_1"},
+				"down": {"uv": [12, 8.5, 16, 12.5], "texture": "#7_1"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 135, 0],
+			"translation": [0.55, 0.05, 0],
+			"scale": [0.62, 0.62, 0.62]
+		}
+	},
+	"groups": [
+		{
+			"name": "beam_diagonal_nsse",
+			"origin": [8, 8, 8],
+			"children": [0]
+		}
+	]
+}

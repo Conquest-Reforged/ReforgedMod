@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "conquest:block/2_advanced_refined/2_metal/office_door_bottom",
+        "top": "conquest:block/2_advanced_refined/2_metal/office_door_top"
+    }
+}

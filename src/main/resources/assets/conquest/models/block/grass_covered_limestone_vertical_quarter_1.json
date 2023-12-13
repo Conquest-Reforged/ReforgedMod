@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "conquest:block/8_topography/4_grass_leaves/grass_covered_limestone",
+		"north": "conquest:block/8_topography/4_grass_leaves/grass_covered_limestone",
+		"top": "block/grass_block_top",
+		"bottom": "block/dirt"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [2, 16, 2],
+			"faces": {
+				"north": {"uv": [14, 0, 16, 16], "texture": "#north"},
+				"east": {"uv": [14, 0, 16, 16], "texture": "#north"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#north"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#north"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#top", "tintindex": 0},
+				"down": {"uv": [0, 14, 2, 16], "texture": "#bottom"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [4, 0, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

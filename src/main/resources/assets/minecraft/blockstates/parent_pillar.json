@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "layer=1": { "model": "block/parent_pillar_2" },
+        "layer=2": { "model": "block/parent_pillar_4" },
+        "layer=3": { "model": "block/parent_pillar_6" }
+    }
+}

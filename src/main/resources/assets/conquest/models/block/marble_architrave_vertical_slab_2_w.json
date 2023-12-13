@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/template_architrave_vertical_slab_2_w",
+	"textures": {
+		"end": "block/quartz_block_top",
+		"side": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_architrave"
+	}
+}

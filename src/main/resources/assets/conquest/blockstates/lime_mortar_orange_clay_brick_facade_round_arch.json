@@ -1,0 +1,63 @@
+{
+    "variants": {
+        "type=top,shape=one,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1" },
+        "type=top,shape=one,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1", "y": 90 },
+        "type=top,shape=one,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1", "y": 180 },
+        "type=top,shape=one,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1", "y": 270 },
+
+        "type=top,shape=two_l,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right" },
+        "type=top,shape=two_l,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right", "y": 90 },
+        "type=top,shape=two_l,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left", "y": 180 },
+        "type=top,shape=two_l,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left", "y": 270 },
+
+        "type=top,shape=two_r,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left" },
+        "type=top,shape=two_r,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left", "y": 90 },
+        "type=top,shape=two_r,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right", "y": 180 },
+        "type=top,shape=two_r,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right", "y": 270 },
+
+        "type=top,shape=three_l,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right" },
+        "type=top,shape=three_l,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right", "y": 90 },
+        "type=top,shape=three_l,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left", "y": 180 },
+        "type=top,shape=three_l,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left", "y": 270 },
+
+        "type=top,shape=three_r,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left" },
+        "type=top,shape=three_r,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left", "y": 90 },
+        "type=top,shape=three_r,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right", "y": 180 },
+        "type=top,shape=three_r,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right", "y": 270 },
+
+        "type=top,shape=three_middle,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle" },
+        "type=top,shape=three_middle,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle", "y": 90 },
+        "type=top,shape=three_middle,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle", "y": 180 },
+        "type=top,shape=three_middle,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle", "y": 270 },
+
+        "type=bottom,shape=one,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1_bottom" },
+        "type=bottom,shape=one,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1_bottom", "y": 90 },
+        "type=bottom,shape=one,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1_bottom", "y": 180 },
+        "type=bottom,shape=one,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_1_bottom", "y": 270 },
+
+        "type=bottom,shape=two_l,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right_bottom" },
+        "type=bottom,shape=two_l,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right_bottom", "y": 90 },
+        "type=bottom,shape=two_l,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left_bottom", "y": 180 },
+        "type=bottom,shape=two_l,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left_bottom", "y": 270 },
+
+        "type=bottom,shape=two_r,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left_bottom" },
+        "type=bottom,shape=two_r,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_left_bottom", "y": 90 },
+        "type=bottom,shape=two_r,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right_bottom", "y": 180 },
+        "type=bottom,shape=two_r,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_2_right_bottom", "y": 270 },
+
+        "type=bottom,shape=three_l,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right_bottom" },
+        "type=bottom,shape=three_l,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right_bottom", "y": 90 },
+        "type=bottom,shape=three_l,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left_bottom", "y": 180 },
+        "type=bottom,shape=three_l,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left_bottom", "y": 270 },
+
+        "type=bottom,shape=three_r,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left_bottom" },
+        "type=bottom,shape=three_r,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_left_bottom", "y": 90 },
+        "type=bottom,shape=three_r,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right_bottom", "y": 180 },
+        "type=bottom,shape=three_r,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_right_bottom", "y": 270 },
+
+        "type=bottom,shape=three_middle,facing=south": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle_bottom" },
+        "type=bottom,shape=three_middle,facing=west": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle_bottom", "y": 90 },
+        "type=bottom,shape=three_middle,facing=north": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle_bottom", "y": 180 },
+        "type=bottom,shape=three_middle,facing=east": { "model": "conquest:block/lime_mortar_orange_clay_brick_facade_round_arch_3_middle_bottom", "y": 270 }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y": { "model": "conquest:block/limestone_plinth_balustrade_base", "uvlock": true },
+        "axis=z": { "model": "conquest:block/limestone_plinth_balustrade", "uvlock": true },
+        "axis=x": { "model": "conquest:block/limestone_plinth_balustrade", "y": 90, "uvlock": true }
+    }
+}

@@ -1,0 +1,8 @@
+{
+	"parent": "conquest:block/template_plinth_fullplain",
+	"textures": {
+		"end": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab_topbottom",
+		"side": "conquest:block/2_advanced_refined/1_stone/3_marble/travertine_plinth",
+		"particle": "conquest:block/2_advanced_refined/1_stone/3_marble/travertine_plinth"
+	}
+}

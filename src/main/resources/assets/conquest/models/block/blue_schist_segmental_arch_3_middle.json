@@ -1,0 +1,12 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_segmental_arch_3_middle.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/blue_schist_cobble",
+        "keystones": "conquest:block/1_basic_refined/1_stone/blue_schist_cobble_arch/arch3",
+        "underside1": "conquest:block/1_basic_refined/1_stone/blue_schist_cobble",
+        "underside2": "conquest:block/1_basic_refined/1_stone/blue_schist_cobble"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "variants": {
+        "facing=north,half=lower": {
+            "model": "conquest:block/grandfather_clock_lower"
+        },
+        "facing=east,half=lower": {
+            "model": "conquest:block/grandfather_clock_lower",
+            "y": 90
+        },
+        "facing=south,half=lower": {
+            "model": "conquest:block/grandfather_clock_lower",
+            "y": 180
+        },
+        "facing=west,half=lower": {
+            "model": "conquest:block/grandfather_clock_lower",
+            "y": 270
+        },
+
+        "facing=north,half=upper": {
+            "model": "conquest:block/grandfather_clock_upper"
+        },
+        "facing=east,half=upper": {
+            "model": "conquest:block/grandfather_clock_upper",
+            "y": 90
+        },
+        "facing=south,half=upper": {
+            "model": "conquest:block/grandfather_clock_upper",
+            "y": 180
+        },
+        "facing=west,half=upper": {
+            "model": "conquest:block/grandfather_clock_upper",
+            "y": 270
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "parent": "block/block",
+    "textures": {
+        "particle": "conquest:block/9_organic/2_leaves/fallen_willow_leaves",
+        "texture": "conquest:block/9_organic/2_leaves/fallen_willow_leaves"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 1, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0,  0, 16, 16 ], "texture": "#texture", "cullface": "down" },
+                "up":    { "uv": [ 0,  0, 16, 16 ], "texture": "#texture" }
+            }
+        }
+    ]
+}

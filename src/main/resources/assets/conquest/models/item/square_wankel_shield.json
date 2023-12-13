@@ -1,0 +1,14 @@
+{
+    "parent": "conquest:item/shield",
+    "textures": {
+        "layer0": "conquest:item/square_wankel_shield"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "conquest:item/square_wankel_shield_blocking"
+        }
+    ]
+}

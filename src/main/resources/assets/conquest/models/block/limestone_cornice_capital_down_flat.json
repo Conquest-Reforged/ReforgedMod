@@ -1,0 +1,8 @@
+{
+    "parent": "conquest:block/template_cornice_capital_down_flat",
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_cornice",
+        "side": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_cornice",
+        "inside": "block/stone"
+    }
+}

@@ -1,0 +1,37 @@
+{
+	"variants": {
+            "down=true,east=false,north=false,south=false,west=false": { "model": "conquest:block/alpine_bearberry" },
+            "down=true,east=false,north=true,south=false,west=false": { "model": "conquest:block/alpine_bearberry_n" },
+            "down=true,east=true,north=false,south=false,west=false": { "model": "conquest:block/alpine_bearberry_e" },
+            "down=true,east=false,north=false,south=true,west=false": { "model": "conquest:block/alpine_bearberry_s" },
+            "down=true,east=false,north=false,south=false,west=true": { "model": "conquest:block/alpine_bearberry_w" },
+            "down=true,east=true,north=true,south=false,west=false": { "model": "conquest:block/alpine_bearberry_ne" },
+            "down=true,east=true,north=false,south=true,west=false": { "model": "conquest:block/alpine_bearberry_es" },
+            "down=true,east=false,north=false,south=true,west=true": { "model": "conquest:block/alpine_bearberry_sw" },
+            "down=true,east=false,north=true,south=false,west=true": { "model": "conquest:block/alpine_bearberry_wn" },
+            "down=true,east=false,north=true,south=true,west=false": { "model": "conquest:block/alpine_bearberry_ns" },
+            "down=true,east=true,north=false,south=false,west=true": { "model": "conquest:block/alpine_bearberry_ew" },
+            "down=true,east=true,north=true,south=true,west=false": { "model": "conquest:block/alpine_bearberry_nse" },
+            "down=true,east=true,north=false,south=true,west=true": { "model": "conquest:block/alpine_bearberry_sew" },
+            "down=true,east=false,north=true,south=true,west=true": { "model": "conquest:block/alpine_bearberry_nsw" },
+            "down=true,east=true,north=true,south=false,west=true": { "model": "conquest:block/alpine_bearberry_new" },
+            "down=true,east=true,north=true,south=true,west=true": { "model": "conquest:block/alpine_bearberry_nsew" },
+
+            "down=false,east=false,north=false,south=false,west=false": { "model": "conquest:block/alpine_bearberry" },
+            "down=false,east=false,north=true,south=false,west=false": { "model": "conquest:block/alpine_bearberry_n_down" },
+            "down=false,east=true,north=false,south=false,west=false": { "model": "conquest:block/alpine_bearberry_e_down" },
+            "down=false,east=false,north=false,south=true,west=false": { "model": "conquest:block/alpine_bearberry_s_down" },
+            "down=false,east=false,north=false,south=false,west=true": { "model": "conquest:block/alpine_bearberry_w_down" },
+            "down=false,east=true,north=true,south=false,west=false": { "model": "conquest:block/alpine_bearberry_ne_down" },
+            "down=false,east=true,north=false,south=true,west=false": { "model": "conquest:block/alpine_bearberry_es_down" },
+            "down=false,east=false,north=false,south=true,west=true": { "model": "conquest:block/alpine_bearberry_sw_down" },
+            "down=false,east=false,north=true,south=false,west=true": { "model": "conquest:block/alpine_bearberry_wn_down" },
+            "down=false,east=false,north=true,south=true,west=false": { "model": "conquest:block/alpine_bearberry_ns_down" },
+            "down=false,east=true,north=false,south=false,west=true": { "model": "conquest:block/alpine_bearberry_we_down" },
+            "down=false,east=true,north=true,south=true,west=false": { "model": "conquest:block/alpine_bearberry_nse_down" },
+            "down=false,east=true,north=false,south=true,west=true": { "model": "conquest:block/alpine_bearberry_sew_down" },
+            "down=false,east=false,north=true,south=true,west=true": { "model": "conquest:block/alpine_bearberry_nsw_down" },
+            "down=false,east=true,north=true,south=false,west=true": { "model": "conquest:block/alpine_bearberry_new_down" },
+            "down=false,east=true,north=true,south=true,west=true": { "model": "conquest:block/alpine_bearberry_nsew_down" }
+            }
+}

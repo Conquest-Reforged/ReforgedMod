@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"4": "conquest:block/4_furniture/3_wood/burnt_bed/bed_head_side_l",
+		"particle": "conquest:block/4_furniture/3_wood/burnt_bed/bed_head_bottom",
+		"top": "conquest:block/4_furniture/3_wood/burnt_bed/bed_head_bottom",
+		"bottom": "conquest:block/4_furniture/3_wood/burnt_bed/bed_head_bottom",
+		"end": "conquest:block/4_furniture/3_wood/burnt_bed/bed_head_feet",
+		"side": "conquest:block/4_furniture/3_wood/burnt_bed/bed_head_side_r"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 9, 16],
+			"faces": {
+				"east": {"uv": [0, 7, 16, 16], "texture": "#4"},
+				"south": {"uv": [0, 7, 16, 16], "texture": "#end"},
+				"west": {"uv": [0, 7, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 16, 16, 0], "texture": "#top"}
+			}
+		},
+		{
+			"from": [0, 3, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		}
+	]
+}

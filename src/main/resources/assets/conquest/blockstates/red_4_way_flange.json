@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/red_4_way_flange", "y": 180 },
+        "toggle=1,facing=west": { "model": "conquest:block/red_4_way_flange", "y": 270 },
+        "toggle=1,facing=north": { "model": "conquest:block/red_4_way_flange" },
+        "toggle=1,facing=east": { "model": "conquest:block/red_4_way_flange", "y": 90 },
+
+        "toggle=2,facing=south": { "model": "conquest:block/red_4_way_flange", "x": 90, "y": 270 },
+        "toggle=2,facing=west": { "model": "conquest:block/red_4_way_flange", "x": 90 },
+        "toggle=2,facing=north": { "model": "conquest:block/red_4_way_flange", "x": 90, "y": 90 },
+        "toggle=2,facing=east": { "model": "conquest:block/red_4_way_flange", "x": 90, "y": 180 },
+
+        "toggle=3,facing=south": { "model": "conquest:block/red_4_way_flange", "x": 270 , "y": 270 },
+        "toggle=3,facing=west": { "model": "conquest:block/red_4_way_flange", "x": 270 },
+        "toggle=3,facing=north": { "model": "conquest:block/red_4_way_flange", "x": 270, "y": 90 },
+        "toggle=3,facing=east": { "model": "conquest:block/red_4_way_flange", "x": 270, "y": 180 }
+    }
+}

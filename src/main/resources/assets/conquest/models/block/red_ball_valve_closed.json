@@ -1,0 +1,6 @@
+{
+	"parent": "conquest:block/parent_ball_valve_closed",
+	"textures": {
+		"pipe": "conquest:block/2_advanced_refined/2_metal/pipe_red"
+	}
+}

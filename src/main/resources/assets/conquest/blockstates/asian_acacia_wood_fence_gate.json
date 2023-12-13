@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"facing=south,open=false": { "model": "conquest:block/asian_acacia_wood_fence_gate_closed" },
+        "facing=west,open=false":  { "model": "conquest:block/asian_acacia_wood_fence_gate_closed", "y": 90 },
+        "facing=north,open=false": { "model": "conquest:block/asian_acacia_wood_fence_gate_closed", "y": 180 },
+        "facing=east,open=false":  { "model": "conquest:block/asian_acacia_wood_fence_gate_closed", "y": 270 },
+        "facing=south,open=true": { "model": "conquest:block/asian_acacia_wood_fence_gate_open" },
+        "facing=west,open=true":  { "model": "conquest:block/asian_acacia_wood_fence_gate_open", "y": 90 },
+        "facing=north,open=true": { "model": "conquest:block/asian_acacia_wood_fence_gate_open", "y": 180 },
+        "facing=east,open=true":  { "model": "conquest:block/asian_acacia_wood_fence_gate_open", "y": 270 }
+	}
+}

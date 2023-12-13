@@ -1,0 +1,59 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"2_straight": "block/acacia_planks",
+		"vertical": "block/acacia_planks",
+		"particle": "block/acacia_planks",
+		"side": "block/acacia_planks"
+	},
+	"elements": [
+		{
+			"from": [16, 0, 0],
+			"to": [16.0625, 16, 23],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [23, 16, 0.0625],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 0],
+			"to": [16, 0.031, 16],
+			"shade": false,
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2_straight"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 0.03],
+			"to": [16, 16, 0.031],
+			"shade": false,
+			"faces": {
+				"south": {"uv": [16, 0, 0, 16], "texture": "#vertical"}
+			}
+		},
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 15.969],
+			"to": [16, 16, 15.97],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#vertical"}
+			}
+		}
+	]
+}

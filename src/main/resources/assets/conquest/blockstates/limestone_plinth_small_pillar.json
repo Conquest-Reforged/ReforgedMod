@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "":   { "model": "conquest:block/limestone_plinth_fence_post" }
+    }
+}

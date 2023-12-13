@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "facing=south,type=bottom": { "model": "conquest:block/iron_artillery_block_slab_quarter_ns" },
+        "facing=west,type=bottom": { "model": "conquest:block/iron_artillery_block_slab_quarter_ew" },
+        "facing=north,type=bottom": { "model": "conquest:block/iron_artillery_block_slab_quarter_ns", "y": 180, "uvlock": true },
+        "facing=east,type=bottom": { "model": "conquest:block/iron_artillery_block_slab_quarter_ew", "y": 180, "uvlock": true },
+
+        "facing=south,type=top": { "model": "conquest:block/iron_artillery_block_slab_quarter_top_ns" },
+        "facing=west,type=top": { "model": "conquest:block/iron_artillery_block_slab_quarter_top_ew" },
+        "facing=north,type=top": { "model": "conquest:block/iron_artillery_block_slab_quarter_top_ns", "y": 180, "uvlock": true },
+        "facing=east,type=top": { "model": "conquest:block/iron_artillery_block_slab_quarter_top_ew", "y": 180, "uvlock": true }
+    }
+}

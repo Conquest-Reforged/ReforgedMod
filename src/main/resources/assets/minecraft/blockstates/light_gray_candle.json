@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "candles=1,lit=false": [
+		{"model": "minecraft:block/light_gray_candle_one_candle"},
+		{"model": "minecraft:block/light_gray_candle_one_candle","y": 90},
+		{"model": "minecraft:block/light_gray_candle_one_candle","y": 180},
+		{"model": "minecraft:block/light_gray_candle_one_candle","y": 270}
+	],
+    "candles=1,lit=true": [
+		{"model": "minecraft:block/light_gray_candle_one_candle_lit"},
+		{"model": "minecraft:block/light_gray_candle_one_candle_lit","y": 90},
+		{"model": "minecraft:block/light_gray_candle_one_candle_lit","y": 180},
+		{"model": "minecraft:block/light_gray_candle_one_candle_lit","y": 270}
+	],
+    "candles=2,lit=false": [
+		{"model": "minecraft:block/light_gray_candle_two_candles"},
+		{"model": "minecraft:block/light_gray_candle_two_candles","y": 90},
+		{"model": "minecraft:block/light_gray_candle_two_candles","y": 180},
+		{"model": "minecraft:block/light_gray_candle_two_candles","y": 270}
+	],
+    "candles=2,lit=true": [
+		{"model": "minecraft:block/light_gray_candle_two_candles_lit"},
+		{"model": "minecraft:block/light_gray_candle_two_candles_lit","y": 90},
+		{"model": "minecraft:block/light_gray_candle_two_candles_lit","y": 180},
+		{"model": "minecraft:block/light_gray_candle_two_candles_lit","y": 270}
+	],
+    "candles=3,lit=false": [
+		{"model": "minecraft:block/light_gray_candle_three_candles"},
+		{"model": "minecraft:block/light_gray_candle_three_candles","y": 90},
+		{"model": "minecraft:block/light_gray_candle_three_candles","y": 180},
+		{"model": "minecraft:block/light_gray_candle_three_candles","y": 270}
+	],
+    "candles=3,lit=true": [
+		{"model": "minecraft:block/light_gray_candle_three_candles_lit"},
+		{"model": "minecraft:block/light_gray_candle_three_candles_lit","y": 90},
+		{"model": "minecraft:block/light_gray_candle_three_candles_lit","y": 180},
+		{"model": "minecraft:block/light_gray_candle_three_candles_lit","y": 270}
+	],
+    "candles=4,lit=false": [
+		{"model": "minecraft:block/light_gray_candle_four_candles"},
+		{"model": "minecraft:block/light_gray_candle_four_candles","y": 90},
+		{"model": "minecraft:block/light_gray_candle_four_candles","y": 180},
+		{"model": "minecraft:block/light_gray_candle_four_candles","y": 270}
+	],
+    "candles=4,lit=true": [
+		{"model": "minecraft:block/light_gray_candle_four_candles_lit"},
+		{"model": "minecraft:block/light_gray_candle_four_candles_lit","y": 90},
+		{"model": "minecraft:block/light_gray_candle_four_candles_lit","y": 180},
+		{"model": "minecraft:block/light_gray_candle_four_candles_lit","y": 270}
+	]
+  }
+}

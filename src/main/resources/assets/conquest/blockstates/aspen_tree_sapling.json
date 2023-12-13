@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "stage=0": { "model": "conquest:block/aspen_tree_sapling" },
+    "stage=1": { "model": "conquest:block/aspen_tree_sapling_tall" }
+  }
+}

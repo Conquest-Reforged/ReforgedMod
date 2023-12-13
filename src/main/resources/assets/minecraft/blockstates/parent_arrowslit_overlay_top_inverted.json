@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "block/parent_arrowslit_overlay_top_inverted", "y": 180, "uvlock": true },
+        "facing=west": { "model": "block/parent_arrowslit_overlay_top_inverted", "y": 270, "uvlock": true },
+        "facing=north": { "model": "block/parent_arrowslit_overlay_top_inverted", "uvlock": true },
+        "facing=east": { "model": "block/parent_arrowslit_overlay_top_inverted", "y": 90, "uvlock": true }
+    }
+}

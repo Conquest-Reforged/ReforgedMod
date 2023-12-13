@@ -1,0 +1,6 @@
+{
+	"parent": "conquest:block/crop_3",
+	"textures": {
+		"crop": "block/beetroots_stage3"
+	}
+}

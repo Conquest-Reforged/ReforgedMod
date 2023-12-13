@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_plinth_vertical_slab_6_s",
+	"textures": {
+		"end": "block/stone",
+		"bottom": "block/stone",
+		"particle": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_plinth",
+		"side": "conquest:block/2_advanced_refined/1_stone/2_limestone/limestone_plinth"
+	}
+}

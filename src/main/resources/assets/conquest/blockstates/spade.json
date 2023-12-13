@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "toggle=1,facing=north": { "model": "conquest:block/spade" },
+        "toggle=1,facing=east": { "model": "conquest:block/spade", "y": 90 },
+        "toggle=1,facing=south": { "model": "conquest:block/spade", "y": 180 },
+        "toggle=1,facing=west": { "model": "conquest:block/spade", "y": 270 },
+
+        "toggle=2,facing=north": { "model": "conquest:block/spade_on_ground", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/spade_on_ground", "y": 270 },
+        "toggle=2,facing=south": { "model": "conquest:block/spade_on_ground" },
+        "toggle=2,facing=west": { "model": "conquest:block/spade_on_ground", "y": 90 }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/lightning_rod_sideways",
+    "ambientocclusion": false,
+    "textures": {
+        "11": "block/lightning_rod_gargoyle_on",
+        "particle": "block/lightning_rod_gargoyle_on"
+    }
+}

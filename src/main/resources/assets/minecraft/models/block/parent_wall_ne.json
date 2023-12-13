@@ -1,0 +1,9 @@
+{
+	"parent": "block/wall_ne_topbottom",
+	"textures": {
+		"particle": "block/cobblestone",
+		"wall": "block/cobblestone",
+		"top": "block/cobblestone",
+		"bottom": "block/cobblestone"
+	}
+}

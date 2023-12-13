@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/abacus", "y": 90 },
+        "facing=west": { "model": "conquest:block/abacus", "y": 180 },
+        "facing=north": { "model": "conquest:block/abacus", "y": 270 },
+        "facing=east": { "model": "conquest:block/abacus" }
+    }
+}

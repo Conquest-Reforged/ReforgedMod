@@ -1,0 +1,115 @@
+{
+	"parent": "block/block",
+	"elements": [ 	 
+		{
+			"__comment": "Base",
+			"from": [ 2, 1, 2 ],
+			"to": [ 14, 4, 14 ],
+			"faces": {
+				"down": { "uv": [ 2, 2, 14, 14 ], "texture": "#bottom" },
+				"up": { "uv": [ 2, 2, 14, 14 ], "texture": "#bottom" },
+				"north": { "uv": [ 2, 12, 14, 15 ], "texture": "#body" },
+				"south": { "uv": [ 2, 12, 14, 15 ], "texture": "#body" },
+				"west": { "uv": [ 2, 12, 14, 15 ], "texture": "#body" },
+				"east": { "uv": [ 2, 12, 14, 15 ], "texture": "#body" }
+			}
+		},
+		{
+			"__comment": "Lower Portion",
+			"from": [ 3, 4, 3 ],
+			"to": [ 13, 5, 13 ],
+			"faces": {
+				"down": { "uv": [ 3, 3, 13, 13 ], "texture": "#bottom" },
+				"up": { "uv": [ 3, 3, 13, 13 ], "texture": "#bottom" },
+				"north": { "uv": [ 3, 11, 13, 12 ], "texture": "#body" },
+				"south": { "uv": [ 3, 11, 13, 12 ], "texture": "#body" },
+				"west": { "uv": [ 3, 11, 13, 12 ], "texture": "#body" },
+				"east": { "uv": [ 3, 11, 13, 12 ], "texture": "#body" }
+			}
+		},
+		{
+			"__comment": "Wider Portion",
+			"from": [ 3.5, 5, 3.5 ],
+			"to": [ 12.5, 7, 12.5 ],
+			"faces": {
+				"down": { "uv": [ 3.5, 3.5, 12.5, 12.5 ], "texture": "#bottom" },
+				"up": { "uv": [ 3.5, 3.5, 12.5, 12.5 ], "texture": "#bottom" },
+				"north": { "uv": [ 3.5, 9, 12.5, 11 ], "texture": "#body" },
+				"south": { "uv": [ 3.5, 9, 12.5, 11 ], "texture": "#body" },
+				"west": { "uv": [ 3.5, 9, 12.5, 11 ], "texture": "#body" },
+				"east": { "uv": [ 3.5, 9, 12.5, 11 ], "texture": "#body" }
+			}
+		},
+		{
+			"__comment": "Top",
+			"from": [ 0, 11, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 2, 2, 14, 14 ], "texture": "#top" },
+				"up": { "uv": [ 2, 2, 14, 14 ], "texture": "#top" },
+				"north": { "uv": [ 2, 0, 14, 5 ], "texture": "#body" },
+				"south": { "uv": [ 2, 0, 14, 5 ], "texture": "#body" },
+				"west": { "uv": [ 2, 0, 14, 5 ], "texture": "#body" },
+				"east": { "uv": [ 2, 0, 14, 5 ], "texture": "#body" }
+			}
+		},
+		{
+			"__comment": "Base",
+			"from": [ 1.5, 0, 1.5 ],
+			"to": [ 14.5, 1, 14.5 ],
+			"faces": {
+				"down": { "uv": [ 1.5, 1.5, 14.5, 14.5 ], "texture": "#bottom" },
+				"up": { "uv": [ 1.5, 1.5, 14.5, 14.5 ], "texture": "#bottom" },
+				"north": { "uv": [ 1.5, 15, 14.5, 16 ], "texture": "#body" },
+				"south": { "uv": [ 1.5, 15, 14.5, 16 ], "texture": "#body" },
+				"west": { "uv": [ 1.5, 15, 14.5, 16 ], "texture": "#body" },
+				"east": { "uv": [ 1.5, 15, 14.5, 16 ], "texture": "#body" }
+			}
+		},
+		{
+			"__comment": "Wider Portion",
+			"from": [ 3, 7, 3 ],
+			"to": [ 13, 8, 13 ],
+			"faces": {
+				"down": { "uv": [ 3, 3, 13, 13 ], "texture": "#bottom" },
+				"up": { "uv": [ 3, 3, 13, 13 ], "texture": "#bottom" },
+				"north": { "uv": [ 3, 8, 13, 9 ], "texture": "#body" },
+				"south": { "uv": [ 3, 8, 13, 9 ], "texture": "#body" },
+				"west": { "uv": [ 3, 8, 13, 9 ], "texture": "#body" },
+				"east": { "uv": [ 3, 8, 13, 9 ], "texture": "#body" }
+			}
+		},
+		{
+			"__comment": "Wider Portion",
+			"from": [ 2, 8, 2 ],
+			"to": [ 14, 9.5, 14 ],
+			"faces": {
+				"down": { "uv": [ 2, 2, 14, 14 ], "texture": "#bottom" },
+				"up": { "uv": [ 2, 2, 14, 14 ], "texture": "#bottom" },
+				"north": { "uv": [ 2, 6.5, 14, 8 ], "texture": "#body" },
+				"south": { "uv": [ 2, 6.5, 14, 8 ], "texture": "#body" },
+				"west": { "uv": [ 2, 6.5, 14, 8 ], "texture": "#body" },
+				"east": { "uv": [ 2, 6.5, 14, 8 ], "texture": "#body" }
+			}
+		},
+		{
+			"__comment": "Wider Portion",
+			"from": [ 1, 9.5, 1 ],
+			"to": [ 15, 11, 15 ],
+			"faces": {
+				"down": { "uv": [ 1, 1, 15, 15 ], "texture": "#bottom" },
+				"up": { "uv": [ 1, 1, 15, 15 ], "texture": "#bottom" },
+				"north": { "uv": [ 1, 5, 15, 6.5 ], "texture": "#body" },
+				"south": { "uv": [ 1, 5, 15, 6.5 ], "texture": "#body" },
+				"west": { "uv": [ 1, 5, 15, 6.5 ], "texture": "#body" },
+				"east": { "uv": [ 1, 5, 15, 6.5 ], "texture": "#body" }
+			}
+		}
+	],
+	"display": {
+		"fixed": {
+			"rotation":  [ 0, 90, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "conquest:block/travertine_plinth_capital_down_flat", "uvlock": true }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/fancy_chair" },
+        "toggle=1,facing=west": { "model": "conquest:block/fancy_chair", "y": 90 },
+        "toggle=1,facing=north": { "model": "conquest:block/fancy_chair", "y": 180 },
+        "toggle=1,facing=east": { "model": "conquest:block/fancy_chair", "y": 270 },
+
+        "toggle=2,facing=south": { "model": "conquest:block/fancy_chair_rotated" },
+        "toggle=2,facing=west": { "model": "conquest:block/fancy_chair_rotated", "y": 90 },
+        "toggle=2,facing=north": { "model": "conquest:block/fancy_chair_rotated", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/fancy_chair_rotated", "y": 270 },
+
+        "toggle=3,facing=south": { "model": "conquest:block/fancy_chair_knocked_over" },
+        "toggle=3,facing=west": { "model": "conquest:block/fancy_chair_knocked_over", "y": 90 },
+        "toggle=3,facing=north": { "model": "conquest:block/fancy_chair_knocked_over", "y": 180 },
+        "toggle=3,facing=east": { "model": "conquest:block/fancy_chair_knocked_over", "y": 270 },
+
+        "toggle=4,facing=south": { "model": "conquest:block/fancy_chair_upside_down", "y": 180 },
+        "toggle=4,facing=west": { "model": "conquest:block/fancy_chair_upside_down", "y": 270 },
+        "toggle=4,facing=north": { "model": "conquest:block/fancy_chair_upside_down" },
+        "toggle=4,facing=east": { "model": "conquest:block/fancy_chair_upside_down", "y": 90 }
+    }
+}

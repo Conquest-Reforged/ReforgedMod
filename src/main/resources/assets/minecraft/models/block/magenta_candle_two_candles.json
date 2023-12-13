@@ -1,0 +1,8 @@
+{
+	"parent": "block/magenta_candle_two_candles_lit",
+	"textures": {
+		"particle": "block/cross_chandelier",
+		"holder": "block/cross_chandelier",
+		"candle": "block/candle"
+	}
+}

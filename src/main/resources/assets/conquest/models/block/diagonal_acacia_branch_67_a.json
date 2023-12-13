@@ -1,0 +1,72 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "minecraft:block/acacia_log",
+		"log": "minecraft:block/acacia_log"
+	},
+	"elements": [
+		{
+			"name": "halfbeam",
+			"from": [6.019, -0.206, 12.07775],
+			"to": [10.019, 12.994, 16.07775],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [1.478, 12.994, 14.09375]},
+			"faces": {
+				"north": {"uv": [12, 0, 16, 13], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 2, 8, 15], "rotation": 180, "texture": "#log"},
+				"south": {"uv": [12, 0, 16, 13], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4, 2.5, 8, 15.5], "texture": "#log"},
+				"up": {"uv": [8, 5, 12, 9], "rotation": 180, "texture": "#log"},
+				"down": {"uv": [12, 8.5, 16, 12.5], "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [6.04244, 25.84204, 10.90157],
+			"to": [9.97994, 29.49438, 14.74531],
+			"rotation": {"angle": -45, "axis": "x", "origin": [1.478, 27.82604, 26.07813]},
+			"faces": {
+				"north": {"uv": [12, 8.5, 15.9375, 12.15234], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 2, 7.84374, 5.65234], "texture": "#log"},
+				"south": {"uv": [8, 5, 11.9375, 8.65234], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4, 2.5, 7.84374, 6.15234], "rotation": 180, "texture": "#log"},
+				"up": {"uv": [12, 0, 15.9375, 3.84374], "texture": "#log"},
+				"down": {"uv": [12, 0, 15.9375, 3.84374], "rotation": 180, "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [6.03072, 7.52954, 2.29219],
+			"to": [9.99166, 11.18188, 6.13594],
+			"rotation": {"angle": -45, "axis": "x", "origin": [1.478, 9.51354, 17.46876]},
+			"faces": {
+				"north": {"uv": [12, 8.5, 15.96094, 12.15234], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 2, 7.84375, 5.65234], "texture": "#log"},
+				"south": {"uv": [8, 5, 11.96094, 8.65234], "rotation": 180, "texture": "#log"},
+				"west": {"uv": [4, 2.5, 7.84375, 6.15234], "rotation": 180, "texture": "#log"},
+				"up": {"uv": [12, 0, 15.96094, 3.84375], "texture": "#log"},
+				"down": {"uv": [12, 0, 15.96094, 3.84375], "rotation": 180, "texture": "#log"}
+			}
+		},
+		{
+			"name": "halfbeam",
+			"from": [6.04, 12, 16.46494],
+			"to": [10.04, 17, 20.46494],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [1.478, 23.494, 18.46094]},
+			"faces": {
+				"north": {"uv": [8, 0, 12, 2.5], "rotation": 180, "texture": "#log"},
+				"east": {"uv": [4, 0, 8, 2.5], "rotation": 180, "texture": "#log"},
+				"south": {"uv": [12, 0, 8, 2.5], "texture": "#log"},
+				"west": {"uv": [4, 0, 8, 2.5], "texture": "#log"},
+				"up": {"uv": [12, 11.5, 16, 15.5], "rotation": 180, "texture": "#log"},
+				"down": {"uv": [8, 8.5, 12, 12.5], "rotation": 180, "texture": "#log"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "beam_diagonal_nsse",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

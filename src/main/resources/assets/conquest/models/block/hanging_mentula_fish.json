@@ -1,0 +1,46 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "conquest:block/6_foodstuffs/4_food/hanging_mentula_fish",
+        "cross": "conquest:block/6_foodstuffs/4_food/hanging_mentula_fish",
+        "cross1": "conquest:block/6_foodstuffs/4_food/hanging_mentula_fish_top"
+    },
+    "elements": [
+        {
+            "from": [ 16, 0, 0 ],
+            "to": [ 16.0625, 16, 23 ],
+            "rotation": { "origin": [ 16, 0, 0 ], "axis": "y", "angle": -45 },
+            "faces": {
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" }
+            }
+        },
+        {
+            "from": [ 0, 0, 0 ],
+            "to": [ 23, 16, 0.0625 ],
+            "rotation": { "origin": [ 0, 0, 0 ], "axis": "y", "angle": -45 },
+            "faces": {
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" }
+            }
+        },
+        {
+            "from": [ 16, 16, 0 ],
+            "to": [ 16.0625, 32, 23 ],
+            "rotation": { "origin": [ 16, 0, 0 ], "axis": "y", "angle": -45 },
+            "faces": {
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cross1" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cross1" }
+            }
+        },
+        {
+            "from": [ 0, 16, 0 ],
+            "to": [ 23, 32, 0.0625 ],
+            "rotation": { "origin": [ 0, 0, 0 ], "axis": "y", "angle": -45 },
+            "faces": {
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross1" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross1" }
+            }
+        }
+    ]
+}

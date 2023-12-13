@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "conquest:block/big_fruit_cake_with_icing" },
+        "bites=1": { "model": "conquest:block/big_fruit_cake_with_icing_slice1" },
+        "bites=2": { "model": "conquest:block/big_fruit_cake_with_icing_slice2" },
+        "bites=3": { "model": "conquest:block/big_fruit_cake_with_icing_slice3" },
+        "bites=4": { "model": "conquest:block/big_fruit_cake_with_icing_slice4" },
+        "bites=5": { "model": "conquest:block/big_fruit_cake_with_icing_slice5" },
+        "bites=6": { "model": "conquest:block/big_fruit_cake_with_icing_slice6" }
+    }
+}

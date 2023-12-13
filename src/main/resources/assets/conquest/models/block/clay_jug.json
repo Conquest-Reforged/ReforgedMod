@@ -1,0 +1,43 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/obj/clay_jug.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/3_decoration/1_stone/clay_jug",
+        "all": "conquest:block/3_decoration/1_stone/clay_jug"
+    },
+    "gui_light": "side",
+    "display": {
+        "thirdperson_righthand": {
+            "rotation":  [ 75, 45, 0 ],
+            "translation":  [ 0, 2.5, 3 ],
+            "scale":  [ 0.375, 0.375, 0.375 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation":  [ 75, 45, 0 ],
+            "translation":  [ 0, 2.5, 3 ],
+            "scale":  [ 0.375, 0.375, 0.375 ]
+        },
+        "firstperson_righthand": {
+            "rotation":  [ 0, 15, 0 ],
+            "translation":  [ 0, 2, 0 ],
+            "scale":  [ 0.4, 0.4, 0.4 ]
+        },
+        "firstperson_lefthand": {
+            "rotation":  [ 0, 15, 0 ],
+            "translation":  [ 0, 2, 0 ],
+            "scale":  [ 0.4, 0.4, 0.4 ]
+        },
+        "gui": {
+            "rotation":  [ 30, 225, 0 ],
+            "translation":  [ 0, 0, 0 ],
+            "scale":  [ 0.625, 0.625, 0.625 ]
+        },
+        "fixed": {
+            "rotation":  [ 0, 135, 0 ],
+            "translation":  [ 0, 0, -11 ],
+            "scale":  [ 2, 2, 2 ]
+        }
+    }
+}

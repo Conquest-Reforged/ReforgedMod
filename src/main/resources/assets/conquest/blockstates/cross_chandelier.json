@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "light=0": { "model": "conquest:block/cross_chandelier_unlit" },
+        "light=1": { "model": "conquest:block/cross_chandelier" },
+        "light=2": { "model": "conquest:block/cross_chandelier" },
+        "light=3": { "model": "conquest:block/cross_chandelier" }
+    }
+}

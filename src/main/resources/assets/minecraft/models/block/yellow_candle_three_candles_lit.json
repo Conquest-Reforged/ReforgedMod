@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/template_three_candelabra",
+  "textures": {
+	"particle": "minecraft:block/yellow_candelabra_holder",
+	"holder": "minecraft:block/yellow_candelabra_holder",
+	"candle": "minecraft:block/yellow_candelabra",
+	"flame": "minecraft:block/candle_lit"
+  }
+}

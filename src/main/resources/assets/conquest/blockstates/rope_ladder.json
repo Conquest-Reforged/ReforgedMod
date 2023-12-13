@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/rope_ladder", "y": 180 },
+        "facing=west": { "model": "conquest:block/rope_ladder", "y": 270 },
+        "facing=north": { "model": "conquest:block/rope_ladder" },
+        "facing=east": { "model": "conquest:block/rope_ladder", "y": 90 }
+    }
+}

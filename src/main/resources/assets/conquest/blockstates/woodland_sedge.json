@@ -1,0 +1,44 @@
+{
+    "variants": {
+        "layers=1": [
+            {"model":"conquest:block/woodland_sedge_1_a"},
+            {"model":"conquest:block/woodland_sedge_1_b"},
+            {"model":"conquest:block/woodland_sedge_1_c"}
+        ],
+        "layers=2": [
+            {"model":"conquest:block/woodland_sedge_2_a"},
+            {"model":"conquest:block/woodland_sedge_2_b"},
+            {"model":"conquest:block/woodland_sedge_2_c"}
+        ],
+        "layers=3": [
+            {"model":"conquest:block/woodland_sedge_3_a"},
+            {"model":"conquest:block/woodland_sedge_3_b"},
+            {"model":"conquest:block/woodland_sedge_3_c"}
+        ],
+        "layers=4": [
+            {"model":"conquest:block/woodland_sedge_4_a"},
+            {"model":"conquest:block/woodland_sedge_4_b"},
+            {"model":"conquest:block/woodland_sedge_4_c"}
+        ],
+        "layers=5": [
+            {"model":"conquest:block/woodland_sedge_5_a"},
+            {"model":"conquest:block/woodland_sedge_5_b"},
+            {"model":"conquest:block/woodland_sedge_5_c"}
+        ],
+        "layers=6": [
+            {"model":"conquest:block/woodland_sedge_6_a"},
+            {"model":"conquest:block/woodland_sedge_6_b"},
+            {"model":"conquest:block/woodland_sedge_6_c"}
+        ],
+        "layers=7": [
+            {"model":"conquest:block/woodland_sedge_7_a"},
+            {"model":"conquest:block/woodland_sedge_7_b"},
+            {"model":"conquest:block/woodland_sedge_7_c"}
+        ],
+        "layers=8": [
+            {"model":"conquest:block/woodland_sedge_8_a"},
+            {"model":"conquest:block/woodland_sedge_8_b"},
+            {"model":"conquest:block/woodland_sedge_8_c"}
+        ]
+    }
+}

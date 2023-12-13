@@ -1,0 +1,121 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"3": "conquest:block/2_advanced_refined/2_metal/metal_scaffolding/bottom",
+		"4": "conquest:block/2_advanced_refined/2_metal/metal_scaffolding/top_unstable_1",
+		"particle": "conquest:block/2_advanced_refined/2_metal/metal_scaffolding/tower_side_unstable",
+		"texture": "conquest:block/2_advanced_refined/2_metal/metal_scaffolding/tower_side_unstable",
+		"inner": "conquest:block/2_advanced_refined/2_metal/metal_scaffolding/inner"
+	},
+	"elements": [
+		{
+			"name": "PlaneX2",
+			"from": [0, 0, 0],
+			"to": [0.001, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "PlaneX2",
+			"from": [3, 0, 0],
+			"to": [3.001, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#inner"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#inner"}
+			}
+		},
+		{
+			"name": "PlaneX2",
+			"from": [0, 0, 0],
+			"to": [0.001, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "west"}
+			}
+		},
+		{
+			"name": "PlaneX2",
+			"from": [16, 0, 0],
+			"to": [16.001, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "PlaneX2",
+			"from": [13, 0, 0],
+			"to": [13.001, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#inner"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#inner"}
+			}
+		},
+		{
+			"name": "PlaneZ15",
+			"from": [0, 0, 0],
+			"to": [16, 16, 0.001],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "PlaneZ15",
+			"from": [0, 0, 0],
+			"to": [16, 16, 0.001],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "north"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "PlaneZ15",
+			"from": [0, 0, 3],
+			"to": [16, 16, 3.001],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#inner"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#inner"}
+			}
+		},
+		{
+			"name": "PlaneZ15",
+			"from": [0, 0, 16],
+			"to": [16, 16, 16.001],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "PlaneZ15",
+			"from": [0, 0, 13],
+			"to": [16, 16, 13.001],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#inner"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#inner"}
+			}
+		},
+		{
+			"name": "PlaneY21",
+			"from": [0, 0, 0],
+			"to": [16, 0.001, 16],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3", "cullface": "down"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#3", "cullface": "down"}
+			}
+		},
+		{
+			"name": "PlaneY21",
+			"from": [0, 16, 0],
+			"to": [16, 16.001, 16],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "up"}
+			}
+		}
+	]
+}

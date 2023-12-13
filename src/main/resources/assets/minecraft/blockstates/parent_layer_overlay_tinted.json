@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layers=1": { "model": "block/parent_slab_bottom_1_overlay_tinted" },
+        "layers=2": { "model": "block/parent_slab_bottom_2_overlay_tinted" },
+        "layers=3": { "model": "block/parent_slab_bottom_3_overlay_tinted" },
+        "layers=4": { "model": "block/parent_slab_bottom_4_overlay_tinted" },
+        "layers=5": { "model": "block/parent_slab_bottom_5_overlay_tinted" },
+        "layers=6": { "model": "block/parent_slab_bottom_6_overlay_tinted" },
+        "layers=7": { "model": "block/parent_slab_bottom_7_overlay_tinted" },
+        "layers=8": { "model": "block/parent_cube" }
+    }
+}

@@ -1,0 +1,15 @@
+{   "parent": "block/thin_block",
+    "textures": {
+        "particle": "conquest:block/7_tools/3_utility/wheel",
+        "wool": "conquest:block/7_tools/3_utility/wheel"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 0.5, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0,  0, 16, 16 ], "texture": "#wool", "cullface": "down" },
+                "up":    { "uv": [ 16, 16, 0, 0  ], "texture": "#wool", "cullface": "up" }
+            }
+        }
+    ]
+}

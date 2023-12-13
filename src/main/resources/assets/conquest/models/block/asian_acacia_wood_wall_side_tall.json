@@ -1,0 +1,9 @@
+{
+	"parent": "block/template_wall_side_tall",
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall",
+		"wall": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall",
+		"top": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall",
+		"bottom": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall"
+	}
+}

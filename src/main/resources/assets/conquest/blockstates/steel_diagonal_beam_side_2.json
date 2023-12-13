@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "hinge=left,type=bottom,facing=south": { "model": "conquest:block/steel_diagonal_beam_side_2_a", "y": 270 },
+        "hinge=left,type=bottom,facing=west": { "model": "conquest:block/steel_diagonal_beam_side_2_a" },
+        "hinge=left,type=bottom,facing=north": { "model": "conquest:block/steel_diagonal_beam_side_2_a", "y": 90 },
+        "hinge=left,type=bottom,facing=east": { "model": "conquest:block/steel_diagonal_beam_side_2_a", "y": 180 },
+
+        "hinge=left,type=top,facing=south": { "model": "conquest:block/steel_diagonal_beam_side_2_b", "y": 270 },
+        "hinge=left,type=top,facing=west": { "model": "conquest:block/steel_diagonal_beam_side_2_b" },
+        "hinge=left,type=top,facing=north": { "model": "conquest:block/steel_diagonal_beam_side_2_b", "y": 90 },
+        "hinge=left,type=top,facing=east": { "model": "conquest:block/steel_diagonal_beam_side_2_b", "y": 180 },
+
+        "hinge=right,type=bottom,facing=south": { "model": "conquest:block/steel_diagonal_beam_side_2_ab", "y": 270 },
+        "hinge=right,type=bottom,facing=west": { "model": "conquest:block/steel_diagonal_beam_side_2_ab" },
+        "hinge=right,type=bottom,facing=north": { "model": "conquest:block/steel_diagonal_beam_side_2_ab", "y": 90 },
+        "hinge=right,type=bottom,facing=east": { "model": "conquest:block/steel_diagonal_beam_side_2_ab", "y": 180 },
+
+        "hinge=right,type=top,facing=south": { "model": "conquest:block/steel_diagonal_beam_side_2_ba", "y": 270 },
+        "hinge=right,type=top,facing=west": { "model": "conquest:block/steel_diagonal_beam_side_2_ba" },
+        "hinge=right,type=top,facing=north": { "model": "conquest:block/steel_diagonal_beam_side_2_ba", "y": 90 },
+        "hinge=right,type=top,facing=east": { "model": "conquest:block/steel_diagonal_beam_side_2_ba", "y": 180 }
+    }
+}

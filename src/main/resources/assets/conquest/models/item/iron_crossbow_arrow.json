@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:item/iron_crossbow",
+    "textures": {
+        "layer0": "conquest:item/iron_crossbow_3"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "conquest:block/apples" },
+      { "model": "conquest:block/apples_1" },
+      { "model": "conquest:block/apples_2" },
+      { "model": "conquest:block/apples_3" }
+    ]
+  }
+}

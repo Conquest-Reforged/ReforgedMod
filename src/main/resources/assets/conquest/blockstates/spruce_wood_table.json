@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/spruce_wood_table" },
+        "facing=west": { "model": "conquest:block/spruce_wood_table", "y": 90 },
+        "facing=north": { "model": "conquest:block/spruce_wood_table", "y": 180 },
+        "facing=east": { "model": "conquest:block/spruce_wood_table", "y": 270 }
+    }
+}

@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_wood_trellis",
+		"texture": "conquest:block/2_advanced_refined/7_wood/1_painted/white_painted_wood_trellis"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 16, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#texture"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#texture"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#texture"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#texture"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#texture"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#texture"}
+			}
+		}
+	]
+}

@@ -1,0 +1,125 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"torch": "conquest:block/3_decoration/2_metal/hanging_oil_lamp/standing_oil_lamp_off",
+		"particle": "conquest:block/3_decoration/2_metal/hanging_oil_lamp/standing_oil_lamp_off"
+	},
+	"elements": [
+		{
+			"name": "octagon",
+			"from": [8, 0, 5.044],
+			"to": [8, 16, 10.956],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [10, 0, 16, 16], "texture": "#torch"},
+				"west": {"uv": [10, 0, 16, 16], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.12212, 0, 8],
+			"to": [10.87788, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.14063, 8, 8]},
+			"faces": {
+				"north": {"uv": [10, 0, 16, 16], "texture": "#torch"},
+				"south": {"uv": [10, 0, 16, 16], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [6.28217, 10.72569, 6.36041],
+			"to": [9.71783, 11.22569, 9.65481],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10.97569, 8.00761]},
+			"faces": {
+				"north": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"east": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"south": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"west": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"up": {"uv": [1.5, 2.5, 5, 6], "texture": "#torch"},
+				"down": {"uv": [1.5, 2.5, 5, 6], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.3528, 3.23438, 5.28217],
+			"to": [10.6472, 3.76563, 10.71783],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.3528, -3.70312, 8.28978]},
+			"faces": {
+				"north": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"east": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"south": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"west": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"up": {"uv": [0, 1, 6.5, 7.5], "rotation": 90, "texture": "#torch"},
+				"down": {"uv": [0, 9.5, 6.294, 15.936], "rotation": 90, "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.3528, 9.20313, 5.28217],
+			"to": [10.6472, 9.73438, 10.71783],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.3528, 2.26563, 8.28978]},
+			"faces": {
+				"north": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"east": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"south": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"west": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"up": {"uv": [0, 1, 6.5, 7.5], "rotation": 90, "texture": "#torch"},
+				"down": {"uv": [0, 9.5, 6.294, 15.936], "rotation": 90, "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.78217, 9.69444, 5.86041],
+			"to": [10.21783, 10.19444, 10.15481],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.94444, 8.00761]},
+			"faces": {
+				"north": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"east": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"south": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"west": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"up": {"uv": [1, 2, 5.5, 6.5], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [6.96612, 3.75, 5.504],
+			"to": [9.03388, 9.625, 10.496],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8.25, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"},
+				"south": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [6.96612, 3.75, 5.504],
+			"to": [9.03388, 9.625, 10.496],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.25, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"},
+				"south": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.504, 3.75, 6.96612],
+			"to": [10.496, 9.625, 9.03388],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8.25, 8]},
+			"faces": {
+				"east": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"},
+				"west": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.504, 3.75, 6.96612],
+			"to": [10.496, 9.625, 9.03388],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.25, 8]},
+			"faces": {
+				"east": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"},
+				"west": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"}
+			}
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "conquest:block/1_basic_refined/3_wood/bundled_firewood",
+		"north": "conquest:block/1_basic_refined/3_wood/bundled_firewood",
+		"east": "conquest:block/1_basic_refined/3_wood/bundled_firewood_topbottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 14],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#north"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#east"},
+				"south": {"uv": [0, 16, 16, 0], "rotation": 270, "texture": "#north"},
+				"west": {"uv": [14, 0, 16, 16], "texture": "#east"},
+				"up": {"uv": [14, 0, 16, 16], "rotation": 90, "texture": "#north"},
+				"down": {"uv": [0, 0, 2, 16], "rotation": 90, "texture": "#north"}
+			}
+		},
+		{
+			"from": [14, 0, 0],
+			"to": [16, 16, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "rotation": 270, "texture": "#north"},
+				"east": {"uv": [2, 0, 16, 16], "texture": "#east"},
+				"west": {"uv": [0, 0, 14, 16], "texture": "#east"},
+				"up": {"uv": [0, 14, 14, 16], "rotation": 90, "texture": "#north"},
+				"down": {"uv": [2, 0, 16, 2], "rotation": 90, "texture": "#north"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 135, 0],
+			"translation": [0, -0.5, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

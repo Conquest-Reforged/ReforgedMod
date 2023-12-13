@@ -1,0 +1,12 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_round_arch_3.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab",
+        "keystones": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_arch/arch3",
+        "underside1": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab",
+        "underside2": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab"
+    }
+}

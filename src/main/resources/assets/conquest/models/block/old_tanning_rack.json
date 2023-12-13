@@ -1,0 +1,7 @@
+{
+	"parent": "conquest:block/tanning_rack",
+	"textures": {
+		"particle": "conquest:block/7_tools/3_utility/tanning_rack/old_tanning_rack",
+		"6": "conquest:block/7_tools/3_utility/tanning_rack/old_tanning_rack"
+	}
+}

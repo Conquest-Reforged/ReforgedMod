@@ -1,0 +1,24 @@
+{
+    "variants": {
+        "type=bottom,hinge=left,facing=south": { "model": "block/parent_arch_twometer_half_left", "y": 90, "x":180, "uvlock": true },
+        "type=bottom,hinge=left,facing=west": { "model": "block/parent_arch_twometer_half_left", "y": 180, "x":180, "uvlock": true },
+        "type=bottom,hinge=left,facing=north": { "model": "block/parent_arch_twometer_half_right", "y": 270, "x":180, "uvlock": true },
+        "type=bottom,hinge=left,facing=east": { "model": "block/parent_arch_twometer_half_right", "x":180, "uvlock": true },
+
+        "type=bottom,hinge=right,facing=south": { "model": "block/parent_arch_twometer_half_right", "y": 90, "x":180, "uvlock": true },
+        "type=bottom,hinge=right,facing=west": { "model": "block/parent_arch_twometer_half_right", "y": 180, "x":180, "uvlock": true },
+        "type=bottom,hinge=right,facing=north": { "model": "block/parent_arch_twometer_half_left", "y": 270, "x":180, "uvlock": true },
+        "type=bottom,hinge=right,facing=east": { "model": "block/parent_arch_twometer_half_left", "x":180, "uvlock": true },
+
+        "type=top,hinge=right,facing=south": { "model": "block/parent_arch_twometer_half_left", "y": 90, "uvlock": true },
+        "type=top,hinge=right,facing=west": { "model": "block/parent_arch_twometer_half_left", "y": 180, "uvlock": true },
+        "type=top,hinge=right,facing=north": { "model": "block/parent_arch_twometer_half_right", "y": 270, "uvlock": true },
+        "type=top,hinge=right,facing=east": { "model": "block/parent_arch_twometer_half_right", "uvlock": true },
+
+        "type=top,hinge=left,facing=south": { "model": "block/parent_arch_twometer_half_right", "y": 90, "uvlock": true },
+        "type=top,hinge=left,facing=west": { "model": "block/parent_arch_twometer_half_right", "y": 180, "uvlock": true },
+        "type=top,hinge=left,facing=north": { "model": "block/parent_arch_twometer_half_left", "y": 270, "uvlock": true },
+        "type=top,hinge=left,facing=east": { "model": "block/parent_arch_twometer_half_left", "uvlock": true }
+
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "__comment": "Designed by RomanCapitalist with Cubik Studio - https://cubik.studio",
+    "textures": {
+        "particle": "conquest:block/3_decoration/4_cloth/blue_and_green_buntings",
+        "texture": "conquest:block/3_decoration/4_cloth/blue_and_green_buntings"
+    },
+    "elements": [
+        {
+            "__comment": "PlaneY1",
+            "from": [ 7.9996, 0, 0.0004 ],
+            "to": [ 8.0006, 16, 11.3154 ],
+            "rotation": { "origin": [ 8, 0, 0 ], "axis": "y", "angle": 45 },
+            "faces": {
+                "west": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture", "rotation": 180 },
+                "east": { "uv": [ 16, 16, 0, 0 ], "texture": "#texture", "rotation": 180 }
+            }
+        }
+    ]
+}

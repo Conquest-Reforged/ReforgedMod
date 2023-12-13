@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "conquest:block/9_organic/2_leaves/light_yellow_birch_leaves"
+    }
+}

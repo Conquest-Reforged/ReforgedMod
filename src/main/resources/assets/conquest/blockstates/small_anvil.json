@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "damage=1,facing=south": { "model": "conquest:block/small_anvil" },
+        "damage=1,facing=west": { "model": "conquest:block/small_anvil", "y": 90 },
+        "damage=1,facing=north": { "model": "conquest:block/small_anvil", "y": 180 },
+        "damage=1,facing=east": { "model": "conquest:block/small_anvil", "y": 270 },
+
+        "damage=2,facing=south": { "model": "conquest:block/small_anvil_slight_damaged" },
+        "damage=2,facing=west": { "model": "conquest:block/small_anvil_slight_damaged", "y": 90 },
+        "damage=2,facing=north": { "model": "conquest:block/small_anvil_slight_damaged", "y": 180 },
+        "damage=2,facing=east": { "model": "conquest:block/small_anvil_slight_damaged", "y": 270 },
+
+        "damage=3,facing=south": { "model": "conquest:block/small_anvil_damaged" },
+        "damage=3,facing=west": { "model": "conquest:block/small_anvil_damaged", "y": 90 },
+        "damage=3,facing=north": { "model": "conquest:block/small_anvil_damaged", "y": 180 },
+        "damage=3,facing=east": { "model": "conquest:block/small_anvil_damaged", "y": 270 }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "facing=south,type=bottom": { "model": "block/parent_slab_eighth_beam" },
+        "facing=west,type=bottom": { "model": "block/parent_slab_eighth_beam", "y": 90 },
+        "facing=north,type=bottom": { "model": "block/parent_slab_eighth_beam", "y": 180 },
+        "facing=east,type=bottom": { "model": "block/parent_slab_eighth_beam", "y": 270 },
+
+        "facing=south,type=top": { "model": "block/parent_slab_eighth_top_beam", "y": 90 },
+        "facing=west,type=top": { "model": "block/parent_slab_eighth_top_beam", "y": 180 },
+        "facing=north,type=top": { "model": "block/parent_slab_eighth_top_beam", "y": 270 },
+        "facing=east,type=top": { "model": "block/parent_slab_eighth_top_beam" }
+    }
+}

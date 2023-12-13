@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "conquest:block/travertine_ionian_capital_full" },
+        "axis=z":   { "model": "conquest:block/travertine_ionian_capital_full_side" },
+        "axis=x":   { "model": "conquest:block/travertine_ionian_capital_full_side", "y": 90 }
+    }
+}

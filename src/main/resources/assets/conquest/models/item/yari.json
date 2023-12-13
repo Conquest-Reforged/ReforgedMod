@@ -1,0 +1,33 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "conquest:item/yari"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ -80, 260, -40 ],
+            "translation": [ -3, 15, 1.8 ],
+            "scale": [ 3.4, 3.4, 0.7 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 0, -280, 48.5 ],
+            "translation": [ -3, -0.5, 25.8 ],
+            "scale": [ 3.4, 3.4, 0.7 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 75 ],
+            "translation": [ 3.43, 9.7, -7.23],
+            "scale": [ 2.72, 2.72, 0.5 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 90, -75 ],
+            "translation": [ 3.43, 9.7, -7.23],
+            "scale": [ 2.72, 2.72, 0.5 ]
+        },
+        "fixed": {
+            "rotation": [ 0.5, 0.1, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale": [ 5, 5, 1 ]
+        }     
+    }
+}

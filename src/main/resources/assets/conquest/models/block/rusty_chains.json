@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "conquest:block/3_decoration/2_metal/rusty_chains"
+    }
+}

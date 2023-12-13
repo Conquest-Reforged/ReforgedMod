@@ -1,0 +1,70 @@
+
+{
+  "variants": {
+    "powered=false": [
+    {
+      "model": "minecraft:block/crimson_pressure_plate"
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate",
+        "y": 90
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate",
+        "y": 180
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate",
+        "y": 270
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile"
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile",
+        "y": 90
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile",
+        "y": 180
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile",
+        "y": 270
+    }
+	],
+
+    "powered=true": [
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pressed"
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pressed",
+        "y": 90
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pressed",
+        "y": 180
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pressed",
+        "y": 270
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile_pressed"
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile_pressed",
+        "y": 90
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile_pressed",
+        "y": 180
+    },
+    {
+      "model": "minecraft:block/crimson_pressure_plate_pile_pressed",
+        "y": 270
+    }
+	]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "conquest:block/3_decoration/4_cloth/hanging_bear_skin"
+  }
+}

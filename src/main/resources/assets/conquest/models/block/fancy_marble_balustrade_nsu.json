@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_fancy_balustrade_nsu",
+	"textures": {
+		"texture": "conquest:block/2_advanced_refined/1_stone/3_marble/fancy_marble_balustrade",
+		"particle": "conquest:block/2_advanced_refined/1_stone/3_marble/fancy_marble_balustrade",
+		"texture1": "block/quartz_block_top",
+		"texture2": "conquest:block/2_advanced_refined/1_stone/3_marble/fancy_marble_balustrade_top"
+	}
+}

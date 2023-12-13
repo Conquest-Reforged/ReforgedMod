@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/empty_crate", "y": 90 },
+        "toggle=1,facing=west": { "model": "conquest:block/empty_crate", "y": 180 },
+        "toggle=1,facing=north": { "model": "conquest:block/empty_crate", "y": 270 },
+        "toggle=1,facing=east": { "model": "conquest:block/empty_crate" },
+        "toggle=2,facing=south": { "model": "conquest:block/empty_crate_tilted", "y": 90 },
+        "toggle=2,facing=west": { "model": "conquest:block/empty_crate_tilted", "y": 180 },
+        "toggle=2,facing=north": { "model": "conquest:block/empty_crate_tilted", "y": 270 },
+        "toggle=2,facing=east": { "model": "conquest:block/empty_crate_tilted" }
+    }
+}

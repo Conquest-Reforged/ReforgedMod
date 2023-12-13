@@ -1,0 +1,6 @@
+{
+    "parent": "block/rail_flat",
+    "textures": {
+        "rail": "conquest:block/3_decoration/4_cloth/rope/rope"
+    }
+}

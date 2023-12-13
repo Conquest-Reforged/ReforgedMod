@@ -1,0 +1,14 @@
+{
+    "parent": "conquest:item/shield",
+    "textures": {
+        "layer0": "conquest:item/big_roman_scutum"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "conquest:item/big_roman_scutum_blocking"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/red_painted_steel_diagonal_beam_1_a", "y": 90 },
+        "facing=west": { "model": "conquest:block/red_painted_steel_diagonal_beam_1_b" },
+        "facing=north": { "model": "conquest:block/red_painted_steel_diagonal_beam_1_b", "y": 90 },
+        "facing=east": { "model": "conquest:block/red_painted_steel_diagonal_beam_1_a" }
+    }
+}

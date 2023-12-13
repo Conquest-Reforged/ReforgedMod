@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "conquest:block/6_foodstuffs/4_food/hanging_rabbit"
+    }
+}

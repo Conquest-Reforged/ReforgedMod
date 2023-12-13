@@ -1,0 +1,6 @@
+{
+	"parent": "conquest:block/crop_2",
+	"textures": {
+		"crop": "block/carrots_stage0"
+	}
+}

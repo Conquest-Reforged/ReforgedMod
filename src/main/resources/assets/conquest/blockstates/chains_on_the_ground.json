@@ -1,0 +1,18 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"conquest:block/chains_on_the_ground_flat"
+  },
+  "variants": {
+    "shape=north_south": { "model": "conquest:block/chains_on_the_ground_flat" },
+    "shape=east_west": { "model": "conquest:block/chains_on_the_ground_flat", "y": 90 },
+    "shape=ascending_east": { "model": "conquest:block/chains_on_the_ground_raised_ne", "y": 90 },
+    "shape=ascending_west": { "model": "conquest:block/chains_on_the_ground_raised_sw", "y": 90 },
+    "shape=ascending_north": { "model": "conquest:block/chains_on_the_ground_raised_ne" },
+    "shape=ascending_south": { "model": "conquest:block/chains_on_the_ground_raised_sw" },
+    "shape=south_east": { "model": "conquest:block/chains_on_the_ground_corner" },
+    "shape=south_west": { "model": "conquest:block/chains_on_the_ground_corner", "y": 90 },
+    "shape=north_west": { "model": "conquest:block/chains_on_the_ground_corner", "y": 180 },
+    "shape=north_east": { "model": "conquest:block/chains_on_the_ground_corner", "y": 270 }
+  }
+}

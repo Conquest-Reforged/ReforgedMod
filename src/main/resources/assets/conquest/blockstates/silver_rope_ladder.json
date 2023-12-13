@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/silver_rope_ladder", "y": 180 },
+        "facing=west": { "model": "conquest:block/silver_rope_ladder", "y": 270 },
+        "facing=north": { "model": "conquest:block/silver_rope_ladder" },
+        "facing=east": { "model": "conquest:block/silver_rope_ladder", "y": 90 }
+    }
+}

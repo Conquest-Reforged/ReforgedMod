@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "layers=1,half=lower": { "model": "block/large_fern_2" },
+        "layers=1,half=upper":    { "model": "block/empty" },
+        "layers=2,half=lower": { "model": "block/large_fern_2" },
+        "layers=2,half=upper":    { "model": "block/empty" },
+        "layers=3,half=lower": { "model": "block/large_fern_3" },
+        "layers=3,half=upper":    { "model": "block/empty" },
+        "layers=4,half=lower": { "model": "block/large_fern_4" },
+        "layers=4,half=upper":    { "model": "block/empty" },
+        "layers=5,half=lower": { "model": "block/large_fern_5" },
+        "layers=5,half=upper":    { "model": "block/empty" },
+        "layers=6,half=lower": { "model": "block/large_fern_6" },
+        "layers=6,half=upper":    { "model": "block/empty" },
+        "layers=7,half=lower": { "model": "block/large_fern_7" },
+        "layers=7,half=upper":    { "model": "block/empty" },
+
+        "layers=8,half=lower": { "model": "block/large_fern" },
+        "layers=8,half=upper":    { "model": "block/empty" }
+    }
+}

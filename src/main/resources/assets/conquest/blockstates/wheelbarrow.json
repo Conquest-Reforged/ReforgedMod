@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "toggle=1,facing=north": { "model": "conquest:block/wheelbarrow"},
+        "toggle=1,facing=east":{ "model": "conquest:block/wheelbarrow", "y": 90 },
+        "toggle=1,facing=south": { "model": "conquest:block/wheelbarrow", "y": 180 },
+        "toggle=1,facing=west":{ "model": "conquest:block/wheelbarrow", "y": 270 },
+        "toggle=2,facing=north": { "model": "conquest:block/wheelbarrow_with_dirt"},
+        "toggle=2,facing=east":{ "model": "conquest:block/wheelbarrow_with_dirt", "y": 90 },
+        "toggle=2,facing=south": { "model": "conquest:block/wheelbarrow_with_dirt", "y": 180 },
+        "toggle=2,facing=west":{ "model": "conquest:block/wheelbarrow_with_dirt", "y": 270 },
+        "toggle=3,facing=north": { "model": "conquest:block/wheelbarrow_with_firewood"},
+        "toggle=3,facing=east":{ "model": "conquest:block/wheelbarrow_with_firewood", "y": 90 },
+        "toggle=3,facing=south": { "model": "conquest:block/wheelbarrow_with_firewood", "y": 180 },
+        "toggle=3,facing=west":{ "model": "conquest:block/wheelbarrow_with_firewood", "y": 270 },
+        "toggle=4,facing=north": { "model": "conquest:block/wheelbarrow_with_hay_bale"},
+        "toggle=4,facing=east":{ "model": "conquest:block/wheelbarrow_with_hay_bale", "y": 90 },
+        "toggle=4,facing=south": { "model": "conquest:block/wheelbarrow_with_hay_bale", "y": 180 },
+        "toggle=4,facing=west":{ "model": "conquest:block/wheelbarrow_with_hay_bale", "y": 270 },
+        "toggle=5,facing=north": { "model": "conquest:block/wheelbarrow_with_barrel"},
+        "toggle=5,facing=east":{ "model": "conquest:block/wheelbarrow_with_barrel", "y": 90 },
+        "toggle=5,facing=south": { "model": "conquest:block/wheelbarrow_with_barrel", "y": 180 },
+        "toggle=5,facing=west":{ "model": "conquest:block/wheelbarrow_with_barrel", "y": 270 },
+        "toggle=6,facing=north": { "model": "conquest:block/wheelbarrow_with_terracotta_urn"},
+        "toggle=6,facing=east":{ "model": "conquest:block/wheelbarrow_with_terracotta_urn", "y": 90 },
+        "toggle=6,facing=south": { "model": "conquest:block/wheelbarrow_with_terracotta_urn", "y": 180 },
+        "toggle=6,facing=west":{ "model": "conquest:block/wheelbarrow_with_terracotta_urn", "y": 270 }
+    }
+}

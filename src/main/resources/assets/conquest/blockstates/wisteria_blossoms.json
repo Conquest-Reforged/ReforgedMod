@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "conquest:block/wisteria_blossoms" },
+			{ "model": "conquest:block/wisteria_blossoms_1", "y": 90 },
+			{ "model": "conquest:block/wisteria_blossoms_2", "y": 180 },
+			{ "model": "conquest:block/wisteria_blossoms_3", "y": 270 }
+        ]
+    }
+}

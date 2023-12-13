@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/bow_saw_on_the_ground" },
+        "facing=west": { "model": "conquest:block/bow_saw_on_the_ground", "y": 90 },
+        "facing=north": { "model": "conquest:block/bow_saw_on_the_ground", "y": 180 },
+        "facing=east": { "model": "conquest:block/bow_saw_on_the_ground", "y": 270 }
+    }
+}

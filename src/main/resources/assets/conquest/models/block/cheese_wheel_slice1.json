@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "conquest:block/6_foodstuffs/4_food/cheese_wheel_side",
+        "bottom": "conquest:block/6_foodstuffs/4_food/big_fruit_cake_with_icing_bottom",
+        "top": "conquest:block/6_foodstuffs/4_food/cheese_wheel_top",
+        "side": "conquest:block/6_foodstuffs/4_food/cheese_wheel_side",
+        "inside": "conquest:block/6_foodstuffs/4_food/cheese_wheel_inner"
+    },
+    "elements": [
+        {   "from": [ 3, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

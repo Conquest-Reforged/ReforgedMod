@@ -1,0 +1,64 @@
+{
+	"textures": {
+		"particle": "block/stone",
+		"texture": "block/stone"
+	},
+	"elements": [
+		{
+			"name": "Cube12",
+			"from": [5.5, -9.5, 2.5],
+			"to": [16.5, -3.5, 9.5],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.5, -14, 9.5]},
+			"faces": {
+				"north": {"uv": [0.5, 6, 11.5, 12], "texture": "#texture"},
+				"east": {"uv": [6.5, 6, 13.5, 12], "texture": "#texture"},
+				"south": {"uv": [4.5, 6, 15.5, 12], "texture": "#texture"},
+				"west": {"uv": [2.5, 6, 9.5, 12], "texture": "#texture"},
+				"up": {"uv": [4.5, 2.5, 15.5, 9.5], "texture": "#texture"},
+				"down": {"uv": [4, 6.5, 15, 13.5], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube12",
+			"from": [1.5, -7, 2.5],
+			"to": [8.5, -2.5, 13],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [1.5, -7, 13]},
+			"faces": {
+				"north": {"uv": [3.48183, 5, 10.48183, 9.5], "texture": "#texture"},
+				"east": {"uv": [2.20074, 5, 12.70074, 9.5], "texture": "#texture"},
+				"south": {"uv": [5.51817, 5, 12.51817, 9.5], "texture": "#texture"},
+				"west": {"uv": [3.29926, 5, 13.79926, 9.5], "texture": "#texture"},
+				"up": {"uv": [5.51817, 3.29926, 12.51817, 13.79926], "texture": "#texture"},
+				"down": {"uv": [5.51817, 2.20074, 12.51817, 12.70074], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube12",
+			"from": [14.5, -10, 5.5],
+			"to": [21.5, -5.5, 16],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [21.5, -10, 5.5]},
+			"faces": {
+				"north": {"uv": [4.5, 9, 11.5, 13.5], "texture": "#texture"},
+				"east": {"uv": [1.5, 9, 12, 13.5], "texture": "#texture"},
+				"south": {"uv": [4.5, 9, 11.5, 13.5], "texture": "#texture"},
+				"west": {"uv": [4, 9, 14.5, 13.5], "texture": "#texture"},
+				"up": {"uv": [4, 4.5, 14.5, 11.5], "rotation": 90, "texture": "#texture"},
+				"down": {"uv": [4, 4.5, 14.5, 11.5], "rotation": 270, "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Cube12",
+			"from": [7.5, -5.5, 0],
+			"to": [18, -1, 7],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [7.5, -5.5, 0]},
+			"faces": {
+				"north": {"uv": [1.5, 9, 12, 13.5], "texture": "#texture"},
+				"east": {"uv": [4.5, 9, 11.5, 13.5], "texture": "#texture"},
+				"south": {"uv": [4, 9, 14.5, 13.5], "texture": "#texture"},
+				"west": {"uv": [4.5, 9, 11.5, 13.5], "texture": "#texture"},
+				"up": {"uv": [4, 4.5, 14.5, 11.5], "texture": "#texture"},
+				"down": {"uv": [4, 4.5, 14.5, 11.5], "texture": "#texture"}
+			}
+		}
+	]
+}

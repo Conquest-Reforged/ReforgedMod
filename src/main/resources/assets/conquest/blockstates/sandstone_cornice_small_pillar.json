@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "":   { "model": "conquest:block/sandstone_cornice_fence_post" }
+    }
+}

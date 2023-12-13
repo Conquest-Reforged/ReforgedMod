@@ -1,0 +1,22 @@
+{
+    "parent": "block/block",
+    "textures": {
+        "particle": "block/cobblestone",
+        "sidewall": "block/cobblestone",
+        "topwall": "block/cobblestone"
+    },
+    "elements": [
+        {   "from": [ 4, 0, 4 ],
+            "to": [ 12, 16, 12 ],
+            "faces": {
+                "down":  { "texture": "#topwall", "cullface": "down" },
+                "up":    { "texture": "#topwall", "cullface": "up" },
+                "north": { "texture": "#sidewall" },
+                "south": { "texture": "#sidewall" },
+                "west":  { "texture": "#sidewall" },
+                "east":  { "texture": "#sidewall" }
+            },
+            "__comment": "Center post"
+        }
+    ]
+}

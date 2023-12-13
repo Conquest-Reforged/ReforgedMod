@@ -1,0 +1,9 @@
+{
+   "providers":[
+      {"type":"bitmap","file":"gui/custom/escmenuheader.png","ascent":64,"height":120,"chars":["\uF117\uF120"]},
+      {"type":"bitmap","file":"gui/custom/seperator.png","ascent":-32768,"height":-3,"chars":["\uF119"]},
+      {"type":"bitmap","file":"gui/custom/exit_screen.png","ascent":19,"height":64,"chars":["\uF118\ue238\ue239\ue240"]},
+      {"type":"bitmap","file":"gui/custom/options.png","ascent":78,"height":80,"chars":["\ue241"]},
+      {"type":"bitmap","file":"gui/custom/videosettings.png","ascent":78,"height":80,"chars":["\ue242"]}
+   ]
+}

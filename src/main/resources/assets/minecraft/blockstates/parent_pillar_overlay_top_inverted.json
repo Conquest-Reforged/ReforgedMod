@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "layer=1": { "model": "block/parent_pillar_2_overlay_top_inverted" },
+        "layer=2": { "model": "block/parent_pillar_4_overlay_top_inverted" },
+        "layer=3": { "model": "block/parent_pillar_6_overlay_top_inverted" }
+    }
+}

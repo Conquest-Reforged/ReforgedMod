@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:block/cross_6",
+    "textures": {
+        "cross": "conquest:block/9_organic/3_plants/common_beans/beans_stage_2"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "facing=south,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter" },
+        "facing=west,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter", "y": 90 },
+        "facing=north,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter", "y": 180 },
+        "facing=east,type=bottom": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter", "y": 270 },
+
+        "facing=south,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter", "x": 180, "y": 180 },
+        "facing=west,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter", "x": 180, "y": 270 },
+        "facing=north,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter", "x": 180 },
+        "facing=east,type=top": { "model": "conquest:block/horizontally_bundled_firewood_slab_quarter", "x": 180, "y": 90 }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/rounded_chest" },
+        "toggle=1,facing=west": { "model": "conquest:block/rounded_chest", "y": 90 },
+        "toggle=1,facing=north": { "model": "conquest:block/rounded_chest", "y": 180 },
+        "toggle=1,facing=east": { "model": "conquest:block/rounded_chest", "y": 270 },
+
+        "toggle=2,facing=south": { "model": "conquest:block/rounded_chest_open" },
+        "toggle=2,facing=west": { "model": "conquest:block/rounded_chest_open", "y": 90 },
+        "toggle=2,facing=north": { "model": "conquest:block/rounded_chest_open", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/rounded_chest_open", "y": 270 }
+    }
+}

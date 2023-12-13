@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_ionian_capital_fence_post_side",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/1_stone/5_sandstone/dark_sandstone_ionian_capital",
+		"texture": "conquest:block/2_advanced_refined/1_stone/5_sandstone/dark_sandstone_ionian_capital",
+		"texture1": "conquest:block/1_basic_refined/1_stone/5_sandstone/large_tan_sandstone_block_topbottom",
+		"texture2": "conquest:block/2_advanced_refined/1_stone/5_sandstone/dark_sandstone_ionian_capital_spirals"
+	}
+}

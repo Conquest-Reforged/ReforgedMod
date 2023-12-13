@@ -1,0 +1,6 @@
+{
+    "variants": {
+      "type=top": { "model": "conquest:block/blue_marble_frieze_slab_top" },
+      "type=bottom": { "model": "conquest:block/blue_marble_frieze_slab_bottom" }
+    }
+}

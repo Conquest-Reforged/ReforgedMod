@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "toggle=1,facing=east": { "model": "conquest:block/milk_jug", "y": 270 },
+        "toggle=1,facing=south":{ "model": "conquest:block/milk_jug" },
+        "toggle=1,facing=west": { "model": "conquest:block/milk_jug", "y": 90 },
+        "toggle=1,facing=north":{ "model": "conquest:block/milk_jug", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/milk_jug_closed", "y": 270 },
+        "toggle=2,facing=south":{ "model": "conquest:block/milk_jug_closed" },
+        "toggle=2,facing=west": { "model": "conquest:block/milk_jug_closed", "y": 90 },
+        "toggle=2,facing=north":{ "model": "conquest:block/milk_jug_closed", "y": 180 },
+        "toggle=3,facing=east": { "model": "conquest:block/milk_jug_single", "y": 270 },
+        "toggle=3,facing=south":{ "model": "conquest:block/milk_jug_single" },
+        "toggle=3,facing=west": { "model": "conquest:block/milk_jug_single", "y": 90 },
+        "toggle=3,facing=north":{ "model": "conquest:block/milk_jug_single", "y": 180 }
+    }
+}

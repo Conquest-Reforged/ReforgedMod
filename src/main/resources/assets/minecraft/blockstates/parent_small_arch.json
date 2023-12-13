@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "direction=eastwest": { "model": "block/parent_small_arch", "y": 90 },
+        "direction=northsouth": { "model": "block/parent_small_arch" }
+    }
+}

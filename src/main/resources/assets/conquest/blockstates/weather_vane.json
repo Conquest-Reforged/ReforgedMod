@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "conquest:block/weather_vane_cross" },
+        "axis=z":   { "model": "conquest:block/weather_vane" },
+        "axis=x":   { "model": "conquest:block/weather_vane", "y": 90 }
+    }
+}

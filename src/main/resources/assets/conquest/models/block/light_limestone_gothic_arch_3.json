@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_gothic_arch_3.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/3_limestone/light_limestone_brick",
+        "keystones": "conquest:block/1_basic_refined/1_stone/3_limestone/light_limestone_arch/arch3",
+        "underside1": "conquest:block/1_basic_refined/1_stone/3_limestone/light_limestone_brick",
+        "underside2": "conquest:block/1_basic_refined/1_stone/3_limestone/light_limestone_brick",
+        "underside3": "conquest:block/1_basic_refined/1_stone/3_limestone/light_limestone_brick"
+    }
+}

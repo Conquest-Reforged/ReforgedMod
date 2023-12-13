@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "":   { "model": "block/parent_doric_base_fence_post" }
+    }
+}

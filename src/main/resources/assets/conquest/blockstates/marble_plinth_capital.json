@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "conquest:block/marble_plinth_capital_down_flat", "uvlock": true }
+    }
+}

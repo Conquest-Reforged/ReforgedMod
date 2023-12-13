@@ -1,0 +1,9 @@
+{	
+	"parent": "minecraft:block/lime_candle_one_candle_lit",
+	"textures": {
+		"particle": "block/candle_on_hand",
+		"holder": "block/candle_on_hand",
+		"candle": "block/candle",
+		"flame": "block/empty"
+	}
+}

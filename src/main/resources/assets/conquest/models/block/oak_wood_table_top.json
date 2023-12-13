@@ -1,0 +1,23 @@
+{
+"__comment": "Designed by Jugbot with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+"textures": {
+    "particle": "minecraft:block/crafting_table_top",
+    "texture": "conquest:block/4_furniture/3_wood/oak_wood_table_2",
+    "planks_oak": "minecraft:block/crafting_table_top"
+},
+"elements": [ 
+{
+    "__comment": "Top",
+    "from": [ 0, 13, 0 ],
+    "to": [ 16, 16, 16 ],
+    "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#planks_oak" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#planks_oak" },
+        "north": { "uv": [ 0, 0, 16, 3 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 0, 16, 3 ], "texture": "#texture" },
+        "west":  { "uv": [ 0, 0, 16, 3 ], "texture": "#texture" },
+        "east":  { "uv": [ 0, 0, 16, 3 ], "texture": "#texture" }
+    }
+}
+]
+}

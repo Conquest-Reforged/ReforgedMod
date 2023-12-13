@@ -1,0 +1,47 @@
+{
+    "variants": {
+        "type=bottom,east=false,north=false,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half" },
+
+        "type=bottom,east=false,north=true,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half_n" },
+        "type=bottom,east=true,north=false,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half_n", "y": 90, "uvlock": true },
+        "type=bottom,east=false,north=false,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half_n", "y": 180, "uvlock": true },
+        "type=bottom,east=false,north=false,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_n", "y": 270, "uvlock": true },
+
+        "type=bottom,east=true,north=true,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half_ne" },
+        "type=bottom,east=true,north=false,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half_ne", "y": 90, "uvlock": true },
+        "type=bottom,east=false,north=false,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_ne", "y": 180, "uvlock": true },
+        "type=bottom,east=false,north=true,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_ne", "y": 270, "uvlock": true },
+
+        "type=bottom,east=false,north=true,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half_ns" },
+        "type=bottom,east=true,north=false,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_ns_1", "y": 90, "uvlock": true },
+
+        "type=bottom,east=true,north=true,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_half_nse" },
+        "type=bottom,east=true,north=false,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_nse", "y": 90, "uvlock": true },
+        "type=bottom,east=false,north=true,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_nse", "y": 180, "uvlock": true },
+        "type=bottom,east=true,north=true,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_nse", "y": 270, "uvlock": true },
+
+        "type=bottom,east=true,north=true,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_half_nsew" },
+
+        "type=top,east=false,north=false,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper" },
+
+        "type=top,east=false,north=true,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper_n" },
+        "type=top,east=true,north=false,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper_n", "y": 90, "uvlock": true },
+        "type=top,east=false,north=false,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper_n", "y": 180, "uvlock": true },
+        "type=top,east=false,north=false,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_n", "y": 270, "uvlock": true },
+
+        "type=top,east=true,north=true,south=false,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper_ne" },
+        "type=top,east=true,north=false,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper_ne", "y": 90, "uvlock": true },
+        "type=top,east=false,north=false,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_ne", "y": 180, "uvlock": true },
+        "type=top,east=false,north=true,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_ne", "y": 270, "uvlock": true },
+
+        "type=top,east=false,north=true,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper_ns" },
+        "type=top,east=true,north=false,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_ns_1", "y": 90, "uvlock": true },
+
+        "type=top,east=true,north=true,south=true,west=false": { "model": "conquest:block/sandstone_plinth_1_slab_upper_nse" },
+        "type=top,east=true,north=false,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_nse", "y": 90, "uvlock": true },
+        "type=top,east=false,north=true,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_nse", "y": 180, "uvlock": true },
+        "type=top,east=true,north=true,south=false,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_nse", "y": 270, "uvlock": true },
+
+        "type=top,east=true,north=true,south=true,west=true": { "model": "conquest:block/sandstone_plinth_1_slab_upper_nsew" }
+    }
+}

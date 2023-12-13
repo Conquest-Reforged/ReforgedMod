@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "conquest:block/thick_diagonal_oak_branch_45_connector_1e",
+	"textures": {
+		"log": "conquest:block/9_organic/1_wood/beech_log",
+		"particle": "conquest:block/9_organic/1_wood/beech_log"
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "down=true,facing=east,up=false": {"model":"conquest:block/rack_of_halberds_no_stands", "y": 270},
+        "down=true,facing=west,up=false": {"model":"conquest:block/rack_of_halberds_no_stands", "y": 90},
+        "down=true,facing=south,up=false": {"model":"conquest:block/rack_of_halberds_no_stands"},
+        "down=true,facing=north,up=false": {"model":"conquest:block/rack_of_halberds_no_stands", "y": 180},
+
+        "down=true,facing=east,up=true": {"model":"conquest:block/rack_of_halberds_no_stands_middle", "y": 270},
+        "down=true,facing=west,up=true": {"model":"conquest:block/rack_of_halberds_no_stands_middle", "y": 90},
+        "down=true,facing=south,up=true": {"model":"conquest:block/rack_of_halberds_no_stands_middle"},
+        "down=true,facing=north,up=true": {"model":"conquest:block/rack_of_halberds_no_stands_middle", "y": 180},
+
+        "down=false,facing=east,up=false": {"model":"conquest:block/rack_of_halberds", "y": 270},
+        "down=false,facing=west,up=false": {"model":"conquest:block/rack_of_halberds", "y": 90},
+        "down=false,facing=south,up=false": {"model":"conquest:block/rack_of_halberds"},
+        "down=false,facing=north,up=false": {"model":"conquest:block/rack_of_halberds", "y": 180},
+
+        "down=false,facing=east,up=true": {"model":"conquest:block/rack_of_halberds", "y": 270},
+        "down=false,facing=west,up=true": {"model":"conquest:block/rack_of_halberds", "y": 90},
+        "down=false,facing=south,up=true": {"model":"conquest:block/rack_of_halberds"},
+        "down=false,facing=north,up=true": {"model":"conquest:block/rack_of_halberds", "y": 180}
+    }
+}

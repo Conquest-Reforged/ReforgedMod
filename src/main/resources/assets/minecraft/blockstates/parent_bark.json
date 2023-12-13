@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "block/parent_bark" },
+        "axis=z":   { "model": "block/parent_bark", "x": 90 },
+        "axis=x":   { "model": "block/parent_bark", "x": 90, "y": 90 }
+    }
+}

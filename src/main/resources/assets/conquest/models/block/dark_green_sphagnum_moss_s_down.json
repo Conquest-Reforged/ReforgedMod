@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/single",
+		"side": "conquest:block/9_organic/3_plants/dark_green_sphagnum_moss/single"
+	},
+	"elements": [
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 15.919],
+			"to": [16, 16, 15.95],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"}
+			}
+		}
+	]
+}

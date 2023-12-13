@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "layer=1":   { "model": "block/parent_doric_base_pillar_2" },
+        "layer=2":   { "model": "block/parent_doric_base_wall_post" },
+        "layer=3":   { "model": "block/parent_doric_base_pillar_6" }
+    }
+}

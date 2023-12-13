@@ -1,0 +1,25 @@
+{
+    "parent": "block/block",
+    "textures": {
+        "bottom": "block/dirt",
+        "top": "conquest:block/8_topography/5_dirt/diagonally_plowed_farmland",
+        "north": "conquest:block/8_topography/5_dirt/diagonally_plowed_farmland",
+        "east": "conquest:block/8_topography/5_dirt/diagonally_plowed_farmland",
+        "west": "conquest:block/8_topography/5_dirt/diagonally_plowed_farmland",
+        "south": "conquest:block/8_topography/5_dirt/diagonally_plowed_farmland",
+        "particle": "conquest:block/8_topography/5_dirt/diagonally_plowed_farmland"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top", "cullface": "up" },
+                "north": { "texture": "#north", "cullface": "north" },
+                "south": { "texture": "#south", "cullface": "south" },
+                "west":  { "texture": "#west", "cullface": "west" },
+                "east":  { "texture": "#east", "cullface": "east" }
+            }
+        }
+    ]
+}

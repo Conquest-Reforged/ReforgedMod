@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "facing=north,half=bottom,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 270, "x":180 },
+        "facing=south,half=bottom,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 90, "x":180 },
+        "facing=east,half=bottom,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "x":180 },
+        "facing=west,half=bottom,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 180, "x":180 },
+        "facing=north,half=top,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 270, "x":180 },
+        "facing=south,half=top,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 90, "x":180 },
+        "facing=east,half=top,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "x":180 },
+        "facing=west,half=top,open=false": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 180, "x":180 },
+        "facing=north,half=bottom,open=true": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 270 },
+        "facing=south,half=bottom,open=true": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 90 },
+        "facing=east,half=bottom,open=true": { "model": "conquest:block/horizontal_palm_wood_railing" },
+        "facing=west,half=bottom,open=true": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 180 },
+        "facing=north,half=top,open=true": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 270 },
+        "facing=south,half=top,open=true": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 90 },
+        "facing=east,half=top,open=true": { "model": "conquest:block/horizontal_palm_wood_railing" },
+        "facing=west,half=top,open=true": { "model": "conquest:block/horizontal_palm_wood_railing", "y": 180 }
+    }
+}

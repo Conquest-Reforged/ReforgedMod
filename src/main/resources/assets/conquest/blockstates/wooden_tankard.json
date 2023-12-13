@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "tankards=1,facing=north": [{ "model": "conquest:block/wooden_tankard", "y": 270 }, { "model": "conquest:block/wooden_tankard_filled", "y": 270 }],
+    "tankards=1,facing=east": [{ "model": "conquest:block/wooden_tankard" }, { "model": "conquest:block/wooden_tankard_filled" }],
+    "tankards=1,facing=south": [{ "model": "conquest:block/wooden_tankard", "y": 90 }, { "model": "conquest:block/wooden_tankard_filled", "y": 90 }],
+    "tankards=1,facing=west": [{ "model": "conquest:block/wooden_tankard", "y": 180 }, { "model": "conquest:block/wooden_tankard_filled", "y": 180 }],
+
+    "tankards=2,facing=north": { "model": "conquest:block/wooden_tankards", "y": 270 },
+    "tankards=2,facing=east": { "model": "conquest:block/wooden_tankards" },
+    "tankards=2,facing=south": { "model": "conquest:block/wooden_tankards", "y": 90 },
+    "tankards=2,facing=west": { "model": "conquest:block/wooden_tankards", "y": 180 }
+  }
+}

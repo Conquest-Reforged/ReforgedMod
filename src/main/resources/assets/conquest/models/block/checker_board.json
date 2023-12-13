@@ -1,0 +1,6 @@
+{
+    "parent": "block/pressure_plate_up",
+    "textures": {
+        "texture": "conquest:block/3_decoration/3_wood/checker_board"
+    }
+}

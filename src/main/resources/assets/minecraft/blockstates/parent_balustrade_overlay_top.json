@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y": { "model": "block/parent_balustrade_base_overlay_top", "uvlock": true },
+        "axis=z": { "model": "block/parent_balustrade_overlay_top", "uvlock": true },
+        "axis=x": { "model": "block/parent_balustrade_overlay_top", "y": 90, "uvlock": true }
+    }
+}

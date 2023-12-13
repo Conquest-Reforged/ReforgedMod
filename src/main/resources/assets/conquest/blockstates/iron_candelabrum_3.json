@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "facing=east,light=0": { "model": "conquest:block/iron_candelabra_3", "y": 90 },
+        "facing=south,light=0": { "model": "conquest:block/iron_candelabra_3", "y": 180 },
+        "facing=west,light=0": { "model": "conquest:block/iron_candelabra_3", "y": 270 },
+        "facing=north,light=0": { "model": "conquest:block/iron_candelabra_3" },
+
+        "facing=east,light=1": { "model": "conquest:block/iron_candelabra_lit_3", "y": 90 },
+        "facing=south,light=1": { "model": "conquest:block/iron_candelabra_lit_3", "y": 180 },
+        "facing=west,light=1": { "model": "conquest:block/iron_candelabra_lit_3", "y": 270 },
+        "facing=north,light=1": { "model": "conquest:block/iron_candelabra_lit_3" },
+
+        "facing=east,light=2": { "model": "conquest:block/iron_candelabra_lit_3", "y": 90 },
+        "facing=south,light=2": { "model": "conquest:block/iron_candelabra_lit_3", "y": 180 },
+        "facing=west,light=2": { "model": "conquest:block/iron_candelabra_lit_3", "y": 270 },
+        "facing=north,light=2": { "model": "conquest:block/iron_candelabra_lit_3" },
+
+        "facing=east,light=3": { "model": "conquest:block/iron_candelabra_lit_3", "y": 90 },
+        "facing=south,light=3": { "model": "conquest:block/iron_candelabra_lit_3", "y": 180 },
+        "facing=west,light=3": { "model": "conquest:block/iron_candelabra_lit_3", "y": 270 },
+        "facing=north,light=3": { "model": "conquest:block/iron_candelabra_lit_3" }
+    }
+}

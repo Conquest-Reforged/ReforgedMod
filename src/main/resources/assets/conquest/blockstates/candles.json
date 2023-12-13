@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "facing=east,light=0": [{ "model": "conquest:block/candles1_unlit" }, { "model": "conquest:block/candles2_unlit" }, { "model": "conquest:block/candles3_unlit" }],
+        "facing=south,light=0": [{ "model": "conquest:block/candles1_unlit", "y": 90 }, { "model": "conquest:block/candles2_unlit", "y": 90 }, { "model": "conquest:block/candles3_unlit", "y": 90 }],
+        "facing=west,light=0": [{ "model": "conquest:block/candles1_unlit", "y": 180 }, { "model": "conquest:block/candles2_unlit", "y": 180 }, { "model": "conquest:block/candles3_unlit", "y": 180 }],
+        "facing=north,light=0": [{ "model": "conquest:block/candles1_unlit", "y": 270 }, { "model": "conquest:block/candles2_unlit", "y": 270 }, { "model": "conquest:block/candles3_unlit", "y": 270 }],
+
+        "facing=east,light=1": [{ "model": "conquest:block/candles1" }, { "model": "conquest:block/candles2" }, { "model": "conquest:block/candles3" }],
+        "facing=south,light=1": [{ "model": "conquest:block/candles1", "y": 90 }, { "model": "conquest:block/candles2", "y": 90 }, { "model": "conquest:block/candles3", "y": 90 }],
+        "facing=west,light=1": [{ "model": "conquest:block/candles1", "y": 180 }, { "model": "conquest:block/candles2", "y": 180 }, { "model": "conquest:block/candles3", "y": 180 }],
+        "facing=north,light=1": [{ "model": "conquest:block/candles1", "y": 270 }, { "model": "conquest:block/candles2", "y": 270 }, { "model": "conquest:block/candles3", "y": 270 }],
+
+        "facing=east,light=2": [{ "model": "conquest:block/candles1" }, { "model": "conquest:block/candles2" }, { "model": "conquest:block/candles3" }],
+        "facing=south,light=2": [{ "model": "conquest:block/candles1", "y": 90 }, { "model": "conquest:block/candles2", "y": 90 }, { "model": "conquest:block/candles3", "y": 90 }],
+        "facing=west,light=2": [{ "model": "conquest:block/candles1", "y": 180 }, { "model": "conquest:block/candles2", "y": 180 }, { "model": "conquest:block/candles3", "y": 180 }],
+        "facing=north,light=2": [{ "model": "conquest:block/candles1", "y": 270 }, { "model": "conquest:block/candles2", "y": 270 }, { "model": "conquest:block/candles3", "y": 270 }],
+
+        "facing=east,light=3": [{ "model": "conquest:block/candles1" }, { "model": "conquest:block/candles2" }, { "model": "conquest:block/candles3" }],
+        "facing=south,light=3": [{ "model": "conquest:block/candles1", "y": 90 }, { "model": "conquest:block/candles2", "y": 90 }, { "model": "conquest:block/candles3", "y": 90 }],
+        "facing=west,light=3": [{ "model": "conquest:block/candles1", "y": 180 }, { "model": "conquest:block/candles2", "y": 180 }, { "model": "conquest:block/candles3", "y": 180 }],
+        "facing=north,light=3": [{ "model": "conquest:block/candles1", "y": 270 }, { "model": "conquest:block/candles2", "y": 270 }, { "model": "conquest:block/candles3", "y": 270 }]
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_cornice_stairs_normal",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_cornice",
+		"bottom": "block/quartz_block_top",
+		"top": "block/quartz_block_top",
+		"side": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_cornice"
+	}
+}

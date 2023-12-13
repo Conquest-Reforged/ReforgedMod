@@ -1,0 +1,6 @@
+{
+    "parent": "conquest:block/cross_1",
+    "textures": {
+        "cross": "conquest:block/9_organic/3_plants/wild_daisy"
+    }
+}

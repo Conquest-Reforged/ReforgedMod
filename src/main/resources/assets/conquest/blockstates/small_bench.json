@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "shape=one,facing=south": { "model": "conquest:block/small_bench" },
+        "shape=one,facing=west": { "model": "conquest:block/small_bench", "y": 90 },
+        "shape=one,facing=north": { "model": "conquest:block/small_bench", "y": 180 },
+        "shape=one,facing=east": { "model": "conquest:block/small_bench", "y": 270 },
+
+        "shape=edge_l,facing=north": { "model": "conquest:block/small_bench_half" },
+        "shape=edge_l,facing=east": { "model": "conquest:block/small_bench_half", "y": 90 },
+        "shape=edge_l,facing=south": { "model": "conquest:block/small_bench_half", "y": 180 },
+        "shape=edge_l,facing=west": { "model": "conquest:block/small_bench_half", "y": 270 },
+
+        "shape=edge_r,facing=north": { "model": "conquest:block/small_bench_half", "y": 180 },
+        "shape=edge_r,facing=east": { "model": "conquest:block/small_bench_half", "y": 270 },
+        "shape=edge_r,facing=south": { "model": "conquest:block/small_bench_half" },
+        "shape=edge_r,facing=west": { "model": "conquest:block/small_bench_half", "y": 90 },
+
+        "shape=middle,facing=north": { "model": "conquest:block/small_bench_middle" },
+        "shape=middle,facing=east": { "model": "conquest:block/small_bench_middle", "y": 90 },
+        "shape=middle,facing=south": { "model": "conquest:block/small_bench_middle", "y": 180 },
+        "shape=middle,facing=west": { "model": "conquest:block/small_bench_middle", "y": 270 }
+    }
+}

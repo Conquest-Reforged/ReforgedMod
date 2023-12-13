@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"side": "block/acacia_planks",
+		"particle": "block/acacia_planks",
+		"single": "block/acacia_planks"
+	},
+	"elements": [
+		{
+			"name": "PlaneY3",
+			"from": [0, 0, 0],
+			"to": [16, 16, 0.031],
+			"shade": false,
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#single"}
+			}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/iron_artillery_block_vertical_slab_ns" },
+        "facing=west": { "model": "conquest:block/iron_artillery_block_vertical_slab_ew" },
+        "facing=north": { "model": "conquest:block/iron_artillery_block_vertical_slab_ns", "y": 180 },
+        "facing=east": { "model": "conquest:block/iron_artillery_block_vertical_slab_ew", "y": 180 }
+    }
+}

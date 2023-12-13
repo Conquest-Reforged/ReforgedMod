@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom,facing=south": { "model": "block/parent_arch_twometer", "y": 180, "x":180, "uvlock": true },
+        "type=bottom,facing=west": { "model": "block/parent_arch_twometer", "y": 270, "x":180, "uvlock": true },
+        "type=bottom,facing=north": { "model": "block/parent_arch_twometer", "x":180, "uvlock": true },
+        "type=bottom,facing=east": { "model": "block/parent_arch_twometer", "y": 90, "x":180, "uvlock": true },
+
+        "type=top,facing=south": { "model": "block/parent_arch_twometer", "uvlock": true },
+        "type=top,facing=west": { "model": "block/parent_arch_twometer", "y": 90, "uvlock": true },
+        "type=top,facing=north": { "model": "block/parent_arch_twometer", "y": 180, "uvlock": true },
+        "type=top,facing=east": { "model": "block/parent_arch_twometer", "y": 270, "uvlock": true }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "conquest:block/template_plinth_capital_down_flat",
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/1_stone/5_sandstone/dark_sandstone_plinth",
+        "top": "conquest:block/1_basic_refined/1_stone/5_sandstone/large_tan_sandstone_block_topbottom",
+        "bottom": "conquest:block/1_basic_refined/1_stone/5_sandstone/large_tan_sandstone_block_topbottom",
+        "side": "conquest:block/2_advanced_refined/1_stone/5_sandstone/dark_sandstone_plinth"
+    }
+}

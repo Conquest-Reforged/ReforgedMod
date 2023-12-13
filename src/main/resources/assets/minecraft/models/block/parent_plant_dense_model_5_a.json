@@ -1,0 +1,6 @@
+{
+    "parent": "block/plant_dense_model_5_a",
+    "textures": {
+        "texture": "block/acacia_planks"
+    }
+}

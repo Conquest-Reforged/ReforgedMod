@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "conquest:block/9_organic/2_leaves/bright_broad_leaves"
+    }
+}

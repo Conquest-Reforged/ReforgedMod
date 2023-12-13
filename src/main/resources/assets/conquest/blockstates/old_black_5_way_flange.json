@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=south": { "model": "conquest:block/old_black_5_way_flange", "y": 180 },
+        "facing=west": { "model": "conquest:block/old_black_5_way_flange", "y": 270 },
+        "facing=north": { "model": "conquest:block/old_black_5_way_flange" },
+        "facing=east": { "model": "conquest:block/old_black_5_way_flange", "y": 90 },
+        "facing=down": { "model": "conquest:block/old_black_5_way_flange", "x": 90 },
+        "facing=up": { "model": "conquest:block/old_black_5_way_flange", "x": 270 }
+    }
+}

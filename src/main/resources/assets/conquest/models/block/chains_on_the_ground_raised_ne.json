@@ -1,0 +1,6 @@
+{
+    "parent": "block/template_rail_raised_ne",
+    "textures": {
+        "rail": "conquest:block/3_decoration/2_metal/iron_chains_on_the_ground"
+    }
+}

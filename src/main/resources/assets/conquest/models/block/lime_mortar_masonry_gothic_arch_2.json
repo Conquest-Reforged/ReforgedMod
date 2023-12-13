@@ -1,0 +1,12 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_gothic_arch_2.obj",
+    "ambientToFullbright": true,
+    "flip-v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/3_limestone/lime_mortar_masonry",
+        "keystones": "conquest:block/1_basic_refined/1_stone/3_limestone/lime_mortar_masonry_arch/arch2",
+        "underside1": "conquest:block/1_basic_refined/1_stone/3_limestone/lime_mortar_masonry",
+        "underside2": "conquest:block/1_basic_refined/1_stone/3_limestone/lime_mortar_masonry"
+    }
+}

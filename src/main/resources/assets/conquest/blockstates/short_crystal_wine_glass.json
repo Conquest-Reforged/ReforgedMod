@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "conquest:block/short_crystal_wine_glass" },
+        "bites=1": { "model": "conquest:block/short_crystal_wine_glass" },
+        "bites=2": { "model": "conquest:block/short_crystal_wine_glass" },
+        "bites=3": { "model": "conquest:block/short_crystal_wine_glass" },
+        "bites=4": { "model": "conquest:block/short_crystal_wine_glass" },
+        "bites=5": { "model": "conquest:block/short_crystal_wine_glass" },
+        "bites=6": { "model": "conquest:block/short_crystal_wine_glass_empty" }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+      "facing=south": { "model": "conquest:block/iron_cage_bars_vertical_corner", "y": 180 },
+      "facing=west": { "model": "conquest:block/iron_cage_bars_vertical_corner", "y": 270 },
+      "facing=north": { "model": "conquest:block/iron_cage_bars_vertical_corner" },
+      "facing=east": { "model": "conquest:block/iron_cage_bars_vertical_corner", "y": 90 }
+    }
+}

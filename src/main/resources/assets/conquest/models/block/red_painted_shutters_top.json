@@ -1,0 +1,5 @@
+{   "parent": "block/template_trapdoor_top",
+    "textures": {
+        "texture": "conquest:block/2_advanced_refined/7_wood/1_painted/red_painted_shutters"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "variants": {
+        "toggle=1,type=bottom,facing=south": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45" },
+        "toggle=1,type=bottom,facing=west": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45", "y": 90 },
+        "toggle=1,type=bottom,facing=north": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45", "y": 180 },
+        "toggle=1,type=bottom,facing=east": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45", "y": 270 },
+
+        "toggle=1,type=top,facing=south": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top" },
+        "toggle=1,type=top,facing=west": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top", "y": 90 },
+        "toggle=1,type=top,facing=north": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top", "y": 180 },
+        "toggle=1,type=top,facing=east": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top", "y": 270 },
+
+        "toggle=2,type=bottom,facing=south": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_stem" },
+        "toggle=2,type=bottom,facing=west": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_stem", "y": 90 },
+        "toggle=2,type=bottom,facing=north": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_stem", "y": 180 },
+        "toggle=2,type=bottom,facing=east": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_stem", "y": 270 },
+
+        "toggle=2,type=top,facing=south": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top_stem" },
+        "toggle=2,type=top,facing=west": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top_stem", "y": 90 },
+        "toggle=2,type=top,facing=north": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top_stem", "y": 180 },
+        "toggle=2,type=top,facing=east": { "model": "conquest:block/thick_diagonal_orange_pine_branch_22_45_top_stem", "y": 270 }
+
+    }
+}

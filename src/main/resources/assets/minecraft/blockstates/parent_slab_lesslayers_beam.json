@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layer=1,type=bottom": { "model": "block/parent_slab_bottom_1_beam" },
+        "layer=1,type=top": { "model": "block/parent_slab_top_1_beam" },
+        "layer=2,type=bottom": { "model": "block/parent_slab_bottom_2_beam" },
+        "layer=2,type=top": { "model": "block/parent_slab_top_2_beam" },
+        "layer=3,type=bottom": { "model": "block/parent_slab_bottom_4_beam" },
+        "layer=3,type=top": { "model": "block/parent_slab_top_4_beam" },
+        "layer=4,type=bottom": { "model": "block/parent_slab_bottom_6_beam" },
+        "layer=4,type=top": { "model": "block/parent_slab_top_6_beam" }
+    }
+}

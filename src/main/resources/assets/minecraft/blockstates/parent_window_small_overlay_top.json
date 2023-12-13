@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "up=false,down=false": { "model": "block/parent_window_small_updown_overlay_top", "uvlock": true },
+        "up=true,down=false": { "model": "block/parent_window_small_down_overlay_top", "uvlock": true },
+        "up=false,down=true": { "model": "block/parent_window_small_up_overlay_top", "uvlock": true },
+        "up=true,down=true": { "model": "block/parent_window_small_overlay_top", "y": 270, "uvlock": true }
+    }
+}

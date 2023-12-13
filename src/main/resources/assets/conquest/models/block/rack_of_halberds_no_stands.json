@@ -1,0 +1,17 @@
+{
+"textures": {
+    "particle": "conquest:block/7_tools/1_weapons/rack_of_halberds_1",
+    "rack": "conquest:block/7_tools/1_weapons/rack_of_halberds_1"
+},
+"elements": [
+    {
+        "__comment": "PlaneZ7",
+        "from": [ 0, 0, 1 ],
+        "to": [ 16, 16, 1.001 ],
+        "faces": {
+            "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#rack" },
+            "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#rack" }
+        }
+    }
+]
+}

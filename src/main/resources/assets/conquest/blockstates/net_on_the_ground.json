@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "conquest:block/net_on_the_ground" }
+  }
+}

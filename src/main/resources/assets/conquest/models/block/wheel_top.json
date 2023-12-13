@@ -1,0 +1,6 @@
+{
+    "parent": "block/templatetrapdoor_top",
+    "textures": {
+        "texture": "conquest:block/7_tools/3_utility/wheel"
+    }
+}

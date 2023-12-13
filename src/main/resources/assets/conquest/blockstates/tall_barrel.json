@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "half=lower,open=false": {
+            "model": "conquest:block/tall_barrel_lower"
+        },
+        "half=lower,open=true": {
+            "model": "conquest:block/tall_barrel_lower"
+        },
+        "half=upper,open=false": {
+            "model": "conquest:block/empty_tall_barrel_upper"
+        },
+        "half=upper,open=true": {
+            "model": "conquest:block/tall_barrel_upper"
+        }
+    }
+}

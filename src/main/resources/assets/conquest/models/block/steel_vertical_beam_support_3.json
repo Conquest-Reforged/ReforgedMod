@@ -1,0 +1,41 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "conquest:block/2_advanced_refined/2_metal/steel_beam",
+		"particle": "conquest:block/2_advanced_refined/2_metal/steel_beam"
+	},
+	"elements": [
+		{
+			"from": [0, 12, 5],
+			"to": [16, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 20, 12.75]},
+			"faces": {
+				"north": {"uv": [6, 0, 10, 16], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [10, 0, 14, 6], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [6, 0, 10, 16], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [10, 0, 14, 6], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [0, 0, 6, 16], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 16], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 0, 5],
+			"to": [4, 12, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12.75]},
+			"faces": {
+				"north": {"uv": [6, 4, 10, 16], "texture": "#0"},
+				"east": {"uv": [0, 4, 6, 16], "texture": "#0"},
+				"south": {"uv": [6, 4, 10, 16], "texture": "#0"},
+				"west": {"uv": [0, 4, 6, 16], "texture": "#0"},
+				"down": {"uv": [10, 0, 14, 6], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "vertical expand",
+			"origin": [8, 20, -3.25],
+			"children": [0, 1]
+		}
+	]
+}

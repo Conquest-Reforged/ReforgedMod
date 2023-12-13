@@ -1,0 +1,52 @@
+{
+    "variants": {
+        "layers=1": [
+            { "model": "conquest:block/wild_shrub_1" },
+            { "model": "conquest:block/wild_shrub_1", "y": 90 },
+            { "model": "conquest:block/wild_shrub_1", "y": 180 },
+            { "model": "conquest:block/wild_shrub_1", "y": 270 }
+        ],
+        "layers=2": [
+            { "model": "conquest:block/wild_shrub_2" },
+            { "model": "conquest:block/wild_shrub_2", "y": 90 },
+            { "model": "conquest:block/wild_shrub_2", "y": 180 },
+            { "model": "conquest:block/wild_shrub_2", "y": 270 }
+        ],
+        "layers=3": [
+            { "model": "conquest:block/wild_shrub_3" },
+            { "model": "conquest:block/wild_shrub_3", "y": 90 },
+            { "model": "conquest:block/wild_shrub_3", "y": 180 },
+            { "model": "conquest:block/wild_shrub_3", "y": 270 }
+        ],
+        "layers=4": [
+            { "model": "conquest:block/wild_shrub_4" },
+            { "model": "conquest:block/wild_shrub_4", "y": 90 },
+            { "model": "conquest:block/wild_shrub_4", "y": 180 },
+            { "model": "conquest:block/wild_shrub_4", "y": 270 }
+        ],
+        "layers=5": [
+            { "model": "conquest:block/wild_shrub_5" },
+            { "model": "conquest:block/wild_shrub_5", "y": 90 },
+            { "model": "conquest:block/wild_shrub_5", "y": 180 },
+            { "model": "conquest:block/wild_shrub_5", "y": 270 }
+        ],
+        "layers=6": [
+            { "model": "conquest:block/wild_shrub_6" },
+            { "model": "conquest:block/wild_shrub_6", "y": 90 },
+            { "model": "conquest:block/wild_shrub_6", "y": 180 },
+            { "model": "conquest:block/wild_shrub_6", "y": 270 }
+        ],
+        "layers=7": [
+            { "model": "conquest:block/wild_shrub_7" },
+            { "model": "conquest:block/wild_shrub_7", "y": 90 },
+            { "model": "conquest:block/wild_shrub_7", "y": 180 },
+            { "model": "conquest:block/wild_shrub_7", "y": 270 }
+        ],
+        "layers=8": [
+            { "model": "conquest:block/wild_shrub_8" },
+            { "model": "conquest:block/wild_shrub_8", "y": 90 },
+            { "model": "conquest:block/wild_shrub_8", "y": 180 },
+            { "model": "conquest:block/wild_shrub_8", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"parent": "conquest:block/template_corinthian_capital_ns_1",
+	"textures": {
+		"3": "conquest:block/2_advanced_refined/1_stone/3_marble/travertine_corinthian_capital_frond",
+		"side": "conquest:block/2_advanced_refined/1_stone/3_marble/travertine_corinthian_capital",
+		"particle": "conquest:block/2_advanced_refined/1_stone/3_marble/travertine_corinthian_capital",
+		"up": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab_topbottom",
+		"down": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab_topbottom"
+	}
+}

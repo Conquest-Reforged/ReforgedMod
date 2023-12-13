@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layers=1":  { "model": "conquest:block/taiga_grass_bottom_height2" },
+        "layers=2":  { "model": "conquest:block/taiga_grass_bottom_height4" },
+        "layers=3":  { "model": "conquest:block/taiga_grass_bottom_height6" },
+        "layers=4":  { "model": "conquest:block/taiga_grass_bottom_height8" },
+        "layers=5":  { "model": "conquest:block/taiga_grass_bottom_height10" },
+        "layers=6":  { "model": "conquest:block/taiga_grass_bottom_height12" },
+        "layers=7":  { "model": "conquest:block/taiga_grass_bottom_height14" },
+        "layers=8":  { "model": "conquest:block/taiga_grass_height16" }
+    }
+}

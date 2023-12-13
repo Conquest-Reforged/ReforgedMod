@@ -1,0 +1,186 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "conquest:block/3_decoration/2_metal/oil_lamp",
+		"1": "conquest:block/3_decoration/2_metal/hanging_oil_lamp/hanging_oil_lamp_wallholder",
+		"2": "conquest:block/3_decoration/2_metal/candle_model",
+		"particle": "conquest:block/3_decoration/2_metal/hanging_oil_lamp/hanging_oil_lamp_wallholder",
+		"torch": "conquest:block/3_decoration/2_metal/hanging_oil_lamp/mounted_candle_holder"
+	},
+	"elements": [
+		{
+			"name": "flame",
+			"from": [8.06324, 5.4, 7.70194],
+			"to": [8.06324, 7.4, 8.70194],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.06935, 3.89662, 8.19494]},
+			"faces": {
+				"east": {"uv": [4.5, 2, 6.5, 6], "texture": "#2"},
+				"west": {"uv": [6.5, 2, 4.5, 6], "texture": "#2"}
+			}
+		},
+		{
+			"name": "flame",
+			"from": [8.06324, 5.4, 7.70194],
+			"to": [8.06324, 7.4, 8.70194],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.06935, 3.89662, 8.19494]},
+			"faces": {
+				"east": {"uv": [4.5, 2, 6.5, 6], "texture": "#2"},
+				"west": {"uv": [6.5, 2, 4.5, 6], "texture": "#2"}
+			}
+		},
+		{
+			"name": "wax",
+			"from": [7.27546, 3.4, 7.38795],
+			"to": [8.77546, 5.4, 8.88795],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.06935, 3.89662, 8.19494]},
+			"faces": {
+				"north": {"uv": [6, 12, 8, 16], "texture": "#0"},
+				"east": {"uv": [6, 12, 8, 16], "texture": "#0"},
+				"south": {"uv": [6, 12, 8, 16], "texture": "#0"},
+				"west": {"uv": [6, 12, 8, 16], "texture": "#0"},
+				"up": {"uv": [6, 12, 8, 14], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [6.30697, 10.72569, 6.4047],
+			"to": [9.74263, 11.22569, 9.6991],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.0248, 10.97569, 8.0519]},
+			"faces": {
+				"north": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"east": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"south": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"west": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"up": {"uv": [1.5, 2.5, 5, 6], "texture": "#torch"},
+				"down": {"uv": [1.5, 2.5, 5, 6], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.8776, 3.23438, 5.82646],
+			"to": [10.172, 3.76563, 10.26212],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.3776, -3.70312, 8.33407]},
+			"faces": {
+				"north": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"east": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"south": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"west": {"uv": [0, 8, 6.436, 8.5], "texture": "#torch"},
+				"up": {"uv": [0, 1, 6.5, 7.5], "rotation": 90, "texture": "#torch"},
+				"down": {"uv": [0, 9.5, 6.294, 15.936], "rotation": 90, "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.8776, 9.20313, 5.82646],
+			"to": [10.172, 9.73438, 10.26212],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.3776, 2.26563, 8.33407]},
+			"faces": {
+				"north": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"east": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"south": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"west": {"uv": [0, 7, 6.436, 7.5], "texture": "#torch"},
+				"up": {"uv": [0, 1, 6.5, 7.5], "rotation": 90, "texture": "#torch"},
+				"down": {"uv": [0, 9.5, 6.294, 15.936], "rotation": 90, "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [6.30697, 9.69444, 6.4047],
+			"to": [9.74263, 10.19444, 9.6991],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.0248, 9.94444, 8.0519]},
+			"faces": {
+				"north": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"east": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"south": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"west": {"uv": [2.5, 8, 5.936, 8.5], "texture": "#torch"},
+				"up": {"uv": [1, 2, 5.5, 6.5], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [7.1977, 3.75, 6.04749],
+			"to": [8.85191, 9.625, 10.04109],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.0248, 8.25, 8.04429]},
+			"faces": {
+				"north": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"},
+				"south": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [7.1977, 3.75, 6.04749],
+			"to": [8.85191, 9.625, 10.04109],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.0248, 8.25, 8.04429]},
+			"faces": {
+				"north": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"},
+				"south": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [6.028, 3.75, 7.21719],
+			"to": [10.0216, 9.625, 8.8714],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.0248, 8.25, 8.04429]},
+			"faces": {
+				"east": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"},
+				"west": {"uv": [6.5, 0, 9.5, 6], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [6.028, 3.75, 7.21719],
+			"to": [10.0216, 9.625, 8.8714],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.0248, 8.25, 8.04429]},
+			"faces": {
+				"east": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"},
+				"west": {"uv": [6.5, 10, 9.5, 16], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [8, 0, 5.044],
+			"to": [8, 16, 10.956],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [10, 0, 16, 16], "texture": "#torch"},
+				"west": {"uv": [10, 0, 16, 16], "texture": "#torch"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.12212, 0, 8],
+			"to": [10.87788, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8.14063, 8, 8]},
+			"faces": {
+				"north": {"uv": [10, 0, 16, 16], "texture": "#torch"},
+				"south": {"uv": [10, 0, 16, 16], "texture": "#torch"}
+			}
+		},
+		{
+			"from": [8, 0, 0],
+			"to": [8, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 16], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [0, 1, 2,
+		{
+			"name": "hanging_oil_lamp",
+			"origin": [8, 8, 8],
+			"children": [3, 4, 5, 6, 7, 8, 9, 10]
+		},
+		{
+			"name": "hanging_oil_lamp_wall",
+			"origin": [8, 8, 8],
+			"children": [11, 12, 13]
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+    "variants": {
+        "layers=1": [
+            {"model":"conquest:block/purple_wolfs_bane_1_a"},
+            {"model":"conquest:block/purple_wolfs_bane_1_b"},
+            {"model":"conquest:block/purple_wolfs_bane_1_c"}
+        ],
+        "layers=2": [
+            {"model":"conquest:block/purple_wolfs_bane_2_a"},
+            {"model":"conquest:block/purple_wolfs_bane_2_b"},
+            {"model":"conquest:block/purple_wolfs_bane_2_c"}
+        ],
+        "layers=3": [
+            {"model":"conquest:block/purple_wolfs_bane_3_a"},
+            {"model":"conquest:block/purple_wolfs_bane_3_b"},
+            {"model":"conquest:block/purple_wolfs_bane_3_c"}
+        ],
+        "layers=4": [
+            {"model":"conquest:block/purple_wolfs_bane_4_a"},
+            {"model":"conquest:block/purple_wolfs_bane_4_b"},
+            {"model":"conquest:block/purple_wolfs_bane_4_c"}
+        ],
+        "layers=5": [
+            {"model":"conquest:block/purple_wolfs_bane_5_a"},
+            {"model":"conquest:block/purple_wolfs_bane_5_b"},
+            {"model":"conquest:block/purple_wolfs_bane_5_c"}
+        ],
+        "layers=6": [
+            {"model":"conquest:block/purple_wolfs_bane_6_a"},
+            {"model":"conquest:block/purple_wolfs_bane_6_b"},
+            {"model":"conquest:block/purple_wolfs_bane_6_c"}
+        ],
+        "layers=7": [
+            {"model":"conquest:block/purple_wolfs_bane_7_a"},
+            {"model":"conquest:block/purple_wolfs_bane_7_b"},
+            {"model":"conquest:block/purple_wolfs_bane_7_c"}
+        ],
+        "layers=8": [
+            {"model":"conquest:block/purple_wolfs_bane_8_a"},
+            {"model":"conquest:block/purple_wolfs_bane_8_b"},
+            {"model":"conquest:block/purple_wolfs_bane_8_c"}
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "conquest:block/oak_branch_tip_2",
+	"textures": {
+		"log": "minecraft:block/spruce_log",
+		"branch7": "conquest:block/9_organic/1_wood/spruce_log_branches_7",
+		"branch8": "conquest:block/9_organic/1_wood/spruce_log_branches_8",
+		"particle": "minecraft:block/spruce_log"
+	}
+}

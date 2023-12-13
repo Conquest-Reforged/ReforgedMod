@@ -1,0 +1,22 @@
+{
+	"textures": {
+		"texture": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall",
+		"top": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall",
+		"bottom": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall",
+		"particle": "conquest:block/1_basic_refined/3_wood/asian_acacia_wood_wall"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 2, 0, 2 ],
+			"to": [ 14, 16, 14 ],
+			"faces": {
+				"down": { "uv": [ 2, 2, 14, 14 ], "texture": "#bottom", "cullface": "down" },
+				"up": { "uv": [ 2, 2, 14, 14 ], "texture": "#top", "cullface": "up" },
+				"north": { "uv": [ 2, 0, 14, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 2, 0, 14, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 2, 0, 14, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 2, 0, 14, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

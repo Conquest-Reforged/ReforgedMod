@@ -1,0 +1,8 @@
+{
+	"parent": "block/blue_candle_three_candles_lit",
+	"textures": {
+		"particle": "block/blue_candle",
+		"candle": "block/blue_candle",
+		"flame": "block/blue_candle_off"
+	}
+}

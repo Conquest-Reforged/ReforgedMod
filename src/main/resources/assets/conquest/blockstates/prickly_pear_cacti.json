@@ -1,0 +1,331 @@
+{
+    "variants": {
+        "layers=1,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_1_c"}
+        ],
+        "layers=1,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_1_c"}
+        ],
+        "layers=1,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_1_c"}
+        ],
+        "layers=1,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_1_c"}
+        ],
+        "layers=1,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_c"}
+        ],
+        "layers=1,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_c"}
+        ],
+        "layers=1,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_1_c"}
+        ],
+        "layers=1,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_1_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_1_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_1_c"}
+        ],
+
+        "layers=2,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_2_c"}
+        ],
+        "layers=2,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_2_c"}
+        ],
+        "layers=2,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_2_c"}
+        ],
+        "layers=2,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_2_c"}
+        ],
+        "layers=2,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_c"}
+        ],
+        "layers=2,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_c"}
+        ],
+        "layers=2,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_2_c"}
+        ],
+        "layers=2,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_2_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_2_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_2_c"}
+        ],
+
+        "layers=3,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_3_c"}
+        ],
+        "layers=3,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_3_c"}
+        ],
+        "layers=3,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_3_c"}
+        ],
+        "layers=3,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_3_c"}
+        ],
+        "layers=3,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_c"}
+        ],
+        "layers=3,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_c"}
+        ],
+        "layers=3,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_3_c"}
+        ],
+        "layers=3,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_3_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_3_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_3_c"}
+        ],
+
+        "layers=4,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_4_c"}
+        ],
+        "layers=4,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_4_c"}
+        ],
+        "layers=4,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_4_c"}
+        ],
+        "layers=4,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_4_c"}
+        ],
+        "layers=4,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_c"}
+        ],
+        "layers=4,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_c"}
+        ],
+        "layers=4,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_4_c"}
+        ],
+        "layers=4,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_4_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_4_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_4_c"}
+        ],
+
+        "layers=5,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_5_c"}
+        ],
+        "layers=5,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_5_c"}
+        ],
+        "layers=5,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_5_c"}
+        ],
+        "layers=5,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_5_c"}
+        ],
+        "layers=5,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_c"}
+        ],
+        "layers=5,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_c"}
+        ],
+        "layers=5,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_5_c"}
+        ],
+        "layers=5,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_5_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_5_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_5_c"}
+        ],
+
+        "layers=6,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_6_c"}
+        ],
+        "layers=6,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_6_c"}
+        ],
+        "layers=6,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_6_c"}
+        ],
+        "layers=6,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_6_c"}
+        ],
+        "layers=6,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_c"}
+        ],
+        "layers=6,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_c"}
+        ],
+        "layers=6,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_6_c"}
+        ],
+        "layers=6,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_6_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_6_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_6_c"}
+        ],
+
+        "layers=7,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_7_c"}
+        ],
+        "layers=7,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_7_c"}
+        ],
+        "layers=7,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_7_c"}
+        ],
+        "layers=7,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_7_c"}
+        ],
+        "layers=7,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_c"}
+        ],
+        "layers=7,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_c"}
+        ],
+        "layers=7,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_7_c"}
+        ],
+        "layers=7,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_7_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_7_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_7_c"}
+        ],
+
+        "layers=8,age=0": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_8_c"}
+        ],
+        "layers=8,age=1": [
+            {"model":"conquest:block/prickly_pear_cacti_baby_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_baby_8_c"}
+        ],
+        "layers=8,age=2": [
+            {"model":"conquest:block/prickly_pear_cacti_young_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_8_c"}
+        ],
+        "layers=8,age=3": [
+            {"model":"conquest:block/prickly_pear_cacti_young_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_young_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_young_8_c"}
+        ],
+        "layers=8,age=4": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_c"}
+        ],
+        "layers=8,age=5": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_c"}
+        ],
+        "layers=8,age=6": [
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_medium_8_c"}
+        ],
+        "layers=8,age=7": [
+            {"model":"conquest:block/prickly_pear_cacti_grown_8_a"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_8_b"},
+            {"model":"conquest:block/prickly_pear_cacti_grown_8_c"}
+        ]
+    }
+}

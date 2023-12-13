@@ -1,0 +1,17 @@
+{
+    "multipart": [
+        {   "apply": { "model": "block/parent_branch_post" }},
+        {   "when": {  "north": "true" },
+            "apply": { "model": "block/parent_branch_diagonal" }
+        },
+        {   "when": {  "east": "true" },
+            "apply": { "model": "block/parent_branch_diagonal", "y": 90 }
+        },
+        {   "when": {  "south": "true" },
+            "apply": { "model": "block/parent_branch_diagonal", "y": 180 }
+        },
+        {   "when": {  "west": "true" },
+            "apply": { "model": "block/parent_branch_diagonal", "y": 270 }
+        }
+    ]
+}

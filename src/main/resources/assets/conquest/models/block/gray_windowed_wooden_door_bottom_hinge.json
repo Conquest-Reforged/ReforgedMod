@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "conquest:block/2_advanced_refined/7_wood/gray_windowed_wooden_door_bottom",
+        "top": "conquest:block/2_advanced_refined/7_wood/gray_windowed_wooden_door_top"
+    }
+}

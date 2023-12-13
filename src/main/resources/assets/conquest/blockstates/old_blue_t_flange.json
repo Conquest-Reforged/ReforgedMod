@@ -1,0 +1,23 @@
+{
+    "variants": {
+        "toggle=1,facing=south": { "model": "conquest:block/old_blue_t_flange", "y": 180 },
+        "toggle=1,facing=west": { "model": "conquest:block/old_blue_t_flange", "y": 270 },
+        "toggle=1,facing=north": { "model": "conquest:block/old_blue_t_flange" },
+        "toggle=1,facing=east": { "model": "conquest:block/old_blue_t_flange", "y": 90 },
+
+        "toggle=2,facing=south": { "model": "conquest:block/old_blue_t_flange_a" },
+        "toggle=2,facing=west": { "model": "conquest:block/old_blue_t_flange_a", "y": 90 },
+        "toggle=2,facing=north": { "model": "conquest:block/old_blue_t_flange_a", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/old_blue_t_flange_a", "y": 270 },
+
+        "toggle=3,facing=south": { "model": "conquest:block/old_blue_t_flange", "x": 90, "y": 270 },
+        "toggle=3,facing=west": { "model": "conquest:block/old_blue_t_flange", "x": 90 },
+        "toggle=3,facing=north": { "model": "conquest:block/old_blue_t_flange", "x": 90, "y": 90 },
+        "toggle=3,facing=east": { "model": "conquest:block/old_blue_t_flange", "x": 90, "y": 180 },
+
+        "toggle=4,facing=south": { "model": "conquest:block/old_blue_t_flange_a", "x": 180 },
+        "toggle=4,facing=west": { "model": "conquest:block/old_blue_t_flange_a", "x": 180, "y": 90 },
+        "toggle=4,facing=north": { "model": "conquest:block/old_blue_t_flange_a", "x": 180, "y": 180 },
+        "toggle=4,facing=east": { "model": "conquest:block/old_blue_t_flange_a", "x": 180, "y": 270 }
+    }
+}

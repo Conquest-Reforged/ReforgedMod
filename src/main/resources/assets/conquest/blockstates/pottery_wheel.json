@@ -1,0 +1,34 @@
+{
+    "variants": {
+        "facing=south,part=head": {
+            "model": "conquest:block/pottery_wheel_head"
+        },
+        "facing=west,part=head": {
+            "model": "conquest:block/pottery_wheel_head",
+            "y": 90
+        },
+        "facing=north,part=head": {
+            "model": "conquest:block/pottery_wheel_head",
+            "y": 180
+        },
+        "facing=east,part=head": {
+            "model": "conquest:block/pottery_wheel_head",
+            "y": 270
+        },
+        "facing=south,part=foot": {
+            "model": "conquest:block/pottery_wheel_foot"
+        },
+        "facing=west,part=foot": {
+            "model": "conquest:block/pottery_wheel_foot",
+            "y": 90
+        },
+        "facing=north,part=foot": {
+            "model": "conquest:block/pottery_wheel_foot",
+            "y": 180
+        },
+        "facing=east,part=foot": {
+            "model": "conquest:block/pottery_wheel_foot",
+            "y": 270
+        }
+    }
+}

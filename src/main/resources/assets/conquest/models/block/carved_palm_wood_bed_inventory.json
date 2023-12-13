@@ -1,0 +1,64 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"top": "conquest:block/4_furniture/3_wood/carved_palm_wood_bed_feet_top",
+		"bottom": "block/oak_planks",
+		"end": "conquest:block/4_furniture/3_wood/carved_palm_wood_bed_feet_end",
+		"side": "conquest:block/4_furniture/3_wood/carved_palm_wood_bed_feet_side",
+		"particle": "conquest:block/4_furniture/3_wood/carved_palm_wood_bed_head_top",
+		"1_top": "conquest:block/4_furniture/3_wood/carved_palm_wood_bed_head_top",
+		"1_end": "conquest:block/4_furniture/3_wood/carved_palm_wood_bed_head_end",
+		"1_side": "conquest:block/4_furniture/3_wood/carved_palm_wood_bed_head_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 9, 16],
+			"faces": {
+				"north": {"uv": [0, 7, 16, 16], "texture": "#end"},
+				"east": {"uv": [16, 7, 0, 16], "texture": "#side"},
+				"west": {"uv": [0, 7, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#top"}
+			}
+		},
+		{
+			"from": [0, 3, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [0, 0, 16],
+			"to": [16, 9, 32],
+			"faces": {
+				"east": {"uv": [16, 7, 0, 16], "texture": "#1_side"},
+				"south": {"uv": [0, 7, 16, 16], "texture": "#1_end"},
+				"west": {"uv": [0, 7, 16, 16], "texture": "#1_side"},
+				"up": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#1_top"}
+			}
+		},
+		{
+			"from": [0, 3, 16],
+			"to": [16, 3, 32],
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 160, 0],
+			"translation": [-1, -0.5, 0],
+			"scale": [0.55, 0.55, 0.55]
+		}
+	},
+	"groups": [0, 1,
+		{
+			"name": "carved_palm_wood_bed_head",
+			"origin": [8, 8, 8],
+			"children": [2, 3]
+		}
+	]
+}

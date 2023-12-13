@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "conquest:block/white_painted_wood_trellis_open", "y": 90 },
+        "facing=south": { "model": "conquest:block/white_painted_wood_trellis_open", "y": 180 },
+        "facing=west": { "model": "conquest:block/white_painted_wood_trellis_open", "y": 270 },
+        "facing=north": { "model": "conquest:block/white_painted_wood_trellis_open" },
+        "facing=up": { "model": "conquest:block/white_painted_wood_trellis_bottom" },
+        "facing=down": { "model": "conquest:block/white_painted_wood_trellis_top" }
+    }
+}

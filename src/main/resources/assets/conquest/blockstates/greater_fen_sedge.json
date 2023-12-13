@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "layers=1,random=0": {"model":"conquest:block/greater_fen_sedge_1_a"},
+        "layers=1,random=1": {"model":"conquest:block/greater_fen_sedge_1_b"},
+        "layers=1,random=2": {"model":"conquest:block/greater_fen_sedge_1_c"},
+        "layers=2,random=0": {"model":"conquest:block/greater_fen_sedge_2_a"},
+        "layers=2,random=1": {"model":"conquest:block/greater_fen_sedge_2_b"},
+        "layers=2,random=2": {"model":"conquest:block/greater_fen_sedge_2_c"},
+        "layers=3,random=0": {"model":"conquest:block/greater_fen_sedge_3_a"},
+        "layers=3,random=1": {"model":"conquest:block/greater_fen_sedge_3_b"},
+        "layers=3,random=2": {"model":"conquest:block/greater_fen_sedge_3_c"},
+        "layers=4,random=0": {"model":"conquest:block/greater_fen_sedge_4_a"},
+        "layers=4,random=1": {"model":"conquest:block/greater_fen_sedge_4_b"},
+        "layers=4,random=2": {"model":"conquest:block/greater_fen_sedge_4_c"},
+        "layers=5,random=0": {"model":"conquest:block/greater_fen_sedge_5_a"},
+        "layers=5,random=1": {"model":"conquest:block/greater_fen_sedge_5_b"},
+        "layers=5,random=2": {"model":"conquest:block/greater_fen_sedge_5_c"},
+        "layers=6,random=0": {"model":"conquest:block/greater_fen_sedge_6_a"},
+        "layers=6,random=1": {"model":"conquest:block/greater_fen_sedge_6_b"},
+        "layers=6,random=2": {"model":"conquest:block/greater_fen_sedge_6_c"},
+        "layers=7,random=0": {"model":"conquest:block/greater_fen_sedge_7_a"},
+        "layers=7,random=1": {"model":"conquest:block/greater_fen_sedge_7_b"},
+        "layers=7,random=2": {"model":"conquest:block/greater_fen_sedge_7_c"},
+        "layers=8,random=0": {"model":"conquest:block/greater_fen_sedge_8_a"},
+        "layers=8,random=1": {"model":"conquest:block/greater_fen_sedge_8_b"},
+        "layers=8,random=2": {"model":"conquest:block/greater_fen_sedge_8_c"}
+    }
+}

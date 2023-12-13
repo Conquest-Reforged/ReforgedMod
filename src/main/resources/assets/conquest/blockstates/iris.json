@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "": [
+            {"model":"conquest:block/iris_model_1"},
+            {"model":"conquest:block/iris_model_2"},
+            {"model":"conquest:block/iris_model_3"}
+        ]
+    }
+}

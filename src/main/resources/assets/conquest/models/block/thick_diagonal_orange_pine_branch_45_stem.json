@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "conquest:block/thick_diagonal_oak_branch_45_stem",
+	"textures": {
+		"log": "conquest:block/9_organic/1_wood/orange_pine_log",
+		"branch5": "conquest:block/9_organic/1_wood/orange_pine_log_branches_5",
+		"particle": "conquest:block/9_organic/1_wood/orange_pine_log"
+	}
+}

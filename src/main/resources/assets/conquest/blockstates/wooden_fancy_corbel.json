@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "toggle=1,facing=east": { "model": "conquest:block/wooden_fancy_corbel", "y": 270 },
+        "toggle=1,facing=south":{ "model": "conquest:block/wooden_fancy_corbel" },
+        "toggle=1,facing=west": { "model": "conquest:block/wooden_fancy_corbel", "y": 90 },
+        "toggle=1,facing=north":{ "model": "conquest:block/wooden_fancy_corbel", "y": 180 },
+        "toggle=2,facing=east": { "model": "conquest:block/wooden_fancy_corbel_left", "y": 270 },
+        "toggle=2,facing=south":{ "model": "conquest:block/wooden_fancy_corbel_left" },
+        "toggle=2,facing=west": { "model": "conquest:block/wooden_fancy_corbel_left", "y": 90 },
+        "toggle=2,facing=north":{ "model": "conquest:block/wooden_fancy_corbel_left", "y": 180 },
+        "toggle=3,facing=east": { "model": "conquest:block/wooden_fancy_corbel_right", "y": 270 },
+        "toggle=3,facing=south":{ "model": "conquest:block/wooden_fancy_corbel_right" },
+        "toggle=3,facing=west": { "model": "conquest:block/wooden_fancy_corbel_right", "y": 90 },
+        "toggle=3,facing=north":{ "model": "conquest:block/wooden_fancy_corbel_right", "y": 180 },
+        "toggle=4,facing=east": { "model": "conquest:block/wooden_fancy_corbel_diagonal", "y": 270 },
+        "toggle=4,facing=south":{ "model": "conquest:block/wooden_fancy_corbel_diagonal" },
+        "toggle=4,facing=west": { "model": "conquest:block/wooden_fancy_corbel_diagonal", "y": 90 },
+        "toggle=4,facing=north":{ "model": "conquest:block/wooden_fancy_corbel_diagonal", "y": 180 }
+    }
+}

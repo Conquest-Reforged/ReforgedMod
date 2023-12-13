@@ -1,0 +1,9 @@
+{
+	"parent": "conquest:block/template_plinth_balustrade_base",
+	"textures": {
+		"particle": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_and_sandstone_plinth",
+		"body": "conquest:block/2_advanced_refined/1_stone/3_marble/marble_and_sandstone_plinth",
+		"top": "block/quartz_block_top",
+		"bottom": "conquest:block/2_advanced_refined/1_stone/5_sandstone/complex_sandstone_design"
+	}
+}

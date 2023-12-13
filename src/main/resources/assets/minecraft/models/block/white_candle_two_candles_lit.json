@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/template_two_candelabra",
+  "textures": {
+	"particle": "minecraft:block/white_candelabra_holder",
+	"holder": "minecraft:block/white_candelabra_holder",
+	"candle": "minecraft:block/white_candelabra",
+	"flame": "minecraft:block/candle_lit"
+  }
+}

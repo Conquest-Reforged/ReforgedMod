@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom,facing=south": { "model": "conquest:block/old_green_3_way_flange", "y": 90 },
+        "type=bottom,facing=west": { "model": "conquest:block/old_green_3_way_flange", "y": 180 },
+        "type=bottom,facing=north": { "model": "conquest:block/old_green_3_way_flange", "y": 270 },
+        "type=bottom,facing=east": { "model": "conquest:block/old_green_3_way_flange" },
+
+        "type=top,facing=south": { "model": "conquest:block/old_green_3_way_flange", "x": 90, "y": 90 },
+        "type=top,facing=west": { "model": "conquest:block/old_green_3_way_flange", "x": 90, "y": 180 },
+        "type=top,facing=north": { "model": "conquest:block/old_green_3_way_flange", "x": 90, "y": 270},
+        "type=top,facing=east": { "model": "conquest:block/old_green_3_way_flange", "x": 90 }
+    }
+}

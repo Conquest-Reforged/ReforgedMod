@@ -1,0 +1,18 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"texture": "conquest:block/4_furniture/3_wood/oak_wood_table_2",
+		"particle": "conquest:block/4_furniture/3_wood/oak_wood_table"
+	},
+	"elements": [
+		{
+			"name": "PlaneS",
+			"from": [0, 0, 15.927],
+			"to": [16, 13, 15.9895],
+			"faces": {
+				"north": {"uv": [0.001, 3.001, 15.999, 15.999], "texture": "#texture"},
+				"south": {"uv": [0.001, 3.001, 15.999, 15.999], "texture": "#texture"}
+			}
+		}
+	]
+}

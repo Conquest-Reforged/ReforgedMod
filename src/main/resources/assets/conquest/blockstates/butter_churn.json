@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=lower": {
+            "model": "conquest:block/butter_churn_lower"
+        },
+        "half=upper": {
+            "model": "conquest:block/butter_churn_upper"
+        }
+    }
+}
