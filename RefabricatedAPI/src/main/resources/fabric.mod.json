@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "refabricatedapi",
+  "version": "${version}",
+  "name": "RefabricatedAPI",
+  "description": "ConquestReforged Fabric API Module",
+  "authors": [
+    "Hippokleides",
+    "Monsterfish",
+    "JayemCeekay"
+  ],
+  "contributors": [
+    "ArtemisiaTR",
+    "DeChoppy",
+    "wheellee",
+    "CreativeRealms"
+  ],
+  "contact": {},
+  "license": "All Rights Reserved",
+  "icon": "assets/user/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+    ],
+    "main": [
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/server/packs/repository/PackRepository": [
+        "com/conquestrefabricated/core/interfaces/PackRepositoryAddPackFinder"
+      ]
+    }
+  }
+}

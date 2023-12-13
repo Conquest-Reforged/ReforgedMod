@@ -1,167 +1,207 @@
 plugins {
-    id 'net.minecraftforge.gradle' version '6.+'
-    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
-    id 'org.spongepowered.mixin' version '0.7.+'
-    id 'eclipse'
+    id 'fabric-loom' version '1.1-SNAPSHOT'
     id 'maven-publish'
 }
 
-archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
-
-// JENKINS STUFF! LEAVE THIS ALONE!
-if (System.getenv('BUILD_NUMBER') != null) {
-    version = "${version}." + System.getenv('BUILD_NUMBER')
-}
-
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
-
-println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
-minecraft {
-    mappings channel: project.mappings, version: project.mappings_version
-
-    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
-    runs {
-        client {
-            workingDirectory project.file('run')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'examplemod'
-
-            arg "-mixin.config=conquest.mixins.json"
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-
-            mods {
-                conquest {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        server {
-            workingDirectory project.file('run')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'examplemod'
-
-            arg "-mixin.config=conquest.mixins.json"
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-
-            mods {
-                conquest {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        gameTestServer {
-            workingDirectory project.file('run')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'examplemod'
-
-            arg "-mixin.config=conquest.mixins.json"
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-
-            mods {
-                conquest {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        data {
-            workingDirectory project.file('run')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-
-            args '--mod', 'conquest', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-
-            mods {
-                conquest {
-                    source sourceSets.main
-                }
-            }
-        }
-    }
-}
-
-sourceSets.main.resources { srcDir 'src/generated/resources' }
-
 repositories {
+    // Add repositories to retrieve artifacts from in here.
+    // You should only use this when depending on other mods because
+    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+    // for more information about repositories.
     maven {
-        name = "CurseForge Maven" //Base
-        url = "https://www.cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
+        name = "Fabric"
+        url = "https://maven.fabricmc.net/"
     }
-    flatDir {
-        dir 'libs'
-    }
+
+
 }
 
 dependencies {
-    // Base
-    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    // To change the versions see the gradle.properties file
 
-    // Extras
-    implementation fg.deobf("curse.maven:cyanide_forge-541676:${cyanide_version}")
-    implementation fg.deobf("curse.maven:spark-361579:${spark_version}")
-    implementation fg.deobf("curse.maven:appleskin-248787:${appleskin_version}")
-    implementation fg.deobf("curse.maven:configured-457570:${configured_version}")
-    implementation fg.deobf("curse.maven:catalogue-459701:${catalogue_version}")
+    // Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+
+        subprojects.each {
+            implementation(project(path: "${it.name}", configuration: "namedElements"))
+            include(project("${it.name}:"))
+        }
+
+/*
+    implementation(project(path: ":RefabricatedCore", configuration: "namedElements"))
+    implementation(project(path: ":RefabricatedClient", configuration: "namedElements"))
+    implementation(project(path: ":RefabricatedContent", configuration: "namedElements"))
+    implementation(project(path: ":RefabricatedAPI", configuration: "namedElements"))*/
 }
 
-mixin {
-    add sourceSets.main, "conquest.refmap.json"
-    config "conquest.mixins.json"
+processResources {
+    inputs.property "version", project.version
+    filteringCharset "UTF-8"
 
-    debug.verbose = true
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+def targetJavaVersion = 17
+tasks.withType(JavaCompile).configureEach {
+    // ensure that the encoding is set to UTF-8, no matter what the system default is
+    // this fixes some edge cases with special characters not displaying correctly
+    // see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
+    // If Javadoc is generated, this must be specified in that task too.
+    it.options.encoding = "UTF-8"
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+        it.options.release = targetJavaVersion
+    }
+}
+
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+    archivesBaseName = project.archives_base_name
+    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+    // if it is present.
+    // If you remove this line, sources will not be generated.
+    withSourcesJar()
 }
 
 jar {
-    manifest {
-        attributes([
-                "Specification-Title"     : "conquest",
-                "Specification-Vendor"    : "conquest",
-                "Specification-Version"   : "1",
-                "Implementation-Title"    : project.name,
-                "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "conquest",
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
-        ])
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}" }
     }
+    from fileTree("$projectDir/src/generated/resources") { exclude "**/.cache/**" }
 }
 
-jar.finalizedBy('reobfJar')
-
+// configure the maven publication
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifact jar
+            from components.java
         }
     }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
-        maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+        // Add repositories to publish to here.
+        // Notice: This block does NOT have the same function as the block in the top level.
+        // The repositories here will be used for publishing your artifact, not for
+        // retrieving dependencies.
+    }
+}
+
+allprojects {
+    apply(plugin: "fabric-loom")
+    loom {
+        accessWidenerPath = file("$rootDir/src/main/resources/Refabricated.accesswidener")
+        runtimeOnlyLog4j = false
+        remapSourcesJar {
+
+        }
+    }
+
+   repositories {
+       maven { url = "https://cursemaven.com" }
+       maven { url = "https://mvn.devos.one/snapshots/" }
+       maven { url = "https://mvn.devos.one/releases/" }
+       maven { url = "https://jitpack.io/" }
+   }
+
+    dependencies {
+        minecraft "com.mojang:minecraft:${project.minecraft_version}"
+        //mappings loom.officialMojangMappings()
+        mappings("net.fabricmc:yarn:${project.yarn_mappings}")
+        modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+        // Fabric API. This is technically optional, but you probably want it anyway.
+        modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+        modImplementation(include("com.electronwill.night-config:core:3.6.3"))
+        modImplementation(include("com.electronwill.night-config:toml:3.6.3"))
+        modImplementation("curse.maven:forge-config-api-port-fabric-547434:4401535")
+       // modImplementation("curse.maven:porting-lib-696251:4410365")
+        modImplementation(include("io.github.fabricators_of_create.Porting-Lib:porting-lib:2.1.811+1.19.2"))
+        implementation("com.github.LlamaLad7:MixinExtras:0.1.1")
+        annotationProcessor("com.github.LlamaLad7:MixinExtras:0.1.1")
+
+        //modImplementation 'org.apache.logging.log4j:log4j-api:2.19.0'
+    }
+
+    processResources {
+        inputs.property "version", project.version
+        filesMatching("fabric.mod.json") {
+            expand "version": project.version
+        }
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    jar {
+        zip64(true)
+        from "LICENSE"
+    }
+
+    sourcesJar {
+        zip64(true)
+    }
+}
+
+loom {
+
+    mixin {
+        defaultRefmapName = "Refabricated-refmap.json"
+    }
+
+    runs {
+        refabricatedModClient {
+            client()
+            name "Refabricated Mod Client"
+            vmArg "-Ddev"
+            // vmArg "-Dfabric-api.datagen"
+            //vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+            //vmArg "-Dfabric-api.datagen.modid=${modid}"
+        }
+
+        refabricatedDataGenClient {
+            inherit client
+            name "Data Generation"
+
+
+            runDir "build/datagen"
+        }
+
+        refabricatedModServer {
+            server()
+            name "Refabricated Mod Server"
+        }
+    }
+    remapSourcesJar{
+        enabled(false)
+    }
+}
+
+
+sourceSets {
+    main {
+        resources {
+            srcDirs += [
+                    'src/main/generated'
+            ]
         }
     }
 }
 
-tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
+/*
+allprojects {
+    apply from: file("$rootDir/build-module.gradle")
 }
+apply from: file("build-main.gradle")
+assemble {
+    dependsOn(mergeJar, renameJar)
+}
+*/

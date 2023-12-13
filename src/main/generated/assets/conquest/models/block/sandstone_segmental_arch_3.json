@@ -1,0 +1,12 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_segmental_arch_3.obj",
+    "emissive_ambient": true,
+    "flip_v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/1_clay/lime_mortar_orange_clay_brick_arch/1",
+        "keystones": "conquest:block/1_basic_refined/1_stone/5_sandstone/sandstone_arch/arch2",
+        "underside1": "conquest:block/1_basic_refined/1_stone/5_sandstone/sandstone_arch/1",
+        "underside2": "conquest:block/1_basic_refined/1_stone/5_sandstone/sandstone_arch/2"
+    }
+}

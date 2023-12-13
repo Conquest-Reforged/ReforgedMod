@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "conquest:block/dead_spruce_leaf_half"
+    },
+    "type=top": {
+      "model": "conquest:block/dead_spruce_leaf_half_top"
+    }
+  }
+}

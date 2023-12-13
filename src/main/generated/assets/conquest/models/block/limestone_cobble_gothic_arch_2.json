@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/smooth_gothic_arch_2.obj",
+    "emissive_ambient": true,
+    "flip_v": true,
+    "textures": {
+        "particle": "minecraft:block/cobblestone",
+        "keystones": "minecraft:block/cobblestone",
+        "underside1": "minecraft:block/cobblestone",
+        "underside2": "minecraft:block/cobblestone",
+        "underside3": "minecraft:block/cobblestone"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/smooth_gothic_arch_3_middle.obj",
+    "emissive_ambient": true,
+    "flip_v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/3_limestone/carved_limestone",
+        "keystones": "conquest:block/1_basic_refined/1_stone/3_limestone/carved_limestone",
+        "underside1": "conquest:block/1_basic_refined/1_stone/3_limestone/carved_limestone",
+        "underside2": "conquest:block/1_basic_refined/1_stone/3_limestone/carved_limestone"
+    }
+}

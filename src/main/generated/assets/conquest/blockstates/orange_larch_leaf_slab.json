@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "conquest:block/orange_larch_leaf_half"
+    },
+    "type=top": {
+      "model": "conquest:block/orange_larch_leaf_half_top"
+    }
+  }
+}

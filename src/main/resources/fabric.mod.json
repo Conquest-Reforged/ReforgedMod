@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "conquest",
+  "version": "${version}",
+  "name": "ConquestReforged Fabric",
+  "description": "ConquestReforged Fabric Main Module",
+  "authors": [
+    "Hippokleides",
+    "Monsterfish",
+    "JayemCeekay"
+  ],
+  "contributors": [
+    "ArtemisiaTR",
+    "DeChoppy",
+    "wheellee",
+    "CreativeRealms"
+  ],
+  "contact": {},
+  "license": "All Rights Reserved",
+  "icon": "assets/user/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.conquestrefabricated.core.data.DataGen"
+    ],
+    "client": [
+      "com.conquestrefabricated.RefabricatedModClient"
+    ],
+    "main": [
+      "com.conquestrefabricated.RefabricatedMod"
+    ]
+  },
+  "mixins": [
+    "Refabricated.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "1.19.2"
+  },
+  "accessWidener": "Refabricated.accesswidener"
+}

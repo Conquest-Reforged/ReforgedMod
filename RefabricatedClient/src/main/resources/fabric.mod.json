@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "refabricatedclient",
+  "version": "${version}",
+  "name": "RefabricatedClient",
+  "description": "ConquestReforged Fabric Client Module",
+  "authors": [
+    "Hippokleides",
+    "Monsterfish",
+    "JayemCeekay"
+  ],
+  "contributors": [
+    "ArtemisiaTR",
+    "DeChoppy",
+    "wheellee",
+    "CreativeRealms"
+  ],
+  "contact": {},
+  "license": "All Rights Reserved",
+  "icon": "assets/user/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+    ],
+    "main": [
+    ]
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/resource/ResourcePackManager": [
+        "com/conquestrefabricated/core/interfaces/PackRepositoryAddPackFinder"
+      ]
+    }
+  }
+}

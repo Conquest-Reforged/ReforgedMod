@@ -1,0 +1,44 @@
+{
+    "variants": {
+        "type=bottom,toggle=1,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch" },
+        "type=bottom,toggle=1,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch", "y": 90 },
+        "type=bottom,toggle=1,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch", "y": 180 },
+        "type=bottom,toggle=1,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch", "y": 270 },
+
+        "type=bottom,toggle=2,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch_1" },
+        "type=bottom,toggle=2,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch_1", "y": 90 },
+        "type=bottom,toggle=2,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch_1", "y": 180 },
+        "type=bottom,toggle=2,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch_1", "y": 270 },
+
+        "type=bottom,toggle=3,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch_2" },
+        "type=bottom,toggle=3,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch_2", "y": 90 },
+        "type=bottom,toggle=3,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch_2", "y": 180 },
+        "type=bottom,toggle=3,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch_2", "y": 270 },
+
+        "type=bottom,toggle=4,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch_3" },
+        "type=bottom,toggle=4,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch_3", "y": 90 },
+        "type=bottom,toggle=4,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch_3", "y": 180 },
+        "type=bottom,toggle=4,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch_3", "y": 270 },
+
+
+        "type=top,toggle=1,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch_top" },
+        "type=top,toggle=1,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch_top", "y": 90 },
+        "type=top,toggle=1,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch_top", "y": 180 },
+        "type=top,toggle=1,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch_top", "y": 270 },
+
+        "type=top,toggle=2,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch_1_top" },
+        "type=top,toggle=2,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch_1_top", "y": 90 },
+        "type=top,toggle=2,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch_1_top", "y": 180 },
+        "type=top,toggle=2,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch_1_top", "y": 270 },
+
+        "type=top,toggle=3,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch_2_top" },
+        "type=top,toggle=3,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch_2_top", "y": 90 },
+        "type=top,toggle=3,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch_2_top", "y": 180 },
+        "type=top,toggle=3,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch_2_top", "y": 270 },
+
+        "type=top,toggle=4,facing=north": { "model": "conquest:block/light_spruce_leaf_long_branch_3_top" },
+        "type=top,toggle=4,facing=east": { "model": "conquest:block/light_spruce_leaf_long_branch_3_top", "y": 90 },
+        "type=top,toggle=4,facing=south": { "model": "conquest:block/light_spruce_leaf_long_branch_3_top", "y": 180 },
+        "type=top,toggle=4,facing=west": { "model": "conquest:block/light_spruce_leaf_long_branch_3_top", "y": 270 }
+    }
+}

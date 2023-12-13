@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.conquestrefabricated.content.entities.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EntityRenderersMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

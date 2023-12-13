@@ -1,0 +1,12 @@
+{
+	"loader": "forge:obj",
+	"model": "conquest:models/obj/butter_churn_lower.obj",
+	"emissive_ambient": true,
+	"flip_v": true,
+	"textures": {
+		"particle": "conquest:block/3_decoration/3_wood/butter_churn/butter_churn_side",
+		"side": "conquest:block/3_decoration/3_wood/butter_churn/butter_churn_side",
+		"top": "conquest:block/3_decoration/3_wood/butter_churn/butter_churn_top",
+		"bottom": "conquest:block/3_decoration/3_wood/butter_churn/butter_churn_bottom"
+	}
+}

@@ -1,0 +1,24 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl m_ecd38a7d-207a-6ad7-3e0d-e11676803804
+Ns 0.000000
+Ka 0.0 0.0 0.0
+Kd 0.800000 0.800000 0.800000
+Ks 1.0 1.0 1.0
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 0
+map_Kd #branches1
+
+newmtl m_fb54af49-740f-260a-2096-91a0c49745a4
+Ns 0.000000
+Ka 0.0 0.0 0.0
+Kd 0.800000 0.800000 0.800000
+Ks 1.0 1.0 1.0
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 0
+map_Kd #branch

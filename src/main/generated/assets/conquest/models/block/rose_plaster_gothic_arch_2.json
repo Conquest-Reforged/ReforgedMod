@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/smooth_gothic_arch_2.obj",
+    "emissive_ambient": true,
+    "flip_v": true,
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/3_plaster/rose_plaster",
+        "keystones": "conquest:block/2_advanced_refined/3_plaster/rose_plaster",
+        "underside1": "conquest:block/2_advanced_refined/3_plaster/rose_plaster",
+        "underside2": "conquest:block/2_advanced_refined/3_plaster/rose_plaster",
+        "underside3": "conquest:block/2_advanced_refined/3_plaster/rose_plaster"
+    }
+}

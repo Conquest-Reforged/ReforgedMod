@@ -1,23 +1,19 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' }
-        maven { url = 'https://maven.parchmentmc.org' }
-    }
-    resolutionStrategy {
-        eachPlugin {
-            switch (requested.id.toString()) {
-                case "net.minecraftforge.gradle": {
-                    useModule("${requested.id}:ForgeGradle:${requested.version}")
-                    break
-                }
-                case "org.spongepowered.mixin": {
-                    useModule("org.spongepowered:mixingradle:${requested.version}")
-                    break;
-                }
-            }
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
         }
+        gradlePluginPortal()
     }
+
 }
 
-rootProject.name = "ConquestReforged"
+rootProject.name = "ConquestRefabricated"
+include("RefabricatedClient")
+include("RefabricatedCore")
+include("RefabricatedContent")
+include("RefabricatedAPI")
+rootProject.children.each {it ->
+    it.buildFileName = "module.gradle"
+}

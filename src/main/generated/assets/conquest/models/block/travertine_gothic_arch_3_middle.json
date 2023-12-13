@@ -1,0 +1,11 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_gothic_arch_3_middle.obj",
+    "emissive_ambient": true,
+    "flip_v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab",
+        "keystones": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_arch/arch3",
+        "underside1": "conquest:block/1_basic_refined/1_stone/4_marble/travertine_slab"
+    }
+}

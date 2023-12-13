@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/smooth_round_arch_2.obj",
+    "emissive_ambient": true,
+    "flip_v": true,
+    "textures": {
+        "particle": "conquest:block/2_advanced_refined/3_plaster/light_sienna_stucco",
+        "keystones": "conquest:block/2_advanced_refined/3_plaster/light_sienna_stucco",
+        "underside1": "conquest:block/2_advanced_refined/3_plaster/light_sienna_stucco",
+        "underside2": "conquest:block/2_advanced_refined/3_plaster/light_sienna_stucco",
+        "underside3": "conquest:block/2_advanced_refined/3_plaster/light_sienna_stucco"
+    }
+}

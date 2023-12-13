@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "conquest:models/block/obj/generic_gothic_arch_3.obj",
+    "emissive_ambient": true,
+    "flip_v": true,
+    "textures": {
+        "particle": "conquest:block/1_basic_refined/1_stone/6_slate/slate_light_mortar_wall",
+        "keystones": "conquest:block/1_basic_refined/1_stone/6_slate/slate_arch/arch3",
+        "underside1": "conquest:block/1_basic_refined/1_stone/6_slate/slate_light_mortar_wall",
+        "underside2": "conquest:block/1_basic_refined/1_stone/6_slate/slate_light_mortar_wall",
+        "underside3": "conquest:block/1_basic_refined/1_stone/6_slate/slate_light_mortar_wall"
+    }
+}

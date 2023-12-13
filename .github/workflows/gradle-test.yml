@@ -1,0 +1,38 @@
+name: Java CI Stage 2
+
+on:
+  push:
+    branches: [ "test" ]
+  pull_request:
+    branches: [ "test" ]
+
+permissions:
+  contents: write-all
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+      with:
+        arguments: build
+    - name: Generate Tag
+      id: tag
+      run: |
+        echo "::set-output name=release_tag::ConquestRefabricated-development-$(date +"%Y-%m-%d")"
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "LICENSE,build/libs/*.jar"
+        tag: "latest"
+        name: Test Artifact"
+        omitBody: true
+
