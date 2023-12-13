@@ -1,4 +1,0 @@
-dependencies {
-    compileProject(project(":ReforgedAPI")) { transitive false }
-    compileProject(project(":ReforgedCore")) { transitive false }
-}
