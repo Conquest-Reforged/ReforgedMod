@@ -1,7 +1,0 @@
-modLoader="javafml"
-loaderVersion="[25,)"
-[[mods]]
-    modId="client"
-    displayName="Test Mod"
-    version="0.0.1"
-    description="Test Mod"

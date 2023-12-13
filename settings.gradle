@@ -1,9 +1,0 @@
-rootProject.name = "ConquestReforged"
-include "ReforgedAPI"
-include "ReforgedCore"
-include "ReforgedContent"
-include "ReforgedClient"
-
-rootProject.children.each { project ->
-    project.buildFileName = "module.gradle"
-}
