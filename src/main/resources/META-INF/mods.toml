@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[25,)"
+[[mods]]
+modId="conquest"
+displayName="${name}"
+version="${version}"
+logoFile="conquestreforged.png"
+displayURL="https://conquestreforged.com"
+issueTrackerURL="https://github.com/Conquest-Reforged/Indev"
+
+authors="HIPPOKLEIDIS, dags-"
+
+credits='''
+
+  [Developers]
+  HIPPOKLEIDIS (Project Lead)
+  ArtemisiaTR
+  dags
+
+  [Artists & Modellers]
+  Monsterfish (Art Lead)
+  ArtemisiaTR
+  DeChoppy
+  wheellee
+
+  [Contributors]
+  CreativeRealms
+  Jugbot
+  Triliton
+  WunderBread
+
+  With special thanks to past
+  & present backers of the mod!
+'''
+
+description='''
+Description:
+ Conquest Reforged adds hundreds of high quality textures to Minecraft for builders to use in their worlds, allowing players to delve into an endless amount of themes and building styles.
+'''

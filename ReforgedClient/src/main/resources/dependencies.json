@@ -1,0 +1,14 @@
+[
+  {
+    "type": "LIB",
+    "id": "net.optifine.Config",
+    "name": "Optifine",
+    "url": "https://optifine.net/adloadx?f=OptiFine_1.15.2_HD_U_G6.jar"
+  },
+  {
+    "type": "RESOURCEPACK",
+    "id": "conquest_reforged",
+    "name": "ConquestReforged Resourcepack",
+    "url": "https://www.curseforge.com/minecraft/texture-packs/conquest-reforged-resource-pack/files"
+  }
+]
