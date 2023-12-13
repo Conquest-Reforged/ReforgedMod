@@ -1,5 +1,0 @@
-dependencies {
-    implementation(project(":RefabricatedCore"))
-    implementation(project(":RefabricatedClient"))
-    implementation(project(":RefabricatedAPI"))
-}
