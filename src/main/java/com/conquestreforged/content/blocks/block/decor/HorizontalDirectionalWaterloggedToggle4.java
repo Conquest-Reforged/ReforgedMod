@@ -1,0 +1,45 @@
+package com.conquestreforged.content.blocks.block.decor;
+
+import com.conquestreforged.content.blocks.block.directional.HorizontalDirectionalWaterlogged;
+import com.conquestreforged.core.block.builder.Props;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.IntProperty;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+
+public class HorizontalDirectionalWaterloggedToggle4 extends HorizontalDirectionalWaterlogged {
+
+    public static final IntProperty TOGGLE = IntProperty.of("toggle", 1, 4);
+
+    public HorizontalDirectionalWaterloggedToggle4(Props props) {
+        super(props);
+    }
+
+    @Override
+    protected void addProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(TOGGLE);
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext context) {
+        return super.getPlacementState(context).with(TOGGLE, 1);
+    }
+
+    @SuppressWarnings("deprecation")
+    @Override
+    public ActionResult onUse(BlockState state, World level, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hitResult) {
+        if (!player.getAbilities().allowModifyWorld) {
+            return ActionResult.FAIL;
+        } else {
+            level.setBlockState(blockPos, state.cycle(TOGGLE), 3);
+            return ActionResult.SUCCESS;
+        }
+    }
+}
