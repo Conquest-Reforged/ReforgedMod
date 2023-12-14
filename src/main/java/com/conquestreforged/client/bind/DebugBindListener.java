@@ -2,13 +2,13 @@ package com.conquestreforged.client.bind;
 
 import com.conquestreforged.core.client.input.BindEvent;
 import com.conquestreforged.core.client.input.BindListener;
-import net.minecraft.block.BlockState;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.state.property.Property;
-import net.minecraft.text.Text;
-import net.minecraft.util.hit.HitResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.client.Minecraft;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.phys.HitResult;
 import org.lwjgl.glfw.GLFW;
 
 public class DebugBindListener implements BindListener {
@@ -19,21 +19,21 @@ public class DebugBindListener implements BindListener {
             return;
         }
 
-        HitResult result = MinecraftClient.getInstance().crosshairTarget;
+        HitResult result = Minecraft.getInstance().hitResult;
         if (result == null) {
             return;
         }
 
-        BlockPos pos = new BlockPos(result.getPos());
-        String state = toString(event.player.get().world.getBlockState(pos));
-        long window = MinecraftClient.getInstance().getWindow().getHandle();
-        event.player.get().sendMessage(Text.of("Copied BlockInfo to clipboard!"));
+        BlockPos pos = new BlockPos((int) result.getLocation().x, (int) result.getLocation().y, (int) result.getLocation().z);
+        String state = toString(event.player.get().level().getBlockState(pos));
+        long window = Minecraft.getInstance().getWindow().getWindow();
+        event.player.get().sendSystemMessage(Component.literal("Copied BlockInfo to clipboard!"));
         GLFW.glfwSetClipboardString(window, '`' + state + '`');
     }
 
     private static String toString(BlockState state) {
         StringBuilder sb = new StringBuilder(128);
-        sb.append(Registry.BLOCK.getId(state.getBlock()));
+        sb.append(BuiltInRegistries.BLOCK.getId(state.getBlock()));
         int len = sb.length();
         for (Property<?> p : state.getProperties()) {
             if (sb.length() == len) {
@@ -41,7 +41,7 @@ public class DebugBindListener implements BindListener {
             } else {
                 sb.append(',');
             }
-            sb.append(p.getName()).append('=').append(state.get(p));
+            sb.append(p.getName()).append('=').append(state.getValue(p));
         }
         if (sb.length() > len) {
             sb.append(']');

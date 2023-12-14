@@ -1,11 +1,11 @@
 package com.conquestreforged.api.painting;
 
 import com.conquestreforged.api.painting.art.Art;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 
 public interface Painting {
@@ -14,9 +14,9 @@ public interface Painting {
 
     String getTranslationKey();
 
-    Identifier getRegistryName();
+    ResourceLocation getRegistryName();
 
-    default Identifier getItemName() {
+    default ResourceLocation getItemName() {
         return getRegistryName();
     }
 
@@ -25,17 +25,17 @@ public interface Painting {
     }
 
     default ItemStack createStack(Art art, int count) {
-        Item item = Registry.ITEM.get(getItemName());
+        Item item = BuiltInRegistries.ITEM.get(getItemName());
 
-        NbtCompound painting = new NbtCompound();
+        CompoundTag painting = new CompoundTag();
         painting.putString(Art.TYPE_TAG, getName());
         painting.putString(Art.ART_TAG, art.getName());
 
-        NbtCompound data = new NbtCompound();
+        CompoundTag data = new CompoundTag();
         data.put(Art.DATA_TAG, painting);
 
         ItemStack stack = new ItemStack(item, count);
-        stack.setNbt(data);
+        stack.setTag(data);
         return stack;
     }
 }

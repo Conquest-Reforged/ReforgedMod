@@ -1,13 +1,13 @@
 package com.conquestreforged.api.painting.vanilla;
 
 import com.conquestreforged.api.painting.Painting;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 public class VanillaPainting implements Painting {
 
     public static final Painting INSTANCE = new VanillaPainting();
 
-    private final Identifier name = new Identifier("conquest:vanilla_painting");
+    private final ResourceLocation name = new ResourceLocation("conquest:vanilla_painting");
 
     @Override
     public String getName() {
@@ -20,7 +20,7 @@ public class VanillaPainting implements Painting {
     }
 
     @Override
-    public Identifier getRegistryName() {
+    public ResourceLocation getRegistryName() {
         return name;
     }
 

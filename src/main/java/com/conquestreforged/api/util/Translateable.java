@@ -1,6 +1,6 @@
 package com.conquestreforged.api.util;
 
-import net.minecraft.client.resource.language.I18n;
+import net.minecraft.client.resources.language.I18n;
 
 /**
  * @author dags <dags@dags.me>
@@ -15,7 +15,7 @@ public interface Translateable {
 
     default String getDisplayName() {
         String lookup = getTranslationKey();
-        String translation = I18n.translate(lookup);
+        String translation = I18n.get(lookup);
         if (translation.equals(lookup)) {
             return getName();
         }
@@ -24,7 +24,7 @@ public interface Translateable {
 
     default String getDisplayName(String parent) {
         String lookup = getTranslationKey(parent);
-        String translation = I18n.translate(lookup);
+        String translation = I18n.get(lookup);
         if (translation.equals(lookup)) {
             return getName();
         }

@@ -1,18 +1,18 @@
 package com.conquestreforged.client.events;
 
 import com.conquestreforged.core.item.ItemUtils;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.minecraft.block.BlockState;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.HitResult;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.HitResult;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 
-@Environment(EnvType.CLIENT)
+@OnlyIn(Dist.CLIENT)
 public class BlockPicker {
 
     public static ItemStack onPick() {
@@ -20,25 +20,25 @@ public class BlockPicker {
             return ItemStack.EMPTY;
         }
 
-        PlayerEntity player = MinecraftClient.getInstance().player;
-        if (player == null || !player.getAbilities().creativeMode) {
+        Player player = Minecraft.getInstance().player;
+        if (player == null || !player.getAbilities().instabuild) {
             return ItemStack.EMPTY;
         }
 
-        HitResult result = MinecraftClient.getInstance().crosshairTarget;
+        HitResult result = Minecraft.getInstance().hitResult;
         if (result == null) {
             return ItemStack.EMPTY;
         }
 
-        BlockPos pos = new BlockPos(result.getPos());
-        BlockState state = player.world.getBlockState(pos);
+        BlockPos pos = new BlockPos((int) result.getLocation().x, (int) result.getLocation().y, (int) result.getLocation().z));
+        BlockState state = player.level().getBlockState(pos);
         if (state.hasBlockEntity()) {
             return ItemStack.EMPTY;
         }
 
         ItemStack stack = ItemUtils.fromState(state);
-        player.getInventory().addPickBlock(stack);
-        MinecraftClient.getInstance().interactionManager.clickCreativeStack(player.getStackInHand(Hand.MAIN_HAND), 36 + player.getInventory().selectedSlot);
+        player.getInventory().add(stack);
+        Minecraft.getInstance().gameMode.handleCreativeModeItemAdd(player.getItemInHand(InteractionHand.MAIN_HAND), 36 + player.getInventory().selected);
         return stack;
     }
 }

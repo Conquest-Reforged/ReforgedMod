@@ -5,13 +5,11 @@ import com.conquestreforged.content.blocks.init.ParticleRegistrar;
 import com.conquestreforged.content.blocks.init.TileRegistrar;
 import com.conquestreforged.content.entities.init.EntityCommonInit;
 import com.conquestreforged.content.items.init.ItemCommonInit;
-import net.fabricmc.api.ModInitializer;
 
-public class ReforgedMod implements ModInitializer {
+@Mod("conquest")
+public class ReforgedMod {
 
-
-    @Override
-    public void onInitialize() {
+    public static void ReforgedMod() {
         BlockRegistrar.blocks();
         BlockRegistrar.items();
        // InitCommon.items();
@@ -27,6 +25,4 @@ public class ReforgedMod implements ModInitializer {
        // InitCommon.common();
 
     }
-
-
 }

@@ -18,27 +18,17 @@ import com.conquestreforged.core.config.ConfigInit;
 import com.conquestreforged.core.init.InitClient;
 import com.conquestreforged.core.item.group.manager.ItemGroupManager;
 import com.conquestreforged.core.util.log.Log;
-import io.github.fabricators_of_create.porting_lib.event.client.ColorHandlersCallback;
-import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
-import net.fabricmc.fabric.api.client.screen.v1.ScreenKeyboardEvents;
-import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
-import net.fabricmc.fabric.api.event.client.player.ClientPickBlockGatherCallback;
-import net.fabricmc.fabric.impl.client.screen.ScreenEventFactory;
-import net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen;
-import net.minecraft.item.ItemStack;
-import net.minecraft.screen.PlayerScreenHandler;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
 
-public class ReforgedModClient implements ClientModInitializer {
+public class ReforgedModClient {
 
     public static ConfigBuildEvent configBuildEvent;
 
-    @Override
-    public void onInitializeClient() {
+    @SubscribeEvent
+    public static void onInitializeClient(FMLClientSetupEvent event) {
 
         BlockClientInit.clientBlockEntities();
         ColorHandlersCallback.BLOCK.register(BlockClientInit::items);
@@ -49,86 +39,86 @@ public class ReforgedModClient implements ClientModInitializer {
 
         ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
 
-            registry.register(new Identifier("conquest", "particle/raven_1"));
-            registry.register(new Identifier("conquest", "particle/raven_2"));
-            registry.register(new Identifier("conquest", "particle/raven_3"));
-            registry.register(new Identifier("conquest", "particle/raven_4"));
-            registry.register(new Identifier("conquest", "particle/raven_flying_1"));
-            registry.register(new Identifier("conquest", "particle/raven_flying_2"));
-            registry.register(new Identifier("conquest", "particle/raven_flying_3"));
-            registry.register(new Identifier("conquest", "particle/raven_flying_4"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_1"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_2"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_3"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_4"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_flying_2"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_flying_3"));
+            registry.register(new ResourceLocation("conquest", "particle/raven_flying_4"));
 
-            registry.register(new Identifier("conquest", "particle/hawk_1"));
-            registry.register(new Identifier("conquest", "particle/hawk_2"));
-            registry.register(new Identifier("conquest", "particle/hawk_3"));
-            registry.register(new Identifier("conquest", "particle/hawk_4"));
-            registry.register(new Identifier("conquest", "particle/hawk_flying_1"));
-            registry.register(new Identifier("conquest", "particle/hawk_flying_2"));
-            registry.register(new Identifier("conquest", "particle/hawk_flying_3"));
-            registry.register(new Identifier("conquest", "particle/hawk_flying_4"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_1"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_2"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_3"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_4"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_flying_2"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_flying_3"));
+            registry.register(new ResourceLocation("conquest", "particle/hawk_flying_4"));
 
-            registry.register(new Identifier("conquest", "particle/bat_1"));
-            registry.register(new Identifier("conquest", "particle/bat_2"));
-            registry.register(new Identifier("conquest", "particle/bat_flying_1"));
-            registry.register(new Identifier("conquest", "particle/bat_flying_2"));
-            registry.register(new Identifier("conquest", "particle/bat_flying_3"));
-            registry.register(new Identifier("conquest", "particle/bat_flying_4"));
+            registry.register(new ResourceLocation("conquest", "particle/bat_1"));
+            registry.register(new ResourceLocation("conquest", "particle/bat_2"));
+            registry.register(new ResourceLocation("conquest", "particle/bat_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/bat_flying_2"));
+            registry.register(new ResourceLocation("conquest", "particle/bat_flying_3"));
+            registry.register(new ResourceLocation("conquest", "particle/bat_flying_4"));
 
-            registry.register(new Identifier("conquest", "particle/bluejay_1"));
-            registry.register(new Identifier("conquest", "particle/bluejay_2"));
-            registry.register(new Identifier("conquest", "particle/bluejay_3"));
-            registry.register(new Identifier("conquest", "particle/bluejay_4"));
-            registry.register(new Identifier("conquest", "particle/bluejay_flying_1"));
-            registry.register(new Identifier("conquest", "particle/bluejay_flying_2"));
-            registry.register(new Identifier("conquest", "particle/bluejay_flying_3"));
-            registry.register(new Identifier("conquest", "particle/bluejay_flying_4"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_1"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_2"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_3"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_4"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_flying_2"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_flying_3"));
+            registry.register(new ResourceLocation("conquest", "particle/bluejay_flying_4"));
 
-            registry.register(new Identifier("conquest", "particle/duck_1"));
-            registry.register(new Identifier("conquest", "particle/duck_2"));
-            registry.register(new Identifier("conquest", "particle/duck_3"));
-            registry.register(new Identifier("conquest", "particle/duck_4"));
-            registry.register(new Identifier("conquest", "particle/duck_flying_1"));
-            registry.register(new Identifier("conquest", "particle/duck_flying_2"));
-            registry.register(new Identifier("conquest", "particle/duck_flying_3"));
-            registry.register(new Identifier("conquest", "particle/duck_flying_4"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_1"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_2"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_3"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_4"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_flying_2"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_flying_3"));
+            registry.register(new ResourceLocation("conquest", "particle/duck_flying_4"));
 
-            registry.register(new Identifier("conquest", "particle/owl_1"));
-            registry.register(new Identifier("conquest", "particle/owl_2"));
-            registry.register(new Identifier("conquest", "particle/owl_3"));
-            registry.register(new Identifier("conquest", "particle/owl_4"));
-            registry.register(new Identifier("conquest", "particle/owl_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/owl_1"));
+            registry.register(new ResourceLocation("conquest", "particle/owl_2"));
+            registry.register(new ResourceLocation("conquest", "particle/owl_3"));
+            registry.register(new ResourceLocation("conquest", "particle/owl_4"));
+            registry.register(new ResourceLocation("conquest", "particle/owl_flying_1"));
 
-            registry.register(new Identifier("conquest", "particle/pigeon_1"));
-            registry.register(new Identifier("conquest", "particle/pigeon_2"));
-            registry.register(new Identifier("conquest", "particle/pigeon_3"));
-            registry.register(new Identifier("conquest", "particle/pigeon_4"));
-            registry.register(new Identifier("conquest", "particle/pigeon_flying_1"));
-            registry.register(new Identifier("conquest", "particle/pigeon_flying_2"));
-            registry.register(new Identifier("conquest", "particle/pigeon_flying_3"));
-            registry.register(new Identifier("conquest", "particle/pigeon_flying_4"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_1"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_2"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_3"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_4"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_flying_2"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_flying_3"));
+            registry.register(new ResourceLocation("conquest", "particle/pigeon_flying_4"));
 
 
-            registry.register(new Identifier("conquest", "particle/puffin_1"));
-            registry.register(new Identifier("conquest", "particle/puffin_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/puffin_1"));
+            registry.register(new ResourceLocation("conquest", "particle/puffin_flying_1"));
 
-            registry.register(new Identifier("conquest", "particle/seagull_1"));
-            registry.register(new Identifier("conquest", "particle/seagull_2"));
-            registry.register(new Identifier("conquest", "particle/seagull_3"));
-            registry.register(new Identifier("conquest", "particle/seagull_4"));
-            registry.register(new Identifier("conquest", "particle/seagull_flying_1"));
-            registry.register(new Identifier("conquest", "particle/seagull_flying_2"));
-            registry.register(new Identifier("conquest", "particle/seagull_flying_3"));
-            registry.register(new Identifier("conquest", "particle/seagull_flying_4"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_1"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_2"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_3"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_4"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_flying_1"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_flying_2"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_flying_3"));
+            registry.register(new ResourceLocation("conquest", "particle/seagull_flying_4"));
 
-            registry.register(new Identifier("conquest", "particle/rat_1"));
-            registry.register(new Identifier("conquest", "particle/rat_2"));
-            registry.register(new Identifier("conquest", "particle/rat_3"));
-            registry.register(new Identifier("conquest", "particle/rat_4"));
+            registry.register(new ResourceLocation("conquest", "particle/rat_1"));
+            registry.register(new ResourceLocation("conquest", "particle/rat_2"));
+            registry.register(new ResourceLocation("conquest", "particle/rat_3"));
+            registry.register(new ResourceLocation("conquest", "particle/rat_4"));
 
-            registry.register(new Identifier("conquest", "particle/toad_1"));
-            registry.register(new Identifier("conquest", "particle/toad_2"));
-            registry.register(new Identifier("conquest", "particle/toad_3"));
-            registry.register(new Identifier("conquest", "particle/toad_4"));
+            registry.register(new ResourceLocation("conquest", "particle/toad_1"));
+            registry.register(new ResourceLocation("conquest", "particle/toad_2"));
+            registry.register(new ResourceLocation("conquest", "particle/toad_3"));
+            registry.register(new ResourceLocation("conquest", "particle/toad_4"));
 
 
         });

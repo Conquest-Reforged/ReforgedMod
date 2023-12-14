@@ -4,23 +4,25 @@ import com.conquestreforged.client.gui.dependency.Dependency;
 import com.conquestreforged.client.tutorial.Tutorials;
 import com.conquestreforged.core.config.section.ConfigSection;
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.DrawableHelper;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.client.gui.widget.CheckboxWidget;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.Util;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.Checkbox;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class DependencyScreen extends Screen {
 
-    private static final Identifier CTM = new Identifier("conquest:textures/gui/dependency/ctm.png");
+    private static final ResourceLocation CTM = new ResourceLocation("conquest:textures/gui/dependency/ctm.png");
     private static final int CTM_HEIGHT = 256;
     private static final int CTM_WIDTH = 432;
 
@@ -32,10 +34,10 @@ public class DependencyScreen extends Screen {
     private final Screen screen;
     private final ConfigSection section;
     private final List<Dependency> missing;
-    private final CheckboxWidget check = new CheckboxWidget(0, 0, 0, 0, Text.translatable("conquest.dependency.checkbox"), false);
+    private final Checkbox check = Checkbox.builder(Component.translatable("conquest.dependency.checkbox"), null).selected(false).pos(0, 0).build();
 
     public DependencyScreen(Screen parent, ConfigSection section, List<Dependency> missing) {
-        super(Text.of("Dependencies"));
+        super(Component.literal("Dependencies"));
         this.screen = parent;
         this.section = section;
         this.missing = missing;
@@ -47,10 +49,10 @@ public class DependencyScreen extends Screen {
     }
 
     @Override
-    public void close() {
-        section.set("ignore_dependencies", check.isChecked());
+    public void onClose() {
+        section.set("ignore_dependencies", check.selected());
         section.save();
-        MinecraftClient.getInstance().setScreen(screen);
+        Minecraft.getInstance().setScreen(screen);
     }
 
     @Override
@@ -73,7 +75,7 @@ public class DependencyScreen extends Screen {
         int buttonHeightDifference = 94;
 
         for (Dependency dependency : missing) {
-            addDrawableChild(createButton(dependency, height - buttonHeightDifference, center));
+            addRenderableWidget(createButton(dependency, height - buttonHeightDifference, center));
             buttonHeightDifference -= 24;
         }
 
@@ -83,18 +85,18 @@ public class DependencyScreen extends Screen {
         //    addButton(button);
         //}
 
-        addDrawableChild(new ButtonWidget(center - 50, height - 24, 100, 20, Text.translatable("conquest.dependency.close"), b -> close()));
+        addRenderableWidget(Button.builder(Component.translatable("conquest.dependency.close"), b -> clearFocus()).bounds(center - 50, height - 24, 100, 20).build());
 
         check.setWidth(20);
         /*todo*/
         //check.setHeight(20);
-        check.y = height - 24;
-        check.x = center + 50 + 8;
-        addDrawableChild(check);
+        check.setHeight(height - 24);
+        check.setWidth(center + 50 + 8);
+        addRenderableWidget(check);
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mx, int my, float ticks) {
+    public void render(PoseStack matrixStack, int mx, int my, float ticks) {
         renderBackground(matrixStack);
 
         //listWidget.render(mx, my, ticks);
@@ -146,13 +148,13 @@ public class DependencyScreen extends Screen {
         return paddingTop;
     }
 
-    private static ButtonWidget createButton(Dependency dependency, int heightIn, int center) {
-        return new ButtonWidget(center - 85, heightIn, 170, 20, Text.translatable(dependency.getDisplayName()), btn -> {
+    private static Button createButton(Dependency dependency, int heightIn, int center) {
+        return Button.builder(Component.translatable(dependency.getDisplayName()), btn -> {
             try {
-                Util.getOperatingSystem().open(new URL(dependency.getURL()));
+                Util.getPlatform().openUrl(new URL(dependency.getURL()));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        });
+        }).bounds(center - 85, heightIn, 170, 20).build();
     }
 }

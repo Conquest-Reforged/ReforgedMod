@@ -8,10 +8,10 @@ import com.conquestreforged.api.painting.vanilla.VanillaPainting;
 import com.conquestreforged.client.gui.painting.PaintingScreen;
 import com.conquestreforged.core.client.input.BindEvent;
 import com.conquestreforged.core.client.input.BindListener;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.decoration.painting.PaintingVariants;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Items;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.decoration.PaintingVariants;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Items;
 
 public class PaintingBindListener implements BindListener {
 
@@ -21,7 +21,7 @@ public class PaintingBindListener implements BindListener {
             return;
         }
 
-        e.player.map(PlayerEntity::getMainHandStack).ifPresent(stack -> {
+        e.player.map(Player::getMainHandItem).ifPresent(stack -> {
             if (stack.getItem() instanceof PaintingHolder) {
                 PaintingHolder holder = (PaintingHolder) stack.getItem();
                 Art<?> art = holder.getArt(stack);
@@ -30,16 +30,16 @@ public class PaintingBindListener implements BindListener {
                     return;
                 }
                 PaintingScreen<?> screen = new PaintingScreen<>(stack, type, art);
-                MinecraftClient.getInstance().setScreen(screen);
+                Minecraft.getInstance().setScreen(screen);
                 return;
             }
 
             if (stack.getItem() == Items.PAINTING) {
-                String name = PaintingVariants.ALBAN.getRegistry() + "";
+                String name = PaintingVariants.ALBAN + "";
                 Art<?> art = VanillaArt.fromName(name);
                 Painting type = VanillaPainting.INSTANCE;
                 PaintingScreen<?> screen = new PaintingScreen<>(stack, type, art);
-                MinecraftClient.getInstance().setScreen(screen);
+                Minecraft.getInstance().setScreen(screen);
             }
         });
     }

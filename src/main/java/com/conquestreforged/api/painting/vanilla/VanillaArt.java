@@ -2,9 +2,9 @@ package com.conquestreforged.api.painting.vanilla;
 
 import com.conquestreforged.api.painting.art.Art;
 import com.conquestreforged.api.painting.art.ArtRenderer;
-import net.minecraft.entity.decoration.painting.PaintingVariant;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.decoration.PaintingVariant;
 
 import java.util.Collections;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class VanillaArt implements Art<PaintingVariant> {
 
     public static final List<Art<PaintingVariant>> ALL = Collections.unmodifiableList(
-            Registry.PAINTING_VARIANT.stream().map(VanillaArt::new).collect(Collectors.toList())
+            BuiltInRegistries.PAINTING_VARIANT.stream().map(VanillaArt::new).collect(Collectors.toList())
     );
 
     private final PaintingVariant art;
@@ -62,12 +62,12 @@ public class VanillaArt implements Art<PaintingVariant> {
 
     @Override
     public String getName() {
-        return Registry.PAINTING_VARIANT.getId(art) + "";
+        return BuiltInRegistries.PAINTING_VARIANT.getId(art) + "";
     }
 
     @Override
     public String getDisplayName(String parent) {
-        return Registry.PAINTING_VARIANT.getKey(art).get().getValue().getPath();
+        return BuiltInRegistries.PAINTING_VARIANT.getKey(art).getPath();
     }
 
     @Override
@@ -81,7 +81,7 @@ public class VanillaArt implements Art<PaintingVariant> {
     }
 
     public static Art<PaintingVariant> fromName(String name) {
-        PaintingVariant type = Registry.PAINTING_VARIANT.get(new Identifier(name));
+        PaintingVariant type = BuiltInRegistries.PAINTING_VARIANT.get(new ResourceLocation(name));
         return Art.find(type, ALL);
     }
 }
